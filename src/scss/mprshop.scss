@@ -4,51 +4,52 @@
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
 
-
-
-*{
-	box-sizing: border-box;
-}
-body{
-	background-color: #fff;
-	font-family: 'Circe', sans-serif;
-	color: #333;
-	&.lock{
-		overflow: hidden;
-	}
-}
-.wrp{
-
-}
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
+* {
+  box-sizing: border-box;
 }
 
-.w100{
-	width: 100%;
+body {
+  background-color: #fff;
+  font-family: 'Circe', sans-serif;
+  color: #333;
+  &.lock {
+    overflow: hidden;
+  }
 }
 
-.remodal{
+.wrp {
 
-	@media only screen and (min-width: 641px) {
-		max-width: 540px;
-	}
-	.remodal-close{
-		top: 10px;
-		right: 10px;
-		left: auto;
-	}
-	&__title{
-		color: #fff;
-	}
 }
 
+.container {
+  max-width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.remodal {
+
+  @media only screen and (min-width: 641px) {
+    max-width: 540px;
+  }
+  .remodal-close {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+  &__title {
+    color: #fff;
+  }
+}
+
+//Уведомления
+@import "componets/alert";
 
 //Шапка
 @import "componets/header";
