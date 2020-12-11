@@ -61,14 +61,17 @@ body {
 @import "componets/footer";
 
 //Новости на главной
-@import "componets/news-main";
+@import "componets/blog";
 
 //Подписка
 @import "componets/subscribe";
 
 //Карты на главной
-@import "componets/maps-main";
+@import "componets/maps";
 
 //Преимущества на главной
-@import "componets/advantage-main";
+@import "componets/tizers";
+
+//Преимущества на главной
+@import "componets/banners-bottom";
 
