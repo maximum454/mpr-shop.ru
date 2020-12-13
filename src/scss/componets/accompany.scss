@@ -1,0 +1,96 @@
+.accompany{
+	overflow: hidden;
+	&__header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 60px;
+		color: #333333;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		max-width: 360px;
+	}
+	&__img{
+		margin-right: 20px;
+		flex: 0 0 100px;
+		img{
+			max-width: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__name{
+		font-size: 20px;
+		line-height: 32px;
+		color: #333333;
+		height: 64px;
+		overflow: hidden;
+	}
+	&__star{
+		background-image: url("../img/Star.svg");
+		background-repeat: no-repeat;
+		background-position: center left;
+		padding-left: 24px;
+		font-size: 17px;
+		line-height: 25px;
+		color: #333333;
+	}
+	&__nav{
+		overflow: hidden;
+		max-width: 100px;
+		display: flex;
+		border: 1px solid #EB222D;
+		border-radius: 12px;
+	}
+	.slick-arrow{
+		background-image: url("../img/arrow.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 25px;
+		position: relative;
+		flex: 1 0 0;
+	}
+	.slick-disabled{
+		opacity: .4;
+	}
+	&__prev{
+		border-right: 1px solid #EB222D;
+	}
+	&__next{
+		transform: rotate(180deg);
+	}
+	@include r(1023){
+		h2{
+			font-size: 32px;
+			line-height: 48px;
+		}
+		&__name{
+			font-size: 17px;
+			line-height: 24px;
+		}
+	}
+	@include r(767){
+		h2{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__img{
+			margin-right: 20px;
+			flex: 0 0 80px;
+			img{
+				max-width: 100%;
+				display: block;
+				object-fit: cover;
+			}
+		}
+		&__txt{
+			display: none;
+		}
+	}
+}

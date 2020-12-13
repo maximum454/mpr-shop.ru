@@ -91,11 +91,8 @@
 			grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
 		}
 		&__name{
-			font-weight: bold;
-			font-size: 24px;
-			line-height: 32px;
-			color: #333333;
-			margin-bottom: 7px;
+			font-size: 17px;
+			line-height: 24px;
 		}
 		&__anons{
 			font-weight: normal;
