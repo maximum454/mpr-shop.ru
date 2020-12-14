@@ -11,6 +11,9 @@
 	&__slider{
 		position: relative;
 		margin-bottom: 20px;
+		img{
+			max-width: 100%;
+		}
 	}
 	&__for{
 		.item{
@@ -52,7 +55,6 @@
 		.item{
 			flex: 1 0 0;
 			max-width: 486px;
-			min-width: 350px;
 			overflow: hidden;
 			border-radius: 12px;
 			position: relative;
@@ -83,6 +85,36 @@
 		}
 		.txt{
 			padding: 20px;
+		}
+	}
+	@include r(1440){
+		&__nav{
+			display: none;
+		}
+	}
+	@include r(1023){
+		&__body{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 20px;
+		}
+		&__aside{
+			display: none;
+		}
+		&__block{
+			grid-gap: 20px;
+		}
+	}
+	@include r(767){
+		&__block{
+			grid-gap: 20px;
+			grid-template-columns: repeat(4,280px);
+			overflow: auto;
+			img{
+				object-fit: cover;
+				height: 100%;
+				display: block;
+			}
 		}
 	}
 }

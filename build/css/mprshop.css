@@ -1364,6 +1364,10 @@ body.lock {
   margin-bottom: 20px;
 }
 
+.promo__slider img {
+  max-width: 100%;
+}
+
 .promo__for .item {
   border-radius: 12px 0 12px 12px;
   overflow: hidden;
@@ -1420,7 +1424,6 @@ body.lock {
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
   max-width: 486px;
-  min-width: 350px;
   overflow: hidden;
   border-radius: 12px;
   position: relative;
@@ -2427,6 +2430,12 @@ body.lock {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .promo__nav {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1110px) {
   .tizers__item {
     margin: 20px;
@@ -2445,6 +2454,20 @@ body.lock {
 }
 
 @media only screen and (max-width: 1023px) {
+  .promo__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .promo__aside {
+    display: none;
+  }
+
+  .promo__block {
+    grid-gap: 20px;
+  }
+
   .accompany h2 {
     font-size: 32px;
     line-height: 48px;
@@ -2524,6 +2547,19 @@ body.lock {
   .nav__link {
     color: #142459;
     font-size: 18px;
+  }
+
+  .promo__block {
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 280px);
+    overflow: auto;
+  }
+
+  .promo__block img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    display: block;
   }
 
   .card__body {
