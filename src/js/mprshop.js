@@ -8,6 +8,27 @@
 
 
 $(function () {
+    $('.js-slider-promo').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.js-slider-promo-nav'
+    });
+
+    $('.js-slider-promo-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.js-slider-promo',
+        dots: true,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+    });
+
+
     $('.js-slider-accompany').slick({
         dots: false,
         infinite: true,

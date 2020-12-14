@@ -1,0 +1,20 @@
+.promo{
+	&__body{
+		display: grid;
+		grid-template-columns: 280px 1fr;
+		grid-gap: 40px;
+	}
+	&__aside{
+
+	}
+	&__slider{
+
+	}
+	&__for{
+
+	}
+	&__nav{
+		width: 52px;
+
+	}
+}
