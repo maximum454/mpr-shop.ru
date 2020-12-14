@@ -2,6 +2,7 @@
 @@include('./partials/burger.js')
 @@include('./partials/slick.js')
 @@include('./partials/remodal.js')
+@@include('./partials/tabs.js')
 
 
 
@@ -40,4 +41,6 @@ $(function () {
             // instead of a settings object
         ]
     });
+
+    $tabs('.tabs');
 })

@@ -60,6 +60,9 @@ body {
 //Подвал
 @import "componets/footer";
 
+//Карточки товара на главной
+@import "componets/card";
+
 //Новости на главной
 @import "componets/blog";
 
@@ -72,8 +75,17 @@ body {
 //Преимущества на главной
 @import "componets/tizers";
 
+//Акции
+@import "componets/stock";
+
+//Табы
+@import "componets/tabs";
+
 //Преимущества на главной
 @import "componets/banners-bottom";
+
+//Преимущества на главной
+@import "componets/banners-top";
 
 //Смотрели ранее
 @import "componets/accompany";

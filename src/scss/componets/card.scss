@@ -1,0 +1,140 @@
+.card{
+	position: relative;
+	margin: 60px 0;
+	h2{
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 60px;
+		color: #333333;
+	}
+	&__body{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+	}
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item{
+		display: block;
+		text-decoration: none;
+		max-width: 344px;
+		border: 1px dashed #888E94;
+		border-left: none;
+		border-top: none;
+		padding: 22px;
+		&:nth-last-child(-n+4){
+			border-bottom: none;
+		}
+	}
+	&__img{
+		margin-bottom: 12px;
+		text-align: center;
+		img{
+			max-width: 100%;
+			object-fit: contain;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	&__txt{
+
+	}
+	&__name{
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 32px;
+		color: #000000;
+	}
+	&__articul{
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 25px;
+		color: #888E94;
+	}
+	&__count{
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 25px;
+		color: #27AE60;
+	}
+	&__price{
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #000000;
+	}
+	&__star{
+		background-image: url("../img/Star.svg");
+		background-repeat: no-repeat;
+		background-position: center left;
+		padding-left: 24px;
+		font-size: 17px;
+		line-height: 25px;
+		color: #333333;
+	}
+	&__btn{
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 31px;
+		color: #333333;
+		text-decoration: none;
+		display: block;
+		width: fit-content;
+		padding: 20px 46px 20px 25px;
+		margin: 20px auto;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url("../img/border-btn.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+	}
+	@include r(1100){
+		&__item{
+			&:nth-last-child(-n+4){
+				border-bottom: 1px dashed #888E94;
+			}
+			&:nth-last-child(-n+2){
+				border-bottom: none;
+			}
+		}
+	}
+	@include r(980){
+		&__item{
+			max-width: 100%;
+			&:nth-last-child(-n+4){
+				border-bottom: 1px dashed #888E94;
+			}
+			&:nth-last-child(-n+2){
+				border-bottom: none;
+			}
+			&:nth-child(2n){
+				border-right: none;
+			}
+		}
+	}
+	@include r(767){
+		&__body{
+			grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+		}
+		&__name{
+			font-size: 15px;
+			line-height: 20px;
+		}
+		&__articul{
+			display: none;
+		}
+		&__count{
+			font-size: 15px;
+			line-height: 20px;
+		}
+	}
+}
