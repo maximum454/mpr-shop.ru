@@ -17,14 +17,16 @@
 		font-size: 24px;
 		line-height: 32px;
 		color: #000000;
-		max-width: 281px;
+		max-width: 347px;
 		margin-right: 20px;
 		position: relative;
+		padding-left: 66px;
+		min-width: 300px;
 		&:before{
 			content: '';
 			position: absolute;
 			top: 50%;
-			left: -66px;
+			left: 0;
 			transform: translate(0,-50%);
 			background-image: url("../img/subscribe.svg");
 			background-size: 100%;
@@ -46,6 +48,7 @@
 		padding: 22px 0;
 		max-width: 423px;
 		width: 100%;
+		min-width: 194px;
 		margin-right: 20px;
 	}
 	&__submit{
@@ -61,5 +64,10 @@
 		width: fit-content;
 		padding: 20px 40px;
 		border: none;
+	}
+	@include r(1023){
+		&__title{
+
+		}
 	}
 }
