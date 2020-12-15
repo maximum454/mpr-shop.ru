@@ -1,7 +1,90 @@
 .header {
-  &__top{
+	&__top {
+		padding: 20px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-  }
+	&__logo {
+		max-width: 358px;
 
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	&__select-delivery {
+		position: relative;
+		padding-left: 62px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url("../img/placemark.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 42px;
+			height: 42px;
+		}
+		span{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		p{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
+			margin: 0;
+		}
+	}
+	&__phone{
+		font-weight: bold;
+		font-size: 37px;
+		line-height: 48px;
+		color: #333333;
+		text-decoration: none;
+	}
+	&__control{
+		display: flex;
+		margin: 0 -20px;
+	}
+	&__auth{
+		background-image: url("../img/auth-icon.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 42px;
+		height: 42px;
+		display: block;
+		margin: 0 20px;
+	}
+	&__like{
+		background-image: url("../img/like-icon.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 42px;
+		height: 42px;
+		display: block;
+		margin: 0 20px;
+	}
+	&__cart{
+		background-image: url("../img/cart-icon.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 42px;
+		height: 42px;
+		display: block;
+		margin: 0 20px;
+	}
 
 }
