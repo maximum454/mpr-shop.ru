@@ -1,0 +1,28 @@
+.menu-header{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	&>li{
+		margin-left: 25px;
+	}
+	&__down{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&__icon{
+		margin-right: 17px;
+	}
+	&__down{
+		display: none;
+	}
+	a{
+		display: flex;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: #333333;
+		text-decoration: none;
+	}
+}
