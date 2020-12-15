@@ -10,7 +10,7 @@
 
 	&__slider{
 		position: relative;
-		margin-bottom: 20px;
+		margin-bottom: 36px;
 		img{
 			max-width: 100%;
 		}
@@ -63,6 +63,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			padding: 20px 28px;
 		}
 		.name{
 			font-weight: bold;
@@ -82,9 +83,6 @@
 			display: inline-block;
 			padding: 5px;
 			margin-top: -4px;
-		}
-		.txt{
-			padding: 20px;
 		}
 	}
 	@include r(1440){

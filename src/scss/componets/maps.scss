@@ -1,11 +1,11 @@
 .maps{
 	margin: 60px 0;
-	&__title{
-		font-family: 'Circe', sans-serif;
+	h2{
 		font-weight: bold;
 		font-size: 45px;
 		line-height: 60px;
 		color: #333333;
+		margin: 0 0 20px;
 		a{
 			color: inherit;
 		}
@@ -54,14 +54,14 @@
 			font-style: normal;
 			font-weight: normal;
 			font-size: 17px;
-			line-height: 25px;
+			line-height: 23px;
 			color: #BDBDBD;
 		}
 		p{
 			font-style: normal;
 			font-weight: normal;
 			font-size: 20px;
-			line-height: 32px;
+			line-height: 31px;
 			color: #333333;
 			margin: 0;
 		}
@@ -76,12 +76,12 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 17px;
-		line-height: 25px;
+		line-height: 23px;
 		color: #333333;
 		border: 1px solid #EB222D;
 		box-sizing: border-box;
 		border-radius: 12px;
-		padding: 20px;
+		padding: 12px 18px;
 		margin-bottom: 10px;
 		text-decoration: none;
 	}

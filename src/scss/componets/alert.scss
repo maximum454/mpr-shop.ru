@@ -1,10 +1,11 @@
 .alert{
   border-radius: 0;
-  padding: 15px;
+  padding: 13px 15px;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   font-weight: 700;
+  font-family: 'Circe', sans-serif;
   &-danger {
     color: #fff;
     background-color: #EB222D;
@@ -18,6 +19,7 @@
     color: #FFFFFF;
     text-decoration: none;
     display: none;
+
   }
   @include r(1023){
     font-size: 17px;

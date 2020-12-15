@@ -2,17 +2,21 @@
 	font-family: 'Circe', sans-serif;
 	position: relative;
 	margin: 60px 0;
-	&__title{
+	h2{
+		font-family: 'Circe';
+		font-weight: 700;
 		font-size: 45px;
 		line-height: 60px;
-		font-weight: 700;
 		color: #333333;
-		text-decoration-line: underline;
+		margin: 0 0 20px;
+		a{
+			color: inherit;
+		}
 	}
 	&__body{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		grid-gap: 40px;
+		grid-gap: 60px 40px;
 	}
 	&__item{
 		display: flex;
@@ -22,7 +26,7 @@
 	&__img{
 		flex: 1 0 0;
 		min-width: 120px;
-		margin-right: 10px;
+		margin-right: 20px;
 
 		overflow: hidden;
 		img{
@@ -41,6 +45,7 @@
 		line-height: 22px;
 		letter-spacing: 0.07em;
 		margin: 0;
+		text-transform: uppercase;
 	}
 	&__name{
 		font-weight: bold;
