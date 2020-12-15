@@ -65,4 +65,12 @@
 		border: none;
 		background-color: transparent;
 	}
+	@include r(1023){
+		.select {
+			display: none;
+		}
+		&__input{
+			border-radius:12px;
+		}
+	}
 }

@@ -2,15 +2,13 @@
 	overflow: hidden;
 	&__body{
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-		grid-gap: 40px;
-		margin: 0 -20px;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
 	}
 	&__item{
 		padding: 32px;
 		border: 1px dashed rgba(136, 142, 148, 0.4);
 		border-radius: 12px;
-		margin: 20px;
 	}
 	&__header{
 		display: flex;
@@ -76,11 +74,13 @@
 		}
 	}
 	@include r(980){
-		&__body{
-			display: block;
-		}
 		&__item{
 			padding: 16px;
+		}
+	}
+	@include r(860){
+		&__body{
+			grid-template-columns: 1fr;
 		}
 	}
 	@include r(767){

@@ -1247,6 +1247,7 @@ body.lock {
 .header__logo img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .header__select-delivery {
@@ -1289,6 +1290,7 @@ body.lock {
   color: #333333;
   text-decoration: none;
   margin: 0 65px;
+  white-space: nowrap;
 }
 
 .header__control {
@@ -1329,6 +1331,10 @@ body.lock {
   height: 42px;
   display: block;
   margin: 0 20px;
+}
+
+.header__btn {
+  display: none;
 }
 
 .header__bottom {
@@ -1458,6 +1464,7 @@ body.lock {
   line-height: 28px;
   color: #333333;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav__burger {
@@ -2542,16 +2549,14 @@ body.lock {
 
 .banners-bottom__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  grid-gap: 40px;
-  margin: 0 -20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .banners-bottom__item {
   padding: 32px;
   border: 1px dashed rgba(136, 142, 148, 0.4);
   border-radius: 12px;
-  margin: 20px;
 }
 
 .banners-bottom__header {
@@ -2875,6 +2880,30 @@ body.lock {
     display: block;
   }
 
+  .header__btn {
+    display: block;
+    background-color: #EB222D;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .search-form .select {
+    display: none;
+  }
+
+  .search-form__input {
+    border-radius: 12px;
+  }
+
   .promo__body {
     display: grid;
     grid-template-columns: 1fr;
@@ -2958,12 +2987,14 @@ body.lock {
     line-height: 24px;
   }
 
-  .banners-bottom__body {
-    display: block;
-  }
-
   .banners-bottom__item {
     padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .banners-bottom__body {
+    grid-template-columns: 1fr;
   }
 }
 
