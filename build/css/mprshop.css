@@ -1180,7 +1180,7 @@ body.lock {
 
 .alert {
   border-radius: 0;
-  padding: .70rem 1.25rem;
+  padding: 15px;
   margin-bottom: 0;
   font-size: 20px;
   text-align: center;
@@ -1191,6 +1191,16 @@ body.lock {
   color: #fff;
   background-color: #EB222D;
   border: none;
+}
+
+.alert__phone {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.09em;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: none;
 }
 
 .nav__burger {
@@ -2454,6 +2464,25 @@ body.lock {
 }
 
 @media only screen and (max-width: 1023px) {
+  .alert {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 9px  15px;
+  }
+
+  .alert__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .alert__phone {
+    display: block;
+  }
+
   .promo__body {
     display: grid;
     grid-template-columns: 1fr;
@@ -2515,6 +2544,22 @@ body.lock {
 }
 
 @media only screen and (max-width: 767px) {
+  .alert {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0  15px;
+  }
+
+  .alert__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .alert__phone {
+    display: none;
+  }
+
   .nav__burger {
     display: block;
   }

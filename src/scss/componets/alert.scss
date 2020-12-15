@@ -1,6 +1,6 @@
 .alert{
   border-radius: 0;
-  padding: .70rem 1.25rem;
+  padding: 15px;
   margin-bottom: 0;
   font-size: 20px;
   text-align: center;
@@ -9,5 +9,37 @@
     color: #fff;
     background-color: #EB222D;
     border: none;
+  }
+  &__phone{
+    font-size: 17px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: none;
+  }
+  @include r(1023){
+    font-size: 17px;
+    line-height: 24px;
+    padding:9px  15px;
+    &__body{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__phone{
+      display: block;
+    }
+  }
+  @include r(767){
+    font-size: 12px;
+    line-height: 24px;
+    padding:0  15px;
+    &__body{
+      justify-content: center;
+    }
+    &__phone{
+      display: none;
+    }
   }
 }
