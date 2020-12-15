@@ -67,7 +67,34 @@
 	}
 	@include r(1023){
 		&__title{
-
+			display: block;
+			flex: 1 0 100%;
+		}
+		&__form{
+			flex-wrap: wrap;
+		}
+		&__input{
+			margin-bottom: 20px;
+		}
+	}
+	@include r(767){
+		&__title{
+			margin: 0 0 20px;
+			font-size: 17px;
+			line-height: 24px;
+		}
+	}
+	@include r(374){
+		&__title{
+			color: #000000;
+			max-width: 100%;
+			margin-right: 0;
+			position: relative;
+			padding-left: 0;
+			min-width: auto;
+			&:before{
+				display: none;
+			}
 		}
 	}
 }

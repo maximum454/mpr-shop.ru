@@ -103,4 +103,14 @@
 			max-width: 250px;
 		}
 	}
+	@include r(540){
+		&__main{
+			grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+		}
+	}
+	@include r(375){
+		&__main{
+			grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+		}
+	}
 }

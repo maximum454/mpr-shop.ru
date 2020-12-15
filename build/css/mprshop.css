@@ -1170,6 +1170,10 @@ body.lock {
   overflow: hidden;
 }
 
+.wrp {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1366px;
   margin-left: auto;
@@ -1802,25 +1806,6 @@ body.lock {
           justify-content: space-between;
 }
 
-.footer__contact a {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #F2F2F2;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 24px;
-}
-
-.footer__contact a span {
-  display: block;
-  font-size: 17px;
-  line-height: 25px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #BDBDBD;
-}
-
 .footer__social {
   margin-left: -6px;
 }
@@ -1830,9 +1815,13 @@ body.lock {
   margin: 0 6px;
 }
 
+.footer__menu {
+  margin: 0 auto 0 124px;
+}
+
 .footer__list {
   padding: 0;
-  margin: 0 auto 0 124px;
+  margin: 0;
   list-style: none;
 }
 
@@ -1853,6 +1842,46 @@ body.lock {
   font-size: 20px;
   line-height: 32px;
   color: #BDBDBD;
+}
+
+.footer__call {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #BDBDBD;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.footer__phone {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F2F2F2;
+  text-decoration: none;
+  display: block;
+}
+
+.footer__email {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F2F2F2;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.footer__adres {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F2F2F2;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 24px;
 }
 
 .card {
@@ -2694,6 +2723,62 @@ body.lock {
           transform: rotate(180deg);
 }
 
+.pays i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+  background: url(../img/payment.svg) 0 0 no-repeat;
+  opacity: 0.5;
+}
+
+.pays i.cacsh {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -298px;
+}
+
+.pays i.mastercard {
+  width: 24px;
+  height: 16px;
+  background-position: -279px -300px;
+}
+
+.pays i.visa {
+  width: 32px;
+  height: 10px;
+  background-position: -40px -304px;
+}
+
+.pays i.yandex_money {
+  width: 15px;
+  height: 19px;
+  background-position: -92px -298px;
+}
+
+.pays i.webmoney {
+  width: 17px;
+  height: 18px;
+  background-position: -127px -299px;
+}
+
+.pays i.qiwi {
+  width: 19px;
+  height: 20px;
+  background-position: -165px -298px;
+}
+
+.pays i.sbrf {
+  width: 19px;
+  height: 20px;
+  background-position: -240px -298px;
+}
+
+.pays i.alfa {
+  width: 14px;
+  height: 19px;
+  background-position: -323px -298px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
@@ -2761,6 +2846,41 @@ body.lock {
     grid-gap: 20px;
   }
 
+  .footer__body {
+    display: grid;
+    grid-template-areas: 'right list' 'left list';
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__left {
+    grid-area: left;
+  }
+
+  .footer__right {
+    grid-area: right;
+  }
+
+  .footer__menu {
+    grid-area: list;
+    margin: 0;
+  }
+
+  .subscribe__title {
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+
+  .subscribe__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
+
   .accompany h2 {
     font-size: 32px;
     line-height: 48px;
@@ -2769,6 +2889,10 @@ body.lock {
   .accompany__name {
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .pays {
+    display: none;
   }
 }
 
@@ -2871,6 +2995,65 @@ body.lock {
     display: block;
   }
 
+  .footer__body {
+    display: grid;
+    grid-template-areas: 'right' 'list' 'left';
+    grid-template-columns: 1fr;
+  }
+
+  .footer__left {
+    grid-area: left;
+  }
+
+  .footer__right {
+    grid-area: right;
+  }
+
+  .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__copy {
+    margin-left: 20px;
+  }
+
+  .footer__menu {
+    grid-area: list;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #676767;
+    border-bottom: 1px solid #676767;
+    overflow: hidden;
+  }
+
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 570px;
+  }
+
+  .footer__list li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+
   .card__body {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
@@ -2891,6 +3074,7 @@ body.lock {
 
   .blog__body {
     grid-gap: 24px;
+    grid-template-columns: 1fr;
   }
 
   .blog__category {
@@ -2901,6 +3085,12 @@ body.lock {
   .blog__name {
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .subscribe__title {
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .tizers__body {
@@ -2958,10 +3148,10 @@ body.lock {
   }
 
   .accompany__img {
-    margin-right: 20px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80px;
             flex: 0 0 80px;
+    margin: 0 auto;
   }
 
   .accompany__img img {
@@ -2973,5 +3163,63 @@ body.lock {
 
   .accompany__txt {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .footer__logo {
+    display: block;
+  }
+
+  .footer__copy {
+    margin: 20px 0;
+  }
+
+  .banners-bottom__main {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .accompany__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .accompany__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .banners-bottom__main {
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .subscribe__title {
+    color: #000000;
+    max-width: 100%;
+    margin-right: 0;
+    position: relative;
+    padding-left: 0;
+    min-width: auto;
+  }
+
+  .subscribe__title:before {
+    display: none;
+  }
+
+  .accompany__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+    margin: 0 auto;
   }
 }

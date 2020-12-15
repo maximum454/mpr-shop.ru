@@ -47,19 +47,10 @@ $(function () {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
                     slidesToShow: 4,
                     arrows: false
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 

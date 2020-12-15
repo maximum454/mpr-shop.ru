@@ -67,6 +67,7 @@
 	@include r(767){
 		&__body{
 			grid-gap: 24px;
+			grid-template-columns: 1fr;
 		}
 		&__category{
 			font-size: 12px;

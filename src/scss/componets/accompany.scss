@@ -83,8 +83,8 @@
 			line-height: 24px;
 		}
 		&__img{
-			margin-right: 20px;
 			flex: 0 0 80px;
+			margin: 0 auto;
 			img{
 				max-width: 100%;
 				display: block;
@@ -93,6 +93,24 @@
 		}
 		&__txt{
 			display: none;
+		}
+	}
+	@include r(540){
+		&__img{
+			flex: 0 0 100px;
+			margin: 0 auto;
+		}
+	}
+	@include r(480){
+		&__img{
+			flex: 0 0 80px;
+			margin: 0 auto;
+		}
+	}
+	@include r(374){
+		&__img{
+			flex: 0 0 60px;
+			margin: 0 auto;
 		}
 	}
 }

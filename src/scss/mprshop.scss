@@ -19,7 +19,7 @@ body {
 }
 
 .wrp {
-
+  overflow: hidden;
 }
 
 .container {
@@ -102,4 +102,7 @@ body {
 
 //Смотрели ранее
 @import "componets/accompany";
+
+//Платежи
+@import "componets/pays";
 
