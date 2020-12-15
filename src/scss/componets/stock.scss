@@ -6,6 +6,35 @@
 		line-height: 60px;
 		color: #333333;
 	}
+	&__label{
+		position: relative;
+		background: #EB222D;
+		border-radius: 12px;
+		max-width: 323px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 34px;
+		&-name{
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 32px;
+			color: #FFFFFF;
+		}
+		&-price{
+			font-weight: bold;
+			font-size: 105px;
+			line-height: 100px;
+			color: #FFFFFF;
+		}
+	}
+	&__inner{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 30px;
+		align-items: center;
+	}
 	&__item{
 		display: flex;
 	}

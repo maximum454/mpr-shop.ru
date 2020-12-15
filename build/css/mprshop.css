@@ -2368,6 +2368,50 @@ body.lock {
   color: #333333;
 }
 
+.stock__label {
+  position: relative;
+  background: #EB222D;
+  border-radius: 12px;
+  max-width: 323px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 34px;
+}
+
+.stock__label-name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.stock__label-price {
+  font-weight: bold;
+  font-size: 105px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.stock__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .stock__item {
   display: -webkit-box;
   display: -ms-flexbox;
