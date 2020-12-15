@@ -2896,12 +2896,34 @@ body.lock {
     display: none;
   }
 
+  .header__auth {
+    width: 32px;
+    height: 32px;
+    margin: 0 15px;
+  }
+
+  .header__like {
+    width: 32px;
+    height: 32px;
+    margin: 0 15px;
+  }
+
+  .header__cart {
+    width: 32px;
+    height: 32px;
+    margin: 0 15px;
+  }
+
   .search-form .select {
     display: none;
   }
 
   .search-form__input {
     border-radius: 12px;
+  }
+
+  .menu-header__icon {
+    display: none;
   }
 
   .promo__body {

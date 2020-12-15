@@ -26,4 +26,12 @@
 		text-decoration: none;
 		white-space: nowrap;
 	}
+	@include r(1023){
+		&__icon{
+			display: none;
+		}
+	}
+	@include r(767){
+
+	}
 }
