@@ -2419,7 +2419,16 @@ body.lock {
 }
 
 .stock__img {
+  max-width: 158px;
+  width: 100%;
   margin-right: 12px;
+}
+
+.stock__img img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .stock__name {
@@ -2915,6 +2924,15 @@ body.lock {
     margin-bottom: 20px;
   }
 
+  .stock__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .accompany h2 {
     font-size: 32px;
     line-height: 48px;
@@ -3111,6 +3129,18 @@ body.lock {
     line-height: 24px;
   }
 
+  .maps__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .maps__item {
+    margin: 20px;
+  }
+
   .tizers__body {
     display: block;
     margin: 0;
@@ -3122,6 +3152,14 @@ body.lock {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+
+  .tizers__img {
+    margin-right: 20px;
   }
 
   .tizers h3 {
@@ -3132,6 +3170,22 @@ body.lock {
   .tizers p {
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .stock__label {
+    display: none;
+  }
+
+  .stock__inner {
+    display: block;
+  }
+
+  .stock__item {
+    margin-bottom: 20px;
+  }
+
+  .stock__img {
+    max-width: 80px;
   }
 
   .banners-bottom__header {

@@ -39,7 +39,14 @@
 		display: flex;
 	}
 	&__img{
+		max-width: 158px;
+		width: 100%;
 		margin-right: 12px;
+		img{
+			max-width: 100%;
+			display: block;
+			object-fit: cover;
+		}
 	}
 	&__name{
 		font-size: 20px;
@@ -69,6 +76,28 @@
 			background-image: url("../img/border-btn.svg");
 			background-repeat: no-repeat;
 			background-size: 100%;
+		}
+	}
+	@include r(1023){
+		&__inner{
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-gap: 30px;
+			align-items: center;
+		}
+	}
+	@include r(767){
+		&__label{
+			display: none;
+		}
+		&__inner{
+			display: block;
+		}
+		&__item{
+			margin-bottom: 20px;
+		}
+		&__img{
+			max-width: 80px;
 		}
 	}
 }
