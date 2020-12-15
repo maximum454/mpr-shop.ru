@@ -1899,7 +1899,7 @@ body.lock {
 
 .card__body {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card__row {
@@ -2193,8 +2193,8 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   margin: 0 -20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow: auto;
+  max-width: 1200px;
 }
 
 .maps__item {
@@ -2802,16 +2802,6 @@ body.lock {
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  .card__item:nth-last-child(-n+4) {
-    border-bottom: 1px dashed #888E94;
-  }
-
-  .card__item:nth-last-child(-n+2) {
-    border-bottom: none;
-  }
-}
-
 @media only screen and (max-width: 1023px) {
   .alert {
     font-size: 17px;
@@ -2897,22 +2887,6 @@ body.lock {
 }
 
 @media only screen and (max-width: 980px) {
-  .card__item {
-    max-width: 100%;
-  }
-
-  .card__item:nth-last-child(-n+4) {
-    border-bottom: 1px dashed #888E94;
-  }
-
-  .card__item:nth-last-child(-n+2) {
-    border-bottom: none;
-  }
-
-  .card__item:nth-child(2n) {
-    border-right: none;
-  }
-
   .blog__img {
     display: none;
   }

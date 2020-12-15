@@ -3893,7 +3893,6 @@ $(function () {
         arrows: false,
     });
 
-
     $('.js-slider-accompany').slick({
         dots: false,
         infinite: true,

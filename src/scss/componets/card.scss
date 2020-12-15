@@ -10,7 +10,7 @@
 	}
 	&__body{
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+		grid-template-columns: repeat(4, 1fr);
 	}
 	&__row{
 		display: flex;
@@ -96,30 +96,6 @@
 			background-image: url("../img/border-btn.svg");
 			background-repeat: no-repeat;
 			background-size: 100%;
-		}
-	}
-	@include r(1100){
-		&__item{
-			&:nth-last-child(-n+4){
-				border-bottom: 1px dashed #888E94;
-			}
-			&:nth-last-child(-n+2){
-				border-bottom: none;
-			}
-		}
-	}
-	@include r(980){
-		&__item{
-			max-width: 100%;
-			&:nth-last-child(-n+4){
-				border-bottom: 1px dashed #888E94;
-			}
-			&:nth-last-child(-n+2){
-				border-bottom: none;
-			}
-			&:nth-child(2n){
-				border-right: none;
-			}
 		}
 	}
 	@include r(767){
