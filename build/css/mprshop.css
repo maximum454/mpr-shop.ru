@@ -1642,6 +1642,11 @@ body.lock {
   max-width: 100%;
 }
 
+.promo__for {
+  overflow: hidden;
+  max-width: 1015px;
+}
+
 .promo__for .item {
   border-radius: 12px 0 12px 12px;
   overflow: hidden;
@@ -2851,6 +2856,10 @@ body.lock {
   .promo__nav {
     display: none;
   }
+
+  .promo__for .item {
+    border-radius: 12px;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -2890,6 +2899,7 @@ body.lock {
     color: #FFFFFF;
     border: none;
     padding: 20px;
+    margin-right: 12px;
   }
 
   .header__phone {
@@ -3037,6 +3047,10 @@ body.lock {
     display: none;
   }
 
+  .menu-header {
+    display: none;
+  }
+
   .nav__burger {
     display: block;
   }
@@ -3075,6 +3089,7 @@ body.lock {
     grid-gap: 20px;
     grid-template-columns: repeat(4, 280px);
     overflow: auto;
+    max-width: 732px;
   }
 
   .promo__block img {
