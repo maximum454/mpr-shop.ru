@@ -52,6 +52,8 @@
 		grid-gap: 40px;
 		img{
 			max-width: 100%;
+			object-fit: cover;
+			display: block;
 		}
 		.item{
 			flex: 1 0 0;
