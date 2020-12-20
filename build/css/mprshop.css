@@ -1985,6 +1985,10 @@ body.lock {
   padding: 22px;
 }
 
+.card__item:nth-child(4n) {
+  border-right: 0;
+}
+
 .card__item:nth-last-child(-n+4) {
   border-bottom: none;
 }

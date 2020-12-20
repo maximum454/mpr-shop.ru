@@ -25,6 +25,9 @@
 		border-left: none;
 		border-top: none;
 		padding: 22px;
+		&:nth-child(4n){
+			border-right: 0;
+		}
 		&:nth-last-child(-n+4){
 			border-bottom: none;
 		}
