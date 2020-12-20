@@ -2472,7 +2472,7 @@ body.lock {
 .stock__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 36px 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
