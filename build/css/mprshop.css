@@ -1806,7 +1806,7 @@ body.lock {
           align-items: center;
   padding-left: 56px;
   position: relative;
-  margin: 7px 0;
+  margin: 5px 0;
 }
 
 .menu-category li .icon {
@@ -2575,11 +2575,6 @@ body.lock {
   background-image: url("../img/tabs-nav-act.svg");
   cursor: default;
   color: #ffffff;
-}
-
-.tabs__link:not(.tabs__link_active):hover,
-.tabs__link:not(.tabs__link_active):focus {
-  background-color: #efefef;
 }
 
 .tabs__content {
