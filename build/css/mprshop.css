@@ -2892,6 +2892,10 @@ body.lock {
     padding: 20px;
   }
 
+  .header__logo {
+    max-width: 250px;
+  }
+
   .header__phone {
     display: none;
   }
