@@ -25,7 +25,8 @@
 		max-width: 1200px;
 	}
 	&__item{
-		max-width: 420px;
+		width: 420px;
+		min-width: 320px;
 		background: #FFFFFF;
 		border: 1px solid rgba(136, 142, 148, 0.4);
 		box-sizing: border-box;
@@ -86,13 +87,11 @@
 		margin-bottom: 10px;
 		text-decoration: none;
 	}
-	@include r(767){
+	@include r(1023){
 		&__body{
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		&__item{
-			margin:20px;
+			margin: 0;
+			overflow: auto;
+			max-width: 973px;
 		}
 	}
 }

@@ -15,18 +15,12 @@ $(function () {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.js-slider-promo-nav'
+        customPaging : function(slider, i) {
+            var thumb = $(slider.$slides[i]).data();
+            return '<a>'+(i+1)+'</a>';
+        },
     });
 
-    $('.js-slider-promo-nav').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.js-slider-promo',
-        dots: true,
-        centerMode: false,
-        focusOnSelect: true,
-        arrows: false,
-    });
 
     $('.js-slider-accompany').slick({
         dots: false,

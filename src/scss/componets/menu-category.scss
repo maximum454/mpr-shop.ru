@@ -22,6 +22,7 @@
 		align-items: center;
 		padding-left: 56px;
 		position: relative;
+		margin: 7px 0;
 		.icon{
 			position: absolute;
 			top: 0;
@@ -46,6 +47,15 @@
 			display: -webkit-box;
 			-webkit-line-clamp: 1;
 			-webkit-box-orient: vertical;
+			margin-right: 10px;
+		}
+		&.more{
+			margin: 10px 0;
+			a{
+				border-top: 1px solid rgba(136, 142, 148, 0.4);
+				padding: 26px 8px 0 8px;
+
+			}
 		}
 	}
 }
