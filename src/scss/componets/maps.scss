@@ -88,10 +88,62 @@
 		text-decoration: none;
 	}
 	@include r(1023){
+		margin: 40px 0;
 		&__body{
-			margin: 0;
+			margin: 0 -20px;
 			overflow: auto;
 			max-width: 973px;
+		}
+		h2{
+			font-size: 32px;
+			line-height: 48px;
+			a{
+				color: inherit;
+			}
+		}
+		h3{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		ul{
+			span{
+				font-size: 15px;
+				line-height: 20px;
+			}
+			p{
+				font-size: 17px;
+				line-height: 24px;
+			}
+		}
+		&__btn{
+			font-size: 15px;
+			line-height: 20px;
+		}
+	}
+	@include r(767){
+		margin: 40px 0;
+		&__body{
+			margin: 0 -20px;
+			overflow: auto;
+			max-width: 973px;
+		}
+		h2{
+			font-size: 24px;
+			line-height: 32px;
+		}
+		h3{
+			font-size: 17px;
+			line-height: 24px;
+		}
+		ul{
+			p{
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+		&__btn{
+			font-size: 15px;
+			line-height: 20px;
 		}
 	}
 }

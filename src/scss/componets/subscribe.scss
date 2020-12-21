@@ -66,9 +66,18 @@
 		border: none;
 	}
 	@include r(1023){
+		margin: 40px 0;
+		&__body{
+			background: #F6F8FA;
+			border-radius: 12px;
+			padding: 33px 15px 27px 15px;
+		}
 		&__title{
 			display: block;
 			flex: 1 0 100%;
+			max-width: 490px;
+			text-align: center;
+			margin: 0 0 26px;
 		}
 		&__form{
 			flex-wrap: wrap;
@@ -78,10 +87,17 @@
 		}
 	}
 	@include r(767){
+		margin: 32px 0;
 		&__title{
 			margin: 0 0 20px;
 			font-size: 17px;
 			line-height: 24px;
+			text-align: left;
+			padding-left: 51px;
+			&:before{
+				width: 36px;
+				height: 36px;
+			}
 		}
 	}
 	@include r(374){

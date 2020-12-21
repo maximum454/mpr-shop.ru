@@ -43,9 +43,10 @@
 
 	&__copy {
 		font-weight: normal;
-		font-size: 20px;
-		line-height: 32px;
+		font-size: 18px;
+		line-height: 22px;
 		color: #BDBDBD;
+		margin-left: 20px;
 	}
 
 	&__call {
@@ -88,7 +89,16 @@
 	}
 
 	&__logo {
-
+		display: flex;
+		align-items: center;
+		max-width: 420px;
+		img{
+			flex: 1 0 0;
+			max-width: 100%;
+			display: block;
+			object-fit: cover;
+			height: auto;
+		}
 	}
 
 	@include r(1023) {
@@ -120,10 +130,6 @@
 		&__right {
 			grid-area: right;
 
-		}
-		&__logo {
-			display: flex;
-			align-items: center;
 		}
 		&__copy {
 			margin-left: 20px;

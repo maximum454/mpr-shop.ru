@@ -1900,9 +1900,10 @@ body.lock {
 
 .footer__copy {
   font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 22px;
   color: #BDBDBD;
+  margin-left: 20px;
 }
 
 .footer__call {
@@ -1943,6 +1944,27 @@ body.lock {
   text-decoration: none;
   display: block;
   margin-bottom: 24px;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 420px;
+}
+
+.footer__logo img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
 }
 
 .card {
@@ -3054,11 +3076,52 @@ body.lock {
     margin: 0;
   }
 
+  .card {
+    margin: 40px 0;
+  }
+
+  .card h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .blog {
+    margin: 40px 0;
+  }
+
+  .blog h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .blog__category {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .blog__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .subscribe {
+    margin: 40px 0;
+  }
+
+  .subscribe__body {
+    background: #F6F8FA;
+    border-radius: 12px;
+    padding: 33px 15px 27px 15px;
+  }
+
   .subscribe__title {
     display: block;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
+    max-width: 490px;
+    text-align: center;
+    margin: 0 0 26px;
   }
 
   .subscribe__form {
@@ -3070,10 +3133,43 @@ body.lock {
     margin-bottom: 20px;
   }
 
+  .maps {
+    margin: 40px 0;
+  }
+
   .maps__body {
-    margin: 0;
+    margin: 0 -20px;
     overflow: auto;
     max-width: 973px;
+  }
+
+  .maps h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .maps h2 a {
+    color: inherit;
+  }
+
+  .maps h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .maps ul span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .maps ul p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .maps__btn {
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .stock__inner {
@@ -3101,6 +3197,12 @@ body.lock {
 }
 
 @media only screen and (max-width: 980px) {
+  .blog__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px 40px;
+  }
+
   .blog__img {
     display: none;
   }
@@ -3351,15 +3453,6 @@ body.lock {
     grid-area: right;
   }
 
-  .footer__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .footer__copy {
     margin-left: 20px;
   }
@@ -3396,6 +3489,10 @@ body.lock {
     margin: 0 20px 0 0;
   }
 
+  .card {
+    margin: 30px 0;
+  }
+
   .card__body {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
@@ -3414,6 +3511,15 @@ body.lock {
     line-height: 20px;
   }
 
+  .blog {
+    margin: 30px 0;
+  }
+
+  .blog h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .blog__body {
     grid-gap: 24px;
     grid-template-columns: 1fr;
@@ -3429,10 +3535,51 @@ body.lock {
     line-height: 20px;
   }
 
+  .subscribe {
+    margin: 32px 0;
+  }
+
   .subscribe__title {
     margin: 0 0 20px;
     font-size: 17px;
     line-height: 24px;
+    text-align: left;
+    padding-left: 51px;
+  }
+
+  .subscribe__title:before {
+    width: 36px;
+    height: 36px;
+  }
+
+  .maps {
+    margin: 40px 0;
+  }
+
+  .maps__body {
+    margin: 0 -20px;
+    overflow: auto;
+    max-width: 973px;
+  }
+
+  .maps h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .maps h3 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .maps ul p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .maps__btn {
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .tizers__body {
