@@ -23,6 +23,8 @@
 		.item{
 			border-radius: 12px 0 12px 12px;
 			overflow: hidden;
+			display: block;
+			text-decoration: none;
 		}
 	}
 	&__nav{
@@ -61,6 +63,8 @@
 			overflow: hidden;
 			border-radius: 12px;
 			position: relative;
+			display: block;
+			text-decoration: none;
 		}
 		.txt{
 			position: absolute;
