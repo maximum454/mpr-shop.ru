@@ -17,6 +17,7 @@
 		display: flex;
 		align-items: center;
 		max-width: 360px;
+		text-decoration: none;
 	}
 	&__img{
 		margin-right: 20px;
@@ -68,6 +69,7 @@
 		transform: rotate(180deg);
 	}
 	@include r(1023){
+		margin: 40px 0;
 		h2{
 			font-size: 32px;
 			line-height: 48px;
@@ -78,6 +80,7 @@
 		}
 	}
 	@include r(767){
+		margin: 30px 0;
 		h2{
 			font-size: 20px;
 			line-height: 24px;

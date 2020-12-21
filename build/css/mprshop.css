@@ -1656,6 +1656,8 @@ body.lock {
 .promo__for .item {
   border-radius: 12px 0 12px 12px;
   overflow: hidden;
+  display: block;
+  text-decoration: none;
 }
 
 .promo__nav {
@@ -1710,6 +1712,8 @@ body.lock {
   overflow: hidden;
   border-radius: 12px;
   position: relative;
+  display: block;
+  text-decoration: none;
 }
 
 .promo__block .txt {
@@ -2799,6 +2803,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   max-width: 360px;
+  text-decoration: none;
 }
 
 .accompany__img {
@@ -2979,6 +2984,10 @@ body.lock {
 }
 
 @media only screen and (max-width: 1110px) {
+  .tizers {
+    margin: 40px 0;
+  }
+
   .tizers__item {
     margin: 20px;
     min-width: calc(50% - 40px);
@@ -3190,6 +3199,10 @@ body.lock {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .accompany {
+    margin: 40px 0;
   }
 
   .accompany h2 {
@@ -3609,6 +3622,10 @@ body.lock {
     line-height: 20px;
   }
 
+  .tizers {
+    margin: 30px 0;
+  }
+
   .tizers__body {
     display: block;
     margin: 0;
@@ -3695,6 +3712,10 @@ body.lock {
 
   .banners-top {
     display: none;
+  }
+
+  .accompany {
+    margin: 30px 0;
   }
 
   .accompany h2 {
