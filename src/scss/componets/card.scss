@@ -35,6 +35,8 @@
 	&__img{
 		margin-bottom: 12px;
 		text-align: center;
+		display: block;
+		text-decoration: none;
 		img{
 			max-width: 100%;
 			object-fit: contain;
@@ -46,6 +48,8 @@
 
 	}
 	&__name{
+		display: block;
+		text-decoration: none;
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 32px;

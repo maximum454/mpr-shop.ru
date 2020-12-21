@@ -2018,6 +2018,8 @@ body.lock {
 .card__img {
   margin-bottom: 12px;
   text-align: center;
+  display: block;
+  text-decoration: none;
 }
 
 .card__img img {
@@ -2029,6 +2031,8 @@ body.lock {
 }
 
 .card__name {
+  display: block;
+  text-decoration: none;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
