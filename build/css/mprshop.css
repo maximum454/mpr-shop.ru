@@ -2715,6 +2715,10 @@ body.lock {
   margin: 0 auto;
 }
 
+.banners-bottom__footer {
+  display: none;
+}
+
 .banners-top {
   margin: 60px 0;
 }
@@ -3649,6 +3653,10 @@ body.lock {
     margin-bottom: 20px;
   }
 
+  .banners-bottom__header .banners-bottom__btn {
+    display: none;
+  }
+
   .banners-bottom__main {
     grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
   }
@@ -3665,6 +3673,17 @@ body.lock {
     color: #888E94;
     margin: 0;
     max-width: 250px;
+  }
+
+  .banners-bottom__footer {
+    display: block;
+  }
+
+  .banners-bottom__btn {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 20px;
+    margin: 20px 0;
   }
 
   .banners-top {

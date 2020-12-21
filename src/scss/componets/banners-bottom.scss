@@ -73,6 +73,9 @@
 			margin: 0 auto;
 		}
 	}
+	&__footer{
+		display: none;
+	}
 	@include r(980){
 		&__item{
 			padding: 16px;
@@ -86,6 +89,9 @@
 	@include r(767){
 		&__header{
 			margin-bottom: 20px;
+			.banners-bottom__btn{
+				display: none;
+			}
 		}
 		&__main{
 			grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
@@ -101,6 +107,15 @@
 			color: #888E94;
 			margin: 0;
 			max-width: 250px;
+		}
+		&__footer{
+			display: block;
+		}
+		&__btn{
+			font-size: 15px;
+			line-height: 20px;
+			padding: 10px 20px;
+			margin: 20px 0;
 		}
 	}
 	@include r(540){
