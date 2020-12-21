@@ -113,6 +113,20 @@
 		&__body{
 			grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 		}
+		&__item{
+			&:nth-child(2n){
+				border-right: 0;
+			}
+			&:nth-child(4n){
+				border-right: 0;
+			}
+			&:nth-last-child(-n+4){
+				border-bottom: 1px dashed #888E94;
+			}
+			&:nth-last-child(-n+2){
+				border-bottom:none;
+			}
+		}
 		&__name{
 			font-size: 15px;
 			line-height: 20px;
