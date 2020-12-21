@@ -3250,7 +3250,7 @@ body.lock {
         -ms-flex-order: 1;
             order: 1;
     max-width: 137px;
-    margin-right: 30px;
+    margin-right: 0;
   }
 
   .header__select-delivery {
