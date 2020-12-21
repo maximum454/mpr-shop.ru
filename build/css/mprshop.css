@@ -2138,6 +2138,8 @@ body.lock {
           flex: 1 0 0;
   min-width: 120px;
   margin-right: 20px;
+  display: block;
+  text-decoration: none;
   overflow: hidden;
 }
 
@@ -2161,11 +2163,12 @@ body.lock {
 }
 
 .blog__name {
+  display: block;
+  text-decoration: none;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   color: #333333;
-  text-decoration: none;
   font-family: 'Circe', sans-serif;
 }
 
