@@ -3910,14 +3910,13 @@ body.lock {
 
   .subscribe__input {
     width: 100%;
+    max-width: 100%;
     min-width: auto;
     margin: 0 0 20px;
   }
 
   .subscribe__submit {
     width: 100%;
-    font-size: 12px;
-    line-height: 18px;
     padding: 10px;
   }
 
