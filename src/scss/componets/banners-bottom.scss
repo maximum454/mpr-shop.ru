@@ -110,6 +110,9 @@
 		}
 		&__footer{
 			display: block;
+			.banners-bottom__btn{
+				margin-bottom: 0;
+			}
 		}
 		&__btn{
 			font-size: 15px;

@@ -3083,10 +3083,23 @@ body.lock {
     grid-gap: 20px;
   }
 
+  .footer {
+    padding: 30px 0;
+  }
+
   .footer__body {
     display: grid;
     grid-template-areas: 'right list' 'left list';
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+  }
+
+  .footer__logo {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .footer__copy {
+    margin-left: 0;
   }
 
   .footer__left {
@@ -3100,6 +3113,22 @@ body.lock {
   .footer__menu {
     grid-area: list;
     margin: 0;
+    align-self: end;
+  }
+
+  .footer__phone {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer__email {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer__adres {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .card {
@@ -3482,6 +3511,10 @@ body.lock {
     line-height: 20px;
   }
 
+  .footer {
+    padding: 20px 0;
+  }
+
   .footer__body {
     display: grid;
     grid-template-areas: 'right' 'list' 'left';
@@ -3492,12 +3525,38 @@ body.lock {
     grid-area: left;
   }
 
+  .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer__logo img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+    max-width: 120px;
+  }
+
   .footer__right {
     grid-area: right;
   }
 
   .footer__copy {
     margin-left: 20px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .footer__menu {
@@ -3530,6 +3589,28 @@ body.lock {
   .footer__list li {
     display: inline-block;
     margin: 0 20px 0 0;
+  }
+
+  .footer__list a {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .footer__phone {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .footer__email {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .footer__adres {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 16px;
   }
 
   .card {
@@ -3761,6 +3842,10 @@ body.lock {
     display: block;
   }
 
+  .banners-bottom__footer .banners-bottom__btn {
+    margin-bottom: 0;
+  }
+
   .banners-bottom__btn {
     font-size: 15px;
     line-height: 20px;
@@ -3801,14 +3886,6 @@ body.lock {
 }
 
 @media only screen and (max-width: 540px) {
-  .footer__logo {
-    display: block;
-  }
-
-  .footer__copy {
-    margin: 20px 0;
-  }
-
   .banners-bottom__main {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
@@ -3892,6 +3969,16 @@ body.lock {
     width: 20px;
     height: 20px;
     margin: 0 12px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+
+  .footer__copy {
+    margin: 10px 0 0;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .subscribe__title {
