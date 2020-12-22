@@ -186,6 +186,14 @@
 				height: 100%;
 				display: block;
 			}
+			.name{
+				font-size: 17px;
+				line-height: 24px;
+			}
+			.count{
+				font-size: 15px;
+				line-height: 20px;
+			}
 		}
 	}
 	@include r(480){
@@ -195,6 +203,13 @@
 				height: 200px;
 				object-fit: cover;
 				object-position: left;
+			}
+		}
+		&__block{
+			img{
+				object-fit: cover;
+				height: 126px;
+				display: block;
 			}
 		}
 	}
