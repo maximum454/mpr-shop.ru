@@ -141,18 +141,20 @@
 				position: relative;
 				display: inline-block;
 				padding: 0;
-				margin: 0;
+				margin: 0 6px;
 				cursor: pointer;
 				color: #BDBDBD;
 				font-weight: bold;
 				font-size: 20px;
 				line-height: 48px;
 				width: 100%;
-				max-width: 60px;
-				height: 100%;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+				max-width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				overflow: hidden;
+				background: rgba(136, 142, 148, 0.4);
 				&:first-child{
-					border-top: 1px solid rgba(0, 0, 0, 0.12);
+					border-top: none;
 				}
 				&.slick-active{
 					background-color: #EB222D;
@@ -160,6 +162,7 @@
 				}
 			}
 		}
+
 	}
 	@include r(1023){
 		&__body{
@@ -184,36 +187,14 @@
 				display: block;
 			}
 		}
-		.slick-dots{
-			top: auto;
-			bottom: auto;
-			left: 0;
-			right: 0;
-			position: relative;
-			max-width: 100%;
-			li {
-				position: relative;
-				display: inline-block;
-				padding: 0;
-				margin: 0 6px;
-				cursor: pointer;
-				color: #BDBDBD;
-				font-weight: bold;
-				font-size: 20px;
-				line-height: 48px;
-				width: 100%;
-				max-width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				overflow: hidden;
-				background: rgba(136, 142, 148, 0.4);
-				&:first-child{
-					border-top: none;
-				}
-				&.slick-active{
-					background-color: #EB222D;
-					color: #fff;
-				}
+	}
+	@include r(480){
+		&__slider{
+			img{
+				max-width: 100%;
+				height: 200px;
+				object-fit: cover;
+				object-position: left;
 			}
 		}
 	}
