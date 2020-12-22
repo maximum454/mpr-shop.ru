@@ -105,11 +105,30 @@
 			background-size: 100%;
 		}
 	}
+	&__cart-btn{
+		display: none;
+	}
 	@include r(1023){
 		margin: 40px 0;
 		h2{
 			font-size: 32px;
 			line-height: 48px;
+		}
+		&__cart-btn{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #eb222d;
+			border-radius: 12px;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 28px;
+			color: #fff;
+			border: none;
+			padding: 13px 30px;
+			text-decoration: none;
+			margin-top: 16px;
+			width: fit-content;
 		}
 	}
 	@include r(767){
@@ -134,6 +153,7 @@
 		&__name{
 			font-size: 15px;
 			line-height: 20px;
+			margin-bottom: 8px;
 		}
 		&__articul{
 			display: none;
@@ -141,6 +161,16 @@
 		&__count{
 			font-size: 15px;
 			line-height: 20px;
+			margin-bottom: 4px;
+		}
+		&__price{
+			font-size: 17px;
+			line-height: 24px;
+		}
+		&__cart-btn{
+			font-size: 15px;
+			line-height: 20px;
+			padding: 10px 20px;
 		}
 	}
 }
