@@ -3619,6 +3619,7 @@ body.lock {
         -ms-flex-align: center;
             align-items: center;
     overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
   }
 
