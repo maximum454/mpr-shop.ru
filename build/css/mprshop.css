@@ -2577,8 +2577,6 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
 }
@@ -2597,7 +2595,7 @@ body.lock {
   color: #333333;
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 50px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background-image: url("../img/tabs-nav.svg");
@@ -2612,6 +2610,10 @@ body.lock {
   background-image: url("../img/tabs-nav-act.svg");
   cursor: default;
   color: #ffffff;
+}
+
+.tabs__link span {
+  display: none;
 }
 
 .tabs__content {
@@ -3275,6 +3277,15 @@ body.lock {
             align-items: center;
   }
 
+  .tabs__link {
+    font-size: 20px;
+    line-height: 40px;
+    background-size: 62px 40px;
+    margin-right: 20px;
+    width: 62px;
+    height: 40px;
+  }
+
   .accompany {
     margin: 40px 0;
   }
@@ -3736,9 +3747,15 @@ body.lock {
   }
 
   .maps__body {
-    margin: 0 -20px;
+    margin: 0;
     overflow: auto;
     max-width: 973px;
+    overflow-x: scroll;
+  }
+
+  .maps__item {
+    width: 340px;
+    margin: 0 20px 0 0;
   }
 
   .maps h2 {
@@ -3810,6 +3827,19 @@ body.lock {
 
   .stock__img {
     max-width: 80px;
+  }
+
+  .tabs__link {
+    font-size: 24px;
+    line-height: 45px;
+    background-size: 83px 45px;
+    margin-right: 20px;
+    width: 83px;
+    height: 45px;
+  }
+
+  .tabs__link span {
+    display: inline;
   }
 
   .banners-bottom__header {
@@ -3895,6 +3925,17 @@ body.lock {
         -ms-flex: 0 0 100px;
             flex: 0 0 100px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .tabs__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    overflow-x: scroll;
   }
 }
 

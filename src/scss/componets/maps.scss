@@ -123,9 +123,14 @@
 	@include r(767){
 		margin: 40px 0;
 		&__body{
-			margin: 0 -20px;
+			margin: 0;
 			overflow: auto;
 			max-width: 973px;
+			overflow-x: scroll;
+		}
+		&__item{
+			width: 340px;
+			margin: 0 20px 0 0;
 		}
 		h2{
 			font-size: 24px;
