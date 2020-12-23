@@ -2409,6 +2409,7 @@ body.lock {
   padding: 28px 24px;
   margin: 20px;
   min-width: 240px;
+  text-decoration: none;
 }
 
 .tizers__img {
@@ -2519,6 +2520,7 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
 }
 
 .stock__img {
@@ -2760,6 +2762,7 @@ body.lock {
   width: 100%;
   padding: 68px 20px;
   text-align: center;
+  text-decoration: none;
 }
 
 .banners-top__name {
