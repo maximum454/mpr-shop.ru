@@ -3618,9 +3618,8 @@ body.lock {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow: auto;
+    overflow-x: scroll;
     white-space: nowrap;
-    max-width: 570px;
   }
 
   .footer__list li {

@@ -189,9 +189,8 @@
 			padding: 0;
 			list-style: none;
 			align-items: center;
-			overflow: auto;
+			overflow-x: scroll;
 			white-space: nowrap;
-			max-width: 570px;
 			li{
 				display: inline-block;
 				margin: 0 20px 0 0;
