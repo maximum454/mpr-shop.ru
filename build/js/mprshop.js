@@ -3904,10 +3904,7 @@ $(function () {
             },
             {
                 breakpoint: 767,
-                settings: {
-                    slidesToShow: 4,
-                    arrows: false
-                }
+                settings: 'unslick'
             }
         ]
     });
