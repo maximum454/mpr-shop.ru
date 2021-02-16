@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Главная</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header.html')
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <button>Все товары</button>
+        </aside>
+        <div class="main__container">
+            <span class="main__subtitle">Акции</span>
+            <h1 class="main__title">Получи подарок на выбор</h1>
+            <section class="sale-detail">
+                <div class="sale-detail__img">
+                    <img src="https://picsum.photos/1010/349" width="1016" height="349" alt="">
+                </div>
+                <p>Акция действует с 29-31 января 2021 в г. Екатеринбург, при покупке от 400руб/800руб/1200 руб.
+                    При превышении определенной стоимости чека, предлагается на выбор определенный ассортимент товаров,
+                    акция не пересекается с другими акциями с предоставлением скидок на кассе. Количество подарков
+                    ограничено. Цвет и некоторые незначительные детали могут отличаться, от изображений на фотографии.
+                    Товар сертифицирован. Не является публичной офертой.
+                    Подробности у продавцов-кассиров или по телефону <a href="#">+7(922)1115544</a></p>
+            </section>
+        </div>
+    </main>
+    <div class="container">
+        <h2>Другие акции</h2>
+    <section class="sale">
+        <a href="#" class="sale__item">
+            <div class="sale__txt">
+                <h3 class="sale__name">Халява приди!</h3>
+                <p class="sale__anons">Скидки до 60%</p>
+                <div class="sale__time">9д : 9 ч : 25м</div>
+            </div>
+            <div class="sale__img">
+                <img src="https://picsum.photos/311/238" width="311" height="238" alt="">
+            </div>
+        </a>
+        <a href="#" class="sale__item">
+            <div class="sale__txt">
+                <h3 class="sale__name">Получи подарок </h3>
+                <p class="sale__anons">на выбор при покупке от 400₽</p>
+                <div class="sale__time">9д : 9 ч : 25м</div>
+            </div>
+            <div class="sale__img">
+                <img src="https://picsum.photos/311/238" width="311" height="238" alt="">
+            </div>
+        </a>
+        <a href="#" class="sale__item">
+            <div class="sale__txt">
+                <h3 class="sale__name">Неделя подарков</h3>
+                <p class="sale__anons">при ПОКУПКЕ на сайте мпр от 500₽</p>
+            </div>
+            <div class="sale__img">
+                <img src="https://picsum.photos/311/238" width="311" height="238" alt="">
+            </div>
+        </a>
+        <a href="#" class="sale__item">
+            <div class="sale__txt">
+                <h3 class="sale__name">Неделя подарков</h3>
+                <p class="sale__anons">при ПОКУПКЕ на сайте мпр от 500₽</p>
+                <div class="sale__time">9д : 9 ч : 25м</div>
+            </div>
+            <div class="sale__img">
+                <img src="https://picsum.photos/311/238" width="311" height="238" alt="">
+            </div>
+        </a>
+    </section>
+    </div>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

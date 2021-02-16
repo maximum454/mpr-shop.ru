@@ -1,0 +1,21 @@
+.sale-detail{
+	&__img{
+		border-radius: 12px;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			display: block;
+			height: auto;
+		}
+	}
+	p{
+		font-size: 20px;
+		line-height: 32px;
+		font-family: Circe;
+		color: #333333;
+	}
+	a{
+		color: #EB222D;;
+		text-decoration: none;
+	}
+}

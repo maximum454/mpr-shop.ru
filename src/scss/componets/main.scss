@@ -1,0 +1,35 @@
+.main{
+	&--page{
+		display: grid;
+		grid-template-areas: "aside-left contant";
+		grid-template-columns: 280px 1fr;
+		grid-column-gap: 40px;
+		position: relative;
+		margin-bottom: 80px;
+	}
+	&__aside{
+		grid-area: aside-left;
+	}
+	&__contant{
+		grid-area: contant;
+	}
+	&__subtitle{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 32px;
+		display: flex;
+		align-items: center;
+		color: #888E94;
+	}
+	&__title{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 60px;
+		color: #333333;
+		margin: 10px 0 32px;
+	}
+}

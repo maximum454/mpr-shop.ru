@@ -73,6 +73,9 @@ body {
 //Подвал
 @import "componets/footer";
 
+//внутряняя стрница
+@import "componets/main";
+
 //Карточки товара на главной
 @import "componets/card";
 
@@ -105,4 +108,13 @@ body {
 
 //Платежи
 @import "componets/pays";
+
+//Акции
+@import "componets/sale";
+
+//Акций детальная
+@import "componets/sale-detail";
+
+//Пагинация
+@import "componets/pagination";
 
