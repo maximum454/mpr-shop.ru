@@ -32,4 +32,21 @@
 		color: #333333;
 		margin: 10px 0 32px;
 	}
+	@include r(767){
+		&--page{
+			display: block;
+		}
+		&__aside{
+			display: none;
+		}
+		&__subtitle{
+			font-size: 15px;
+			line-height: 20px;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 16px;
+		}
+	}
 }
