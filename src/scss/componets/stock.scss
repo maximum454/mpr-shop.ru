@@ -32,11 +32,12 @@
 	&__inner{
 		display: grid;
 		grid-template-columns: repeat(3,1fr);
-		grid-gap: 30px;
+		grid-gap: 36px 30px;
 		align-items: center;
 	}
 	&__item{
 		display: flex;
+		text-decoration: none;
 	}
 	&__img{
 		max-width: 158px;

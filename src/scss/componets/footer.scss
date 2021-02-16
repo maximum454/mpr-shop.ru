@@ -43,9 +43,10 @@
 
 	&__copy {
 		font-weight: normal;
-		font-size: 20px;
-		line-height: 32px;
+		font-size: 18px;
+		line-height: 22px;
 		color: #BDBDBD;
+		margin-left: 20px;
 	}
 
 	&__call {
@@ -88,14 +89,31 @@
 	}
 
 	&__logo {
-
+		display: flex;
+		align-items: center;
+		max-width: 420px;
+		img{
+			flex: 1 0 0;
+			max-width: 100%;
+			display: block;
+			object-fit: cover;
+			height: auto;
+		}
 	}
 
 	@include r(1023) {
+		padding: 30px 0;
 		&__body {
 			display: grid;
 			grid-template-areas: 'right list' 'left list';
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr auto;
+		}
+		&__logo {
+			display: block;
+			margin-bottom: 40px;
+		}
+		&__copy{
+			margin-left: 0;
 		}
 		&__left {
 			grid-area: left;
@@ -106,9 +124,25 @@
 		&__menu {
 			grid-area: list;
 			margin: 0;
+			align-self: end;
+		}
+		&__phone {
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		&__email {
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		&__adres {
+			font-size: 20px;
+			line-height: 24px;
 		}
 	}
 	@include r(767) {
+		padding: 20px 0;
 		&__body {
 			display: grid;
 			grid-template-areas: 'right' 'list' 'left';
@@ -117,16 +151,28 @@
 		&__left {
 			grid-area: left;
 		}
+		&__logo {
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			max-width: 100%;
+			margin-bottom: 0;
+			img{
+				flex: 1 0 0;
+				display: block;
+				object-fit: cover;
+				height: auto;
+				max-width: 120px;
+			}
+		}
 		&__right {
 			grid-area: right;
 
 		}
-		&__logo {
-			display: flex;
-			align-items: center;
-		}
 		&__copy {
 			margin-left: 20px;
+			font-size: 15px;
+			line-height: 20px;
 		}
 		&__menu {
 			grid-area: list;
@@ -143,21 +189,43 @@
 			padding: 0;
 			list-style: none;
 			align-items: center;
-			overflow: auto;
+			overflow-x: scroll;
+			overflow-y: hidden;
 			white-space: nowrap;
-			max-width: 570px;
 			li{
 				display: inline-block;
 				margin: 0 20px 0 0;
 			}
+			a{
+				font-size: 17px;
+				line-height: 24px;
+			}
+		}
+		&__phone {
+			font-size: 17px;
+			line-height: 24px;
+		}
+
+		&__email {
+			font-size: 17px;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+
+		&__adres {
+			font-size: 17px;
+			line-height: 24px;
+			margin-bottom: 16px;
 		}
 	}
-	@include r(540){
+	@include r(374){
 		&__logo {
 			display: block;
 		}
 		&__copy {
-			margin: 20px 0;
+			margin: 10px 0 0;
+			font-size: 15px;
+			line-height: 20px;
 		}
 	}
 }

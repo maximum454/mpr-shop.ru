@@ -25,6 +25,9 @@
 		border-left: none;
 		border-top: none;
 		padding: 22px;
+		&:nth-child(4n){
+			border-right: 0;
+		}
 		&:nth-last-child(-n+4){
 			border-bottom: none;
 		}
@@ -32,6 +35,8 @@
 	&__img{
 		margin-bottom: 12px;
 		text-align: center;
+		display: block;
+		text-decoration: none;
 		img{
 			max-width: 100%;
 			object-fit: contain;
@@ -43,6 +48,8 @@
 
 	}
 	&__name{
+		display: block;
+		text-decoration: none;
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 32px;
@@ -98,13 +105,83 @@
 			background-size: 100%;
 		}
 	}
+	&__cart-btn{
+		display: none;
+	}
+	@include r(1023){
+		margin: 40px 0;
+		h2{
+			font-size: 32px;
+			line-height: 48px;
+		}
+		&__name{
+			font-size: 17px;
+			line-height: 24px;
+		}
+		&__articul{
+			font-size: 15px;
+			line-height: 20px;
+		}
+		&__count{
+			font-size: 15px;
+			line-height: 20px;
+		}
+		&__price{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__cart-btn{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #eb222d;
+			border-radius: 12px;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 28px;
+			color: #fff;
+			border: none;
+			padding: 13px 30px;
+			text-decoration: none;
+			margin-top: 16px;
+			width: fit-content;
+		}
+	}
+
+	@include r(800){
+		&__item{
+			padding: 12px;
+		}
+
+	}
 	@include r(767){
+		margin: 30px 0;
+		h2{
+			font-size: 24px;
+			line-height: 32px;
+		}
 		&__body{
-			grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+			grid-template-columns: 1fr 1fr;
+		}
+		&__item{
+			max-width: 100%;
+			&:nth-child(2n){
+				border-right: 0;
+			}
+			&:nth-child(4n){
+				border-right: 0;
+			}
+			&:nth-last-child(-n+4){
+				border-bottom: 1px dashed #888E94;
+			}
+			&:nth-last-child(-n+2){
+				border-bottom:none;
+			}
 		}
 		&__name{
 			font-size: 15px;
 			line-height: 20px;
+			margin-bottom: 8px;
 		}
 		&__articul{
 			display: none;
@@ -112,6 +189,29 @@
 		&__count{
 			font-size: 15px;
 			line-height: 20px;
+			margin-bottom: 4px;
+		}
+		&__price{
+			font-size: 17px;
+			line-height: 24px;
+		}
+		&__cart-btn{
+			font-size: 15px;
+			line-height: 20px;
+			padding: 10px 20px;
+		}
+	}
+	@include r(480){
+		&__body{
+			margin: 0 -15px;
+		}
+		&__item{
+			display: block;
+			text-decoration: none;
+			padding: 16px;
+			border-right: none;
+			border-left: none;
+			border-top: none;
 		}
 	}
 }

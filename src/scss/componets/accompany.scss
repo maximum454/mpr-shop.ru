@@ -13,10 +13,17 @@
 		color: #333333;
 		margin: 0 0 20px;
 	}
+	&__body{
+		display: flex;
+		align-self: center;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
 	&__item{
 		display: flex;
 		align-items: center;
-		max-width: 360px;
+		width: 360px;
+		text-decoration: none;
 	}
 	&__img{
 		margin-right: 20px;
@@ -67,7 +74,11 @@
 	&__next{
 		transform: rotate(180deg);
 	}
+	&__txt{
+		display: block;
+	}
 	@include r(1023){
+		margin: 40px 0;
 		h2{
 			font-size: 32px;
 			line-height: 48px;
@@ -78,9 +89,21 @@
 		}
 	}
 	@include r(767){
+		margin: 30px 0;
 		h2{
 			font-size: 20px;
 			line-height: 24px;
+		}
+		&__nav{
+			display: none;
+		}
+		&__body{
+			display: flex;
+			align-self: center;
+		}
+		&__item{
+			display: block;
+			width: 100px;
 		}
 		&__img{
 			flex: 0 0 80px;
@@ -95,22 +118,9 @@
 			display: none;
 		}
 	}
-	@include r(540){
-		&__img{
-			flex: 0 0 100px;
-			margin: 0 auto;
-		}
-	}
 	@include r(480){
-		&__img{
-			flex: 0 0 80px;
-			margin: 0 auto;
-		}
-	}
-	@include r(374){
-		&__img{
-			flex: 0 0 60px;
-			margin: 0 auto;
+		&__item{
+			width: 80px;
 		}
 	}
 }
