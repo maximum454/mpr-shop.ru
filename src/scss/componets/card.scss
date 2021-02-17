@@ -1,23 +1,27 @@
-.card{
+.card {
 	position: relative;
 	margin: 60px 0;
-	h2{
+
+	h2 {
 		font-weight: bold;
 		font-size: 45px;
 		line-height: 60px;
 		color: #333333;
 		margin: 0 0 20px;
 	}
-	&__body{
+
+	&__body {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 	}
-	&__row{
+
+	&__row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	&__item{
+
+	&__item {
 		display: block;
 		text-decoration: none;
 		max-width: 344px;
@@ -25,29 +29,45 @@
 		border-left: none;
 		border-top: none;
 		padding: 22px;
-		&:nth-child(4n){
+
+		&:nth-child(4n) {
 			border-right: 0;
 		}
-		&:nth-last-child(-n+4){
+
+		&:nth-last-child(-n+4) {
 			border-bottom: none;
 		}
+
+		&--all {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+
+			.card__txt {
+				margin: auto;
+			}
+		}
 	}
-	&__img{
+
+	&__img {
 		margin-bottom: 12px;
 		text-align: center;
 		display: block;
 		text-decoration: none;
-		img{
+
+		img {
 			max-width: 100%;
 			object-fit: contain;
 			margin: 0 auto;
 			display: block;
 		}
 	}
-	&__txt{
+
+	&__txt {
 
 	}
-	&__name{
+
+	&__name {
 		display: block;
 		text-decoration: none;
 		font-weight: normal;
@@ -55,25 +75,29 @@
 		line-height: 32px;
 		color: #000000;
 	}
-	&__articul{
+
+	&__articul {
 		font-weight: normal;
 		font-size: 17px;
 		line-height: 25px;
 		color: #888E94;
 	}
-	&__count{
+
+	&__count {
 		font-weight: normal;
 		font-size: 17px;
 		line-height: 25px;
 		color: #27AE60;
 	}
-	&__price{
+
+	&__price {
 		font-weight: bold;
 		font-size: 24px;
 		line-height: 32px;
 		color: #000000;
 	}
-	&__star{
+
+	&__star {
 		background-image: url("../img/Star.svg");
 		background-repeat: no-repeat;
 		background-position: center left;
@@ -82,7 +106,8 @@
 		line-height: 25px;
 		color: #333333;
 	}
-	&__btn{
+
+	&__btn {
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 24px;
@@ -93,7 +118,8 @@
 		padding: 21px 45px 21px 32px;
 		margin: 20px auto;
 		position: relative;
-		&:before{
+
+		&:before {
 			content: '';
 			position: absolute;
 			top: 0;
@@ -105,32 +131,43 @@
 			background-size: 100%;
 		}
 	}
-	&__cart-btn{
+
+	&__cart-btn {
 		display: none;
 	}
-	@include r(1023){
+
+	&__all {
+		background-image: url("../img/card__all.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 40px;
+		height: 134px;
+		margin: auto;
+	}
+
+	@include r(1023) {
 		margin: 40px 0;
-		h2{
+		h2 {
 			font-size: 32px;
 			line-height: 48px;
 		}
-		&__name{
+		&__name {
 			font-size: 17px;
 			line-height: 24px;
 		}
-		&__articul{
+		&__articul {
 			font-size: 15px;
 			line-height: 20px;
 		}
-		&__count{
+		&__count {
 			font-size: 15px;
 			line-height: 20px;
 		}
-		&__price{
+		&__price {
 			font-size: 20px;
 			line-height: 24px;
 		}
-		&__cart-btn{
+		&__cart-btn {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -148,64 +185,68 @@
 		}
 	}
 
-	@include r(800){
-		&__item{
+	@include r(800) {
+		&__item {
 			padding: 12px;
 		}
 
 	}
-	@include r(767){
+	@include r(767) {
 		margin: 30px 0;
-		h2{
+		h2 {
 			font-size: 24px;
 			line-height: 32px;
 		}
-		&__body{
+		&__body {
 			grid-template-columns: 1fr 1fr;
 		}
-		&__item{
+		&__item {
 			max-width: 100%;
-			&:nth-child(2n){
+
+			&:nth-child(2n) {
 				border-right: 0;
 			}
-			&:nth-child(4n){
+
+			&:nth-child(4n) {
 				border-right: 0;
 			}
-			&:nth-last-child(-n+4){
+
+			&:nth-last-child(-n+4) {
 				border-bottom: 1px dashed #888E94;
 			}
-			&:nth-last-child(-n+2){
-				border-bottom:none;
+
+			&:nth-last-child(-n+2) {
+				border-bottom: none;
 			}
 		}
-		&__name{
+		&__name {
 			font-size: 15px;
 			line-height: 20px;
 			margin-bottom: 8px;
 		}
-		&__articul{
+		&__articul {
 			display: none;
 		}
-		&__count{
+		&__count {
 			font-size: 15px;
 			line-height: 20px;
 			margin-bottom: 4px;
 		}
-		&__price{
+		&__price {
 			font-size: 17px;
 			line-height: 24px;
 		}
-		&__cart-btn{
+		&__cart-btn {
 			font-size: 15px;
 			line-height: 20px;
 			padding: 10px 20px;
 		}
 	}
-	@include r(480){
-		&__body{
+	@include r(480) {
+		&__body {
 			margin: 0 -15px;
 		}
-		&__item{
+		&__item {
 			display: block;
 			text-decoration: none;
 			padding: 16px;

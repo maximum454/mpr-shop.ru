@@ -91,6 +91,33 @@
 			padding: 5px;
 			margin-top: -4px;
 		}
+		&--categor{
+			grid-template-columns: repeat(auto-fit, minmax(180px, 231px));
+			grid-gap: 30px;
+			.item{
+				max-width: none;
+			}
+			.txt{
+				border-radius: 12px;
+				background-color: #F5F8FA;
+				position: relative;
+				padding: 20px 28px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+			.name{
+				font-family: Circe;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 17px;
+				line-height: 25px;
+				color: #333333;
+				background-color: transparent;
+				border-radius:0;
+				padding: 0;
+			}
+		}
 	}
 	.slick-track{
 		overflow: hidden;

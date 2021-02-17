@@ -1,0 +1,55 @@
+.menu{
+	border: 1px solid #E0E0E0;
+	box-sizing: border-box;
+	border-radius: 12px;
+	padding: 24px;
+	&__button{
+		border: none;
+		background-color: transparent;
+		width: 100%;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: #333333;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url("../img/menu-btn.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__list{
+		margin: 32px 0 0;
+		padding: 24px 0 0;
+		list-style: none;
+		border-top: 1px solid #E0E0E0;
+		li{
+			margin-bottom: 24px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			a{
+				font-family: Circe;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 28px;
+				color: #333333;
+				text-decoration: none;
+				&:hover{
+					color: #EB222D;
+				}
+				&.active{
+					color: #EB222D;
+				}
+			}
+		}
+	}
+}

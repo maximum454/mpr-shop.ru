@@ -7,6 +7,10 @@
 ###Страница Акции и Акции детальная
 * https://maximum454.github.io/mpr-shop.ru/build/sale.html
 * https://maximum454.github.io/mpr-shop.ru/build/sale-detail.html
+
+###Страница Статьи и Статьи детальная
+* https://maximum454.github.io/mpr-shop.ru/build/articles.html
+* https://maximum454.github.io/mpr-shop.ru/build/articles-detail.html
  
 
  
