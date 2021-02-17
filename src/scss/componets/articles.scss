@@ -1,0 +1,129 @@
+.articles{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+	grid-column-gap: 38px;
+	grid-row-gap: 33px;
+	position: relative;
+	margin-bottom: 81px;
+	&__item{
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border: 1px solid rgba(136, 142, 148, 0.4);
+		box-sizing: border-box;
+		border-radius: 12px;
+		overflow: hidden;
+	}
+	&__name{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #333333;
+		margin: 0 0 20px;
+	}
+	&__anons{
+		margin: 0 0 20px;
+		color: #BDBDBD;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+	}
+	&__time{
+		text-align: center;
+		display: inline-block;
+		width: fit-content;
+		margin-bottom: 0;
+		margin-top: auto;
+		border: 1px solid #EB222D;
+		box-sizing: border-box;
+		border-radius: 5px;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+		color: #333333;
+		padding: 8px 20px 5px;
+	}
+	&__txt{
+		display: flex;
+		flex-direction: column;
+		padding: 20px 24px;
+		height: 100%;
+	}
+	&__img{
+		img{
+			width: 100%;
+			object-fit: cover;
+			display: block;
+			height: auto;
+		}
+	}
+
+	&__subscribe{
+		width: 100%;
+		grid-column: 1 / -1;
+		margin: 0;
+	}
+	&__pagination{
+		grid-column: 1 / -1;
+		text-align: center;
+	}
+	@include r(767){
+		&__name{
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 9px;
+		}
+		&__anons{
+			font-size: 15px;
+			line-height: 20px;
+			text-transform: none;
+		}
+		&__time{
+			font-size: 15px;
+			padding: 5px 8px 6px;
+		}
+		&__txt{
+			padding: 19px 13px;
+		}
+	}
+	@include r(540){
+		&__txt{
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__name{
+			flex: 0 0 47%;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 9px;
+		}
+		&__anons{
+			font-size: 15px;
+			line-height: 20px;
+			text-transform: none;
+			flex: 0 0 50%;
+			order: 3;
+		}
+		&__time{
+			width: fit-content;
+			order: 2;
+			flex: 0 0 47%;
+			font-size: 15px;
+			padding: 5px 8px 6px;
+			margin-left: 6%;
+			margin-top: 0;
+			margin-bottom: auto;
+		}
+	}
+}

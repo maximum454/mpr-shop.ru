@@ -6,6 +6,15 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	&__title{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 38px;
+		line-height: 48px;
+		color: #333333;
+		margin-bottom: 28px;
+	}
 	h2{
 		font-weight: bold;
 		font-size: 45px;
