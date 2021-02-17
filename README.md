@@ -11,6 +11,11 @@
 ###Страница Статьи и Статьи детальная
 * https://maximum454.github.io/mpr-shop.ru/build/articles.html
 * https://maximum454.github.io/mpr-shop.ru/build/articles-detail.html
+
+###Страница Каталога, Выбраный каталог и Каталог детальная
+* https://maximum454.github.io/mpr-shop.ru/build/catalog.html
+* https://maximum454.github.io/mpr-shop.ru/build/catalog-inner.html
+* https://maximum454.github.io/mpr-shop.ru/build/catalog-detail.html
  
 
  
