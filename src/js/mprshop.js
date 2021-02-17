@@ -3,6 +3,7 @@
 @@include('./partials/slick.js')
 @@include('./partials/remodal.js')
 @@include('./partials/tabs.js')
+@@include('./partials/jquery.fancybox.min.js')
 
 
 
