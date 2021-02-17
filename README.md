@@ -15,6 +15,7 @@
 ###Страница Каталога, Выбраный каталог и Каталог детальная
 * https://maximum454.github.io/mpr-shop.ru/build/catalog.html
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-inner.html
+* https://maximum454.github.io/mpr-shop.ru/build/catalog-rubric.html
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-detail.html
  
 

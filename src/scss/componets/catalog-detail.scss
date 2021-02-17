@@ -1,0 +1,14 @@
+.catalog-detail{
+	&__accompany{
+		.accompany__body{
+			align-self: center;
+			overflow: hidden;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+			grid-gap: 60px 0;
+		}
+		.accompany__item{
+			width: auto;
+		}
+	}
+}

@@ -1,3 +1,15 @@
 .catalog-section{
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+	grid-gap: 1px;
+	&__item{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+		border: 1px solid;
+		text-decoration: none;
+		color: inherit;
+		text-align: center;
+	}
 }

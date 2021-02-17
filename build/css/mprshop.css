@@ -1634,6 +1634,10 @@ body.lock {
   transition: all 100ms ease 0s;
 }
 
+.promo {
+  margin: 0 0 60px;
+}
+
 .promo__body {
   display: grid;
   grid-template-columns: 280px minmax(660px, 1015px);
@@ -2050,7 +2054,7 @@ body.lock {
 
 .card {
   position: relative;
-  margin: 60px 0;
+  margin: 0 0 60px;
 }
 
 .card h2 {
@@ -2717,6 +2721,26 @@ body.lock {
 
 .tabs__link span {
   display: none;
+}
+
+.tabs__link--second {
+  background: #E5EBF0;
+  border-radius: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 16px 8px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333333;
+}
+
+.tabs__link--second.tabs__link_active {
+  background: #EB222D;
+  border-radius: 12px;
+  color: #fff;
 }
 
 .tabs__content {
@@ -3409,6 +3433,7 @@ body.lock {
 }
 
 .pagination__more {
+  text-align: center;
   font-family: Circe;
   font-style: normal;
   font-weight: bold;
@@ -3687,6 +3712,10 @@ body.lock {
   color: #EB222D;
 }
 
+.reviews-aside {
+  margin: 60px 0;
+}
+
 .reviews-aside__item {
   display: block;
   text-decoration: none;
@@ -3714,6 +3743,154 @@ body.lock {
   line-height: 32px;
   color: #333333;
   margin: 0;
+}
+
+.catalog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+  grid-gap: 1px;
+}
+
+.catalog-section__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  border: 1px solid;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.catalog-detail__accompany .accompany__body {
+  align-self: center;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+  grid-gap: 60px 0;
+}
+
+.catalog-detail__accompany .accompany__item {
+  width: auto;
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #888E94;
+  position: relative;
+}
+
+.breadcrumb li:after {
+  content: '/';
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.breadcrumb li:last-child:after {
+  display: none;
+}
+
+.breadcrumb li a,
+.breadcrumb li span {
+  color: #888E94;
+  text-decoration: none;
+}
+
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.sort__count {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.sort__select .select {
+  display: block;
+  font-size: 20px;
+  font-family: Circe;
+  color: #888E94;
+  padding: .6em 2em .5em .8em;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border-radius: 12px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNS43MzIwNSA2QzQuOTYyMjUgNy4zMzMzMyAzLjAzNzc1IDcuMzMzMzMgMi4yNjc5NSA2TDAuNTM1ODk5IDNDLTAuMjMzOTAyIDEuNjY2NjcgMC43MjgzNDkgMCAyLjI2Nzk1IDBINS43MzIwNUM3LjI3MTY1IDAgOC4yMzM5IDEuNjY2NjcgNy40NjQxIDNMNS43MzIwNSA2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K");
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: 10px;
+}
+
+.sort__select .select::-ms-expand {
+  display: none;
+}
+
+.sort__select .select:focus {
+  border-color: #aaa;
+  -webkit-box-shadow: 0 0 1px 1px rgba(235, 34, 45, 0.7);
+          box-shadow: 0 0 1px 1px rgba(235, 34, 45, 0.7);
+  box-shadow: 0 0 0 1px -moz-mac-focusring;
+  outline: none;
+}
+
+.sort__select .select option {
+  font-weight: normal;
+}
+
+.sort__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -55px;
+  right: 0;
+}
+
+.sort__control a .active > * {
+  fill: #EB222D;
+}
+
+.sort__control a > * {
+  fill: #888E94;
 }
 
 @media only screen and (min-width: 641px) {

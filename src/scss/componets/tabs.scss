@@ -32,6 +32,22 @@
 		span{
 			display: none;
 		}
+		&--second{
+			background: #E5EBF0;
+			border-radius: 12px;
+			width: fit-content;
+			padding: 10px 16px 8px;
+			font-family: Circe;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: #333333;
+			&.tabs__link_active{
+				background: #EB222D;
+				border-radius: 12px;
+				color: #fff;
+			}
+		}
 	}
 	&__content {
 		margin-top: 29px;
