@@ -58,6 +58,10 @@
 		border: 1px dashed rgba(136, 142, 148, 0.4);
 		box-sizing: border-box;
 		border-radius: 26px;
+		&--second{
+			padding: 0;
+			border: none;
+		}
 	}
 	&__pane {
 		display: none;

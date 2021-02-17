@@ -4,6 +4,8 @@
 @import 'partials/slick';
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
+@import 'partials/fancybox';
+
 
 * {
   box-sizing: border-box;
@@ -144,4 +146,16 @@ body {
 
 //Сортировка
 @import "componets/sort";
+
+//Галерея
+@import "componets/gallery";
+
+//Отзывы
+@import "componets/review";
+
+//Звезды рейтинг
+@import "componets/rating";
+
+//информация
+@import "componets/information";
 

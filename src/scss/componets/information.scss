@@ -1,0 +1,32 @@
+.information{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-width: 320px;
+	li{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3px 0 0;
+		list-style-type: none;
+		list-style-position: inside;
+		margin-bottom: 10px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 13px;
+			left: 0;
+			width: 100%;
+			border-bottom: 1px dashed #888E94;
+			z-index: 0;
+		}
+		span{
+			background-color: #fff;
+			display: block;
+			position: relative;
+			z-index: 1;
+			padding: 5px;
+		}
+	}
+}

@@ -79,3 +79,12 @@ $maxWidth: 1200;
 	height: 0;
 	padding-bottom: $height;
 }
+
+
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
