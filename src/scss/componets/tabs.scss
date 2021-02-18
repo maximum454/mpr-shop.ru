@@ -48,6 +48,24 @@
 				color: #fff;
 			}
 		}
+		&--services{
+			margin-right: 15px;
+			background: #E5EBF0;
+			border-radius: 12px;
+			width: fit-content;
+			font-family: Circe;
+			padding: 10px 16px 8px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 32px;
+			color: #333333;
+			&.tabs__link_active{
+				background: #EB222D;
+				border-radius: 12px;
+				color: #fff;
+			}
+		}
 	}
 	&__content {
 		margin-top: 29px;

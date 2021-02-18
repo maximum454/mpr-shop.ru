@@ -31,6 +31,9 @@
 		line-height: 60px;
 		color: #333333;
 		margin: 10px 0 32px;
+		span{
+			text-decoration: underline;
+		}
 	}
 	@include r(767){
 		&--page{

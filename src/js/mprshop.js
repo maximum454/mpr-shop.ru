@@ -76,5 +76,10 @@ $(function () {
         variableWidth: true,
     });
 
+    $('.js-input-key').on('keyup', function (){
+        console.log('222');
+        $('.search-form__drop').show();
+    })
+
     $tabs('.tabs');
 })

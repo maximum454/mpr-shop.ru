@@ -26,6 +26,9 @@
 
 ###Страница 404
 * https://maximum454.github.io/mpr-shop.ru/build/404.html
+
+###Страница сервисные центры
+* https://maximum454.github.io/mpr-shop.ru/build/service.html
  
 ####Верстка использует сборку Gulp  
  **Старт:** ***gulp***  

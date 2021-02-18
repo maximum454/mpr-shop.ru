@@ -1,0 +1,26 @@
+.service {
+	&__search-form {
+		max-width: 100%;
+		border: 1px solid #BDBDBD;
+		border-radius: 12px;
+		margin-bottom: 32px;
+		.search-form__input {
+			background-color: transparent;
+			padding: 15px 20px 15px 58px;
+			&:focus{
+				box-shadow: 0 0 14px rgba(#EB222D, 0.5);
+				outline: none;
+				border-radius: 12px;
+			}
+		}
+	}
+
+	.search-form__submit {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		background-image: url(../img/services-search-icon.svg);
+		width: 24px;
+		height: 24px;
+	}
+}

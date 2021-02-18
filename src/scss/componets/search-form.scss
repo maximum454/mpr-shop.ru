@@ -3,6 +3,7 @@
 	max-width: 724px;
 	width: 100%;
 	display: flex;
+	position: relative;
 	&__select{
 		background-color: #E5EBF0;
 		border: none;
@@ -50,6 +51,11 @@
 		position: relative;
 		border: none;
 		padding: 20px 20px 20px 74px;
+		&:focus{
+			box-shadow: 0 0 14px rgba(#EB222D, 0.5);
+			outline: none;
+			border-radius: 0 12px 12px 0;
+		}
 	}
 	&__submit{
 		position: absolute;
@@ -64,6 +70,37 @@
 		height: 39px;
 		border: none;
 		background-color: transparent;
+	}
+	&__drop{
+		display: none;
+		position: absolute;
+		top: 60px;
+		width: 100%;
+		padding: 20px;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 24px rgba(229, 235, 240, 0.5);
+		border-radius: 12px;
+		margin: 0;
+		list-style: none;
+		z-index: 1;
+		li{
+			font-family: Circe;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 17px;
+			line-height: 24px;
+			/* identical to box height, or 141% */
+
+			display: flex;
+			align-items: center;
+
+			color: #333333;
+			margin-bottom: 12px;
+			&:hover{
+				color: #EB222D;
+				cursor: pointer;
+			}
+		}
 	}
 	@include r(1023){
 		.select {
