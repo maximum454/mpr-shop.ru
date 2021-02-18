@@ -20,6 +20,12 @@
 
 ###Страница добавления отзыва
 * https://maximum454.github.io/mpr-shop.ru/build/review-form.html
+
+###Страница учебный центр
+* https://maximum454.github.io/mpr-shop.ru/build/learning.html
+
+###Страница 404
+* https://maximum454.github.io/mpr-shop.ru/build/404.html
  
 ####Верстка использует сборку Gulp  
  **Старт:** ***gulp***  
