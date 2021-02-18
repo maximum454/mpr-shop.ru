@@ -5474,6 +5474,44 @@ body.lock {
   margin: 0 5px;
 }
 
+.page404 {
+  margin-bottom: 80px;
+}
+
+.page404__title {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 185px;
+  line-height: 1;
+  color: #333333;
+  margin: 0 0 20px;
+}
+
+.page404__subtitle {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 60px;
+  color: #333333;
+  margin: 0 0 20px;
+}
+
+.page404__text {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.page404__text a {
+  color: #EB222D;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;

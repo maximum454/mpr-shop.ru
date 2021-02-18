@@ -1,0 +1,33 @@
+.page404{
+	margin-bottom: 80px;
+	&__title{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 185px;
+		line-height: 1;
+		color: #333333;
+		margin: 0 0 20px;
+	}
+	&__subtitle{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 60px;
+		color: #333333;
+		margin: 0 0 20px;
+	}
+	&__text{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 32px;
+		color: #333333;
+		a{
+			color: #EB222D;
+			text-decoration: none;
+		}
+	}
+}
