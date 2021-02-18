@@ -4897,6 +4897,42 @@ body.lock {
   background-image: url("../img/like.svg");
 }
 
+.catalog-detail .catalog-for {
+  position: relative;
+  margin-bottom: 5px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.catalog-detail .catalog-for:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-image: url("../img/view.svg");
+  background-size: 100%;
+  width: 42px;
+  height: 42px;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.catalog-detail .catalog-nav .item {
+  border: 1px solid #EB222D;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 92px;
+}
+
+.catalog-detail .catalog-nav .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: auto;
+  height: auto;
+}
+
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
