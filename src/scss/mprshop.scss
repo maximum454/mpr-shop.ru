@@ -9,47 +9,172 @@
 
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: #fff;
-  font-family: 'Circe', sans-serif;
-  color: #333;
-  &.lock {
-    overflow: hidden;
-  }
+	background-color: #fff;
+	font-family: 'Circe', sans-serif;
+	color: #333;
+
+	&.lock {
+		overflow: hidden;
+	}
 }
 
 .wrp {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .container {
-  max-width: 1366px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+	max-width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .w100 {
-  width: 100%;
+	width: 100%;
 }
 
 .remodal {
 
-  @media only screen and (min-width: 641px) {
-    max-width: 540px;
-  }
-  .remodal-close {
-    top: 10px;
-    right: 10px;
-    left: auto;
-  }
-  &__title {
-    color: #fff;
-  }
+	@media only screen and (min-width: 641px) {
+		max-width: 540px;
+	}
+
+	.remodal-close {
+		top: 10px;
+		right: 10px;
+		left: auto;
+	}
+
+	&__title {
+		color: #fff;
+	}
+}
+
+.checkbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	user-select: none;
+	color: #333333;
+
+	&:hover input ~ .checkmark {
+		background-color: rgba(#EB222D, .5);
+	}
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+
+		&:checked ~ .checkmark {
+			background-color: #EB222D;
+
+			&:after {
+				display: block;
+			}
+		}
+	}
+
+	.checkmark:after {
+		left: 8px;
+		top: 4px;
+		width: 5px;
+		height: 10px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		transform: rotate(45deg);
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 2px;
+		left: 0;
+		height: 24px;
+		width: 24px;
+		background-color: #fff;
+		border-radius: 8px;
+		border: 1px solid rgba(1, 14, 61, 0.12);
+
+		&:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+
+		&:hover input ~ .checkmark {
+			background-color: #ccc;
+		}
+	}
+}
+
+.radio {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	user-select: none;
+
+	&:hover input ~ .checkmark {
+		background-color: rgba(#EB222D, .5);
+	}
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+
+		&:checked ~ .checkmark {
+			background-color: #EB222D;
+
+			&:after {
+				display: block;
+			}
+		}
+	}
+
+	.checkmark:after {
+		top: 8px;
+		left: 8px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: white;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		background-color: #fff;
+		border-radius: 50%;
+		border: 1px solid rgba(1, 14, 61, .12);
+
+		&:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+	}
 }
 
 //Уведомления
@@ -159,4 +284,7 @@ body {
 
 //информация
 @import "componets/information";
+
+//Форма добавления отзыва
+@import "componets/form-review";
 
