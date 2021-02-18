@@ -4918,11 +4918,29 @@ body.lock {
   pointer-events: none;
 }
 
+.catalog-detail .catalog-for .item {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.catalog-detail .catalog-for .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: auto;
+  height: auto;
+}
+
+.catalog-detail .catalog-nav {
+  max-height: 96px;
+  overflow: hidden;
+}
+
 .catalog-detail .catalog-nav .item {
-  border: 1px solid #EB222D;
   border-radius: 12px;
   overflow: hidden;
   max-width: 92px;
+  margin: 0 4px;
 }
 
 .catalog-detail .catalog-nav .item img {
@@ -4931,6 +4949,10 @@ body.lock {
   display: block;
   margin: auto;
   height: auto;
+}
+
+.catalog-detail .catalog-nav .slick-current .item {
+  border: 2px solid #EB222D;
 }
 
 .breadcrumb {
@@ -5050,6 +5072,11 @@ body.lock {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
   grid-gap: 5px;
+}
+
+.gallery__item {
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .gallery__item img {

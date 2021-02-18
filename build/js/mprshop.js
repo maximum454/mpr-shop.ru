@@ -3949,7 +3949,8 @@ $(function () {
         asNavFor: '.catalog-for',
         dots: false,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        variableWidth: true,
     });
 
     $tabs('.tabs');

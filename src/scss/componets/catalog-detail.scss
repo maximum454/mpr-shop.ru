@@ -187,18 +187,35 @@
 			z-index: 10;
 			pointer-events: none;
 		}
-	}
-	.catalog-nav{
 		.item{
-			border: 1px solid #EB222D;
 			border-radius: 12px;
 			overflow: hidden;
-			max-width: 92px;
 			img{
 				object-fit: cover;
 				display: block;
 				margin: auto;
 				height: auto;
+			}
+		}
+	}
+	.catalog-nav{
+		max-height: 96px;
+		overflow: hidden;
+		.item{
+			border-radius: 12px;
+			overflow: hidden;
+			max-width: 92px;
+			margin: 0 4px;
+			img{
+				object-fit: cover;
+				display: block;
+				margin: auto;
+				height: auto;
+			}
+		}
+		.slick-current{
+			.item {
+				border: 2px solid #EB222D;
 			}
 		}
 	}
