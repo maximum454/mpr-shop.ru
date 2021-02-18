@@ -3163,7 +3163,7 @@ body.lock {
   margin: auto;
 }
 
-.card__item--review {
+.card__item--border {
   border: 1px solid #E0E0E0 !important;
   border-radius: 12px;
 }
