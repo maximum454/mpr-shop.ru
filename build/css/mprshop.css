@@ -3163,6 +3163,11 @@ body.lock {
   margin: auto;
 }
 
+.card__item--review {
+  border: 1px solid #E0E0E0 !important;
+  border-radius: 12px;
+}
+
 .card__img {
   margin-bottom: 12px;
   text-align: center;
@@ -5279,6 +5284,25 @@ body.lock {
   color: #333333;
 }
 
+.review__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.review__form {
+  max-width: 500px;
+  width: 100%;
+}
+
 .rating {
   border: none;
   display: -webkit-box;
@@ -5369,10 +5393,6 @@ body.lock {
   position: relative;
   z-index: 1;
   padding: 5px;
-}
-
-.form-review {
-  max-width: 500px;
 }
 
 .form-review__item {

@@ -19,58 +19,80 @@
     @@include('./template/_header.html')
     <main class="main main--page container">
         <aside class="main__aside">
-            <button>Все товары</button>
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
         </aside>
         <div class="main__container">
             <span class="main__subtitle">Зеркало сферическое 2шт. на блистере (MR102), 50мм</span>
             <h1 class="main__title">Новый отзыв</h1>
-            <form class="form-review" action="">
-                <div class="form-review__item">
-                    <label class="form-review__label" for="">Ваше имя</label>
-                    <input class="form-review__input" type="text">
+            <div class="review">
+                <div class="review__add">
+                    <form class="review__form form-review" action="">
+                        <div class="form-review__item">
+                            <label class="form-review__label" for="">Ваше имя</label>
+                            <input class="form-review__input" type="text">
 
-                    <label for="anon" class="checkbox">Отправить анонимно
-                        <input id="anon" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
+                            <label for="anon" class="checkbox">Отправить анонимно
+                                <input id="anon" type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
 
-                </div>
-                <div class="form-review__item">
-                    <label class="form-review__label" for="">email</label>
-                    <input class="form-review__input" type="text">
-                </div>
-                <div class="form-review__item">
-                    <label class="form-review__label" for="">Оценка</label>
-                    <div class="rating">
-                        <input type="radio" id="star5" name="rating" value="5"/>
-                        <label class="full" for="star5" title="Awesome - 5 stars"></label>
-                        <input type="radio" id="star4" name="rating" value="4"/>
-                        <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                        <input type="radio" id="star3" name="rating" value="3"/>
-                        <label class="full" for="star3" title="Meh - 3 stars"></label>
-                        <input type="radio" id="star2" name="rating" value="2"/>
-                        <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                        <input type="radio" id="star1" name="rating" value="1"/>
-                        <label class="full" for="star1" title="Sucks big time - 1 star"></label>
-                    </div>
-                </div>
-                <div class="form-review__item">
-                    <label class="form-review__label" for="">комментарий</label>
-                    <textarea class="form-review__area" name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form-review__item ">
-                    <label class="form-review__label" for="">код с картинки</label>
-                    <div class="capcha">
-                        <input class="form-review__input capcha" type="text">
-                        <div class="capcha-img">
-                            <img src="https://picsum.photos/151/54" width="151" height="54" alt="">
+                        </div>
+                        <div class="form-review__item">
+                            <label class="form-review__label" for="">email</label>
+                            <input class="form-review__input" type="text">
+                        </div>
+                        <div class="form-review__item">
+                            <label class="form-review__label" for="">Оценка</label>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/>
+                                <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/>
+                                <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/>
+                                <label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/>
+                                <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/>
+                                <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                            </div>
+                        </div>
+                        <div class="form-review__item">
+                            <label class="form-review__label" for="">комментарий</label>
+                            <textarea class="form-review__area" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-review__item ">
+                            <label class="form-review__label" for="">код с картинки</label>
+                            <div class="capcha">
+                                <input class="form-review__input capcha" type="text">
+                                <div class="capcha-img">
+                                    <img src="https://picsum.photos/151/54" width="151" height="54" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-review__item">
+                            <input class="form-review__btn" type="submit" value="Опубликовать">
+                        </div>
+                    </form>
+
+                    <div class="card__item card__item--review">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-1.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
                         </div>
                     </div>
                 </div>
-                <div class="form-review__item">
-                    <input class="form-review__btn" type="submit" value="Опубликовать">
-                </div>
-            </form>
+            </div>
         </div>
     </main>
     @@include('./template/_footer.html')
