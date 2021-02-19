@@ -16,25 +16,13 @@
 		width: 42px;
 		height: 100%;
 		background-color: #eb222d;
+		display: none;
 	}
 	li{
 		display: flex;
 		align-items: center;
-		padding-left: 56px;
 		position: relative;
 		margin: 5px 0;
-		.icon{
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-color: #eb222d;
-			width: 42px;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-		}
 		a{
 			font-weight: bold;
 			font-size: 20px;

@@ -1,6 +1,7 @@
 @import 'partials/normalize';
 @import 'mixin';
 @import 'fonts';
+@import 'icon';
 @import 'partials/slick';
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
@@ -320,4 +321,7 @@ body {
 
 //Страница сервиса
 @import "componets/service";
+
+//Слайдер на главной
+@import "componets/slider-main";
 

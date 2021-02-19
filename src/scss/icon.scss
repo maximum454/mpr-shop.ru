@@ -1,0 +1,201 @@
+%svg-common {
+  background: url("../img/icon/icons.svg") no-repeat;
+}
+.icons{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.icons-aromatizatory {
+  @extend %svg-common;
+  background-position: 0 0;
+}
+
+.icons-aromatizatory-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-auto {
+  @extend %svg-common;
+  background-position: 25% 0;
+}
+
+.icons-auto-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-bytovaya-khimiya {
+  @extend %svg-common;
+  background-position: 0 33.333333333333336%;
+}
+
+.icons-bytovaya-khimiya-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-bytovaya-tekhnika {
+  @extend %svg-common;
+  background-position: 25% 33.333333333333336%;
+}
+
+.icons-bytovaya-tekhnika-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-dacha-i-sad {
+  @extend %svg-common;
+  background-position: 50% 0;
+}
+
+.icons-dacha-i-sad-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-dlya-detey {
+  @extend %svg-common;
+  background-position: 50% 33.333333333333336%;
+}
+
+.icons-dlya-detey-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-domashniy-tekstil {
+  @extend %svg-common;
+  background-position: 0 66.66666666666667%;
+}
+
+.icons-domashniy-tekstil-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-elektrotekhnika {
+  @extend %svg-common;
+  background-position: 25% 66.66666666666667%;
+}
+
+.icons-elektrotekhnika-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-galantereya {
+  @extend %svg-common;
+  background-position: 50% 66.66666666666667%;
+}
+
+.icons-galantereya-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-instrumenty {
+  @extend %svg-common;
+  background-position: 75% 0;
+}
+
+.icons-instrumenty-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-kantselyarskie-tovary {
+  @extend %svg-common;
+  background-position: 75% 33.333333333333336%;
+}
+
+.icons-kantselyarskie-tovary-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-khoztovary {
+  @extend %svg-common;
+  background-position: 75% 66.66666666666667%;
+}
+
+.icons-khoztovary-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-more {
+  @extend %svg-common;
+  background-position: 0 100%;
+}
+
+.icons-more-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-novogodnie-tovary {
+  @extend %svg-common;
+  background-position: 25% 100%;
+}
+
+.icons-novogodnie-tovary-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-podarki {
+  @extend %svg-common;
+  background-position: 50% 100%;
+}
+
+.icons-podarki-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-posuda {
+  @extend %svg-common;
+  background-position: 75% 100%;
+}
+
+.icons-posuda-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-santekhnika {
+  @extend %svg-common;
+  background-position: 100% 0;
+}
+
+.icons-santekhnika-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-sport {
+  @extend %svg-common;
+  background-position: 100% 33.333333333333336%;
+}
+
+.icons-sport-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-turizm {
+  @extend %svg-common;
+  background-position: 100% 66.66666666666667%;
+}
+
+.icons-turizm-dims {
+  width: 24px;
+  height: 24px;
+}
+
+
+

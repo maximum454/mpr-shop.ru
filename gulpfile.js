@@ -140,14 +140,21 @@ function images() {
 }
 
 gulp.task('svgSprite', function () {
-    return gulp.src([source + '/iconsprite/*.svg'])
+    return gulp.src([source + '/iconsprite/icon/*.svg'])
         .pipe(
             svgSprite({
                 mode: {
                     stack: {
                         sprite: '../icons/icons.svg',
-                        example: true
-                    }
+                        example: true,
+                    },
+                    css: { // Create a «css» sprite
+                        render: {
+                            scss: true // Render a Sass stylesheet
+                        }
+                    },
+                    inline: true,
+                    symbol: true
                 },
             })
         )

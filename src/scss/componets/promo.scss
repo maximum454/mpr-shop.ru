@@ -27,6 +27,35 @@
 			display: block;
 			text-decoration: none;
 		}
+		.slick-track{
+			overflow: hidden;
+		}
+		.slick-dots{
+			top: 0;
+			bottom: auto;
+			right: -60px;
+			li {
+				position: relative;
+				display: block;
+				padding: 0;
+				margin: 0;
+				cursor: pointer;
+				color: #BDBDBD;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 48px;
+				width: 100%;
+				height: 100%;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+				&:first-child{
+					border-top: 1px solid rgba(0, 0, 0, 0.12);
+				}
+				&.slick-active{
+					background-color: #EB222D;
+					color: #fff;
+				}
+			}
+		}
 	}
 	&__nav{
 		position: absolute;
@@ -120,125 +149,6 @@
 			}
 		}
 	}
-	.slick-track{
-		overflow: hidden;
-	}
-	.slick-dots{
-		top: 0;
-		bottom: auto;
-		right: -60px;
-		 li {
-			position: relative;
-			display: block;
-			padding: 0;
-			 margin: 0;
-			cursor: pointer;
-			 color: #BDBDBD;
-			 font-weight: bold;
-			 font-size: 20px;
-			 line-height: 48px;
-			 width: 100%;
-			 height: 100%;
-			 border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-			 &:first-child{
-				 border-top: 1px solid rgba(0, 0, 0, 0.12);
-			 }
-			 &.slick-active{
-				 background-color: #EB222D;
-				 color: #fff;
-			 }
-		}
-	}
-	@include r(1440){
-		&__nav{
-			display: none;
-		}
-		&__for{
-			.item{
-				border-radius: 12px;
-			}
-		}
-		.slick-dots{
-			top: auto;
-			bottom: auto;
-			left: 0;
-			right: 0;
-			position: relative;
-			max-width: 100%;
-			li {
-				position: relative;
-				display: inline-block;
-				padding: 0;
-				margin: 0 6px;
-				cursor: pointer;
-				color: #BDBDBD;
-				font-weight: bold;
-				font-size: 20px;
-				line-height: 48px;
-				width: 100%;
-				max-width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				overflow: hidden;
-				background: rgba(136, 142, 148, 0.4);
-				&:first-child{
-					border-top: none;
-				}
-				&.slick-active{
-					background-color: #EB222D;
-					color: #fff;
-				}
-			}
-		}
 
-	}
-	@include r(1023){
-		&__body{
-			display: block;
-		}
-		&__aside{
-			display: none;
-		}
-		&__block{
-			grid-gap: 20px;
-		}
-	}
-	@include r(767){
-		&__block{
-			grid-gap: 20px;
-			grid-template-columns: repeat(4,280px);
-			overflow: auto;
-			max-width: 732px;
-			img{
-				object-fit: cover;
-				height: 100%;
-				display: block;
-			}
-			.name{
-				font-size: 17px;
-				line-height: 24px;
-			}
-			.count{
-				font-size: 15px;
-				line-height: 20px;
-			}
-		}
-	}
-	@include r(480){
-		&__slider{
-			img{
-				max-width: 100%;
-				height: 200px;
-				object-fit: cover;
-				object-position: left;
-			}
-		}
-		&__block{
-			img{
-				object-fit: cover;
-				height: 126px;
-				display: block;
-			}
-		}
-	}
+
 }
