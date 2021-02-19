@@ -149,12 +149,11 @@ gulp.task('svgSprite', function () {
                         example: true,
                     },
                     css: { // Create a «css» sprite
+                        sprite: '../icon/icons.svg',
                         render: {
-                            scss: true // Render a Sass stylesheet
+                            scss: true
                         }
-                    },
-                    inline: true,
-                    symbol: true
+                    }
                 },
             })
         )
