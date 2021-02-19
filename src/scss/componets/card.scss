@@ -28,7 +28,6 @@
 		border: 1px dashed #888E94;
 		border-left: none;
 		border-top: none;
-		padding: 22px;
 
 		&:nth-child(4n) {
 			border-right: 0;
@@ -51,6 +50,22 @@
 			border: 1px solid #E0E0E0!important;
 			border-radius: 12px;
 		}
+		&>div{
+			padding: 22px 22px 0 22px;
+			box-shadow: inset 0px 0px 0px 1px #ececec;
+			background: #fff;
+			transition: box-shadow ease-out 0.4s, border ease-out 0.4s;
+			margin-right: -1px;
+			height: 100%;
+		}
+		&:hover{
+			.card__footer{
+				opacity: 1;
+				visibility: visible;
+				height: auto;
+				transition: all .1s ease;
+			}
+		}
 	}
 
 	&__img {
@@ -58,7 +73,7 @@
 		text-align: center;
 		display: block;
 		text-decoration: none;
-
+		position: relative;
 		img {
 			max-width: 100%;
 			object-fit: contain;
@@ -147,6 +162,41 @@
 		width: 40px;
 		height: 134px;
 		margin: auto;
+	}
+
+	&__stickers{
+		position: absolute;
+		top: 8px;
+		left: 8px;
+	}
+
+	&__like{
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		display: block;
+		background-image: url(../img/like.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 34px;
+		height: 34px;
+		border: 0;
+		background-color: transparent;
+		outline: 0;
+	}
+	&__basket{
+
+	}
+	&__border{
+
+	}
+	&__footer{
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		transition: all .1s ease;
+		text-align: center;
 	}
 
 	@include r(1023) {

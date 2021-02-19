@@ -1,0 +1,22 @@
+.stickers {
+	display: flex;
+	&__item {
+		border-radius: 6px;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 24px;
+		color: #FFFFFF;
+		margin:0 8px 0 0;
+		display: block;
+		text-decoration: none;
+		padding: 4px 8px 2px;
+		&.hit{
+			background: #71C9FA;
+		}
+		&.stock{
+			background: #FFA756;
+		}
+	}
+}

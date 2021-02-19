@@ -26,6 +26,9 @@ body {
 .wrp {
 	overflow: hidden;
 }
+.d-none{
+	display: none;
+}
 
 .container {
 	max-width: 1366px;
@@ -214,9 +217,6 @@ body {
 //Главная промо
 @import "componets/promo";
 
-//Меню категории
-@import "componets/menu-category";
-
 //Подвал
 @import "componets/footer";
 
@@ -324,4 +324,7 @@ body {
 
 //Слайдер на главной
 @import "componets/slider-main";
+
+//Стикиры для карточек
+@import "componets/stickers";
 
