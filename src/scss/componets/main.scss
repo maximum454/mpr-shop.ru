@@ -6,11 +6,6 @@
 		grid-column-gap: 40px;
 		position: relative;
 		margin-bottom: 80px;
-		max-width: 1366px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 	&__aside{
 		grid-area: aside-left;
@@ -38,6 +33,15 @@
 		margin: 10px 0 32px;
 		span{
 			text-decoration: underline;
+		}
+	}
+	@include r(1023){
+		&--page{
+			display: block;
+		}
+		&__title{
+			font-size: 32px;
+			line-height: 48px;
 		}
 	}
 	@include r(767){

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Главная</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header.html')
+
+
+
+    <section class="card">
+        <div class="container">
+            <h2>Лучшие предложения</h2>
+            <div class="card__body">
+                <div class="card__item" style="height: 376px">
+                    <div class="card__border">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-2.png" alt="">
+                            <div class="card__stickers stickers">
+                                <div class="stickers__item hit">ХИТ</div>
+                                <div class="stickers__item stock">АКЦИЯ</div>
+                            </div>
+                            <div class="card__like"></div>
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                        </div>
+                        <footer class="card__footer">
+                            <a href="#" class="card__basket">В корзину</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+@@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

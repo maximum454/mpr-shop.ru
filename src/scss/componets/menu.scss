@@ -7,9 +7,7 @@
 		border: none;
 	}
 	ul{
-		margin: 0;
-		padding: 0;
-		list-style: none;
+
 	}
 	&--big{
 		border-radius: 0;
@@ -41,6 +39,7 @@
 		margin: 32px 0 0;
 		padding: 24px 0 0;
 		border-top: 1px solid #E0E0E0;
+		list-style: none;
 		li{
 			margin-bottom: 23px;
 			&:last-child{
@@ -59,7 +58,9 @@
 
 		&--main{
 			border-top: none;
-			margin-bottom: 0;
+			margin: 0;
+			padding: 0;
+			list-style: none;
 			li{
 				a{
 					font-family: Circe;
@@ -129,5 +130,8 @@
 	.icons{
 		margin-right: 16px;
 		vertical-align: middle;
+	}
+	@include r(1023){
+		display: none;
 	}
 }
