@@ -7640,6 +7640,20 @@ body.lock {
     line-height: 20px;
   }
 
+  .page404 {
+    text-align: center;
+  }
+
+  .page404__subtitle {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .page404__text {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .learning h2 {
     font-size: 20px;
     line-height: 24px;

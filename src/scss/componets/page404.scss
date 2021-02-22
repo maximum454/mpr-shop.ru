@@ -30,4 +30,15 @@
 			text-decoration: none;
 		}
 	}
+	@include r(767){
+		text-align: center;
+		&__subtitle{
+			font-size: 32px;
+			line-height: 48px;
+		}
+		&__text{
+			font-size: 17px;
+			line-height: 24px;
+		}
+	}
 }
