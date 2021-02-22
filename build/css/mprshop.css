@@ -3482,7 +3482,7 @@ body.lock {
   border-left: none;
   border-top: none;
   position: relative;
-  height: 378px;
+  /*height: 378px;*/
 }
 
 .card__item:nth-child(4n) {
@@ -7930,6 +7930,11 @@ body.lock {
   .articles-detail p {
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .catalog-section {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
 
   .page404 {

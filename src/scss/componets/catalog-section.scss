@@ -24,4 +24,8 @@
 			background: #E5EBF0;
 		}
 	}
+	@include r(767){
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+	}
 }
