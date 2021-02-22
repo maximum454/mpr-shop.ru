@@ -83,6 +83,7 @@ body {
 	@include r(767){
 		border-radius: 0;
 		margin: 0;
+		height: 100%;
 		.remodal-close{
 			width: 16px;
 			height: 16px;

@@ -6169,6 +6169,9 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 -10px;
 }
 
@@ -6243,17 +6246,87 @@ body.lock {
   margin: 0 10px;
 }
 
+.form p {
+  text-align: left;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333;
+}
+
 .form input {
   border: 1px solid #BDBDBD;
   border-radius: 12px;
   display: block;
   padding: 17px;
   width: 100%;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.form input::-webkit-input-placeholder {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #888E94;
+}
+
+.form input::-moz-placeholder {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #888E94;
+}
+
+.form input:-ms-input-placeholder {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #888E94;
+}
+
+.form input::-ms-input-placeholder {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #888E94;
+}
+
+.form input::placeholder {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #888E94;
 }
 
 .form input.capcha {
   max-width: 180px;
   margin-right: 12px;
+}
+
+.form input[type=password] {
+  font-size: 32px;
+  color: #333333;
+  letter-spacing: 4px;
 }
 
 .form textarea {
@@ -6286,6 +6359,23 @@ body.lock {
   width: 100%;
   height: 68px;
   margin: 0 5px;
+}
+
+.form input[type=submit].link,
+.form button.link,
+.form .btn.link {
+  background-color: transparent;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1;
+  color: #333333;
+  text-decoration: none;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .table {
@@ -7089,6 +7179,7 @@ body.lock {
   .remodal {
     border-radius: 0;
     margin: 0;
+    height: 100%;
   }
 
   .remodal .remodal-close {
@@ -7965,6 +8056,24 @@ body.lock {
     width: 100%;
     height: 48px;
     margin: 0;
+  }
+
+  .form input[type=submit].link,
+  .form button.link,
+  .form .btn.link {
+    background-color: transparent;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1;
+    color: #333333;
+    text-decoration: none;
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
   }
 
   .slider-main__block {

@@ -58,7 +58,7 @@
             </div>
             <a href="#" class="header__phone">8-800-2500-600</a>
             <div class="header__control">
-                <a class="header__auth" href="#"></a>
+                <a class="header__auth" href="#" data-remodal-target="modal-auth"></a>
                 <a class="header__like" href="#"></a>
                 <a class="header__cart" href="#"></a>
             </div>
@@ -99,6 +99,50 @@
                 </li>
             </ul>
         </div>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-auth">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Вход</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="row">
+                <label for="" class="checkbox">Запомнить меня
+                    <input id="" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <a href="#" class="btn link" data-remodal-target="modal-repass">Забыли пароль?</a>
+
+            </div>
+            <div class="item">
+                <input class="btn" type="submit" value="Войти">
+            </div>
+            <a href="" class="btn link">Зарегистрироваться</a>
+
+        </form>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-repass">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Восстановление пароля</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+            <p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам на email</p>
+            </div>
+
+                <input class="btn" type="submit" value="Восстановить">
+
+        </form>
     </div>
 </header>
 
