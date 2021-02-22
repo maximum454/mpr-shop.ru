@@ -6172,7 +6172,8 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .form .select {
@@ -6273,7 +6274,7 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1;
   letter-spacing: 0;
   color: #888E94;
 }
@@ -6283,7 +6284,7 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1;
   letter-spacing: 0;
   color: #888E94;
 }
@@ -6293,7 +6294,7 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1;
   letter-spacing: 0;
   color: #888E94;
 }
@@ -6303,7 +6304,7 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1;
   letter-spacing: 0;
   color: #888E94;
 }
@@ -6313,7 +6314,7 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1;
   letter-spacing: 0;
   color: #888E94;
 }
@@ -6327,6 +6328,7 @@ body.lock {
   font-size: 32px;
   color: #333333;
   letter-spacing: 4px;
+  height: 48px;
 }
 
 .form textarea {
@@ -6376,6 +6378,7 @@ body.lock {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 0;
 }
 
 .table {
@@ -7200,6 +7203,11 @@ body.lock {
     background-repeat: no-repeat;
   }
 
+  .checkbox .checkmark {
+    position: absolute;
+    top: -3px;
+  }
+
   .alert {
     font-size: 12px;
     line-height: 24px;
@@ -8021,6 +8029,7 @@ body.lock {
   .form label.checkbox {
     font-size: 15px;
     line-height: 20px;
+    margin: 0;
   }
 
   .form .select {
@@ -8066,7 +8075,7 @@ body.lock {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
-    line-height: 1;
+    line-height: 20px;
     color: #333333;
     text-decoration: none;
     margin: 0;

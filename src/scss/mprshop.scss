@@ -167,6 +167,12 @@ body {
 			background-color: #ccc;
 		}
 	}
+	@include r(767){
+		.checkmark {
+			position: absolute;
+			top: -3px;
+		}
+	}
 }
 
 .radio {
