@@ -68,6 +68,9 @@
 			line-height: 32px;
 			text-transform: none;
 			letter-spacing: 0;
+			font-family: Circe;
+			font-style: normal;
+			font-weight: normal;
 		}
 	}
 	input[type=date]{
@@ -110,5 +113,50 @@
 		width: 100%;
 		height: 68px;
 		margin: 0 5px;
+	}
+
+	@include r(767){
+		.title{
+			font-size: 24px;
+			line-height: 32px;
+		}
+		label {
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0;
+			text-transform: none;
+			&.checkbox{
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+		.select {
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 20px;
+			padding: 10px;
+		}
+		input {
+			padding: 10px;
+		}
+		textarea{
+			padding: 10px;
+		}
+		input[type=date]{
+			margin: 0 10px;
+			width: calc(50% - 20px);
+		}
+		input[type=submit],button,.btn{
+			font-size: 15px;
+			line-height: 1;
+			border-radius: 12px;
+			padding: 19px 15px 15px;
+			text-decoration: none;
+			display: inline-block;
+			max-width: 100%;
+			width: 100%;
+			height: 48px;
+			margin: 0;
+		}
 	}
 }

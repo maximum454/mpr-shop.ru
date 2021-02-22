@@ -41,7 +41,12 @@ body {
 .w100 {
 	width: 100%;
 }
-
+.remodal-wrapper{
+	@include r(767){
+		border-radius: 0;
+		padding: 0;
+	}
+}
 .remodal {
 	background: #FFFFFF;
 	box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
@@ -73,6 +78,26 @@ body {
 			background-image: url("../img/remodal-close.svg");
 			background-size: 100%;
 			background-repeat: no-repeat;
+		}
+	}
+	@include r(767){
+		border-radius: 0;
+		margin: 0;
+		.remodal-close{
+			width: 16px;
+			height: 16px;
+			top: 36px;
+			right: 36px;
+			&:before {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url("../img/remodal-close.svg");
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
 		}
 	}
 }

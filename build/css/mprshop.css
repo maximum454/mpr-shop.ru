@@ -6165,6 +6165,9 @@ body.lock {
   line-height: 32px;
   text-transform: none;
   letter-spacing: 0;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form input[type=date] {
@@ -6943,6 +6946,34 @@ body.lock {
 }
 
 @media only screen and (max-width: 767px) {
+  .remodal-wrapper {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .remodal {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .remodal .remodal-close {
+    width: 16px;
+    height: 16px;
+    top: 36px;
+    right: 36px;
+  }
+
+  .remodal .remodal-close:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/remodal-close.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
   .alert {
     font-size: 12px;
     line-height: 24px;
@@ -7675,6 +7706,58 @@ body.lock {
   .learning__row h3 {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .form .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .form label {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .form label.checkbox {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .form .select {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  .form input {
+    padding: 10px;
+  }
+
+  .form textarea {
+    padding: 10px;
+  }
+
+  .form input[type=date] {
+    margin: 0 10px;
+    width: calc(50% - 20px);
+  }
+
+  .form input[type=submit],
+  .form button,
+  .form .btn {
+    font-size: 15px;
+    line-height: 1;
+    border-radius: 12px;
+    padding: 19px 15px 15px;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    height: 48px;
+    margin: 0;
   }
 
   .slider-main__block {
