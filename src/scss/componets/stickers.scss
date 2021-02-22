@@ -19,4 +19,16 @@
 			background: #FFA756;
 		}
 	}
+	@include r(767){
+		flex-wrap: wrap;
+		display: block;
+		&__item {
+			font-size: 14px;
+			line-height: 1;
+			margin:0 0 8px;
+			display: block;
+			text-decoration: none;
+			padding: 4px 8px 2px;
+		}
+	}
 }

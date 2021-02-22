@@ -97,33 +97,4 @@
 			padding: 19px 13px;
 		}
 	}
-	@include r(540){
-		&__txt{
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
-		&__name{
-			flex: 0 0 47%;
-			font-size: 20px;
-			line-height: 24px;
-			margin-bottom: 9px;
-		}
-		&__anons{
-			font-size: 15px;
-			line-height: 20px;
-			text-transform: none;
-			flex: 0 0 50%;
-			order: 3;
-		}
-		&__time{
-			width: fit-content;
-			order: 2;
-			flex: 0 0 47%;
-			font-size: 15px;
-			padding: 5px 8px 6px;
-			margin-left: 6%;
-			margin-top: 0;
-			margin-bottom: auto;
-		}
-	}
 }
