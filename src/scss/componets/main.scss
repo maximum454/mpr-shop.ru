@@ -2,7 +2,7 @@
 	&--page{
 		display: grid;
 		grid-template-areas: "aside-left contant";
-		grid-template-columns: 280px 1fr;
+		grid-template-columns: 280px minmax(280px,1015px);
 		grid-column-gap: 40px;
 		position: relative;
 		margin-bottom: 80px;

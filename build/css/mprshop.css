@@ -3332,7 +3332,7 @@ body.lock {
 .main--page {
   display: grid;
   grid-template-areas: "aside-left contant";
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(280px, 1015px);
   grid-column-gap: 40px;
   position: relative;
   margin-bottom: 80px;
@@ -6461,17 +6461,19 @@ body.lock {
   height: 24px;
 }
 
-.slider-main__slider {
+.slider-main {
+  width: 100%;
+  max-width: 1015px;
+}
+
+.slider-main__for {
+  width: 100%;
   position: relative;
   margin-bottom: 36px;
 }
 
-.slider-main__slider img {
+.slider-main__for img {
   max-width: 100%;
-}
-
-.slider-main__for {
-  max-width: 1015px;
 }
 
 .slider-main__for .item {

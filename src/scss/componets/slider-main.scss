@@ -1,226 +1,250 @@
-.slider-main{
-  &__slider{
-    position: relative;
-    margin-bottom: 36px;
+.slider-main {
+	width: 100%;
+	max-width: 1015px;
+	&__for {
+		width: 100%;
+		position: relative;
+		margin-bottom: 36px;
 
-    img{
-      max-width: 100%;
-    }
-  }
-  &__for{
-    max-width: 1015px;
-    .item{
-      border-radius: 12px 0 12px 12px;
-      overflow: hidden;
-      display: block;
-      text-decoration: none;
-    }
-    .slick-track{
-      overflow: hidden;
-    }
-    .slick-dots{
-      top: 0;
-      bottom: auto;
-      right: -60px;
-      li {
-        position: relative;
-        display: block;
-        padding: 0;
-        margin: 0;
-        cursor: pointer;
-        color: #BDBDBD;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 48px;
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        &:first-child{
-          border-top: 1px solid rgba(0, 0, 0, 0.12);
-        }
-        &.slick-active{
-          background-color: #EB222D;
-          color: #fff;
-        }
-      }
-    }
-  }
-  &__nav{
-    position: absolute;
-    top: 0;
-    right: -51px;
-    width: 52px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  &__num{
-    color: #BDBDBD;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 48px;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+		img {
+			max-width: 100%;
+		}
+		.item {
+			border-radius: 12px 0 12px 12px;
+			overflow: hidden;
+			display: block;
+			text-decoration: none;
+		}
 
-  }
-  &__block{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    img{
-      max-width: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .item{
-      flex: 1 0 0;
-      max-width: 486px;
-      overflow: hidden;
-      border-radius: 12px;
-      position: relative;
-      display: block;
-      text-decoration: none;
-    }
-    .txt{
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 20px 28px;
-    }
-    .name{
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 32px;
-      color: #FFFFFF;
-      background-color: #EB222D;
-      border-radius: 4px;
-      padding: 5px;
-    }
-    .count{
-      font-size: 20px;
-      line-height: 32px;
-      color: rgba(255, 255, 255, 0.7);
-      background-color: #EB222D;
-      border-radius: 4px;
-      display: inline-block;
-      padding: 5px;
-      margin-top: -4px;
-    }
-    &--categor{
-      grid-template-columns: repeat(auto-fit, minmax(180px, 231px));
-      grid-gap: 30px;
-      .item{
-        max-width: none;
-      }
-      .txt{
-        border-radius: 12px;
-        background-color: #F5F8FA;
-        position: relative;
-        padding: 20px 28px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-      .name{
-        font-family: Circe;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 25px;
-        color: #333333;
-        background-color: transparent;
-        border-radius:0;
-        padding: 0;
-      }
-    }
-  }
-  @include r(1440){
-    &__nav{
-      display: none;
-    }
-    &__for{
-      .item{
-        border-radius: 12px;
-      }
-    }
-    .slick-dots{
-      top: auto;
-      bottom: auto;
-      left: 0;
-      right: 0;
-      position: relative;
-      max-width: 100%;
-      li {
-        position: relative;
-        display: inline-block;
-        padding: 0;
-        margin: 0 6px;
-        cursor: pointer;
-        color: #BDBDBD;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 48px;
-        width: 100%;
-        max-width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        overflow: hidden;
-        background: rgba(136, 142, 148, 0.4);
-        &:first-child{
-          border-top: none;
-        }
-        &.slick-active{
-          background-color: #EB222D;
-          color: #fff;
-        }
-      }
-    }
+		.slick-track {
+			overflow: hidden;
+		}
 
-  }
-  @include r(1023){
-    &__block{
-      grid-gap: 20px;
-    }
-  }
-  @include r(767){
-    &__block{
-      grid-gap: 20px;
-      grid-template-columns: repeat(4,280px);
-      overflow: auto;
-      max-width: 732px;
-      img{
-        object-fit: cover;
-        height: 100%;
-        display: block;
-      }
-      .name{
-        font-size: 17px;
-        line-height: 24px;
-      }
-      .count{
-        font-size: 15px;
-        line-height: 20px;
-      }
-    }
-  }
-  @include r(480){
-    &__slider{
-      img{
-        max-width: 100%;
-        height: 200px;
-        object-fit: cover;
-        object-position: left;
-      }
-    }
-    &__block{
-      img{
-        object-fit: cover;
-        height: 126px;
-        display: block;
-      }
-    }
-  }
+		.slick-dots {
+			top: 0;
+			bottom: auto;
+			right: -60px;
+
+			li {
+				position: relative;
+				display: block;
+				padding: 0;
+				margin: 0;
+				cursor: pointer;
+				color: #BDBDBD;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 48px;
+				width: 100%;
+				height: 100%;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+				&:first-child {
+					border-top: 1px solid rgba(0, 0, 0, 0.12);
+				}
+
+				&.slick-active {
+					background-color: #EB222D;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__nav {
+		position: absolute;
+		top: 0;
+		right: -51px;
+		width: 52px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__num {
+		color: #BDBDBD;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 48px;
+		width: 100%;
+		height: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+	}
+
+	&__block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+
+		img {
+			max-width: 100%;
+			object-fit: cover;
+			display: block;
+		}
+
+		.item {
+			flex: 1 0 0;
+			max-width: 486px;
+			overflow: hidden;
+			border-radius: 12px;
+			position: relative;
+			display: block;
+			text-decoration: none;
+		}
+
+		.txt {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 20px 28px;
+		}
+
+		.name {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 32px;
+			color: #FFFFFF;
+			background-color: #EB222D;
+			border-radius: 4px;
+			padding: 5px;
+		}
+
+		.count {
+			font-size: 20px;
+			line-height: 32px;
+			color: rgba(255, 255, 255, 0.7);
+			background-color: #EB222D;
+			border-radius: 4px;
+			display: inline-block;
+			padding: 5px;
+			margin-top: -4px;
+		}
+
+		&--categor {
+			grid-template-columns: repeat(auto-fit, minmax(180px, 231px));
+			grid-gap: 30px;
+
+			.item {
+				max-width: none;
+			}
+
+			.txt {
+				border-radius: 12px;
+				background-color: #F5F8FA;
+				position: relative;
+				padding: 20px 28px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+
+			.name {
+				font-family: Circe;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 17px;
+				line-height: 25px;
+				color: #333333;
+				background-color: transparent;
+				border-radius: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	@include r(1440) {
+		&__nav {
+			display: none;
+		}
+		&__for {
+			.item {
+				border-radius: 12px;
+			}
+		}
+		.slick-dots {
+			top: auto;
+			bottom: auto;
+			left: 0;
+			right: 0;
+			position: relative;
+			max-width: 100%;
+
+			li {
+				position: relative;
+				display: inline-block;
+				padding: 0;
+				margin: 0 6px;
+				cursor: pointer;
+				color: #BDBDBD;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 48px;
+				width: 100%;
+				max-width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				overflow: hidden;
+				background: rgba(136, 142, 148, 0.4);
+
+				&:first-child {
+					border-top: none;
+				}
+
+				&.slick-active {
+					background-color: #EB222D;
+					color: #fff;
+				}
+			}
+		}
+
+	}
+	@include r(1023) {
+		&__block {
+			grid-gap: 20px;
+		}
+	}
+	@include r(767) {
+		&__block {
+			grid-gap: 20px;
+			grid-template-columns: repeat(4, 280px);
+			overflow: auto;
+			max-width: 732px;
+
+			img {
+				object-fit: cover;
+				height: 100%;
+				display: block;
+			}
+
+			.name {
+				font-size: 17px;
+				line-height: 24px;
+			}
+
+			.count {
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+	}
+	@include r(480) {
+		&__slider {
+			img {
+				max-width: 100%;
+				height: 200px;
+				object-fit: cover;
+				object-position: left;
+			}
+		}
+		&__block {
+			img {
+				object-fit: cover;
+				height: 126px;
+				display: block;
+			}
+		}
+	}
 }
