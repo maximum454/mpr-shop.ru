@@ -69,6 +69,7 @@
 	}
 	@include r(1023){
 		display: block;
+		text-align: center;
 		&__count{
 			display: none;
 		}

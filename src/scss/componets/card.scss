@@ -87,7 +87,6 @@
 		border-left: none;
 		border-top: none;
 		position: relative;
-		/*height: 378px;*/
 		&:nth-child(4n) {
 			border-right: 0;
 		}
@@ -332,6 +331,53 @@
 				width: 100%;
 			}
 		}
+		&__body {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		&__item {
+			&:nth-child(4n) {
+				border-right: 1px dashed #888E94;
+			}
+
+			&:nth-last-child(-n+4) {
+				border-bottom: 1px dashed #888E94;
+			}
+			&:nth-child(3n) {
+				border-right: none;
+			}
+			&:nth-last-child(-n+2) {
+				border-bottom: none;
+			}
+
+			&--all {
+				display: flex;
+				align-content: center;
+				justify-content: center;
+
+				.card__txt {
+					margin: auto;
+				}
+			}
+			&--border{
+				border: 1px solid #E0E0E0!important;
+				border-radius: 12px;
+			}
+			&:hover{
+				.card__inner{
+					position: absolute;
+					box-shadow: 0px 4px 24px rgba(107, 125, 139, 0.24);
+					background: #fff;
+					border: 1px solid #E0E0E0!important;
+				}
+				.card__footer{
+					opacity: 1;
+					visibility: visible;
+					height: auto;
+					transition: all .1s ease;
+				}
+			}
+		}
 		h2 {
 			font-size: 32px;
 			line-height: 48px;
@@ -368,13 +414,6 @@
 			margin-top: 16px;
 			width: fit-content;
 		}
-	}
-
-	@include r(800) {
-		&__item {
-			padding: 12px;
-		}
-
 	}
 	@include r(767) {
 		margin: 30px 0;
@@ -434,24 +473,39 @@
 			grid-template-columns: 1fr 1fr;
 		}
 		&__item {
-			max-width: 100%;
+			padding: 12px;
+			border-right: none!important;
 
-			&:nth-child(2n) {
-				border-right: 0;
+			&--all {
+				display: flex;
+				align-content: center;
+				justify-content: center;
+
+				.card__txt {
+					margin: auto;
+				}
 			}
-
-			&:nth-child(4n) {
-				border-right: 0;
+			&--border{
+				border: 1px solid #E0E0E0!important;
+				border-radius: 12px;
 			}
+			&:hover{
 
-			&:nth-last-child(-n+4) {
-				border-bottom: 1px dashed #888E94;
-			}
-
-			&:nth-last-child(-n+2) {
-				border-bottom: none;
 			}
 		}
+		&__inner{
+			position: absolute;
+			box-shadow: none;
+			background: #fff;
+			border:none;
+		}
+		&__footer{
+			opacity: 1;
+			visibility: visible;
+			height: auto;
+			transition: all .1s ease;
+		}
+
 		&__name {
 			font-size: 15px;
 			line-height: 20px;
