@@ -53,6 +53,9 @@ body {
 	border-radius: 16px;
 	@media only screen and (min-width: 641px) {
 		max-width: 600px;
+		&.w980{
+			max-width: 980px;
+		}
 	}
 
 	.remodal-close {
@@ -359,4 +362,7 @@ body {
 
 //Стикиры для карточек
 @import "componets/stickers";
+
+//ВЫбор города в модальном окне
+@import "componets/menu-select-city";
 

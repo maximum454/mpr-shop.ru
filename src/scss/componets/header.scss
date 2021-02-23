@@ -114,6 +114,9 @@
 		margin-top: 20px;
 		z-index: 10;
 		display: none;
+		&.active{
+			display: block;
+		}
 		p{
 			font-family: Circe;
 			font-style: normal;

@@ -1,0 +1,83 @@
+.menu-select-city{
+  &__body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 32px;
+  }
+  &__item{
+    text-align: left;
+  }
+  &__title{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 16px;
+    position: relative;
+    &.active{
+      &:before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -32px;
+        background-image: url("../img/menu-select-city-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 18px;
+        height: 13px;
+      }
+    }
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    li{
+      font-family: Circe;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+      color: #333333;
+      margin-bottom: 16px;
+      position: relative;
+      cursor: pointer;
+      &.active{
+        font-weight: bold;
+        color: #EB222D;
+      }
+      &:hover{
+        &:before{
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background: #F6F8FA;
+          border-radius: 8px;
+          width: 110%;
+          height: 110%;
+          z-index: 1;
+        }
+
+      }
+      span,a{
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+
+  @include r(767){
+    &__body{
+      display: none;
+    }
+
+  }
+}

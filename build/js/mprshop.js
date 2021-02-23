@@ -3953,14 +3953,18 @@ $(function () {
         variableWidth: true,
     });
 
+    $('.js-select-delivery').on('click', function(){
+        $('.select-city').toggleClass('active');
+    })
+
     /*Подставляем высоту карточки*/
     let cartItemHeight = $('.card__item').outerHeight(false);
     $('.card__item').css({'height': cartItemHeight+'px'})
 
 
     $('.js-input-key').on('keyup', function (){
-        console.log('222');
         $('.search-form__drop').show();
+        $('.js-drop').show();
     })
 
     $tabs('.tabs');

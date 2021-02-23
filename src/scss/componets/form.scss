@@ -1,5 +1,4 @@
 .form{
-
 	.title{
 		font-family: Circe;
 		font-style: normal;
@@ -12,6 +11,7 @@
 	}
 	.item{
 		margin-bottom: 32px;
+		position: relative;
 	}
 	.row{
 		display: flex;
@@ -19,6 +19,32 @@
 		justify-content: space-between;
 		margin-left: -10px;
 		margin-right: -10px;
+	}
+	.row-search{
+		position: relative;
+	}
+	.search-drop{
+		display: none;
+		position: absolute;
+		top: 60px;
+		width: 100%;
+		padding: 20px;
+		background: #fff;
+		box-shadow: 0 2px 24px rgba(229, 235, 240 , 50%);
+		border-radius: 12px;
+		margin: 0;
+		list-style: none;
+		z-index: 1;
+		text-align: left;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #333333;
+		&.active{
+			display: block;
+		}
 	}
 	.checkbox{
 
@@ -110,6 +136,9 @@
 			max-width: 180px;
 			margin-right: 12px;
 		}
+		&.search-input{
+			padding-left: 62px;
+		}
 	}
 	input[type=password]{
 		font-size: 32px;
@@ -155,6 +184,20 @@
 			margin: 0;
 			width: fit-content;
 			padding: 0;
+		}
+		&.submit{
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translate(0,-50%);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			border: none;
+			background-color: transparent;
+			background-image: url(../img/services-search-icon.svg);
+			width: 24px;
+			height: 24px;
 		}
 	}
 
