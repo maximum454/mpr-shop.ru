@@ -5487,6 +5487,20 @@ body.lock {
   border-radius: 50%;
 }
 
+.catalog-detail__count--no {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  padding: 0;
+}
+
+.catalog-detail__count--no:before {
+  display: none;
+}
+
 .catalog-detail__control {
   margin-bottom: 22px;
   display: -webkit-box;
@@ -5579,6 +5593,16 @@ body.lock {
 
 .catalog-detail__btn.like.active {
   background-image: url("../img/like.svg");
+}
+
+.catalog-detail__btn--warning {
+  border: 1px solid #EB222D;
+  background-color: transparent;
+  color: #333333;
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .catalog-detail .catalog-for {
@@ -6083,6 +6107,29 @@ body.lock {
 .page404__text a {
   color: #EB222D;
   text-decoration: none;
+}
+
+.page404__btn {
+  text-align: center;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  border: none;
+  background-color: #EB222D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  padding: 19px 15px 15px;
+  text-decoration: none;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 68px;
+  margin: 0;
 }
 
 .learning h2 {

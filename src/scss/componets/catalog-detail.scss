@@ -94,6 +94,18 @@
 			height: 8px;
 			border-radius: 50%;
 		}
+		&--no{
+			font-family: Circe;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 32px;
+			color: #333333;
+			padding: 0;
+			&:before{
+				display: none;
+			}
+		}
 	}
 	&__control{
 		margin-bottom: 22px;
@@ -166,6 +178,13 @@
 			&.active{
 				background-image: url("../img/like.svg");
 			}
+		}
+		&--warning{
+			border: 1px solid #EB222D;
+			background-color: transparent;
+			color: #333333;
+			max-width: 100%;
+			width: fit-content;
 		}
 	}
 

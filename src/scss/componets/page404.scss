@@ -30,6 +30,25 @@
 			text-decoration: none;
 		}
 	}
+	&__btn{
+		text-align: center;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: #fff;
+		border: none;
+		background-color:#EB222D;
+		box-sizing: border-box;
+		border-radius: 12px;
+		padding: 19px 15px 15px;
+		text-decoration: none;
+		display: inline-block;
+		width: fit-content;
+		height: 68px;
+		margin: 0;
+	}
 	@include r(767){
 		text-align: center;
 		&__subtitle{

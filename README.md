@@ -17,6 +17,7 @@
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-inner.html
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-rubric.html
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-detail.html
+* https://maximum454.github.io/mpr-shop.ru/build/catalog-detail-no.html
 
 ###Страница добавления отзыва
 * https://maximum454.github.io/mpr-shop.ru/build/review-form.html
@@ -29,6 +30,15 @@
 
 ###Страница сервисные центры
 * https://maximum454.github.io/mpr-shop.ru/build/service.html
+
+###Страница избранные товары
+* https://maximum454.github.io/mpr-shop.ru/build/featured-products.html
+
+###Страница ошибка онлайн платежа
+* https://maximum454.github.io/mpr-shop.ru/build/error-pay.html
+
+
+
  
 ####Верстка использует сборку Gulp  
  **Старт:** ***gulp***  
