@@ -3459,6 +3459,12 @@ body.lock {
   line-height: 60px;
   color: #333333;
   margin: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__body {
@@ -5744,6 +5750,30 @@ body.lock {
 
 .sort__control a > * {
   fill: #888E94;
+}
+
+.sort__btn {
+  text-align: center;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  border: none;
+  background-color: #EB222D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  padding: 13px 15px;
+  text-decoration: none;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  vertical-align: middle;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .gallery {
