@@ -49,6 +49,9 @@
 ###Страница Текущие заказы
 * https://maximum454.github.io/mpr-shop.ru/build/personal-orders.html
 
+###Страница Текущий заказ
+* https://maximum454.github.io/mpr-shop.ru/build/personal-order.html
+
 
  
 ####Верстка использует сборку Gulp  
