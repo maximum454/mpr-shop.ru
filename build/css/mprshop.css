@@ -5292,6 +5292,17 @@ body.lock {
   color: #EB222D;
 }
 
+.menu__list li i.sign-out {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/sign-out.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 100%;
+  width: 20px;
+  height: 23px;
+}
+
 .menu__list li a {
   font-family: Circe;
   font-style: normal;
@@ -6674,6 +6685,23 @@ body.lock {
   border-collapse: collapse;
 }
 
+.table--order tbody tr:last-of-type > th,
+.table--order tbody tr:last-of-type > td {
+  border-bottom: none;
+}
+
+.table--order tbody tr > th,
+.table--order tbody tr > td {
+  padding: 22px 0;
+  border-bottom: 1px solid #BDBDBD;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  vertical-align: top;
+}
+
 .table thead tr > td,
 .table thead tr > th {
   padding: 22px 0;
@@ -6715,6 +6743,50 @@ body.lock {
 .table tfoot tr > th,
 .table tfoot tr > td {
   padding: 14px 20px 15px;
+}
+
+.table .sent {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6FCF97;
+}
+
+.table .charging {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #888888;
+}
+
+.table .cancel {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(235, 34, 45, 0.8);
+}
+
+.table .progress {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(243, 125, 16, 0.8);
+}
+
+.table .basket {
+  background-image: url("../img/icon-basket-delete.svg");
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
 }
 
 .service__search-form {

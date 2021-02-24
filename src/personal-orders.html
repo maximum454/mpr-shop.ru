@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     @@include('./template/_meta.html')
-    <title>Подписка</title>
+    <title>Текущие заказы</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/mprshop.min.css">
 </head>
@@ -23,49 +23,67 @@
                 <button class="menu__button">Все товары</button>
             </div>
             <ul class="menu__list menu__list--border">
-                <li><a href="">Текущие заказы</a></li>
+                <li class="active"><a href="">Текущие заказы</a></li>
                 <li><a href="">История заказов</a></li>
                 <li><a href="">Личные данные</a></li>
                 <li><a href="">Смена пароля</a></li>
-                <li class="active"><a href="">Подписка</a></li>
-                <li class="sign-out"><a href="">Выход <i class="sign-out"></i></a>
+                <li><a href="">Подписка</a></li>
+                <li><a href="">Выход <i class="sign-out"></i></a>
                 </li>
             </ul>
         </aside>
         <div class="main__container">
-            <h1 class="main__title">Подписка</h1>
+            <h1 class="main__title">Текущие заказы</h1>
 
-            <form class="form form--personal" action="">
-                <div class="item">
-                    <label for="">E-MAIL</label>
-                    <input type="text">
-                    <span>После добавления или изменения адреса подписки вам будет выслан код подтверждения.
-Подписка будет не активной до ввода кода подтверждения </span>
-                </div>
-
-                <div class="item-checkbox-list">
-                    <label for="" class="checkbox">Новости</a>
-                        <input id="" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label for="" class="checkbox">Новые товары</a>
-                        <input id="" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label for="" class="checkbox">Состояние заказов</a>
-                        <input id="" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-
-                <div class="item">
-                    <label for="" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a>
-                        <input id="" type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <input type="submit" value="Сохранить изменения">
-            </form>
+            <table class="table table--order">
+                <thead>
+                    <tr>
+                        <td>№ Заказа</td>
+                        <td>Доставка до</td>
+                        <td>Дата</td>
+                        <td>Сумма</td>
+                        <td>Статус</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#968 </td>
+                        <td>236100, ул. Юдаева д. 10 кв.18, г. Псков </td>
+                        <td>24.12.2020</td>
+                        <td>
+                            <div>550 ₽</div>
+                            <div><span class="charging"></span>Безналичный</div>
+                        </td>
+                        <td><span class="sent">Отправлен</span></td>
+                        <td>
+                            <button class="basket"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#968 </td>
+                        <td>236100, ул. Юдаева д. 10 кв.18, г. Псков </td>
+                        <td>24.12.2020</td>
+                        <td>
+                            <div>550 ₽</div>
+                            <div><span class="charging"></span>Безналичный</div>
+                        </td>
+                        <td><span class="progress">Идет сборка</span></td>
+                        <td><button class="basket"></button></td>
+                    </tr>
+                    <tr>
+                        <td>#968 </td>
+                        <td>236100, ул. Юдаева д. 10 кв.18, г. Псков </td>
+                        <td>24.12.2020</td>
+                        <td>
+                            <div>550 ₽</div>
+                            <div><span class="charging"></span>Безналичный</div>
+                        </td>
+                        <td><span class="cancel">Отменен</span></td>
+                        <td><button class="basket"></button></td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
     </main>

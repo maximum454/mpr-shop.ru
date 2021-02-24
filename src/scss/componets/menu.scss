@@ -50,6 +50,16 @@
 					color: #EB222D;
 				}
 			}
+			i.sign-out{
+				display: inline-block;
+				vertical-align: middle;
+				background-image: url("../img/sign-out.svg");
+				background-repeat: no-repeat;
+				background-position: center right;
+				background-size: 100%;
+				width: 20px;
+				height: 23px;
+			}
 			a{
 				font-family: Circe;
 				font-style: normal;

@@ -46,6 +46,9 @@
 ###Страница Подписка
 * https://maximum454.github.io/mpr-shop.ru/build/personal-subscribe.html
 
+###Страница Текущие заказы
+* https://maximum454.github.io/mpr-shop.ru/build/personal-orders.html
+
 
  
 ####Верстка использует сборку Gulp  
