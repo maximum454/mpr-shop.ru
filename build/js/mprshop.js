@@ -3967,5 +3967,10 @@ $(function () {
         $('.js-drop').show();
     })
 
+    $('.js-login-drop').on('click', function (){
+        $('.menu__list--drop').toggleClass('active');
+        $(this).toggleClass('active');
+    })
+
     $tabs('.tabs');
 })

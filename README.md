@@ -37,6 +37,14 @@
 ###Страница ошибка онлайн платежа
 * https://maximum454.github.io/mpr-shop.ru/build/error-pay.html
 
+###Страница Личные данные
+* https://maximum454.github.io/mpr-shop.ru/build/personal-private.html
+
+###Страница Смена пароля
+* https://maximum454.github.io/mpr-shop.ru/build/personal-password.html
+
+###Страница Подписка
+* https://maximum454.github.io/mpr-shop.ru/build/personal-subscribe.html
 
 
  

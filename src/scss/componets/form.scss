@@ -1,4 +1,10 @@
 .form{
+	&--personal{
+		max-width: 640px;
+		input[type=submit],button,.btn{
+			max-width: fit-content!important;
+		}
+	}
 	.title{
 		font-family: Circe;
 		font-style: normal;
@@ -12,6 +18,25 @@
 	.item{
 		margin-bottom: 32px;
 		position: relative;
+		span{
+			font-family: Circe;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 17px;
+			line-height: 25px;
+			color: #333333;
+			display: inline-block;
+			margin-top: 10px;
+		}
+	}
+	.item-checkbox-list{
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+		position: relative;
+		.checkbox{
+			margin-right: 32px;
+		}
 	}
 	.row{
 		display: flex;

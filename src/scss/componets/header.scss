@@ -63,14 +63,67 @@
 		margin: 0 -20px;
 	}
 	&__auth{
-		background-image: url("../img/auth-icon.svg");
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		width: 42px;
-		height: 42px;
 		display: block;
 		margin: 0 20px;
+		position: relative;
+		padding-left: 42px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url("../img/auth-icon.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 42px;
+			height: 42px;
+		}
+		&--login{
+			display: flex;
+			align-items: center;
+			padding-right: 18px;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: url("../img/auth-icon-login.svg");
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 42px;
+				height: 42px;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				margin-top: -4px;
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNS43MzIwNSA2QzQuOTYyMjUgNy4zMzMzMyAzLjAzNzc1IDcuMzMzMzMgMi4yNjc5NSA2TDAuNTM1ODk5IDNDLTAuMjMzOTAyIDEuNjY2NjcgMC43MjgzNDkgMCAyLjI2Nzk1IDBINS43MzIwNUM3LjI3MTY1IDAgOC4yMzM5IDEuNjY2NjcgNy40NjQxIDNMNS43MzIwNSA2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 8px;
+				height: 8px;
+			}
+			&.active{
+				&:after{
+					transform: rotate(180deg);
+
+				}
+			}
+		}
+		span{
+			margin-left: 14px;
+		}
+	}
+	&__auth-name{
+		margin-left: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
 	}
 	&__like{
 		background-image: url("../img/like-icon.svg");
@@ -102,6 +155,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	&__list{
+		position: absolute;
+		top: 16px;
+		left: 0;
+		width: 220px;
+		z-index: 10;
 	}
 	.select-city{
 		width: 421px;
