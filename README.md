@@ -55,6 +55,12 @@
 ###Страница Заказ оформлен
 * https://maximum454.github.io/mpr-shop.ru/build/personal-order-ok.html
 
+###Страница Контакты
+* https://maximum454.github.io/mpr-shop.ru/build/contacts.html
+
+###Страница Адреса магазинов
+* https://maximum454.github.io/mpr-shop.ru/build/shops.html
+
 
  
 ####Верстка использует сборку Gulp  
