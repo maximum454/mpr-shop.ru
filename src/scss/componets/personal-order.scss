@@ -1,21 +1,10 @@
 .personal-order{
-  display: grid;
-  grid-template-columns: 1fr 320px;
+  &__row{
+    display: grid;
+    grid-template-columns: 1fr 320px;
+  }
   &__item{
     margin-bottom: 32px;
-    p{
-      font-family: Circe;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 32px;
-      color: #222222;
-      margin: 0;
-      a{
-        color: inherit;
-        text-decoration: none;
-      }
-    }
   }
   &__title{
     font-family: Circe;
@@ -70,6 +59,22 @@
       color: #333333;
       border: 1px solid #EB222D;
       background-color:transparent;
+    }
+  }
+  p{
+    color: #333333;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    &.text{
+      margin-bottom: 32px;
+    }
+    a{
+      color: #EB222D;;
+      text-decoration: none;
     }
   }
   @include r(767){

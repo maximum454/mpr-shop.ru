@@ -7209,28 +7209,13 @@ body.lock {
   z-index: 10;
 }
 
-.personal-order {
+.personal-order__row {
   display: grid;
   grid-template-columns: 1fr 320px;
 }
 
 .personal-order__item {
   margin-bottom: 32px;
-}
-
-.personal-order__item p {
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
-  color: #222222;
-  margin: 0;
-}
-
-.personal-order__item p a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .personal-order__title {
@@ -7295,6 +7280,25 @@ body.lock {
   color: #333333;
   border: 1px solid #EB222D;
   background-color: transparent;
+}
+
+.personal-order p {
+  color: #333333;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.personal-order p.text {
+  margin-bottom: 32px;
+}
+
+.personal-order p a {
+  color: #EB222D;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 641px) {
