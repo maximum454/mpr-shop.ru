@@ -1,0 +1,79 @@
+.order{
+  display: grid;
+  grid-template-columns: minmax(280px,640px) 280px;
+  &__title{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 48px;
+    color: #333333;
+    margin-bottom: 17px;
+  }
+  &__row{
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__radio{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #888E94;
+    padding: 24px;
+    background: #F6F8FA;
+    border: 1px solid #EB222D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 40px;
+  }
+  &__name{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+  }
+  &__date{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #888E94;
+    margin-bottom: 14px;
+  }
+  &__price{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    width: fit-content;
+    padding: 2px 8px 0;
+    margin: 0 auto 24px;
+    &.success{
+      background: #6FCF97;
+    }
+    &.secondary{
+      background: #888E94;
+    }
+  }
+  &__adres{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #EB222D;
+  }
+}
