@@ -95,5 +95,13 @@ $(function () {
         $(this).toggleClass('active');
     })
 
+    $('.js-modal-subscribe').on('click', function (e){
+        $('.modal-subscribe').addClass('open');
+        setTimeout(function (){
+            $('.modal-subscribe').removeClass('open');
+        },3000)
+        return false;
+    })
+
     $tabs('.tabs');
 })
