@@ -7,6 +7,14 @@
 		position: relative;
 		margin-bottom: 80px;
 	}
+	&--order{
+		display: grid;
+		grid-template-areas: "contant";
+		grid-template-columns: 1fr;
+		grid-column-gap: 40px;
+		position: relative;
+		margin-bottom: 80px;
+	}
 	&__aside{
 		grid-area: aside-left;
 	}

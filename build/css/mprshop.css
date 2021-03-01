@@ -3444,6 +3444,15 @@ body.lock {
   margin-bottom: 80px;
 }
 
+.main--order {
+  display: grid;
+  grid-template-areas: "contant";
+  grid-template-columns: 1fr;
+  grid-column-gap: 40px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
 .main__aside {
   grid-area: aside-left;
 }
@@ -3487,6 +3496,10 @@ body.lock {
 }
 
 .card--recomed h2 {
+  display: none;
+}
+
+.card--recomed .card__title {
   display: none;
 }
 
@@ -8332,8 +8345,20 @@ body.lock {
   }
 
   .card--recomed h2 {
+    display: block;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .card--recomed .card__title {
+    display: block;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 16px;
   }
 
   .card--recomed .card__item {

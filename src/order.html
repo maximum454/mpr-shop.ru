@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Оформление заказа</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header-auth.html')
+    <main class="main main--order container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
+            <ul class="menu__list menu__list--border">
+                <li class="active"><a href="">Текущие заказы</a></li>
+                <li><a href="">История заказов</a></li>
+                <li><a href="">Личные данные</a></li>
+                <li><a href="">Смена пароля</a></li>
+                <li><a href="">Подписка</a></li>
+                <li><a href="">Выход <i class="sign-out"></i></a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main__container">
+            <h1 class="main__title">Оформление заказа</h1>
+            <div class="order">
+                <form class="form" action="">
+                    <div class="title">Получатель</div>
+                    <div class="item">
+                        <label for="">Ваше имя</label>
+                        <input type="text">
+                    </div>
+                    <div class="item">
+                        <label for="">E-mail</label>
+                        <input type="text">
+                    </div>
+                    <div class="item">
+                        <label for="">Телефон</label>
+                        <input type="text">
+                    </div>
+                    <div class="item">
+                        <label for="">комментарий (при необходимости)</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="item">
+                        <label for="" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a>
+                            <input id="" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="btn" type="submit" value="Перейти к оплате">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>
