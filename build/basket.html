@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Максим Карачёв">
+<!-- Twitter Card data -->
+<meta name="twitter:site" content="https://mpr-shop.ru/">
+<meta name="twitter:title" content="mpr-shop.ru">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="mpr-shop">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mpr-shop.ru/">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="mpr-shop">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="apple-mobile-web-app-title" content="Karachyov Maxim">
+<meta name="application-name" content="Karachyov Maxim">
+
+    <title>Корзина</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="#" class="header__logo"><img src="./img/logo-mpr.png" width="358" height="90" alt=""></a>
+            <div class="header__select-delivery js-select-delivery">
+                <span>Доставить в</span>
+                <p>Екатеринбург</p>
+                <div class="select-city">
+                    <div class="close"></div>
+                    <p>Выберите город, в котором оформляете заказ.
+                        Это важно, чтобы увидеть наличие и цены.</p>
+                    <a href="#" class="btn">Все верно</a>
+                    <a href="#" class="link" data-remodal-target="modal-select-city">Выбрать город</a>
+                </div>
+            </div>
+            <a href="#" class="header__phone">8-800-2500-600</a>
+            <div class="header__control">
+                <a class="header__auth" href="#" data-remodal-target="modal-auth"></a>
+                <a class="header__like" href="#"></a>
+                <a class="header__cart" href="#"></a>
+            </div>
+            <button class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header__bottom">
+            <button class="header__btn">Каталог</button>
+            <form class="search-form" action="">
+                <div class="select">
+                    <select class="search-form__select" name="" id="">
+                        <option value="">Везде</option>
+                    </select>
+                </div>
+                <div class="search-form__inner">
+                    <input class="search-form__input js-input-key" type="text" placeholder="Поиск">
+                    <input class="search-form__submit" type="submit" value="">
+                </div>
+                <ul class="search-form__drop">
+                    <li>Екатеринбург, ул. Шарташская, 10</li>
+                    <li>Екатеринбург, ул. Азина, 20/3</li>
+                </ul>
+            </form>
+
+            <ul class="menu-header">
+                <li><a href="#"><img class="menu-header__icon" src="./img/percent-icon.svg" width="24" height="24"
+                                     alt=""> Акции</a></li>
+                <li><a href="#"><img class="menu-header__icon" src="./img/adres-icon.svg" width="24" height="24" alt="">
+                    Адреса магазинов</a></li>
+                <li>
+                    <a href="#"><img class="menu-header__icon" src="./img/company-icon.svg" width="24" height="24"
+                                     alt=""> Компания</a>
+                    <ul class="menu-header__down">
+                        <li><a href="">Компания 1</a></li>
+                        <li><a href="">Компания 2</a></li>
+                        <li><a href="">Компания 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-auth">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Вход</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="item row">
+                <label for="" class="checkbox">Запомнить меня
+                    <input id="" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <a href="#" class="btn link" data-remodal-target="modal-repass">Забыли пароль?</a>
+
+            </div>
+            <div class="item">
+                <input class="btn" type="submit" value="Войти">
+            </div>
+            <a href="" class="btn link">Зарегистрироваться</a>
+
+        </form>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-repass">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Восстановление пароля</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам на
+                    email</p>
+            </div>
+
+            <input class="btn" type="submit" value="Восстановить">
+
+        </form>
+    </div>
+
+    <div class="remodal w980" data-remodal-id="modal-select-city">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Выбор города</div>
+            <div class="item">
+                <p>Выберите город или введите название в поле ниже </p>
+            </div>
+            <div class="item">
+                <div class="row-search">
+                    <input class="search-input js-input-key" type="text" placeholder="">
+                    <input class="submit" type="submit" value="">
+                </div>
+                <ul class="search-drop js-drop">
+                    <li>Ничего не найдено</li>
+                </ul>
+            </div>
+            <div class="menu-select-city">
+                <div class="menu-select-city__body">
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title">Округ</div>
+                        <ul>
+                            <li><span>Дальневосточный</span></li>
+                            <li><span>Казахстан</span></li>
+                            <li class="active"><span>Приволжский</span></li>
+                            <li><span>Северо-Западный</span></li>
+                            <li><span>Северо-Кавказский</span></li>
+                            <li><span>Сибирский</span></li>
+                            <li><span>Уральский</span></li>
+                            <li><span>Центральный</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title active">Регион</div>
+                        <ul>
+                            <li><span>Кировская область</span></li>
+                            <li><span>Нижегородская область</span></li>
+                            <li><span>Оренбургская область</span></li>
+                            <li><span>Пензенская область</span></li>
+                            <li><span>Пермский край</span></li>
+                            <li><span>Республика Башкортостан</span></li>
+                            <li><span>Республика Марий Эл</span></li>
+                            <li><span>Республика Мордовия</span></li>
+                            <li><span>Республика Татарстан</span></li>
+                            <li class="active"><span>Удмуртская республика</span></li>
+                            <li><span>Ульяновская область</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title active">Город</div>
+                        <ul>
+                            <li class="active"><span>Воткинск</span></li>
+                            <li><span>Глазов</span></li>
+                            <li><span>Ижевск</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li class="active"><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                    <li><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                    <li><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <input type="submit" value="Применить">
+            </div>
+
+            </form>
+    </div>
+</header>
+
+
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
+        </aside>
+        <div class="main__container">
+            <h1 class="main__title">Корзина</h1>
+
+            <section class="basket">
+                <div>
+                    <button>Оформить заказ</button>
+                </div>
+
+                <div class="basket__main">
+                    <div class="basket__item">
+                        <div class="basket__img">
+                            <img src="./img/accompany-1.png" width="120" height="120" alt="">
+                        </div>
+                        <div>
+                            <div class="catalog-detail__number">
+                                <span class="minus">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12H12H22" stroke="#888E94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <input type="text" value="1" size="4"/>
+                                <span class="plus">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2V12M12 22V12M12 12H2M12 12H22" stroke="#888E94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                    <button>Оформить заказ на сумму 714 ₽</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section class="accompany">
+        <div class="container">
+            <div class="accompany__header">
+                <h2>Смотрели ранее</h2>
+                <div class="accompany__nav">
+                    <a class="accompany__prev" href="#"></a>
+                    <a class="accompany__next" href="#"></a>
+                </div>
+            </div>
+            <div class="accompany__body js-slider-accompany">
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-1.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-2.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-3.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-4.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-1.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-2.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-3.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__left">
+                <div class="footer__contact">
+                    <a class="footer__phone" href="#">8-800-2500-600</a>
+                    <a class="footer__call" href="#">Заказать звонок</a>
+                    <a class="footer__email" href="#">info@mpr-shop.ru</a>
+                    <a class="footer__adres" href="#">ул. Белинского, 152/1</a>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><img src="./img/vk.svg" alt=""></a>
+                    <a href="#"><img src="./img/fb.svg" alt=""></a>
+                    <a href="#"><img src="./img/inst.svg" alt=""></a>
+                    <a href="#"><img src="./img/youtube.svg" alt=""></a>
+                    <a href="#"><img src="./img/ok.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__menu">
+            <ul class="footer__list">
+                <li><a href="#">О магазинах</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Учебный центр</a></li>
+                <li><a href="#">Сервисные центры</a></li>
+            </ul>
+            </div>
+            <div class="footer__right">
+                <div class="footer__logo">
+                    <div><img src="./img/logo-mpr-white.svg" width="200" height="58" alt=""></div>
+                    <p class="footer__copy">&copy;&nbsp;2020 Магазин постоянных распродаж (МПР)</p>
+                </div>
+                <div class="pays">
+                    <i title="Cash" class="cacsh"></i>
+                    <i title="MasterCard" class="mastercard"></i>
+                    <i title="Visa" class="visa"></i>
+                    <i title="Yandex" class="yandex_money"></i>
+                    <i title="WebMoney" class="webmoney"></i>
+                    <i title="Qiwi" class="qiwi"></i>
+                    <i title="Sberbank" class="sbrf"></i>
+                    <i title="Alfa" class="alfa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>
