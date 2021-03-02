@@ -64,6 +64,9 @@
 ###Страница Оформление заказа
 * https://maximum454.github.io/mpr-shop.ru/build/order.html
 
+###Страница Корзина
+* https://maximum454.github.io/mpr-shop.ru/build/basket.html
+
 
  
 ####Верстка использует сборку Gulp  
