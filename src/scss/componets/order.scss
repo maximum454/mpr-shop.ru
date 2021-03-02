@@ -25,12 +25,26 @@
     color: #888E94;
     padding: 24px;
     background: #F6F8FA;
-    border: 1px solid #EB222D;
     box-sizing: border-box;
     border-radius: 12px;
     width: 100%;
     max-width: 300px;
     margin-right: 40px;
+    .checkmark{
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: transparent!important;
+      &:after{
+        border: 1px solid #EB222D;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+    }
   }
   &__name{
     font-family: Circe;
@@ -76,5 +90,8 @@
     line-height: 32px;
     text-align: center;
     color: #EB222D;
+  }
+  @include r(1023){
+    display: block;
   }
 }
