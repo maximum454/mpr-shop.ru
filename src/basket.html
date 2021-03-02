@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Корзина</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header.html')
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
+        </aside>
+        <div class="main__container">
+            <h1 class="main__title">Корзина</h1>
+
+            <section class="basket">
+                <div>
+                    <button>Оформить заказ</button>
+                </div>
+
+                <div class="basket__main">
+                    <div class="basket__item">
+                        <div class="basket__img">
+                            <img src="./img/accompany-1.png" width="120" height="120" alt="">
+                        </div>
+                        <div>
+                            <div class="catalog-detail__number">
+                                <span class="minus">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12H12H22" stroke="#888E94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <input type="text" value="1" size="4"/>
+                                <span class="plus">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2V12M12 22V12M12 12H2M12 12H22" stroke="#888E94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                    <button>Оформить заказ на сумму 714 ₽</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section class="accompany">
+        <div class="container">
+            <div class="accompany__header">
+                <h2>Смотрели ранее</h2>
+                <div class="accompany__nav">
+                    <a class="accompany__prev" href="#"></a>
+                    <a class="accompany__next" href="#"></a>
+                </div>
+            </div>
+            <div class="accompany__body js-slider-accompany">
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-1.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-2.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-3.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-4.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-1.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-2.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-3.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>
