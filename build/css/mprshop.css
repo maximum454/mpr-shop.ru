@@ -7454,6 +7454,9 @@ body.lock {
 .order {
   display: grid;
   grid-template-columns: minmax(280px, 640px) 280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .order__title {
@@ -7543,6 +7546,187 @@ body.lock {
   line-height: 32px;
   text-align: center;
   color: #EB222D;
+}
+
+.soa-total {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-right: 0;
+}
+
+.soa-total__header {
+  position: relative;
+  margin-bottom: 36px;
+  padding-bottom: 30px;
+}
+
+.soa-total__header:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 48px);
+  left: -24px;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+
+.soa-total__title {
+  margin-bottom: 20px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.soa-total__title a {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: right;
+  color: #EB222D;
+  text-decoration: none;
+}
+
+.soa-total__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.soa-total__count {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #333333;
+  background: #F5F8FA;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.soa-total__main {
+  margin-bottom: 24px;
+}
+
+.soa-total__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.soa-total__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.soa-total__list li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  border: 1px dashed #888E94;
+}
+
+.soa-total__list li > div {
+  background-color: #fff;
+  position: relative;
+  padding: 5px;
+}
+
+.soa-total__price {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: right;
+  color: #333333;
+}
+
+.soa-total__price.bg {
+  background: #6FCF97;
+  border-radius: 6px;
+  color: #FFFFFF;
+  padding: 4px 8px 1px;
+}
+
+.soa-total__price.crossed {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #888E94;
+}
+
+.soa-total__price.succes {
+  color: #6FCF97;
+}
+
+.soa-total__footer {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.soa-total__footer > div:last-of-type {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 @media only screen and (min-width: 641px) {

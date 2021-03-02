@@ -1,6 +1,7 @@
 .order{
   display: grid;
   grid-template-columns: minmax(280px,640px) 280px;
+  justify-content: space-between;
   &__title{
     font-family: Circe;
     font-style: normal;
