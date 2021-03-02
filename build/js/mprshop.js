@@ -3963,8 +3963,12 @@ $(function () {
 
 
     $('.js-input-key').on('keyup', function (){
-        $('.search-form__drop').show();
-        $('.js-drop').show();
+        $(this).parents('form').find('.search-form__drop').show();
+        $(this).parents('form').find('.js-drop').show();
+        if(this.value === ''){
+            $(this).parents('form').find('.search-form__drop').hide();
+            $(this).parents('form').find('.js-drop').hide();
+        }
     })
 
     $('.js-login-drop').on('click', function (){

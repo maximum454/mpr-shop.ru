@@ -265,7 +265,7 @@
                                 <div class="order__adres">ул. Белинского, 152/1</div>
                             </label>
 
-                            <label for="f" class="order__radio radio">
+                            <label for="f" class="order__radio radio" >
                                 <input id="f" type="radio" checked="checked" name='r1'>
                                 <span class="checkmark"></span>
                                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
@@ -282,7 +282,7 @@
                                 <div class="order__name">Самовывоз</div>
                                 <div class="order__date">Завтра 29.12.2020</div>
                                 <div class="order__price secondary">500 ₽</div>
-                                <div class="order__adres">Выбрать</div>
+                                <div class="order__adres" data-remodal-target="dostavka-adress">Выбрать</div>
                             </label>
                         </div>
 
@@ -446,6 +446,54 @@
 
 </div>
 
+<div class="remodal w860 pb-0" data-remodal-id="dostavka-adress">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <form class="form" action="">
+        <div class="title">Доставка по адресу</div>
+        <div class="input-group-container">
+            <div class="input-group">
+                <span class="input-group-text">ул.</span>
+                <input class="input-group-input js-input-key" type="text" placeholder="Володарского">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">дом</span>
+                <input class="input-group-input" type="text" placeholder="345">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">корп</span>
+                <input class="input-group-input" type="text" placeholder="">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">под.</span>
+                <input class="input-group-input" type="text" placeholder="345">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">эт.</span>
+                <input class="input-group-input" type="text" placeholder="3">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">кв.</span>
+                <input class="input-group-input" type="text" placeholder="13">
+            </div>
+
+                <ul class="drop js-drop">
+                    <li><a href="#">ул. Володарского, 4</a></li>
+                    <li><a href="">ул. Александра-Невского, 34</a></li>
+                    <li><a href="">ул. Маяковского, 34 </a></li>
+                    <li class="last"><a href="">Новый адрес</a></li>
+                </ul>
+
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.6326101351056!2d37.875620316512254!3d55.69537488053807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab61c8db52d03%3A0x61a8fd3dc3f37838!2sUlitsa%20Volodarskogo%2C%20Lyubertsy%2C%20Moskovskaya%20oblast&#39;%2C%20Russia!5e0!3m2!1sen!2skz!4v1614663372150!5m2!1sen!2skz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+            <input class="btn w100" type="submit" value="Сохранить">
+
+
+    </form>
+</div>
 <script src="js/mprshop.min.js"></script>
 </body>
 </html>

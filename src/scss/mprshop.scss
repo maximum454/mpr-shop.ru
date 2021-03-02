@@ -51,10 +51,20 @@ body {
 	background: #FFFFFF;
 	box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
 	border-radius: 16px;
+	overflow: hidden;
 	@media only screen and (min-width: 641px) {
 		max-width: 600px;
 		&.w980{
 			max-width: 980px;
+		}
+		&.w860{
+			max-width: 860px;
+		}
+		&.p-0{
+			padding: 0;
+		}
+		&.pb-0{
+			padding-bottom: 0;
 		}
 	}
 
