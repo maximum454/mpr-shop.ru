@@ -39,7 +39,7 @@
 	&__body{
 		display: flex;
 		align-self: center;
-		overflow-x: scroll;
+		overflow-x: hidden;
 		overflow-y: hidden;
 	}
 	&__item{
@@ -139,6 +139,12 @@
 		&__name{
 			font-size: 17px;
 			line-height: 24px;
+		}
+		&__body{
+			display: flex;
+			align-self: center;
+			overflow-x: scroll;
+			overflow-y: hidden;
 		}
 	}
 	@include r(767){

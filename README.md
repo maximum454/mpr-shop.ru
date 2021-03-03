@@ -67,6 +67,9 @@
 ###Страница Корзина
 * https://maximum454.github.io/mpr-shop.ru/build/basket.html
 
+###Страница Корзина промокод
+* https://maximum454.github.io/mpr-shop.ru/build/basket-promocode.html
+
 
  
 ####Верстка использует сборку Gulp  

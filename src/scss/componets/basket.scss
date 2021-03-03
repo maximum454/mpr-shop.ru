@@ -1,7 +1,58 @@
 .basket{
   &__item{
-    border: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
     padding: 30px 0;
+    display: flex;
+    align-items: center;
+    &:last-of-type{
+      border-bottom: none;
+    }
+  }
+  &__header{
+    background: #F6F8FA;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__summa{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+  }
+  &__clear{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: #888E94;
+    display: block;
+    text-decoration: none;
+    &:hover{
+      color: #EB222D;
+    }
+  }
+  &__main{
+    margin-bottom: 60px;
+  }
+  &__footer{
+    background: #F6F8FA;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__name{
     font-family: Circe;
@@ -10,5 +61,106 @@
     font-size: 20px;
     line-height: 32px;
     color: #000000;
+  }
+  &__img{
+    margin-right: 30px;
+    img{
+      display: block;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+  &__delete{
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .btn{
+    display: block;
+    width: fit-content;
+    background: #EB222D;
+    border-radius: 12px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    padding: 20px 43px;
+    cursor: pointer;
+    &.delete{
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      padding: 0;
+      background-image: url("../img/btn-delete.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      outline: none;
+      &:hover{
+        background-image: url("../img/btn-delete-active.svg");
+      }
+    }
+  }
+  &__label{
+	  background: #6FCF97;
+	  border-radius: 6px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    padding: 4px 8px 1px;
+    margin-left: 13px;
+  }
+  .catalog-detail__number{
+    height: 54px;
+    margin-right: 19px;
+  }
+  &__price{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 8px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    &.light{
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      color: #888E94;
+    }
+    &.through{
+      position: relative;
+      margin-left: 8px;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background:  #EB222D;
+        width: 100%;
+        height: 2px;
+      }
+    }
+  }
+  &__row{
+    display: flex;align-items: center;
+    justify-content: flex-start;
+  }
+  @include r(1023){
+
+  }
+  @include r(767){
+
   }
 }
