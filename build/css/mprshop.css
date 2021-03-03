@@ -8086,6 +8086,11 @@ body.lock {
   background-image: url("../img/btn-delete-active.svg");
 }
 
+.basket .btn.second {
+  color: #888E94;
+  background: #E5EBF0;
+}
+
 .basket__label {
   background: #6FCF97;
   border-radius: 6px;
@@ -8211,6 +8216,50 @@ body.lock {
   text-decoration: none;
   display: block;
   margin-left: 20px;
+}
+
+.promocode__name {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  position: relative;
+}
+
+.promocode__prize {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #888E94;
+}
+
+.promocode__close {
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.promocode__close:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/promocode-close.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.promocode__open {
+  display: none;
 }
 
 @media only screen and (min-width: 641px) {
