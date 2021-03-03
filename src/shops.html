@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Адреса Магазинов Постоянных Распродаж</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header-auth.html')
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
+        </aside>
+        <div class="main__container">
+            <h1 class="main__title">Адреса Магазинов Постоянных Распродаж</h1>
+
+            <section class="maps">
+                <div class="tabs">
+                    <div class="tabs__nav">
+                        <a class="tabs__link tabs__link--second tabs__link_active" href="#content-1">Список</a>
+                        <a class="tabs__link tabs__link--second" href="#content-2">На карте</a>
+                    </div>
+                    <div class="tabs__content tabs__content--second">
+                        <div class="tabs__pane tabs__pane_show" id="content-1">
+                            <div class="service">
+                            <form class="service__search-form search-form" action="">
+                                <div class="search-form__inner">
+                                    <input class="search-form__input js-input-key" type="text" placeholder="">
+                                    <input class="search-form__submit" type="submit" value="">
+                                </div>
+                                <ul class="search-form__drop">
+                                    <li>Екатеринбург, ул. Шарташская, 10</li>
+                                    <li>Екатеринбург, ул. Азина, 20/3</li>
+                                </ul>
+                            </form>
+                            </div>
+                            <div class="maps__body maps__body--shops">
+                                <div class="maps__item">
+                                    <div class="maps__txt">
+                                        <h3>ул. Белинского, 152/1</h3>
+                                        <ul>
+                                            <li>
+                                                <span>Режим работы</span>
+                                                <p>пн-вс 9:00-21:00</p>
+                                            </li>
+                                            <li>
+                                                <span>Телефон</span>
+                                                <p>+7(922)111-55-44</p>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="maps__btn">Написать сообщение</a>
+                                    </div>
+                                    <div class="maps__map">
+                                        <img src="https://picsum.photos/418/244" alt="">
+                                    </div>
+                                </div>
+                                <div class="maps__item">
+                                    <div class="maps__txt">
+                                        <h3>ул. Академика Петрова-Денисова, 152/1</h3>
+                                        <ul>
+                                            <li>
+                                                <span>Режим работы</span>
+                                                <p>пн-вс 9:00-21:00</p>
+                                            </li>
+                                            <li>
+                                                <span>Телефон</span>
+                                                <p>+7(922)111-55-44</p>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="maps__btn">Написать сообщение</a>
+                                    </div>
+                                    <div class="maps__map">
+                                        <img src="https://picsum.photos/418/244" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="maps__subtitle">Магазины в других городах</div>
+                            <div class="maps__body  maps__body--shops">
+                                <div class="maps__item">
+                                    <div class="maps__txt">
+                                        <h3>ул. Белинского, 152/1</h3>
+                                        <ul>
+                                            <li>
+                                                <span>Режим работы</span>
+                                                <p>пн-вс 9:00-21:00</p>
+                                            </li>
+                                            <li>
+                                                <span>Телефон</span>
+                                                <p>+7(922)111-55-44</p>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="maps__btn">Написать сообщение</a>
+                                    </div>
+                                    <div class="maps__map">
+                                        <img src="https://picsum.photos/418/244" alt="">
+                                    </div>
+                                </div>
+                                <div class="maps__item">
+                                    <div class="maps__txt">
+                                        <h3>ул. Академика Петрова-Денисова, 152/1</h3>
+                                        <ul>
+                                            <li>
+                                                <span>Режим работы</span>
+                                                <p>пн-вс 9:00-21:00</p>
+                                            </li>
+                                            <li>
+                                                <span>Телефон</span>
+                                                <p>+7(922)111-55-44</p>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="maps__btn">Написать сообщение</a>
+                                    </div>
+                                    <div class="maps__map">
+                                        <img src="https://picsum.photos/418/244" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__pane" id="content-2">
+                            <img src="https://picsum.photos/1024/828" width="1024" height="828" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

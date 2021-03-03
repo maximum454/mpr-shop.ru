@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Максим Карачёв">
+<!-- Twitter Card data -->
+<meta name="twitter:site" content="https://mpr-shop.ru/">
+<meta name="twitter:title" content="mpr-shop.ru">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="mpr-shop">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mpr-shop.ru/">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="mpr-shop">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="apple-mobile-web-app-title" content="Karachyov Maxim">
+<meta name="application-name" content="Karachyov Maxim">
+
+    <title>Внутрисалонные аксессуары</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="#" class="header__logo"><img src="./img/logo-mpr.png" width="358" height="90" alt=""></a>
+            <div class="header__select-delivery js-select-delivery">
+                <span>Доставить в</span>
+                <p>Екатеринбург</p>
+                <div class="select-city">
+                    <div class="close"></div>
+                    <p>Выберите город, в котором оформляете заказ.
+                        Это важно, чтобы увидеть наличие и цены.</p>
+                    <a href="#" class="btn">Все верно</a>
+                    <a href="#" class="link" data-remodal-target="modal-select-city">Выбрать город</a>
+                </div>
+            </div>
+            <a href="#" class="header__phone">8-800-2500-600</a>
+            <div class="header__control">
+                <a class="header__auth" href="#" data-remodal-target="modal-auth"></a>
+                <a class="header__like" href="#"></a>
+                <a class="header__cart" href="#"></a>
+            </div>
+            <button class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header__bottom">
+            <button class="header__btn">Каталог</button>
+            <form class="search-form" action="">
+                <div class="select">
+                    <select class="search-form__select" name="" id="">
+                        <option value="">Везде</option>
+                    </select>
+                </div>
+                <div class="search-form__inner">
+                    <input class="search-form__input js-input-key" type="text" placeholder="Поиск">
+                    <input class="search-form__submit" type="submit" value="">
+                </div>
+                <ul class="search-form__drop">
+                    <li>Екатеринбург, ул. Шарташская, 10</li>
+                    <li>Екатеринбург, ул. Азина, 20/3</li>
+                </ul>
+            </form>
+
+            <ul class="menu-header">
+                <li><a href="#"><img class="menu-header__icon" src="./img/percent-icon.svg" width="24" height="24"
+                                     alt=""> Акции</a></li>
+                <li><a href="#"><img class="menu-header__icon" src="./img/adres-icon.svg" width="24" height="24" alt="">
+                    Адреса магазинов</a></li>
+                <li>
+                    <a href="#"><img class="menu-header__icon" src="./img/company-icon.svg" width="24" height="24"
+                                     alt=""> Компания</a>
+                    <ul class="menu-header__down">
+                        <li><a href="">Компания 1</a></li>
+                        <li><a href="">Компания 2</a></li>
+                        <li><a href="">Компания 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-auth">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Вход</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="item row">
+                <label for="" class="checkbox">Запомнить меня
+                    <input id="" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <a href="#" class="btn link" data-remodal-target="modal-repass">Забыли пароль?</a>
+
+            </div>
+            <div class="item">
+                <input class="btn" type="submit" value="Войти">
+            </div>
+            <a href="" class="btn link">Зарегистрироваться</a>
+
+        </form>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-repass">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Восстановление пароля</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам на
+                    email</p>
+            </div>
+
+            <input class="btn" type="submit" value="Восстановить">
+
+        </form>
+    </div>
+
+    <div class="remodal w980" data-remodal-id="modal-select-city">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Выбор города</div>
+            <div class="item">
+                <p>Выберите город или введите название в поле ниже </p>
+            </div>
+            <div class="item">
+                <div class="row-search">
+                    <input class="search-input js-input-key" type="text" placeholder="">
+                    <input class="submit" type="submit" value="">
+                </div>
+                <ul class="search-drop js-drop">
+                    <li>Ничего не найдено</li>
+                </ul>
+            </div>
+            <div class="menu-select-city">
+                <div class="menu-select-city__body">
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title">Округ</div>
+                        <ul>
+                            <li><span>Дальневосточный</span></li>
+                            <li><span>Казахстан</span></li>
+                            <li class="active"><span>Приволжский</span></li>
+                            <li><span>Северо-Западный</span></li>
+                            <li><span>Северо-Кавказский</span></li>
+                            <li><span>Сибирский</span></li>
+                            <li><span>Уральский</span></li>
+                            <li><span>Центральный</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title active">Регион</div>
+                        <ul>
+                            <li><span>Кировская область</span></li>
+                            <li><span>Нижегородская область</span></li>
+                            <li><span>Оренбургская область</span></li>
+                            <li><span>Пензенская область</span></li>
+                            <li><span>Пермский край</span></li>
+                            <li><span>Республика Башкортостан</span></li>
+                            <li><span>Республика Марий Эл</span></li>
+                            <li><span>Республика Мордовия</span></li>
+                            <li><span>Республика Татарстан</span></li>
+                            <li class="active"><span>Удмуртская республика</span></li>
+                            <li><span>Ульяновская область</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title active">Город</div>
+                        <ul>
+                            <li class="active"><span>Воткинск</span></li>
+                            <li><span>Глазов</span></li>
+                            <li><span>Ижевск</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li class="active"><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                    <li><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                    <li><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <input type="submit" value="Применить">
+            </div>
+
+            </form>
+    </div>
+</header>
+
+
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+
+                <ul class="menu__list">
+                    <li><a href="#" class="active">Зеркала автомобильные</a></li>
+                    <li><a href="#">Внутрисалонные аксесссуары прочие</a></li>
+                    <li><a href="#">Держатели салонные</a></li>
+                    <li><a href="#">Разветвители, зарядники и адаптеры</a></li>
+                    <li><a href="#">Коврики противоскользящие</a></li>
+                </ul>
+            </div>
+
+
+            <section class="reviews-aside">
+                <a href="#" class="reviews-aside__item">
+                    <p class="reviews-aside__label">Обзоры товаров</p>
+                    <h3 class="reviews-aside__title">Какие тряпки для уборки самые лучшие — микрофибра, вискоза
+                        или целлюлоза?</h3>
+                </a>
+                <a href="#" class="reviews-aside__item">
+                    <p class="reviews-aside__label">Обзоры товаров</p>
+                    <h3 class="reviews-aside__title">Какие тряпки для уборки самые лучшие — микрофибра, вискоза
+                        или целлюлоза?</h3>
+                </a>
+                <a href="#" class="reviews-aside__item">
+                    <p class="reviews-aside__label">Обзоры товаров</p>
+                    <h3 class="reviews-aside__title">Какие тряпки для уборки самые лучшие — микрофибра, вискоза
+                        или целлюлоза?</h3>
+                </a>
+            </section>
+        </aside>
+        <div class="main__container">
+            <ul class="breadcrumb">
+                <li><a href="#">Авто</a></li>
+                <li><a href="#">Внутрисалонные аксессуары</a></li>
+                <li><span>Зеркала автомобильные</span></li>
+            </ul>
+            <h1 class="main__title">Зеркало сферическое 2шт. на блистере (MR102), 50мм</h1>
+
+            <div class="catalog-detail">
+                <div class="catalog-detail__info">
+                    <div class="catalog-detail__articul">Арт.: 978-060</div>
+                    <div class="catalog-detail__rating">4,4 <span>(4 оценки)</span></div>
+                    <a class="catalog-detail__review" href="#">Написать отзыв</a>
+                </div>
+
+                <div class="catalog-detail__grid">
+                    <div class="catalog-detail__slider">
+                        <div class="catalog-for">
+                            <div class="item">
+                                <a class="" data-fancybox="gallery11" href="https://picsum.photos/768/1024">
+                                    <img src="https://picsum.photos/400/400" width="400" height="400" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="gallery__item" data-fancybox="gallery11" href="https://picsum.photos/768/1024">
+                                    <img src="https://picsum.photos/400/400" width="400" height="400" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="gallery__item" data-fancybox="gallery11" href="https://picsum.photos/768/1024">
+                                    <img src="https://picsum.photos/400/400" width="400" height="400" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="gallery__item" data-fancybox="gallery11" href="https://picsum.photos/768/1024">
+                                    <img src="https://picsum.photos/400/400" width="400" height="400" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="gallery__item" data-fancybox="gallery11" href="https://picsum.photos/768/1024">
+                                    <img src="https://picsum.photos/400/400" width="400" height="400" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog-nav">
+                            <div class="item">
+                                <img src="https://picsum.photos/92/92" width="92" height="92" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="https://picsum.photos/92/92" width="92" height="92" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="https://picsum.photos/92/92" width="92" height="92" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="https://picsum.photos/92/92" width="92" height="92" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="https://picsum.photos/92/92" width="92" height="92" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog-detail__">
+                        <div class="catalog-detail__price">от 69 ₽/шт.</div>
+                        <div class="catalog-detail__count catalog-detail__count--no">Нет в наличии</div>
+                        <div class="catalog-detail__control">
+                            <button class="catalog-detail__btn catalog-detail__btn--warning" data-remodal-target="modal-notify">Уведомить о поступлении</button>
+                        </div>
+                        <p class="catalog-detail__warning">Цена действительна только для интернет-магазина и может отличаться от цен в розничных магазинах</p>
+                    </div>
+                </div>
+                <div class="remodal" data-remodal-id="modal-notify">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+
+                    <form class="form" action="">
+                        <div class="title">Уведомить о поступлении товара</div>
+                        <div class="item">
+                            <input type="text" placeholder="Email или номер телефона">
+                        </div>
+
+                        <input class="btn" type="submit" value="Отправить">
+
+                    </form>
+                </div>
+
+                <div class="catalog-detail__tab">
+                    <div class="tabs">
+                        <div class="tabs__nav">
+                            <a class="tabs__link tabs__link--second tabs__link_active" href="#content-1">Описание</a>
+                            <a class="tabs__link tabs__link--second" href="#content-2">Характеристики</a>
+                            <a class="tabs__link tabs__link--second" href="#content-3">Отзывы</a>
+                            <a class="tabs__link tabs__link--second" href="#content-4">Сертификаты</a>
+                            <a class="tabs__link tabs__link--second" href="#content-5">Статьи</a>
+                        </div>
+                        <div class="tabs__content tabs__content--second">
+                            <div class="tabs__pane tabs__pane_show" id="content-1">
+                                Сферическое зеркало служит для увеличения обзора и сокращения мертвых зон. 1
+                            </div>
+                            <div class="tabs__pane" id="content-2">
+                                <div class="information-attr">
+                                    <ul class="information">
+                                        <li class="">
+                                            <span class="Label">Тип товара</span>
+                                            <span class="Value">зеркало</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="">Комплектация</span>
+                                            <span class="">2 шт.</span>
+                                        </li>
+                                        <li class="ProductAttribute ProductTabInformation-Attribute">
+                                            <span class="">Страна производитель</span>
+                                            <span class="">Китай</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="">Материал</span>
+                                            <span class="">пластик, стекло</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="">Диаметр</span>
+                                            <span class="">50 мм</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="">Коллекция</span>
+                                            <span class="">сферическое</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__pane" id="content-3">
+                                <div class="review">
+                                    <header class="review__header">
+                                        <div class="review__title">15 отзывов</div>
+                                        <a href="#" class="review__btn">Новый отзыв</a>
+                                    </header>
+
+                                    <div class="review__item">
+                                        <p class="review__date">Константин, 22.03.2020</p>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5"/>
+                                                <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4"/>
+                                                <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3"/>
+                                                <label class="full" for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star2" name="rating" value="2"/>
+                                                <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star1" name="rating" value="1"/>
+                                                <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                            </div>
+                                        </div>
+                                        <p class="review__text">Нормальное зеркало. За свои деньги точно лучше не
+                                            найти</p>
+                                    </div>
+                                    <div class="review__item">
+                                        <p class="review__date">Анна, 21.02.2020</p>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <input type="radio" id="rating2_5" name="rating2" value="5"/>
+                                                <label class="full" for="rating2_5" title="5 stars"></label>
+                                                <input type="radio" id="rating2_4" name="rating2" value="4"/>
+                                                <label class="full" for="rating2_4" title="4 stars"></label>
+                                                <input type="radio" id="rating2_3" name="rating2" value="3"/>
+                                                <label class="full" for="rating2_3" title="3 stars"></label>
+                                                <input type="radio" id="rating2_2" name="rating2" value="2"/>
+                                                <label class="full" for="rating2_2" title="2 stars"></label>
+                                                <input type="radio" id="rating2_1" name="rating2" value="1"/>
+                                                <label class="full" for="rating2_1" title="1 star"></label>
+                                            </div>
+                                        </div>
+                                        <p class="review__text">Оно довольно хрупкое. Но начать свою историю я бы хотела
+                                            не с этого. Все началось с того, как в мае мне предложили нового заказчика.
+                                            Все начиналось безобидно: хороший гонорар, быстрые решения. Но чем мы
+                                            заходили дальше, тем становилось сложнее. Общение в рамках
+                                            заказчик-исполнитель сменилось на заказчик-раб\исполнитель. После чего пара
+                                            нервных срывов и я треснула со всей дури это зеркало. Оно довольно хрупкое,
+                                            в общем.</p>
+                                    </div>
+                                    <div class="review__item">
+                                        <p class="review__date">Константин, 22.03.2020</p>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <input type="radio" id="rating3_5" name="rating3" value="5"/>
+                                                <label class="full" for="rating3_5" title="5 stars"></label>
+                                                <input type="radio" id="rating3_4" name="rating3" value="4"/>
+                                                <label class="full" for="rating3_4" title="4 stars"></label>
+                                                <input type="radio" id="rating3_3" name="rating3" value="3"/>
+                                                <label class="full" for="rating3_3" title="3 stars"></label>
+                                                <input type="radio" id="rating3_2" name="rating3" value="2"/>
+                                                <label class="full" for="rating3_2" title="2 stars"></label>
+                                                <input type="radio" id="rating3_1" name="rating3" value="1"/>
+                                                <label class="full" for="rating3_1" title="1 star"></label>
+                                            </div>
+                                        </div>
+                                        <p class="review__text">Нормальное зеркало. За свои деньги точно лучше не
+                                            найти</p>
+                                    </div>
+                                    <div class="review__item">
+                                        <p class="review__date">Анна, 21.02.2020</p>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <input type="radio" id="rating4_5" name="rating4" value="5"/>
+                                                <label class="full" for="rating4_5" title="5 stars"></label>
+                                                <input type="radio" id="rating4_4" name="rating4" value="4"/>
+                                                <label class="full" for="rating4_4" title="4 stars"></label>
+                                                <input type="radio" id="rating4_3" name="rating4" value="3"/>
+                                                <label class="full" for="rating4_3" title="3 stars"></label>
+                                                <input type="radio" id="rating4_2" name="rating4" value="2"/>
+                                                <label class="full" for="rating4_2" title="2 stars"></label>
+                                                <input type="radio" id="rating4_1" name="rating4" value="1"/>
+                                                <label class="full" for="rating4_1" title="1 star"></label>
+                                            </div>
+                                        </div>
+                                        <p class="review__text">Оно довольно хрупкое. Но начать свою историю я бы хотела
+                                            не с этого. Все началось с того, как в мае мне предложили нового заказчика.
+                                            Все начиналось безобидно: хороший гонорар, быстрые решения. Но чем мы
+                                            заходили дальше, тем становилось сложнее. Общение в рамках
+                                            заказчик-исполнитель сменилось на заказчик-раб\исполнитель. После чего пара
+                                            нервных срывов и я треснула со всей дури это зеркало. Оно довольно хрупкое,
+                                            в общем.</p>
+                                    </div>
+                                    <div class="review__item">
+                                        <p class="review__date">Константин, 22.03.2020</p>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <input type="radio" id="rating5_5" name="rating5" value="5"/>
+                                                <label class="full" for="rating5_5" title="5 stars"></label>
+                                                <input type="radio" id="rating5_4" name="rating5" value="4"/>
+                                                <label class="full" for="rating5_4" title="4 stars"></label>
+                                                <input type="radio" id="rating5_3" name="rating5" value="3"/>
+                                                <label class="full" for="rating5_3" title="3 stars"></label>
+                                                <input type="radio" id="rating5_2" name="rating5" value="2"/>
+                                                <label class="full" for="rating5_2" title="2 stars"></label>
+                                                <input type="radio" id="rating5_1" name="rating5" value="1"/>
+                                                <label class="full" for="rating5_1" title="1 star"></label>
+                                            </div>
+                                        </div>
+                                        <p class="review__text">Нормальное зеркало. За свои деньги точно лучше не
+                                            найти</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__pane" id="content-4">
+                                <div class="gallery">
+                                    <a class="gallery__item" data-fancybox="gallery"
+                                       href="https://picsum.photos/768/1024"><img src="https://picsum.photos/313/442"
+                                                                                  width="313" height="442"></a>
+                                    <a class="gallery__item" data-fancybox="gallery"
+                                       href="https://picsum.photos/768/1024"><img src="https://picsum.photos/313/442"
+                                                                                  width="313" height="442"></a>
+                                    <a class="gallery__item" data-fancybox="gallery"
+                                       href="https://picsum.photos/768/1024"><img src="https://picsum.photos/313/442"
+                                                                                  width="313" height="442"></a>
+                                </div>
+                            </div>
+                            <div class="tabs__pane" id="content-5">
+                                <section class="catalog-detail__blog blog">
+                                    <div class="blog__body">
+                                        <article class="blog__item">
+                                            <a href="#" class="blog__img">
+                                                <img src="./img/blog-1.png" width="120" height="154" alt="Статья"
+                                                     title="Статья 1">
+                                            </a>
+                                            <div class="blog__txt">
+                                                <p class="blog__category">Обзоры товаров</p>
+                                                <a class="blog__name" href="#">Какие тряпки для уборки самые лучшие —
+                                                    микрофибра,
+                                                    вискоза или целлюлоза?</a>
+                                            </div>
+                                        </article>
+                                        <article class="blog__item">
+                                            <a href="#" class="blog__img">
+                                                <img src="./img/blog-2.png" width="120" height="154" alt="Статья"
+                                                     title="Статья 1">
+                                            </a>
+                                            <div class="blog__txt">
+                                                <p class="blog__category">Обзоры товаров</p>
+                                                <a class="blog__name" href="#">20 крутых вещей, которые делают жизнь
+                                                    проще. Вы точно
+                                                    о
+                                                    них еще не слышали</a>
+                                            </div>
+                                        </article>
+                                        <article class="blog__item">
+                                            <a href="#" class="blog__img">
+                                                <img src="./img/blog-3.png" width="120" height="154" alt="Статья"
+                                                     title="Статья 1">
+                                            </a>
+                                            <div class="blog__txt">
+                                                <p class="blog__category">Советы покупателям</p>
+                                                <a class="blog__name" href="#">Как быстро и дешево собрать ребенка в
+                                                    школу в 2020
+                                                    году</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="catalog-detail__accompany accompany">
+                    <div class="accompany__header">
+                        <div class="accompany__title">С этим товаром покупают</div>
+                    </div>
+                    <div class="accompany__body">
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-1.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ё...</div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-2.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика,
+                                    "Ёлка...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-3.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика,
+                                    "Ёлка...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-4.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика,
+                                    "Ёлка...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-1.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-2.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-3.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика,
+                                    "Ёлка...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-3.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика,
+                                    "Ёлка...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                        <a href="#" class="accompany__item">
+                            <div class="accompany__img">
+                                <img src="./img/accompany-3.png" alt="">
+                            </div>
+                            <div class="accompany__txt">
+                                <div class="accompany__name">Подставка под горячее, 20х20см, керамика,
+                                    "Ёлка...
+                                </div>
+                                <div class="accompany__star">4,4</div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+
+            <section class="card">
+                <h2>Другие зеркала автомобильные</h2>
+                <div class="card__body">
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-1.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-2.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-3.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-4.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-5.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                        </div>
+                        <a href="#" class="card__cart-btn">В корзину</a>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-6.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-7.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="#" class="card__img">
+                            <img src="./img/card-7.png" alt="">
+                        </a>
+                        <div class="card__txt">
+                            <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                            <div class="card__articul">Арт.: 978-060</div>
+                            <div class="card__count">Много</div>
+                            <div class="card__row">
+                                <div class="card__price">43 ₷/шт.</div>
+                                <div class="card__star">4,4</div>
+                            </div>
+                            <a href="#" class="card__cart-btn">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__body">
+                <form class="subscribe__form" action="">
+                    <div class="subscribe__title">Будьте в курсе наших акций и новостей</div>
+
+                    <input class="subscribe__input" type="text" placeholder="Email">
+                    <input class="subscribe__submit" type="submit" value="Отправить">
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="accompany">
+        <div class="container">
+            <div class="accompany__header">
+                <h2>Смотрели ранее</h2>
+                <div class="accompany__nav">
+                    <a class="accompany__prev" href="#"></a>
+                    <a class="accompany__next" href="#"></a>
+                </div>
+            </div>
+            <div class="accompany__body js-slider-accompany">
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-1.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-2.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-3.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-4.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-1.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-2.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Маска для глаз тканевая круговая HYDRA NOUR...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="accompany__item">
+                        <div class="accompany__img">
+                            <img src="./img/accompany-3.png" alt="">
+                        </div>
+                        <div class="accompany__txt">
+                            <div class="accompany__name">Подставка под горячее, 20х20см, керамика, "Ёлка...</div>
+                            <div class="accompany__star">4,4</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__left">
+                <div class="footer__contact">
+                    <a class="footer__phone" href="#">8-800-2500-600</a>
+                    <a class="footer__call" href="#">Заказать звонок</a>
+                    <a class="footer__email" href="#">info@mpr-shop.ru</a>
+                    <a class="footer__adres" href="#">ул. Белинского, 152/1</a>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><img src="./img/vk.svg" alt=""></a>
+                    <a href="#"><img src="./img/fb.svg" alt=""></a>
+                    <a href="#"><img src="./img/inst.svg" alt=""></a>
+                    <a href="#"><img src="./img/youtube.svg" alt=""></a>
+                    <a href="#"><img src="./img/ok.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__menu">
+            <ul class="footer__list">
+                <li><a href="#">О магазинах</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Учебный центр</a></li>
+                <li><a href="#">Сервисные центры</a></li>
+            </ul>
+            </div>
+            <div class="footer__right">
+                <div class="footer__logo">
+                    <div><img src="./img/logo-mpr-white.svg" width="200" height="58" alt=""></div>
+                    <p class="footer__copy">&copy;&nbsp;2020 Магазин постоянных распродаж (МПР)</p>
+                </div>
+                <div class="pays">
+                    <i title="Cash" class="cacsh"></i>
+                    <i title="MasterCard" class="mastercard"></i>
+                    <i title="Visa" class="visa"></i>
+                    <i title="Yandex" class="yandex_money"></i>
+                    <i title="WebMoney" class="webmoney"></i>
+                    <i title="Qiwi" class="qiwi"></i>
+                    <i title="Sberbank" class="sbrf"></i>
+                    <i title="Alfa" class="alfa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

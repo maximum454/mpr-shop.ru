@@ -51,8 +51,21 @@ body {
 	background: #FFFFFF;
 	box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
 	border-radius: 16px;
+	overflow: hidden;
 	@media only screen and (min-width: 641px) {
 		max-width: 600px;
+		&.w980{
+			max-width: 980px;
+		}
+		&.w860{
+			max-width: 860px;
+		}
+		&.p-0{
+			padding: 0;
+		}
+		&.pb-0{
+			padding-bottom: 0;
+		}
 	}
 
 	.remodal-close {
@@ -60,7 +73,6 @@ body {
 		right: 10px;
 		left: auto;
 	}
-
 	&__title {
 		color: #fff;
 	}
@@ -156,7 +168,7 @@ body {
 		background-color: #fff;
 		border-radius: 8px;
 		border: 1px solid rgba(1, 14, 61, 0.12);
-
+		margin: 0!important;
 		&:after {
 			content: "";
 			position: absolute;
@@ -228,6 +240,32 @@ body {
 			position: absolute;
 			display: none;
 		}
+	}
+}
+
+.modal-subscribe{
+	background: rgba(21, 33, 55, 0.8);
+	box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 430px;
+	width: 100%;
+	border-radius: 16px;
+	padding: 35px;
+	transform: translate3d(0,0,0) translate(-50%,-50%);
+	display: none;
+	&.open{
+		display: block;
+	}
+	p{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #FFFFFF;
 	}
 }
 
@@ -359,4 +397,22 @@ body {
 
 //Стикиры для карточек
 @import "componets/stickers";
+
+//ВЫбор города в модальном окне
+@import "componets/menu-select-city";
+
+//Страница текущий заказ
+@import "componets/personal-order";
+
+//Страница Контакты
+@import "componets/contacts";
+
+//Страница Оформление заказа
+@import "componets/order";
+
+//Страница Оформление заказа
+@import "componets/soa-total";
+
+//Страница Корзина
+@import "componets/basket";
 

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Контакты</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header-auth.html')
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
+        </aside>
+        <div class="main__container">
+            <h1 class="main__title">Контакты</h1>
+            <div class="contacts">
+                <div class="contacts__body">
+                    <div class="contacts__info">
+                        <p>
+                        <b>Адрес</b><br>
+                        г. Екатеринбург, ул. Фурманова, д. 126, оф. 320
+                        </p>
+                        <p>
+                        <b>Режим работы</b><br>
+                        пн – вс.: с 9:00 - 21:00
+                        </p>
+                        <p>
+                        <b>Телефон</b><br>
+                        8-800-2500-600
+                        </p>
+                        <p>
+                        <b>email</b><br>
+                        info@mpr-shop.ru
+                        </p>
+                        <a href="" class="contacts__btn outline">Написать сообщение</a>
+                        <div class="contacts__social">
+                            <a href="#"><img src="./img/vk.svg" alt=""></a>
+                            <a href="#"><img src="./img/fb.svg" alt=""></a>
+                            <a href="#"><img src="./img/inst.svg" alt=""></a>
+                            <a href="#"><img src="./img/youtube.svg" alt=""></a>
+                            <a href="#"><img src="./img/ok.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <img src="https://picsum.photos/673/530" width="673" height="530" alt="">
+                    </div>
+                </div>
+                <div class="contacts__img">
+                    <img src="https://picsum.photos/487/304" width="487" height="304" alt="">
+                    <img src="https://picsum.photos/487/304" width="487" height="304" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Ваш заказ №434 оформлен</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    @@include('./template/_header-auth.html')
+    <main class="main main--page container">
+        <aside class="main__aside">
+            <div class="menu">
+                <button class="menu__button">Все товары</button>
+            </div>
+            <ul class="menu__list menu__list--border">
+                <li class="active"><a href="">Текущие заказы</a></li>
+                <li><a href="">История заказов</a></li>
+                <li><a href="">Личные данные</a></li>
+                <li><a href="">Смена пароля</a></li>
+                <li><a href="">Подписка</a></li>
+                <li><a href="">Выход <i class="sign-out"></i></a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main__container">
+            <h1 class="main__title">Ваш заказ №434 оформлен</h1>
+
+            <div class="personal-order">
+
+                <p class="text">За ходом выполнения вы сможете следить в <a href="">личном кабинете</a></p>
+                <div class="personal-order__row">
+                    <div class="personal-order__info">
+                        <div class="personal-order__item">
+                            <div class="personal-order__title">Получатель</div>
+                            <p>Петрова Мария Викторовна <br>
+                                enkallio@gmail.com<br>
+                                +7 (987) 878-45-35
+                            </p>
+                        </div>
+                    </div>
+                    <div class="personal-order__itog">
+                        <div class="personal-order__item">
+                            <div class="personal-order__title">Доставка до адреса</div>
+                            <p>236100, ул. Юдаева д. 10 кв.18, г. Псков </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-order__">
+                <img src="./img/accompany-4.png" width="100" height="100" alt="">
+                <img src="./img/accompany-2.png" width="100" height="100" alt="">
+                <img src="./img/accompany-3.png" width="100" height="100" alt="">
+            </div>
+
+        </div>
+    </main>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__body">
+                <form class="subscribe__form" action="">
+                    <div class="subscribe__title">Будьте в курсе наших акций и новостей</div>
+
+                    <input class="subscribe__input" type="text" placeholder="Email">
+                    <input class="subscribe__submit" type="submit" value="Отправить">
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <h2 class="blog__title">Статьи</h2>
+            <div class="blog__body">
+                <article class="blog__item">
+                    <a href="#" class="blog__img">
+                        <img src="./img/blog-1.png" width="120" height="154" alt="Статья"
+                             title="Статья 1">
+                    </a>
+                    <div class="blog__txt">
+                        <p class="blog__category">Обзоры товаров</p>
+                        <a class="blog__name" href="#">Какие тряпки для уборки самые лучшие — микрофибра,
+                            вискоза или целлюлоза?</a>
+                    </div>
+                </article>
+                <article class="blog__item">
+                    <a href="#" class="blog__img">
+                        <img src="./img/blog-2.png" width="120" height="154" alt="Статья"
+                             title="Статья 1">
+                    </a>
+                    <div class="blog__txt">
+                        <p class="blog__category">Обзоры товаров</p>
+                        <a class="blog__name" href="#">20 крутых вещей, которые делают жизнь проще. Вы точно о
+                            них еще не слышали</a>
+                    </div>
+                </article>
+                <article class="blog__item">
+                    <a href="#" class="blog__img">
+                        <img src="./img/blog-3.png" width="120" height="154" alt="Статья"
+                             title="Статья 1">
+                    </a>
+                    <div class="blog__txt">
+                        <p class="blog__category">Советы покупателям</p>
+                        <a class="blog__name" href="#">Как быстро и дешево собрать ребенка в школу в 2020
+                            году</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

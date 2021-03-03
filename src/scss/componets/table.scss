@@ -5,6 +5,27 @@
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	border-collapse: collapse;
+	&--order{
+		tbody {
+			tr{
+				&:last-of-type{
+					&>th,&>td{
+						border-bottom: none;
+					}
+				}
+				&>th,&>td{
+					padding: 22px 0;
+					border-bottom: 1px solid #BDBDBD;
+					font-family: Circe;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 17px;
+					line-height: 24px;
+					vertical-align: top;
+				}
+			}
+		}
+	}
 	thead {
 		tr {
 			&>td,&>th {
@@ -48,5 +69,44 @@
 				padding: 14px 20px 15px;
 			}
 		}
+	}
+	.sent{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 24px;
+		color: #6FCF97;
+	}
+	.charging{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 24px;
+		color: #888888;
+	}
+	.cancel{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 24px;
+		color: rgba(235, 34, 45, 0.8);
+	}
+	.progress{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 24px;
+		color: rgba(243, 125, 16, 0.8);
+	}
+	.basket{
+		background-image: url("../img/icon-basket-delete.svg");
+		width: 24px;
+		height: 24px;
+		border: none;
+		background-color: transparent;
 	}
 }

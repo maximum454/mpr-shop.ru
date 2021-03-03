@@ -3953,14 +3953,35 @@ $(function () {
         variableWidth: true,
     });
 
+    $('.js-select-delivery').on('click', function(){
+        $('.select-city').toggleClass('active');
+    })
+
     /*Подставляем высоту карточки*/
     let cartItemHeight = $('.card__item').outerHeight(false);
     $('.card__item').css({'height': cartItemHeight+'px'})
 
 
     $('.js-input-key').on('keyup', function (){
-        console.log('222');
-        $('.search-form__drop').show();
+        $(this).parents('form').find('.search-form__drop').show();
+        $(this).parents('form').find('.js-drop').show();
+        if(this.value === ''){
+            $(this).parents('form').find('.search-form__drop').hide();
+            $(this).parents('form').find('.js-drop').hide();
+        }
+    })
+
+    $('.js-login-drop').on('click', function (){
+        $('.menu__list--drop').toggleClass('active');
+        $(this).toggleClass('active');
+    })
+
+    $('.js-modal-subscribe').on('click', function (e){
+        $('.modal-subscribe').addClass('open');
+        setTimeout(function (){
+            $('.modal-subscribe').removeClass('open');
+        },3000)
+        return false;
     })
 
     $tabs('.tabs');

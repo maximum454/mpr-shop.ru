@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Максим Карачёв">
+<!-- Twitter Card data -->
+<meta name="twitter:site" content="https://mpr-shop.ru/">
+<meta name="twitter:title" content="mpr-shop.ru">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="mpr-shop">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mpr-shop.ru/">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="mpr-shop">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="apple-mobile-web-app-title" content="Karachyov Maxim">
+<meta name="application-name" content="Karachyov Maxim">
+
+    <title>Оформление заказа</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mprshop.min.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="alert alert-danger" role="alert">
+        <div class="container">
+            <div class="alert__body">
+                <span>МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ</span>
+                <a class="alert__phone" href="tel:88002500600">8-800-2500-600</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="#" class="header__logo"><img src="./img/logo-mpr.png" width="358" height="90" alt=""></a>
+            <div class="header__select-delivery js-select-delivery">
+                <span>Доставить в</span>
+                <p>Екатеринбург</p>
+                <div class="select-city">
+                    <div class="close"></div>
+                    <p>Выберите город, в котором оформляете заказ.
+                        Это важно, чтобы увидеть наличие и цены.</p>
+                    <a href="#" class="btn">Все верно</a>
+                    <a href="#" class="link" data-remodal-target="modal-select-city">Выбрать город</a>
+                </div>
+            </div>
+            <a href="#" class="header__phone">8-800-2500-600</a>
+            <div class="header__control">
+                <div class="header__auth header__auth--login js-login-drop">
+                    <div class="header__auth-name">Марина</div>
+                    <ul class="header__list menu__list menu__list--drop">
+                        <li><a href="#">Текущие заказы</a></li>
+                        <li><a href="#">История заказов</a></li>
+                        <li><a href="#">Личные данные</a></li>
+                        <li><a href="#">Смена пароля</a></li>
+                        <li><a href="#">Подписки</a></li>
+                        <li><a href="#">Выход</a></li>
+                    </ul>
+                </div>
+                <a class="header__like" href="#"></a>
+                <a class="header__cart" href="#"></a>
+            </div>
+            <button class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header__bottom">
+            <button class="header__btn">Каталог</button>
+            <form class="search-form" action="">
+                <div class="select">
+                    <select class="search-form__select" name="" id="">
+                        <option value="">Везде</option>
+                    </select>
+                </div>
+                <div class="search-form__inner">
+                    <input class="search-form__input js-input-key" type="text" placeholder="Поиск">
+                    <input class="search-form__submit" type="submit" value="">
+                </div>
+                <ul class="search-form__drop">
+                    <li>Екатеринбург, ул. Шарташская, 10</li>
+                    <li>Екатеринбург, ул. Азина, 20/3</li>
+                </ul>
+            </form>
+
+            <ul class="menu-header">
+                <li><a href="#"><img class="menu-header__icon" src="./img/percent-icon.svg" width="24" height="24"
+                                     alt=""> Акции</a></li>
+                <li><a href="#"><img class="menu-header__icon" src="./img/adres-icon.svg" width="24" height="24" alt="">
+                    Адреса магазинов</a></li>
+                <li>
+                    <a href="#"><img class="menu-header__icon" src="./img/company-icon.svg" width="24" height="24"
+                                     alt=""> Компания</a>
+                    <ul class="menu-header__down">
+                        <li><a href="">Компания 1</a></li>
+                        <li><a href="">Компания 2</a></li>
+                        <li><a href="">Компания 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-auth">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Вход</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <input type="password" placeholder="Пароль">
+            </div>
+            <div class="item row">
+                <label for="" class="checkbox">Запомнить меня
+                    <input id="" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <a href="#" class="btn link" data-remodal-target="modal-repass">Забыли пароль?</a>
+
+            </div>
+            <div class="item">
+                <input class="btn" type="submit" value="Войти">
+            </div>
+            <a href="" class="btn link">Зарегистрироваться</a>
+
+        </form>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-repass">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Восстановление пароля</div>
+            <div class="item">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="item">
+                <p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам на
+                    email</p>
+            </div>
+
+            <input class="btn" type="submit" value="Восстановить">
+
+        </form>
+    </div>
+
+    <div class="remodal w980" data-remodal-id="modal-select-city">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="form" action="">
+            <div class="title">Выбор города</div>
+            <div class="item">
+                <p>Выберите город или введите название в поле ниже </p>
+            </div>
+            <div class="item">
+                <div class="row-search">
+                    <input class="search-input js-input-key" type="text" placeholder="">
+                    <input class="submit" type="submit" value="">
+                </div>
+                <ul class="search-drop js-drop">
+                    <li>Ничего не найдено</li>
+                </ul>
+            </div>
+            <div class="menu-select-city">
+                <div class="menu-select-city__body">
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title">Округ</div>
+                        <ul>
+                            <li><span>Дальневосточный</span></li>
+                            <li><span>Казахстан</span></li>
+                            <li class="active"><span>Приволжский</span></li>
+                            <li><span>Северо-Западный</span></li>
+                            <li><span>Северо-Кавказский</span></li>
+                            <li><span>Сибирский</span></li>
+                            <li><span>Уральский</span></li>
+                            <li><span>Центральный</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title active">Регион</div>
+                        <ul>
+                            <li><span>Кировская область</span></li>
+                            <li><span>Нижегородская область</span></li>
+                            <li><span>Оренбургская область</span></li>
+                            <li><span>Пензенская область</span></li>
+                            <li><span>Пермский край</span></li>
+                            <li><span>Республика Башкортостан</span></li>
+                            <li><span>Республика Марий Эл</span></li>
+                            <li><span>Республика Мордовия</span></li>
+                            <li><span>Республика Татарстан</span></li>
+                            <li class="active"><span>Удмуртская республика</span></li>
+                            <li><span>Ульяновская область</span></li>
+                        </ul>
+                    </div>
+                    <div class="menu-select-city__item">
+                        <div class="menu-select-city__title active">Город</div>
+                        <ul>
+                            <li class="active"><span>Воткинск</span></li>
+                            <li><span>Глазов</span></li>
+                            <li><span>Ижевск</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li class="active"><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                    <li><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                    <li><a href="#">Воткинск</a></li>
+                    <li><a href="#">Глазов</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <input type="submit" value="Применить">
+            </div>
+
+            </form>
+    </div>
+</header>
+
+
+    <main class="main main--order container">
+        <div class="main__container">
+            <h1 class="main__title">Оформление заказа</h1>
+            <div class="order">
+                <div class="order__left">
+                    <div>
+                        <div class="order__title">Доставка</div>
+                        <div class="order__row">
+                            <label for="d" class="order__radio radio">
+                                <input id="d" type="radio" checked="checked" name='r1'>
+                                <span class="checkmark"></span>
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="8" y1="19" x2="8" y2="40" stroke="#EB222D" stroke-width="4"
+                                          stroke-linecap="round"/>
+                                    <path d="M19 17V38C19 39.1046 19.8954 40 21 40H32C33.1046 40 34 39.1046 34 38V17"
+                                          stroke="#EB222D" stroke-width="4"/>
+                                    <path d="M9.10994 3C7.34631 3 5.79079 4.15506 5.28082 5.84335L2.47486 15.1325C1.89307 17.0585 3.33473 19 5.34669 19H36.6533C38.6653 19 40.1069 17.0585 39.5251 15.1325L36.7192 5.84335C36.2092 4.15506 34.6537 3 32.8901 3H9.10994Z"
+                                          stroke="#EB222D" stroke-width="4"/>
+                                </svg>
+
+                                <div class="order__name">Самовывоз</div>
+                                <div class="order__date">Сегодня</div>
+                                <div class="order__price success">бесплатно</div>
+                                <div class="order__adres">ул. Белинского, 152/1</div>
+                            </label>
+
+                            <label for="f" class="order__radio radio">
+                                <input id="f" type="radio" checked="checked" name='r1'>
+                                <span class="checkmark"></span>
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 13V33C6 36.866 9.13401 40 13 40H29C32.866 40 36 36.866 36 33V13"
+                                          stroke="#EB222D" stroke-width="4"/>
+                                    <path d="M0.711728 14.4702C-0.133169 15.1817 -0.241315 16.4434 0.470178 17.2883C1.18167 18.1332 2.44337 18.2413 3.28827 17.5298L0.711728 14.4702ZM38.7117 17.5298C39.5566 18.2413 40.8183 18.1332 41.5298 17.2883C42.2413 16.4434 42.1332 15.1817 41.2883 14.4702L38.7117 17.5298ZM26.1531 4.33944L24.8648 5.86926L26.1531 4.33944ZM3.28827 17.5298L17.1352 5.86926L14.5586 2.80962L0.711728 14.4702L3.28827 17.5298ZM24.8648 5.86926L38.7117 17.5298L41.2883 14.4702L27.4414 2.80962L24.8648 5.86926ZM17.1352 5.86926C19.3685 3.98855 22.6315 3.98855 24.8648 5.86926L27.4414 2.80962C23.7191 -0.324899 18.2809 -0.324899 14.5586 2.80962L17.1352 5.86926Z"
+                                          fill="#EB222D"/>
+                                    <path d="M15 30C15 28.3431 16.3431 27 18 27H24C25.6569 27 27 28.3431 27 30V40H15V30Z"
+                                          stroke="#EB222D" stroke-width="4"/>
+                                    <circle cx="21" cy="12" r="3" fill="#EB222D"/>
+                                </svg>
+
+                                <div class="order__name">Самовывоз</div>
+                                <div class="order__date">Завтра 29.12.2020</div>
+                                <div class="order__price secondary">500 ₽</div>
+                                <div class="order__adres">Выбрать</div>
+                            </label>
+                        </div>
+
+
+                        <div class="order__title">Оплата</div>
+                        <div class="order__row">
+                            <label for="q" class="order__radio radio">
+                                <input id="q" type="radio" checked="checked" name='r2'>
+                                <span class="checkmark"></span>
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 11H32V7H7V11ZM32 17H7V21H32V17ZM36 25V34.5H40V25H36ZM36 15V24.5H40V15H36ZM7 17C5.34315 17 4 15.6569 4 14H0C0 17.866 3.13401 21 7 21V17ZM32 21C34.2091 21 36 22.7909 36 25H40C40 20.5817 36.4183 17 32 17V21ZM32 11C34.2091 11 36 12.7909 36 15H40C40 10.5817 36.4183 7 32 7V11ZM7 7C3.13401 7 0 10.134 0 14H4C4 12.3431 5.34315 11 7 11V7Z"
+                                          fill="#EB222D"/>
+                                    <path d="M2 15V34C2 37.3137 4.68629 40 8 40H32C35.3137 40 38 37.3137 38 34V25"
+                                          stroke="#EB222D" stroke-width="4"/>
+                                </svg>
+
+                                <div class="order__name">Наличными</div>
+                            </label>
+
+                            <label for="w" class="order__radio radio">
+                                <input id="w" type="radio" checked="checked" name='r2'>
+                                <span class="checkmark"></span>
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="38" height="36" rx="8" stroke="#EB222D" stroke-width="4"/>
+                                    <rect x="1" y="13" width="40" height="2" stroke="#EB222D" stroke-width="2"/>
+                                </svg>
+
+                                <div class="order__name">Картой</div>
+                            </label>
+                        </div>
+                    </div>
+                    <form class="form" action="">
+                        <div class="title">Получатель</div>
+                        <div class="item">
+                            <label for="">Ваше имя</label>
+                            <input type="text">
+                        </div>
+                        <div class="item">
+                            <label for="">E-mail</label>
+                            <input type="text">
+                        </div>
+                        <div class="item">
+                            <label for="">Телефон</label>
+                            <input type="text">
+                        </div>
+                        <div class="item">
+                            <label for="">комментарий (при необходимости)</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="item">
+                            <label for="" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a>
+                                <input id="" type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <input class="btn" type="submit" value="Перейти к оплате">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="order__right">
+                    <div class="soa-total">
+                        <header class="soa-total__header">
+                            <div class="soa-total__title">8 товаров <a href="#" class="soa-total__link">изменить</a></div>
+                            <div class="soa-total__img">
+                                <img src="./img/accompany-1.png" width="40" height="40" alt="">
+                                <img src="./img/accompany-2.png" width="40" height="40" alt="">
+                                <img src="./img/accompany-3.png" width="40" height="40" alt="">
+                                <img src="./img/accompany-4.png" width="40" height="40" alt="">
+                                <div class="soa-total__count">+4</div>
+                            </div>
+                        </header>
+                        <main class="soa-total__main">
+                            <ul class="soa-total__list">
+                                <li>
+                                    <div>Сумма заказа</div>
+                                    <div>
+                                        <div class="soa-total__price">714 ₷</div>
+                                        <div class="soa-total__price crossed">748 ₽</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>Доставка</div>
+                                    <div>
+                                        <div class="soa-total__price succes">Бесплатно</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>Экономия</div>
+                                    <div>
+                                        <div class="soa-total__price bg">34 ₽</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </main>
+                        <footer class="soa-total__footer">
+                            <div>Итого</div>
+                            <div>714 ₷</div>
+                        </footer>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__left">
+                <div class="footer__contact">
+                    <a class="footer__phone" href="#">8-800-2500-600</a>
+                    <a class="footer__call" href="#">Заказать звонок</a>
+                    <a class="footer__email" href="#">info@mpr-shop.ru</a>
+                    <a class="footer__adres" href="#">ул. Белинского, 152/1</a>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><img src="./img/vk.svg" alt=""></a>
+                    <a href="#"><img src="./img/fb.svg" alt=""></a>
+                    <a href="#"><img src="./img/inst.svg" alt=""></a>
+                    <a href="#"><img src="./img/youtube.svg" alt=""></a>
+                    <a href="#"><img src="./img/ok.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__menu">
+            <ul class="footer__list">
+                <li><a href="#">О магазинах</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Учебный центр</a></li>
+                <li><a href="#">Сервисные центры</a></li>
+            </ul>
+            </div>
+            <div class="footer__right">
+                <div class="footer__logo">
+                    <div><img src="./img/logo-mpr-white.svg" width="200" height="58" alt=""></div>
+                    <p class="footer__copy">&copy;&nbsp;2020 Магазин постоянных распродаж (МПР)</p>
+                </div>
+                <div class="pays">
+                    <i title="Cash" class="cacsh"></i>
+                    <i title="MasterCard" class="mastercard"></i>
+                    <i title="Visa" class="visa"></i>
+                    <i title="Yandex" class="yandex_money"></i>
+                    <i title="WebMoney" class="webmoney"></i>
+                    <i title="Qiwi" class="qiwi"></i>
+                    <i title="Sberbank" class="sbrf"></i>
+                    <i title="Alfa" class="alfa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</div>
+
+<script src="js/mprshop.min.js"></script>
+</body>
+</html>

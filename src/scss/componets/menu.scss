@@ -45,6 +45,21 @@
 			&:last-child{
 				margin-bottom: 0;
 			}
+			&.active{
+				a{
+					color: #EB222D;
+				}
+			}
+			i.sign-out{
+				display: inline-block;
+				vertical-align: middle;
+				background-image: url("../img/sign-out.svg");
+				background-repeat: no-repeat;
+				background-position: center right;
+				background-size: 100%;
+				width: 20px;
+				height: 23px;
+			}
 			a{
 				font-family: Circe;
 				font-style: normal;
@@ -79,6 +94,35 @@
 						display: block;
 					}
 				}
+			}
+		}
+		&--border{
+			border: 1px solid #E0E0E0;
+			border-radius: 12px;
+			padding: 24px;
+		}
+		&--drop{
+			background: #FFFFFF;
+			box-shadow: 0px 4px 24px #E5EBF0;
+			border-radius: 12px;
+			padding: 24px;
+			display: none;
+			&.active{
+				display: block;
+			}
+			li{
+				margin-bottom: 18px;
+				&:last-child{
+					margin-top: 28px;
+				}
+			}
+			a{
+				font-family: Circe;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 17px;
+				line-height: 25px;
+				color: #333333;
 			}
 		}
 

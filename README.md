@@ -17,6 +17,7 @@
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-inner.html
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-rubric.html
 * https://maximum454.github.io/mpr-shop.ru/build/catalog-detail.html
+* https://maximum454.github.io/mpr-shop.ru/build/catalog-detail-no.html
 
 ###Страница добавления отзыва
 * https://maximum454.github.io/mpr-shop.ru/build/review-form.html
@@ -29,6 +30,44 @@
 
 ###Страница сервисные центры
 * https://maximum454.github.io/mpr-shop.ru/build/service.html
+
+###Страница избранные товары
+* https://maximum454.github.io/mpr-shop.ru/build/featured-products.html
+
+###Страница ошибка онлайн платежа
+* https://maximum454.github.io/mpr-shop.ru/build/error-pay.html
+
+###Страница Личные данные
+* https://maximum454.github.io/mpr-shop.ru/build/personal-private.html
+
+###Страница Смена пароля
+* https://maximum454.github.io/mpr-shop.ru/build/personal-password.html
+
+###Страница Подписка
+* https://maximum454.github.io/mpr-shop.ru/build/personal-subscribe.html
+
+###Страница Текущие заказы
+* https://maximum454.github.io/mpr-shop.ru/build/personal-orders.html
+
+###Страница Текущий заказ
+* https://maximum454.github.io/mpr-shop.ru/build/personal-order.html
+
+###Страница Заказ оформлен
+* https://maximum454.github.io/mpr-shop.ru/build/personal-order-ok.html
+
+###Страница Контакты
+* https://maximum454.github.io/mpr-shop.ru/build/contacts.html
+
+###Страница Адреса магазинов
+* https://maximum454.github.io/mpr-shop.ru/build/shops.html
+
+###Страница Оформление заказа
+* https://maximum454.github.io/mpr-shop.ru/build/order.html
+
+###Страница Корзина
+* https://maximum454.github.io/mpr-shop.ru/build/basket.html
+
+
  
 ####Верстка использует сборку Gulp  
  **Старт:** ***gulp***  
