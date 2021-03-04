@@ -72,6 +72,14 @@
             <button class="header__btn">Каталог</button>
             <form class="search-form" action="">
                 <div class="select">
+                    <button class="btn btn-secondary dropdown-toggle" type="button">
+                        Кнопка выпадающего списка
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                     <select class="search-form__select" name="" id="">
                         <option value="">Везде</option>
                     </select>
@@ -206,18 +214,6 @@
                         </ul>
                     </div>
                 </div>
-                
-                <ul>
-                    <li class="active"><a href="#">Воткинск</a></li>
-                    <li><a href="#">Глазов</a></li>
-                    <li><a href="#">Ижевск</a></li>
-                    <li><a href="#">Воткинск</a></li>
-                    <li><a href="#">Глазов</a></li>
-                    <li><a href="#">Ижевск</a></li>
-                    <li><a href="#">Воткинск</a></li>
-                    <li><a href="#">Глазов</a></li>
-                    <li><a href="#">Ижевск</a></li>
-                </ul>
             </div>
             <div class="item">
                 <input type="submit" value="Применить">
@@ -229,6 +225,111 @@
 
 
     <main class="main main--page container">
+        <div class="main__menu-big">
+            <div class="menu menu--page">
+                <ul class="menu__list menu__list--main">
+                    <li class="menu__item" id="m1"><a href="#"><i class="icons icons-auto"></i> Авто</a>
+                    </li>
+                    <li class="menu__item" id="m2"><a href="#"><i class="icons icons-aromatizatory"></i> Ароматизаторы</a>
+                    </li>
+                    <li class="menu__item" id="m3"><a href="#"><i class="icons icons-bytovaya-tekhnika"></i> Бытовая техника</a>
+                    </li>
+                    <li><a href="#"><i class="icons icons-bytovaya-khimiya"></i> Бытовая химия</a></li>
+                    <li><a href="#"><i class="icons icons-galantereya"></i> Галантерея</a></li>
+                    <li><a href="#"><i class="icons icons-dacha-i-sad"></i> Дача и сад</a></li>
+                    <li><a href="#"><i class="icons icons-domashniy-tekstil"></i> Домашний текстиль</a></li>
+                    <li><a href="#"><i class="icons icons-instrumenty"></i> Инструменты</a></li>
+                    <li><a href="#"><i class="icons icons-kantselyarskie-tovary"></i> Канцтовары</a></li>
+                    <li><a href="#"><i class="icons icons-elektrotekhnika"></i> Мобильные аксессуа...</a></li>
+                    <li><a href="#"><i class="icons icons-novogodnie-tovary"></i> Новогодние товары</a></li>
+                    <li><a href="#"><i class="icons icons-podarki"></i> Подарки</a></li>
+                    <li><a href="#"><i class="icons icons-posuda"></i> Посуда и кухонные п...</a></li>
+                    <li><a href="#"><i class="icons icons-santekhnika"></i> Сантехника</a></li>
+                    <li><a href="#"><i class="icons icons-sport"></i> Спорт и отдых</a></li>
+                    <li class="menu__more js-menu-more">
+                        <a href="#"><i class="icons icons-more"></i> Еще</a>
+                        <ul>
+                            <li><a href="#"><i class="icons icons-dlya-detey"></i> Товары для детей</a></li>
+                            <li><a href="#"><i class="icons icons-turizm"></i> Туризм и рыбалка</a></li>
+                            <li><a href="#"><i class="icons icons-khoztovary"></i> Хозтовары</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="menu__dropright">
+                    <div data-id="m1" class="menu-big">
+                        <header class="menu-big__header">
+                            <a class="menu-big__link stocked" href="#">Акции</a>
+                            <a class="menu-big__link action" href="#">Товары со скидкой</a>
+                            <button class="menu-big__close"></button>
+                        </header>
+                        <main>
+                            <ul class="menu-big__list">
+                                <li class="menu-big__item"><a href="">Сезонный ассортимент</a>
+                                    <ul>
+                                        <li><a href="">Зимний сезонный ассортимент</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-big__item"><a href="">Лебедки, тали</a>
+
+                                </li>
+                                <li class="menu-big__item"><a href="">Автомобильный свет /
+                                    фонари/лампы переноски</a>
+                                    <ul>
+                                        <li><a href="" class="active">Зеркала автомобильные</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-big__item"><a href="">Внутрисалонные аксессуары</a>
+                                    <ul>
+                                        <li><a href="">Зеркала автомобильные</a></li>
+                                        <li><a href="">Внутрисалонные аксессуары прочие</a></li>
+                                        <li><a href="">Держатели салонные</a></li>
+                                        <li><a href="">Разветвители зарядники
+                                            и адаптеры</a></li>
+                                        <li><a href="">Коврики противоскользящие</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-big__item"><a href="">Автоэлектроника</a>
+                                    <ul>
+                                        <li><a href="">Видеорегистраторы</a></li>
+                                        <li><a href="">Алкотестеры / антисон</a></li>
+                                        <li><a href="">Зарядные устройства
+                                            для автомобильных АКБ</a></li>
+                                        <li><a href="">Чайники кипятильники
+                                            автомобильные</a></li>
+                                        <li><a href="">Парктроники</a></li>
+                                        <li><a href="">Предохранители / тестеры</a></li>
+                                        <li><a href="">Кабели для зарядки и передачи
+                                            данных</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-big__item"><a href="">Ковры автомобильные</a>
+
+                                </li>
+                                <li class="menu-big__item"><a href="">Отдых и туризм авто</a>
+
+                                </li>
+                            </ul>
+                        </main>
+                    </div>
+                    <div data-id="m2" class="menu-big">
+                        <header class="menu-big__header">
+                            <a class="menu-big__link stocked" href="#">Акции</a>
+                            <a class="menu-big__link action" href="#">Товары со скидкой</a>
+                            <button class="menu-big__close"></button>
+                        </header>
+                        <main>
+                            <ul class="menu-big__list clearfix">
+                                <li><a href="">Сезонный ассортимент</a>
+                                    <ul>
+                                        <li><a href="">Зимний сезонный ассортимент</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
         <aside class="main__aside">
             <div class="menu">
                 <button class="menu__button">Все товары</button>

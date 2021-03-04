@@ -1,4 +1,5 @@
 .main{
+	position: relative;
 	&--page{
 		display: grid;
 		grid-template-areas: "aside-left contant";
@@ -20,6 +21,16 @@
 	}
 	&__contant{
 		grid-area: contant;
+	}
+	&__menu-big{
+		position: absolute;
+		z-index: 10;
+		background-color: #fff;
+		display: none;
+		width: 100%;
+		&.active{
+			display: block;
+		}
 	}
 	&__subtitle{
 		font-family: Circe;

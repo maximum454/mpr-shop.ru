@@ -4,6 +4,7 @@
 @@include('./partials/remodal.js')
 @@include('./partials/tabs.js')
 @@include('./partials/jquery.fancybox.min.js')
+@@include('./partials/masonry.pkgd.min.js')
 
 
 $(function () {
@@ -12,6 +13,7 @@ $(function () {
         infinite: true,
         arrows: false,
         speed: 300,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         customPaging: function (slider, i) {
@@ -123,7 +125,45 @@ $(function () {
         return false;
     })
 
+    $('.menu__item').on('mouseover', function (e){
+        var id = $(this).attr('id');
+        menuShow(id);
+    })
+
+    function menuShow(id){
+        $('.menu-big').each(function(){
+            var dataId = $(this).data('id');
+            $(this).removeClass('active');
+            if (dataId === id) {
+                $(this).addClass('active');
+            }
+
+        });
+        $('.menu-big__close').on('click', function (){
+            $('.main__menu-big').removeClass('active');
+            $('.js-menu-more').find('ul').removeClass('active');
+            $('.menu__more>a').show();
+        })
+    }
+
+    $('.menu__button, .js-menu-open').on('click', function (){
+        $('.main__menu-big').toggleClass('active')
+    })
+    $('.js-menu-more').on('click', function (){
+        $(this).find('ul').addClass('active');
+        $('.menu__more>a').hide();
+        return false;
+    })
 
 
-    $tabs('.tabs');
+
+        $('.menu-big__list').masonry({
+            itemSelector: '.menu-big__item',
+        });
+
+
+
+
+
+    //$tabs('.tabs');
 })
