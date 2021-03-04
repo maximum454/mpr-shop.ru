@@ -7,7 +7,6 @@
 	&__select{
 		background-color: #E5EBF0;
 		border: none;
-		padding: 20px;
 		position: relative;
 		display: inline-block;
 		-webkit-appearance: none;
@@ -15,24 +14,72 @@
 		appearance: none;
 		height: 100%;
 		border-radius:12px 0 0 12px;
-	}
-	.select {
-		position: relative;
-		display: inline-block;
-	}
-	.select:after {
-		content: "▼";
-		font-size: 8px;
-		color: #333333;
-		position: absolute;
-		right: 8px;
-		top: 28px;
-		z-index: 1;
-		text-align: center;
-		width: 10%;
-		height: 100%;
-		pointer-events: none;
-		box-sizing: border-box;
+		option{
+			background: #fff;
+		}
+		.jq-selectbox__select{
+			height: 100%;
+			border: none;
+			border-radius: 0;
+			background: none;
+			box-shadow: none;
+			font-family: Circe;
+			color: #333;
+			text-shadow: none;
+			display: flex;
+			align-items: center;
+			padding: 0;
+		}
+		.jq-selectbox__select-text {
+			overflow: hidden;
+			user-select: none;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			font-family: Circe;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: #333333;
+			padding: 0 20px;
+		}
+		.jq-selectbox__trigger {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			margin-top: -4px;
+			width: 8px;
+			height: 8px;
+			border-left: none;
+		}
+		.jq-selectbox__trigger-arrow {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 8px;
+			height: 8px;
+			border: none;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNS43MzIwNSA2QzQuOTYyMjUgNy4zMzMzMyAzLjAzNzc1IDcuMzMzMzMgMi4yNjc5NSA2TDAuNTM1ODk5IDNDLTAuMjMzOTAyIDEuNjY2NjcgMC43MjgzNDkgMCAyLjI2Nzk1IDBINS43MzIwNUM3LjI3MTY1IDAgOC4yMzM5IDEuNjY2NjcgNy40NjQxIDNMNS43MzIwNSA2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K);
+			background-repeat: no-repeat;
+			background-size: 8px;
+		}
+		.jq-selectbox__dropdown {
+			box-sizing: border-box;
+			margin: 26px 0 0;
+			border: transparent;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 24px #E5EBF0;
+			border-radius: 12px;
+			padding: 20px;
+			width: 231px;
+			.selected{
+				background: transparent;
+				color: #EB222D;
+			}
+			li:hover {
+				background-color:transparent;
+				color: #EB222D;
+			}
+		}
 	}
 
 	&__inner{

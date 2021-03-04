@@ -29,16 +29,11 @@
             <button class="header__btn">Каталог</button>
             <form class="search-form" action="">
                 <div class="select">
-                    <button class="btn btn-secondary dropdown-toggle" type="button">
-                        Кнопка выпадающего списка
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    <select class="search-form__select" name="" id="">
+                    <select class="search-form__select js-select" name="" id="search-form__select">
                         <option value="">Везде</option>
+                        <option value="">Каталог</option>
+                        <option value="">Акции</option>
+                        <option value="">Новости и статьи</option>
                     </select>
                 </div>
                 <div class="search-form__inner">
@@ -57,7 +52,7 @@
                 <li><a href="#"><img class="menu-header__icon" src="./img/adres-icon.svg" width="24" height="24" alt="">
                     Адреса магазинов</a></li>
                 <li>
-                    <a href="#"><img class="menu-header__icon" src="./img/company-icon.svg" width="24" height="24"
+                    <a href="#" class="down-icon js-menu-dropdown"><img class="menu-header__icon" src="./img/company-icon.svg" width="24" height="24"
                                      alt=""> Компания</a>
                     <ul class="menu-header__down">
                         <li><a href="">Компания 1</a></li>
