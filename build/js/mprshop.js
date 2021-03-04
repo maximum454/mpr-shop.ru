@@ -3927,7 +3927,9 @@ $(function () {
             },
             {
                 breakpoint: 767,
-                settings: 'unslick'
+                settings: {
+                    slidesToShow: 4,
+                }
             }
         ]
     });
@@ -4023,6 +4025,7 @@ $(function () {
             $(this).removeClass('active');
             if (dataId === id) {
                 $(this).addClass('active');
+                $('.menu').addClass('open');
             }
 
         });
@@ -4038,6 +4041,7 @@ $(function () {
     })
     $('.js-menu-more').on('click', function () {
         $(this).find('ul').addClass('active');
+        $(this).addClass('disable-img');
         $('.menu__more>a').hide();
         return false;
     })

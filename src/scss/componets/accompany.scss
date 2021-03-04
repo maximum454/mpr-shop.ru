@@ -143,8 +143,6 @@
 		&__body{
 			display: flex;
 			align-self: center;
-			overflow-x: scroll;
-			overflow-y: hidden;
 		}
 	}
 	@include r(767){
@@ -155,10 +153,6 @@
 		}
 		&__nav{
 			display: none;
-		}
-		&__body{
-			display: flex;
-			align-self: center;
 		}
 		&__item{
 			display: block;
