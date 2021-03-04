@@ -4620,6 +4620,7 @@ body.lock {
   padding: 21px 45px 21px 32px;
   margin: 20px auto;
   position: relative;
+  height: 66px;
 }
 
 .card__btn:before {
