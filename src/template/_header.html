@@ -2,6 +2,24 @@
     <div class="container">
         <div class="header__top">
             <a href="#" class="header__logo"><img src="./img/logo-mpr.png" width="358" height="90" alt=""></a>
+            <form class="header__search-form search-form" action="">
+                <div class="select">
+                    <select class="search-form__select js-select" name="" id="search-form__select">
+                        <option value="">Везде</option>
+                        <option value="">Каталог</option>
+                        <option value="">Акции</option>
+                        <option value="">Новости и статьи</option>
+                    </select>
+                </div>
+                <div class="search-form__inner">
+                    <input class="search-form__input js-input-key" type="text" placeholder="Поиск">
+                    <input class="search-form__submit" type="submit" value="">
+                </div>
+                <ul class="search-form__drop">
+                    <li>Екатеринбург, ул. Шарташская, 10</li>
+                    <li>Екатеринбург, ул. Азина, 20/3</li>
+                </ul>
+            </form>
             <div class="header__select-delivery js-select-delivery">
                 <span>Доставить в</span>
                 <p>Екатеринбург</p>
@@ -17,7 +35,7 @@
             <div class="header__control">
                 <a class="header__auth" href="#" data-remodal-target="modal-auth"></a>
                 <a class="header__like" href="#"></a>
-                <a class="header__cart" href="#"></a>
+                <a class="header__cart" href="#"><div class="header__count">4</div></a>
             </div>
             <button class="header__burger">
                 <span></span>
@@ -174,4 +192,6 @@
             </form>
     </div>
 </header>
+
+
 

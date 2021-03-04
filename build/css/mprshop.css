@@ -3259,6 +3259,32 @@ body.lock {
   margin-bottom: 41px;
 }
 
+.header.f-nav {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
+          box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header.f-nav .header__logo {
+  max-width: 270px;
+}
+
+.header.f-nav .header__bottom,
+.header.f-nav .header__phone {
+  display: none;
+}
+
+.header.f-nav .header__search-form {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  max-width: 490px;
+}
+
 .header__top {
   padding: 20px 0;
   display: -webkit-box;
@@ -3316,6 +3342,10 @@ body.lock {
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+}
+
+.header__search-form {
+  display: none !important;
 }
 
 .header__phone {
@@ -3429,6 +3459,33 @@ body.lock {
   height: 42px;
   display: block;
   margin: 0 20px;
+  position: relative;
+  margin-right: 42px;
+}
+
+.header__count {
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  right: -34px;
+  margin-top: -16px;
+  position: absolute;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #6FCF97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
 }
 
 .header__btn {
@@ -3558,6 +3615,7 @@ body.lock {
   appearance: none;
   height: 100%;
   border-radius: 12px 0 0 12px;
+  width: 106px;
 }
 
 .search-form__select option {
