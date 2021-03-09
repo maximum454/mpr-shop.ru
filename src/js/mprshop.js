@@ -4,7 +4,6 @@
 @@include('./partials/remodal.js')
 @@include('./partials/tabs.js')
 @@include('./partials/jquery.fancybox.min.js')
-@@include('./partials/masonry.pkgd.min.js')
 @@include('./partials/jquery.formstyler.min.js')
 
 
