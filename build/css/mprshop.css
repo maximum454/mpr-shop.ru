@@ -10566,6 +10566,10 @@ body.lock {
     font-size: 18px;
   }
 
+  .promo .none-text-mobile {
+    display: none;
+  }
+
   .footer {
     padding: 20px 0;
   }

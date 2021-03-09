@@ -212,4 +212,9 @@
 			}
 		}
 	}
+	@include r(767){
+		.none-text-mobile{
+			display: none;
+		}
+	}
 }
