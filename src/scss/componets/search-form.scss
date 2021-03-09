@@ -211,6 +211,13 @@
 		.accompany__item{
 			width: 100%;
 			max-width: 880px;
+			display: flex;
+		}
+		.accompany__img{
+			margin-right: 20px;
+		}
+		.accompany__txt{
+			display: block;
 		}
 	}
 	&__result-all{
@@ -234,6 +241,9 @@
 		}
 		&__input{
 			border-radius:12px;
+			&:focus{
+				border-radius:12px;
+			}
 		}
 	}
 }

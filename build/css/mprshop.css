@@ -3868,6 +3868,17 @@ body.lock {
 .search-form__result .accompany__item {
   width: 100%;
   max-width: 880px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-form__result .accompany__img {
+  margin-right: 20px;
+}
+
+.search-form__result .accompany__txt {
+  display: block;
 }
 
 .search-form__result-all {
@@ -9661,6 +9672,10 @@ body.lock {
     border-radius: 12px;
   }
 
+  .search-form__input:focus {
+    border-radius: 12px;
+  }
+
   .menu-header__icon {
     display: none;
   }
@@ -10218,6 +10233,12 @@ body.lock {
     height: 24px;
     display: block;
     margin: 0 12px;
+  }
+
+  .header__auth:before {
+    background-size: 24px;
+    width: 100%;
+    height: 100%;
   }
 
   .header__like {
