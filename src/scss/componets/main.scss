@@ -28,8 +28,11 @@
 		background-color: #fff;
 		display: none;
 		width: 100%;
+		height: 100%;
+
 		&.active{
 			display: block;
+			z-index: 1000;
 		}
 	}
 	&__subtitle{

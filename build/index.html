@@ -241,42 +241,8 @@
 
 
     <main class="main main--page container">
-        <aside class="main__aside">
-
-            <div class="menu">
-                <ul class="menu__list menu__list--main">
-                    <li class="menu__item" id="m1">
-                        <a href="#"><i class="icons icons-auto"></i> Авто</a>
-                    </li>
-                    <li class="menu__item" id="m2"><a href="#"><i class="icons icons-aromatizatory"></i>
-                        Ароматизаторы</a>
-
-                    </li>
-                    <li class="menu__item" id="m3"><a href="#"><i class="icons icons-bytovaya-tekhnika"></i> Бытовая
-                        техника</a>
-
-                    </li>
-                    <li><a href="#"><i class="icons icons-bytovaya-khimiya"></i> Бытовая химия</a></li>
-                    <li><a href="#"><i class="icons icons-galantereya"></i> Галантерея</a></li>
-                    <li><a href="#"><i class="icons icons-dacha-i-sad"></i> Дача и сад</a></li>
-                    <li><a href="#"><i class="icons icons-domashniy-tekstil"></i> Домашний текстиль</a></li>
-                    <li><a href="#"><i class="icons icons-instrumenty"></i> Инструменты</a></li>
-                    <li><a href="#"><i class="icons icons-kantselyarskie-tovary"></i> Канцтовары</a></li>
-                    <li><a href="#"><i class="icons icons-elektrotekhnika"></i> Мобильные аксессуа...</a></li>
-                    <li><a href="#"><i class="icons icons-novogodnie-tovary"></i> Новогодние товары</a></li>
-                    <li><a href="#"><i class="icons icons-podarki"></i> Подарки</a></li>
-                    <li><a href="#"><i class="icons icons-posuda"></i> Посуда и кухонные п...</a></li>
-                    <li><a href="#"><i class="icons icons-santekhnika"></i> Сантехника</a></li>
-                    <li><a href="#"><i class="icons icons-sport"></i> Спорт и отдых</a></li>
-                    <li class="menu__more js-menu-more">
-                        <a href="#"><i class="icons icons-more"></i> Еще</a>
-                        <ul>
-                            <li><a href="#"><i class="icons icons-dlya-detey"></i> Товары для детей</a></li>
-                            <li><a href="#"><i class="icons icons-turizm"></i> Туризм и рыбалка</a></li>
-                            <li><a href="#"><i class="icons icons-khoztovary"></i> Хозтовары</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <div class="main__menu-big">
+            <div class="menu menu--page">
                 <div class="menu__dropright">
                     <div data-id="m1" class="menu-big">
                         <header class="menu-big__header">
@@ -284,7 +250,7 @@
                             <a class="menu-big__link action" href="#">Товары со скидкой</a>
                             <button class="menu-big__close"></button>
                         </header>
-                        <main>
+                        <main class="menu-big__main">
                             <ul class="menu-big__list">
                                 <li class="menu-big__item"><a href="">Сезонный ассортимент</a>
                                     <ul>
@@ -349,7 +315,60 @@
                             </ul>
                         </main>
                     </div>
+                    <div data-id="m3" class="menu-big">
+                        <header class="menu-big__header">
+                            <a class="menu-big__link stocked" href="#">Акции</a>
+                            <a class="menu-big__link action" href="#">Товары со скидкой</a>
+                            <button class="menu-big__close"></button>
+                        </header>
+                        <main>
+                            <ul class="menu-big__list clearfix">
+                                <li><a href="">Сезонный ассортимент</a>
+                                    <ul>
+                                        <li><a href="">Зимний сезонный ассортимент</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </main>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <aside class="main__aside">
+            <div class="menu">
+                <ul class="menu__list menu__list--main">
+                    <li class="menu__item" id="m1">
+                        <a href="#"><i class="icons icons-auto"></i> Авто</a>
+                    </li>
+                    <li class="menu__item" id="m2"><a href="#"><i class="icons icons-aromatizatory"></i>
+                        Ароматизаторы</a>
+
+                    </li>
+                    <li class="menu__item" id="m3"><a href="#"><i class="icons icons-bytovaya-tekhnika"></i> Бытовая
+                        техника</a>
+
+                    </li>
+                    <li><a href="#"><i class="icons icons-bytovaya-khimiya"></i> Бытовая химия</a></li>
+                    <li><a href="#"><i class="icons icons-galantereya"></i> Галантерея</a></li>
+                    <li><a href="#"><i class="icons icons-dacha-i-sad"></i> Дача и сад</a></li>
+                    <li><a href="#"><i class="icons icons-domashniy-tekstil"></i> Домашний текстиль</a></li>
+                    <li><a href="#"><i class="icons icons-instrumenty"></i> Инструменты</a></li>
+                    <li><a href="#"><i class="icons icons-kantselyarskie-tovary"></i> Канцтовары</a></li>
+                    <li><a href="#"><i class="icons icons-elektrotekhnika"></i> Мобильные аксессуа...</a></li>
+                    <li><a href="#"><i class="icons icons-novogodnie-tovary"></i> Новогодние товары</a></li>
+                    <li><a href="#"><i class="icons icons-podarki"></i> Подарки</a></li>
+                    <li><a href="#"><i class="icons icons-posuda"></i> Посуда и кухонные п...</a></li>
+                    <li><a href="#"><i class="icons icons-santekhnika"></i> Сантехника</a></li>
+                    <li><a href="#"><i class="icons icons-sport"></i> Спорт и отдых</a></li>
+                    <li class="menu__more js-menu-more">
+                        <a href="#"><i class="icons icons-more"></i> Еще</a>
+                        <ul>
+                            <li><a href="#"><i class="icons icons-dlya-detey"></i> Товары для детей</a></li>
+                            <li><a href="#"><i class="icons icons-turizm"></i> Туризм и рыбалка</a></li>
+                            <li><a href="#"><i class="icons icons-khoztovary"></i> Хозтовары</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </aside>
         <div class="main__contant">
