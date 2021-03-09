@@ -3630,6 +3630,10 @@ body.lock {
   visibility: visible;
 }
 
+.search-form.active .search-form__result {
+  visibility: visible;
+}
+
 .search-form__select {
   background-color: #E5EBF0;
   border: none;
@@ -3834,6 +3838,52 @@ body.lock {
   background-image: url("../img/promocode-close.svg");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.search-form__result {
+  visibility: hidden;
+  position: absolute;
+  top: 75px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  max-width: 1128px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 30px 30px 0;
+  overflow: hidden;
+}
+
+.search-form__result ul {
+  margin: 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-form__result ul li {
+  margin-bottom: 30px;
+}
+
+.search-form__result .accompany__item {
+  width: 100%;
+  max-width: 880px;
+}
+
+.search-form__result-all {
+  background: #E5EBF0;
+  display: block;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  padding: 15px 0;
+  text-align: center;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
 }
 
 .menu-header {
