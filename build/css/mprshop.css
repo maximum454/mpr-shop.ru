@@ -5093,9 +5093,16 @@ body.lock {
   max-width: 1200px;
 }
 
+.maps__body--shops {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 40px;
+  margin: 0;
+}
+
 .maps__body--shops .maps__item {
-  width: 50%;
-  min-width: 320px;
+  width: 100%;
+  min-width: auto;
   background: #FFFFFF;
   border: 1px solid rgba(136, 142, 148, 0.4);
   -webkit-box-sizing: border-box;
@@ -5103,7 +5110,7 @@ body.lock {
   border-radius: 12px;
   padding: 20px 24px 0;
   overflow: hidden;
-  margin: 0 20px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5193,6 +5200,11 @@ body.lock {
   padding: 12px 18px;
   margin-bottom: 10px;
   text-decoration: none;
+}
+
+.maps .tabs img {
+  max-width: 100%;
+  height: auto;
 }
 
 .tizers {
@@ -10117,6 +10129,12 @@ body.lock {
   .maps__btn {
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .maps .tabs__link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .stock__inner {
