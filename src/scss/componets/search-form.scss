@@ -4,6 +4,14 @@
 	width: 100%;
 	display: flex;
 	position: relative;
+	&.active{
+		position: absolute;
+		max-width: 100%;
+		z-index: 1000;
+		.search-form__close{
+			visibility: visible;
+		}
+	}
 	&__select{
 		background-color: #E5EBF0;
 		border: none;
@@ -148,6 +156,32 @@
 				color: #EB222D;
 				cursor: pointer;
 			}
+		}
+	}
+	&__close{
+		visibility: hidden;
+		width: 24px;
+		height: 24px;
+		top: 50%;
+		right: 20px;
+		margin-top: -12px;
+		position: absolute;
+		display: inline-block;
+		cursor: pointer;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-image: url("../img/promocode-close.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
 		}
 	}
 	@include r(1023){

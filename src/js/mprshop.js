@@ -51,6 +51,15 @@ $(function () {
         itemSelector: '.menu-big__item',
     });*/
 
+    $('.js-input-search').on('focus', function (){
+        $(this).parents('.search-form').addClass('active');
+        $('.overflow-search').addClass('active');
+    })
+    $('.search-form__close').on('click', function (){
+        $(this).parents('.search-form').removeClass('active');
+        $('.overflow-search').removeClass('active');
+    })
+
 
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
