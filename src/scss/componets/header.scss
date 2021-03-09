@@ -320,7 +320,11 @@
 		}
 	}
 	@include r(767){
+
 		&.f-nav{
+			.header__logo {
+				max-width: 137px;
+			}
 			.header__search-form{
 				max-width: 100%;
 				margin-bottom: 20px;

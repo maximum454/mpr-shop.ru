@@ -260,6 +260,9 @@
 		border: 0;
 		background-color: transparent;
 		outline: 0;
+		&.active{
+			background-image: url("../img/like-active.svg");
+		}
 	}
 	&__basket{
 		text-align: center;
@@ -510,7 +513,7 @@
 			}
 		}
 		&__inner{
-			position: absolute;
+			position: relative;
 			box-shadow: none;
 			background: #fff;
 			border:none;

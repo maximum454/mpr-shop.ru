@@ -4870,6 +4870,10 @@ body.lock {
   outline: 0;
 }
 
+.card__like.active {
+  background-image: url("../img/like-active.svg");
+}
+
 .card__basket {
   text-align: center;
   font-family: Circe;
@@ -7133,6 +7137,10 @@ body.lock {
   position: absolute;
   top: -55px;
   right: 0;
+}
+
+.sort__control a {
+  margin-left: 20px;
 }
 
 .sort__control a .active > * {
@@ -10294,6 +10302,10 @@ body.lock {
     display: none;
   }
 
+  .header.f-nav .header__logo {
+    max-width: 137px;
+  }
+
   .header.f-nav .header__search-form {
     max-width: 100%;
     margin-bottom: 20px;
@@ -10690,7 +10702,7 @@ body.lock {
   }
 
   .card__inner {
-    position: absolute;
+    position: relative;
     -webkit-box-shadow: none;
             box-shadow: none;
     background: #fff;
@@ -11048,6 +11060,10 @@ body.lock {
   .catalog-section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  .sort__control {
+    display: none;
   }
 
   .information--order {

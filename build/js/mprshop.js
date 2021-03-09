@@ -3938,6 +3938,10 @@ $(function () {
         $('.overflow-search').removeClass('active');
     })
 
+    $('.js-card-like').on('click', function (){
+        $(this).toggleClass('active');
+    })
+
 
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');

@@ -47,6 +47,7 @@
 		right: 0;
 
 		a{
+			margin-left: 20px;
 			.active{
 				&>*{
 					fill: #EB222D;
@@ -78,5 +79,10 @@
 		vertical-align: middle;
 		margin-right: 0;
 		margin-left: auto;
+	}
+	@include r(767){
+		&__control{
+			display: none;
+		}
 	}
 }
