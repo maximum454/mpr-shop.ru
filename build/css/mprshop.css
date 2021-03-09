@@ -3265,7 +3265,7 @@ body.lock {
           box-shadow: 0px 5px 14px rgba(21, 33, 55, 0.1);
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
 }
 
