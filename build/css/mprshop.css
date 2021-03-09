@@ -3752,8 +3752,8 @@ body.lock {
 }
 
 .search-form__input:focus {
-  -webkit-box-shadow: 0 0 14px rgba(235, 34, 45, 0.5);
-          box-shadow: 0 0 14px rgba(235, 34, 45, 0.5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: none;
   border-radius: 0 12px 12px 0;
 }
