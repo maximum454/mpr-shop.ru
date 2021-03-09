@@ -4176,6 +4176,7 @@ body.lock {
 
 .promo {
   margin: 0 0 60px;
+  overflow: hidden;
 }
 
 .promo__body {
@@ -4331,6 +4332,10 @@ body.lock {
   max-width: none;
 }
 
+.promo__block--categor .item.filter {
+  display: none;
+}
+
 .promo__block--categor .txt {
   border-radius: 12px;
   background-color: #F5F8FA;
@@ -4355,6 +4360,18 @@ body.lock {
   background-color: transparent;
   border-radius: 0;
   padding: 0;
+}
+
+.promo__filter {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/filter-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-right: 5px;
 }
 
 .footer {
@@ -6337,6 +6354,9 @@ body.lock {
   font-size: 20px;
   line-height: 32px;
   color: #888E94;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .filter .input {
@@ -9803,6 +9823,68 @@ body.lock {
     display: none;
   }
 
+  .promo__over {
+    overflow: hidden;
+  }
+
+  .promo__block--categor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .promo__block--categor .item {
+    max-width: none;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: initial;
+  }
+
+  .promo__block--categor .item.filter {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .promo__block--categor .txt {
+    border-radius: 12px;
+    background-color: #F5F8FA;
+    position: relative;
+    padding: 20px 28px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .promo__block--categor .name {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #333333;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .footer {
     padding: 30px 0;
   }
@@ -9858,6 +9940,10 @@ body.lock {
   .main__title {
     font-size: 32px;
     line-height: 48px;
+  }
+
+  .main__aside {
+    display: none;
   }
 
   .card {
@@ -10200,6 +10286,14 @@ body.lock {
 
   .pagination__list {
     display: none;
+  }
+
+  .filter .input {
+    max-width: 100%;
+  }
+
+  .filter .difis {
+    margin: 0 11px;
   }
 
   .menu {

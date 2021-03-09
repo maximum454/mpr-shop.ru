@@ -25,6 +25,7 @@
 		font-size: 20px;
 		line-height: 32px;
 		color: #888E94;
+		align-items: center;
 	}
 	.input{
 		background: #EEF3F9;
@@ -73,4 +74,12 @@
 		outline: none;
 	}
 	.select option { font-weight:normal; }
+	@include r(1023){
+		.input{
+			max-width: 100%;
+		}
+		.difis{
+			margin: 0 11px;
+		}
+	}
 }

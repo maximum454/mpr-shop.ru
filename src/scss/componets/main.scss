@@ -85,6 +85,9 @@
 			font-size: 32px;
 			line-height: 48px;
 		}
+		&__aside{
+			display: none;
+		}
 	}
 	@include r(767){
 		&--page{

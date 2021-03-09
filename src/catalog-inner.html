@@ -21,7 +21,6 @@
         <aside class="main__aside">
             <div class="menu">
                 <button class="menu__button">Все товары</button>
-
                 <ul class="menu__list">
                     <li><a href="#">Автомобильный свет / фонари / лампы переноски</a></li>
                     <li><a href="#">Автоэлектроника</a></li>
@@ -111,32 +110,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="promo__block promo__block--categor">
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Внутрисалонные аксессуары прочие</div>
+                <div class="promo__over">
+                    <div class="promo__block promo__block--categor">
+                        <a href="#" class="item filter" data-remodal-target="modal-filter">
+                            <div class="txt">
+                                <div class="name">
+                                    <i class="promo__filter"></i>
+
+                                    Фильтр
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Внутрисалонные аксессуары прочие</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Держатели салонные</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Зеркала автомобильные</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Коврики противоскользящие</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Разветвители, зарядники и адаптеры</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="remodal" data-remodal-id="modal-filter">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+
+                    <form class="form" action="">
+                        <div class="title">Фильтр</div>
+                        <div class="filter">
+                            <div class="filter__item">
+                                <div class="filter__title">Цена, ₽</div>
+                                <div class="filter__row">
+                                    <input class="input" type="text" name="arrCatalog_8_MIN" id="arrCatalog_8_MIN" value="" size="5"
+                                           placeholder="от 13" onkeyup="">
+                                    <div class="difis">—</div>
+                                    <input class="input" type="text" name="arrCatalog_8_MAX" id="arrCatalog_8_MAX" value="" size="5"
+                                           placeholder="до 7 868" onkeyup="">
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__title">Магазины</div>
+                                <select class="select" name="filter1" id="filter1">
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                </select>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__title">Наличие</div>
+                                <select class="select" name="filter2" id="filter2">
+                                    <option value="">Не имеет значения</option>
+                                    <option value="">Не имеет значения</option>
+                                    <option value="">Не имеет значения</option>
+                                    <option value="">Не имеет значения</option>
+                                </select>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Держатели салонные</div>
+                        <div class="item">
+                            <input class="btn" type="submit" value="Показать 192 товара">
                         </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Зеркала автомобильные</div>
-                        </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Коврики противоскользящие</div>
-                        </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Разветвители, зарядники и адаптеры</div>
-                        </div>
-                    </a>
+                        <a href="" class="btn link">Сбросить фильтр</a>
+
+                    </form>
                 </div>
             </section>
 
