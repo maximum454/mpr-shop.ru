@@ -57,6 +57,14 @@ $(function () {
         $('.menu-mobile').removeClass('active');
     })
 
+    $('.menu-catalog__list-li').on('click', function (){
+        $(this).find('.menu-catalog__level2').addClass('active');
+    })
+
+    $('.menu-catalog__list-li2').on('click', function (){
+        $(this).find('.menu-catalog__level3').toggleClass('active');
+    })
+
 
     $('.js-menu-catalog').on('click', function (){
         $('.menu-catalog').addClass('active');
