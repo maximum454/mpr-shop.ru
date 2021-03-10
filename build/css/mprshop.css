@@ -10738,6 +10738,28 @@ body.lock {
     display: grid;
   }
 
+  .service .tabs__link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #333333;
+    padding: 0;
+  }
+
+  .service .tabs__link--services {
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .service .tabs__link--services.tabs__link_active {
+    border-bottom: 2px solid #eb222d;
+  }
+
   .slider-main__block {
     grid-gap: 20px;
   }

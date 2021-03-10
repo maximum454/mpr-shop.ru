@@ -23,4 +23,24 @@
 		width: 24px;
 		height: 24px;
 	}
+
+	@include r(1023){
+		.tabs__link{
+			width: fit-content;
+			font-family: Circe;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 17px;
+			line-height: 24px;
+			color: #333333;
+			padding: 0;
+		}
+		.tabs__link--services{
+			background: transparent;
+			border-radius: 0;
+			&.tabs__link_active {
+				border-bottom: 2px solid #eb222d;
+			}
+		}
+	}
 }
