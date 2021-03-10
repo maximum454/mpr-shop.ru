@@ -3935,6 +3935,14 @@ $(function () {
         $('.menu-mobile').removeClass('active');
     })
 
+
+    $('.js-menu-catalog').on('click', function (){
+        $('.menu-catalog').addClass('active');
+    })
+    $('.js-menu-catalog-close').on('click', function (){
+        $('.menu-catalog').removeClass('active');
+    })
+
     $('.js-input-search').on('focus', function (){
         $(this).parents('.search-form').addClass('active');
         $('.overflow-search').addClass('active');

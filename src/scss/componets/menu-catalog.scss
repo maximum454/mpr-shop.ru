@@ -1,0 +1,96 @@
+.menu-catalog{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+	z-index: 1000;
+
+	&.active {
+		display: block;
+	}
+	&__header{
+		position: relative;
+		padding: 16px 0;
+	}
+	&__title{
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #333333;
+	}
+	&__close{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -8px;
+		background-image: url("../img/remodal-close.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+	}
+	&__search{
+		position: relative;
+	}
+	&__input{
+		background: #f6f8fa;
+		border-radius:12px;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		color: #888E94;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border: none;
+		padding: 8px 10px 9px 60px;
+	}
+	&__submit{
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translate(0,-50%);
+		background-image: url(../img/menu-catalog-submit.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 24px;
+		height: 24px;
+		border: none;
+		background-color: transparent;
+	}
+	&__list{
+		margin: 32px 0 0;
+		padding: 24px 0 0;
+		border-top: 1px solid #E0E0E0;
+		list-style: none;
+		li{
+			margin-bottom: 23px;
+			position: relative;
+			&.active{
+				a{
+					color: #EB222D;
+				}
+			}
+			a{
+				font-family: Circe;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 28px;
+				color: #333333;
+				text-decoration: none;
+			}
+		}
+
+	}
+}
