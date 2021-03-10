@@ -9830,6 +9830,52 @@ body.lock {
   height: 24px;
 }
 
+.menu-mobile__auth {
+  position: relative;
+  margin: 30px 0;
+}
+
+.menu-mobile__login {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  display: block;
+  margin-bottom: 24px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 50px;
+}
+
+.menu-mobile__login:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -16px;
+  background-image: url(../img/auth-icon-login.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-mobile__exit {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -12px;
+  background-image: url("../img/menu-exit-icon.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
 .menu-mobile__social a {
   margin-right: 10px;
   width: 24px;

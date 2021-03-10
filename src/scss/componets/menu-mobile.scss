@@ -8,6 +8,7 @@
 	height: 100%;
 	padding: 22px;
 	z-index: 1000;
+
 	&.active {
 		display: block;
 	}
@@ -45,8 +46,10 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+
 		li {
 			margin-bottom: 30px;
+
 			a {
 				font-family: Circe;
 				font-style: normal;
@@ -62,12 +65,13 @@
 	&__footer {
 		padding-top: 30px;
 		position: relative;
-		&:before{
+
+		&:before {
 			content: '';
 			position: absolute;
 			top: 0;
 			left: -22px;
-			width: calc(100% + 44px) ;
+			width: calc(100% + 44px);
 			height: 1px;
 			background-color: rgba(136, 142, 148, 0.4);
 		}
@@ -96,6 +100,7 @@
 		line-height: 20px;
 		padding: 21px;
 		margin: 0 7px;
+
 		&.outline {
 			border: 1px solid #EB222D;
 			background-color: transparent;
@@ -117,7 +122,8 @@
 		position: relative;
 		padding-left: 30px;
 		margin-top: 60px;
-		&:before{
+
+		&:before {
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -144,7 +150,8 @@
 		text-decoration: none;
 		position: relative;
 		padding-left: 30px;
-		&:before{
+
+		&:before {
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -158,14 +165,59 @@
 			height: 24px;
 		}
 	}
+	&__auth{
+		position: relative;
+		margin: 30px 0;
+	}
+
+	&__login {
+		font-family: Circe;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 24px;
+		color: #000000;
+		display: block;
+		margin-bottom: 24px;
+		text-decoration: none;
+		position: relative;
+		padding-left: 50px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -16px;
+			background-image: url(../img/auth-icon-login.svg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 32px;
+			height: 32px;
+		}
+	}
+	&__exit{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -12px;
+		background-image: url("../img/menu-exit-icon.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 24px;
+		height: 24px;
+	}
 
 	&__social {
-		a{
+		a {
 			margin-right: 10px;
 			width: 24px;
 			height: 24px;
 			display: inline-block;
-			img{
+
+			img {
 				max-width: 100%;
 			}
 		}
