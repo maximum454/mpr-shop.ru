@@ -3936,11 +3936,21 @@ $(function () {
     })
 
     $('.menu-catalog__list-li').on('click', function (){
+        var text = $(this).find('.menu-catalog__text').text();
         $(this).find('.menu-catalog__level2').addClass('active');
+        $('.menu-catalog__back').addClass('active');
+        console.log(text);
+        $('.menu-catalog__title-text').text(text);
     })
 
     $('.menu-catalog__list-li2').on('click', function (){
         $(this).find('.menu-catalog__level3').toggleClass('active');
+    })
+
+    $('.menu-catalog__back').on('click', function (){
+        $('.menu-catalog__back').removeClass('active');
+        $('.menu-catalog__title-text').text('Каталог');
+        $('.menu-catalog__level2').removeClass('active');
     })
 
 

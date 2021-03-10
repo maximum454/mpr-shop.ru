@@ -9915,8 +9915,26 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
   color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-catalog__back {
+  background-image: url("../img/menu-catalog__back.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.menu-catalog__back.active {
+  display: block;
 }
 
 .menu-catalog__close {
