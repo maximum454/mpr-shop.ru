@@ -3928,6 +3928,12 @@ $(function () {
     /*$('.menu-big__list').masonry({
         itemSelector: '.menu-big__item',
     });*/
+    $('.header__burger').on('click', function (){
+        $('.menu-mobile').addClass('active');
+    })
+    $('.js-mobile-close').on('click', function (){
+        $('.menu-mobile').removeClass('active');
+    })
 
     $('.js-input-search').on('focus', function (){
         $(this).parents('.search-form').addClass('active');
