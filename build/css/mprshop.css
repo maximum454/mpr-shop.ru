@@ -8518,6 +8518,18 @@ body.lock {
   height: 24px;
 }
 
+.service .search-form__drop {
+  padding: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 24px rgba(229, 235, 240, 0.5);
+          box-shadow: 0px 2px 24px rgba(229, 235, 240, 0.5);
+  border-radius: 12px;
+}
+
+.service .search-form__drop li:last-of-type {
+  margin-bottom: 0;
+}
+
 .slider-main {
   width: 100%;
   max-width: 1015px;
