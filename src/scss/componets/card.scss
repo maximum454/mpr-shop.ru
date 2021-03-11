@@ -73,6 +73,7 @@
 		align-items: center;
 	}
 
+
 	&__body {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -112,6 +113,9 @@
 		&--border{
 			border: 1px solid #E0E0E0!important;
 			border-radius: 12px;
+		}
+		&.p20{
+			padding: 20px;
 		}
 		&:hover{
 			.card__inner{
