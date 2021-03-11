@@ -3521,6 +3521,7 @@ body.lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  z-index: 10000;
 }
 
 .header__list {
@@ -5739,6 +5740,10 @@ body.lock {
   overflow-y: hidden;
 }
 
+.accompany__body div:focus {
+  outline: none;
+}
+
 .accompany__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5748,6 +5753,10 @@ body.lock {
           align-items: center;
   width: 360px;
   text-decoration: none;
+}
+
+.accompany__item:focus {
+  outline: none;
 }
 
 .accompany__img {
