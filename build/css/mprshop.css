@@ -3521,7 +3521,7 @@ body.lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  z-index: 10000;
+  z-index: 110;
 }
 
 .header__list {
@@ -4532,7 +4532,7 @@ body.lock {
 
 .main__menu-big.active {
   display: block;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .main__menu-big.active:before {
@@ -6611,7 +6611,7 @@ body.lock {
   margin: 0;
   padding: 0;
   list-style: none;
-  z-index: 1000;
+  z-index: 105;
 }
 
 .menu__list--main li a {

@@ -32,7 +32,7 @@
 
 		&.active{
 			display: block;
-			z-index: 1000;
+			z-index: 100;
 			&:before{
 				content: '';
 				position: absolute;
