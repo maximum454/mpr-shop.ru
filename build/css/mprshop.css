@@ -8975,6 +8975,16 @@ body.lock {
   margin-right: 0;
 }
 
+.contacts__info a {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+  text-decoration: none;
+}
+
 .order {
   display: grid;
   grid-template-columns: minmax(280px, 640px) 280px;
