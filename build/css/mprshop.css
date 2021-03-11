@@ -5760,6 +5760,10 @@ body.lock {
   outline: none;
 }
 
+.accompany__item:hover .accompany__name {
+  color: #EB222D;
+}
+
 .accompany__img {
   margin-right: 20px;
   -webkit-box-flex: 0;

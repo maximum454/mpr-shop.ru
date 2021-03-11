@@ -55,6 +55,11 @@
 		&:focus{
 			outline: none;
 		}
+		&:hover{
+			.accompany__name{
+				color: #EB222D;
+			}
+		}
 	}
 	&__img{
 		margin-right: 20px;
