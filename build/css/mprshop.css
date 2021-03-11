@@ -4838,7 +4838,7 @@ body.lock {
   padding: 21px 45px 21px 32px;
   margin: 20px auto;
   position: relative;
-  height: 66px;
+  height: 70px;
 }
 
 .card__btn:before {
@@ -6695,6 +6695,7 @@ body.lock {
   left: 280px;
   background-color: #fff;
   width: calc(100% - 280px);
+  height: 100%;
   z-index: 1000;
   border-left: 1px solid #E0E0E0;
 }
