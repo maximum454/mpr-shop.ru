@@ -4698,7 +4698,6 @@ body.lock {
 .card__item {
   display: block;
   text-decoration: none;
-  max-width: 344px;
   border: 1px dashed #888E94;
   border-left: none;
   border-top: none;
@@ -4710,6 +4709,10 @@ body.lock {
 
 .card__item:nth-child(4n) {
   border-right: 0;
+}
+
+.card__item:nth-child(-n+4) {
+  border-bottom: 1px dashed #888E94 !important;
 }
 
 .card__item:nth-last-child(-n+4) {
@@ -4735,6 +4738,14 @@ body.lock {
 .card__item--border {
   border: 1px solid #E0E0E0 !important;
   border-radius: 12px;
+}
+
+.card__item.bb-none {
+  border-bottom: none !important;
+}
+
+.card__item.br-none {
+  border-right: none !important;
 }
 
 .card__item.p20 {
