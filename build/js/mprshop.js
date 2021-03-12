@@ -3883,6 +3883,611 @@ var $tabs = function (target) {
 tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__button fancybox-share__button--fb" href="https://www.facebook.com/sharer/sharer.php?u={{url}}"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m287 456v-299c0-21 6-35 35-35h38v-63c-7-1-29-3-55-3-54 0-91 33-91 94v306m143-254h-205v72h196" /></svg><span>Facebook</span></a><a class="fancybox-share__button fancybox-share__button--tw" href="https://twitter.com/intent/tweet?url={{url}}&text={{descr}}"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m456 133c-14 7-31 11-47 13 17-10 30-27 37-46-15 10-34 16-52 20-61-62-157-7-141 75-68-3-129-35-169-85-22 37-11 86 26 109-13 0-26-4-37-9 0 39 28 72 65 80-12 3-25 4-37 2 10 33 41 57 77 57-42 30-77 38-122 34 170 111 378-32 359-208 16-11 30-25 41-42z" /></svg><span>Twitter</span></a><a class="fancybox-share__button fancybox-share__button--pt" href="https://www.pinterest.com/pin/create/button/?url={{url}}&description={{descr}}&media={{media}}"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m265 56c-109 0-164 78-164 144 0 39 15 74 47 87 5 2 10 0 12-5l4-19c2-6 1-8-3-13-9-11-15-25-15-45 0-58 43-110 113-110 62 0 96 38 96 88 0 67-30 122-73 122-24 0-42-19-36-44 6-29 20-60 20-81 0-19-10-35-31-35-25 0-44 26-44 60 0 21 7 36 7 36l-30 125c-8 37-1 83 0 87 0 3 4 4 5 2 2-3 32-39 42-75l16-64c8 16 31 29 56 29 74 0 124-67 124-157 0-69-58-132-146-132z" fill="#fff"/></svg><span>Pinterest</span></a></p><p><input class="fancybox-share__input" type="text" value="{{url_raw}}" onclick="select()" /></p></div>'}}),e(t).on("click","[data-fancybox-share]",function(){var t,o,i=e.fancybox.getInstance(),a=i.current||null;a&&("function"===e.type(a.opts.share.url)&&(t=a.opts.share.url.apply(a,[i,a])),o=a.opts.share.tpl.replace(/\{\{media\}\}/g,"image"===a.type?encodeURIComponent(a.src):"").replace(/\{\{url\}\}/g,encodeURIComponent(t)).replace(/\{\{url_raw\}\}/g,n(t)).replace(/\{\{descr\}\}/g,i.$caption?encodeURIComponent(i.$caption.text()):""),e.fancybox.open({src:i.translate(i,o),type:"html",opts:{touch:!1,animationEffect:!1,afterLoad:function(t,e){i.$refs.container.one("beforeClose.fb",function(){t.close(null,0)}),e.$content.find(".fancybox-share__button").click(function(){return window.open(this.href,"Share","width=550, height=450"),!1})},mobile:{autoFocus:!1}}}))})}(document,jQuery),function(t,e,n){"use strict";function o(){var e=t.location.hash.substr(1),n=e.split("-"),o=n.length>1&&/^\+?\d+$/.test(n[n.length-1])?parseInt(n.pop(-1),10)||1:1,i=n.join("-");return{hash:e,index:o<1?1:o,gallery:i}}function i(t){""!==t.gallery&&n("[data-fancybox='"+n.escapeSelector(t.gallery)+"']").eq(t.index-1).focus().trigger("click.fb-start")}function a(t){var e,n;return!!t&&(e=t.current?t.current.opts:t.opts,""!==(n=e.hash||(e.$orig?e.$orig.data("fancybox")||e.$orig.data("fancybox-trigger"):""))&&n)}n.escapeSelector||(n.escapeSelector=function(t){return(t+"").replace(/([\0-\x1f\x7f]|^-?\d)|^-$|[^\x80-\uFFFF\w-]/g,function(t,e){return e?"\0"===t?"�":t.slice(0,-1)+"\\"+t.charCodeAt(t.length-1).toString(16)+" ":"\\"+t})}),n(function(){!1!==n.fancybox.defaults.hash&&(n(e).on({"onInit.fb":function(t,e){var n,i;!1!==e.group[e.currIndex].opts.hash&&(n=o(),(i=a(e))&&n.gallery&&i==n.gallery&&(e.currIndex=n.index-1))},"beforeShow.fb":function(n,o,i,s){var r;i&&!1!==i.opts.hash&&(r=a(o))&&(o.currentHash=r+(o.group.length>1?"-"+(i.index+1):""),t.location.hash!=="#"+o.currentHash&&(s&&!o.origHash&&(o.origHash=t.location.hash),o.hashTimer&&clearTimeout(o.hashTimer),o.hashTimer=setTimeout(function(){"replaceState"in t.history?(t.history[s?"pushState":"replaceState"]({},e.title,t.location.pathname+t.location.search+"#"+o.currentHash),s&&(o.hasCreatedHistory=!0)):t.location.hash=o.currentHash,o.hashTimer=null},300)))},"beforeClose.fb":function(n,o,i){i&&!1!==i.opts.hash&&(clearTimeout(o.hashTimer),o.currentHash&&o.hasCreatedHistory?t.history.back():o.currentHash&&("replaceState"in t.history?t.history.replaceState({},e.title,t.location.pathname+t.location.search+(o.origHash||"")):t.location.hash=o.origHash),o.currentHash=null)}}),n(t).on("hashchange.fb",function(){var t=o(),e=null;n.each(n(".fancybox-container").get().reverse(),function(t,o){var i=n(o).data("FancyBox");if(i&&i.currentHash)return e=i,!1}),e?e.currentHash===t.gallery+"-"+t.index||1===t.index&&e.currentHash==t.gallery||(e.currentHash=null,e.close()):""!==t.gallery&&i(t)}),setTimeout(function(){n.fancybox.getInstance()||i(o())},50))})}(window,document,jQuery),function(t,e){"use strict";var n=(new Date).getTime();e(t).on({"onInit.fb":function(t,e,o){e.$refs.stage.on("mousewheel DOMMouseScroll wheel MozMousePixelScroll",function(t){var o=e.current,i=(new Date).getTime();e.group.length<2||!1===o.opts.wheel||"auto"===o.opts.wheel&&"image"!==o.type||(t.preventDefault(),t.stopPropagation(),o.$slide.hasClass("fancybox-animated")||(t=t.originalEvent||t,i-n<250||(n=i,e[(-t.deltaY||-t.deltaX||t.wheelDelta||-t.detail)<0?"next":"previous"]())))})}})}(document,jQuery);
 /* jQuery Form Styler v2.0.2 | (c) Dimox | https://github.com/Dimox/jQueryFormStyler */
 !function(e){"function"==typeof define&&define.amd?define(["jquery"],e):"object"==typeof exports?module.exports=e($||require("jquery")):e(jQuery)}(function(e){"use strict";function t(t,s){this.element=t,this.options=e.extend({},l,s);var i=this.options.locale;void 0!==this.options.locales[i]&&e.extend(this.options,this.options.locales[i]),this.init()}function s(t){if(!e(t.target).parents().hasClass("jq-selectbox")&&"OPTION"!=t.target.nodeName&&e("div.jq-selectbox.opened").length){var s=e("div.jq-selectbox.opened"),l=e("div.jq-selectbox__search input",s),o=e("div.jq-selectbox__dropdown",s);s.find("select").data("_"+i).options.onSelectClosed.call(s),l.length&&l.val("").keyup(),o.hide().find("li.sel").addClass("selected"),s.removeClass("focused opened dropup dropdown")}}var i="styler",l={idSuffix:"-styler",filePlaceholder:"Файл не выбран",fileBrowse:"Обзор...",fileNumber:"Выбрано файлов: %s",selectPlaceholder:"Выберите...",selectSearch:!1,selectSearchLimit:10,selectSearchNotFound:"Совпадений не найдено",selectSearchPlaceholder:"Поиск...",selectVisibleOptions:0,selectSmartPositioning:!0,locale:"ru",locales:{en:{filePlaceholder:"No file selected",fileBrowse:"Browse...",fileNumber:"Selected files: %s",selectPlaceholder:"Select...",selectSearchNotFound:"No matches found",selectSearchPlaceholder:"Search..."}},onSelectOpened:function(){},onSelectClosed:function(){},onFormStyled:function(){}};t.prototype={init:function(){function t(){void 0!==i.attr("id")&&""!==i.attr("id")&&(this.id=i.attr("id")+l.idSuffix),this.title=i.attr("title"),this.classes=i.attr("class"),this.data=i.data()}var i=e(this.element),l=this.options,o=!(!navigator.userAgent.match(/(iPad|iPhone|iPod)/i)||navigator.userAgent.match(/(Windows\sPhone)/i)),a=!(!navigator.userAgent.match(/Android/i)||navigator.userAgent.match(/(Windows\sPhone)/i));if(i.is(":checkbox")){var d=function(){var s=new t,l=e('<div class="jq-checkbox"><div class="jq-checkbox__div"></div></div>').attr({id:s.id,title:s.title}).addClass(s.classes).data(s.data);i.after(l).prependTo(l),i.is(":checked")&&l.addClass("checked"),i.is(":disabled")&&l.addClass("disabled"),l.click(function(e){e.preventDefault(),i.triggerHandler("click"),l.is(".disabled")||(i.is(":checked")?(i.prop("checked",!1),l.removeClass("checked")):(i.prop("checked",!0),l.addClass("checked")),i.focus().change())}),i.closest("label").add('label[for="'+i.attr("id")+'"]').on("click.styler",function(t){e(t.target).is("a")||e(t.target).closest(l).length||(l.triggerHandler("click"),t.preventDefault())}),i.on("change.styler",function(){i.is(":checked")?l.addClass("checked"):l.removeClass("checked")}).on("keydown.styler",function(e){32==e.which&&l.click()}).on("focus.styler",function(){l.is(".disabled")||l.addClass("focused")}).on("blur.styler",function(){l.removeClass("focused")})};d(),i.on("refresh",function(){i.closest("label").add('label[for="'+i.attr("id")+'"]').off(".styler"),i.off(".styler").parent().before(i).remove(),d()})}else if(i.is(":radio")){var r=function(){var s=new t,l=e('<div class="jq-radio"><div class="jq-radio__div"></div></div>').attr({id:s.id,title:s.title}).addClass(s.classes).data(s.data);i.after(l).prependTo(l),i.is(":checked")&&l.addClass("checked"),i.is(":disabled")&&l.addClass("disabled"),e.fn.commonParents=function(){var t=this;return t.first().parents().filter(function(){return e(this).find(t).length===t.length})},e.fn.commonParent=function(){return e(this).commonParents().first()},l.click(function(t){if(t.preventDefault(),i.triggerHandler("click"),!l.is(".disabled")){var s=e('input[name="'+i.attr("name")+'"]');s.commonParent().find(s).prop("checked",!1).parent().removeClass("checked"),i.prop("checked",!0).parent().addClass("checked"),i.focus().change()}}),i.closest("label").add('label[for="'+i.attr("id")+'"]').on("click.styler",function(t){e(t.target).is("a")||e(t.target).closest(l).length||(l.triggerHandler("click"),t.preventDefault())}),i.on("change.styler",function(){i.parent().addClass("checked")}).on("focus.styler",function(){l.is(".disabled")||l.addClass("focused")}).on("blur.styler",function(){l.removeClass("focused")})};r(),i.on("refresh",function(){i.closest("label").add('label[for="'+i.attr("id")+'"]').off(".styler"),i.off(".styler").parent().before(i).remove(),r()})}else if(i.is(":file")){var c=function(){var s=new t,o=i.data("placeholder");void 0===o&&(o=l.filePlaceholder);var a=i.data("browse");void 0!==a&&""!==a||(a=l.fileBrowse);var d=e('<div class="jq-file"><div class="jq-file__name">'+o+'</div><div class="jq-file__browse">'+a+"</div></div>").attr({id:s.id,title:s.title}).addClass(s.classes).data(s.data);i.after(d).appendTo(d),i.is(":disabled")&&d.addClass("disabled");var r=i.val(),c=e("div.jq-file__name",d);r&&c.text(r.replace(/.+[\\\/]/,"")),i.on("change.styler",function(){var e=i.val();if(i.is("[multiple]")){e="";var t=i[0].files.length;if(t>0){var s=i.data("number");void 0===s&&(s=l.fileNumber),s=s.replace("%s",t),e=s}}c.text(e.replace(/.+[\\\/]/,"")),""===e?(c.text(o),d.removeClass("changed")):d.addClass("changed")}).on("focus.styler",function(){d.addClass("focused")}).on("blur.styler",function(){d.removeClass("focused")}).on("click.styler",function(){d.removeClass("focused")})};c(),i.on("refresh",function(){i.off(".styler").parent().before(i).remove(),c()})}else if(i.is('input[type="number"]')){var n=function(){var s=new t,l=e('<div class="jq-number"><div class="jq-number__spin minus"></div><div class="jq-number__spin plus"></div></div>').attr({id:s.id,title:s.title}).addClass(s.classes).data(s.data);i.after(l).prependTo(l).wrap('<div class="jq-number__field"></div>'),i.is(":disabled")&&l.addClass("disabled");var o,a,d,r=null,c=null;void 0!==i.attr("min")&&(o=i.attr("min")),void 0!==i.attr("max")&&(a=i.attr("max")),d=void 0!==i.attr("step")&&e.isNumeric(i.attr("step"))?Number(i.attr("step")):Number(1);var n=function(t){var s,l=i.val();e.isNumeric(l)||(l=0,i.val("0")),t.is(".minus")?s=Number(l)-d:t.is(".plus")&&(s=Number(l)+d);var r=(d.toString().split(".")[1]||[]).length;if(r>0){for(var c="1";c.length<=r;)c+="0";s=Math.round(s*c)/c}e.isNumeric(o)&&e.isNumeric(a)?s>=o&&s<=a&&i.val(s):e.isNumeric(o)&&!e.isNumeric(a)?s>=o&&i.val(s):!e.isNumeric(o)&&e.isNumeric(a)?s<=a&&i.val(s):i.val(s)};l.is(".disabled")||(l.on("mousedown","div.jq-number__spin",function(){var t=e(this);n(t),r=setTimeout(function(){c=setInterval(function(){n(t)},40)},350)}).on("mouseup mouseout","div.jq-number__spin",function(){clearTimeout(r),clearInterval(c)}).on("mouseup","div.jq-number__spin",function(){i.change().trigger("input")}),i.on("focus.styler",function(){l.addClass("focused")}).on("blur.styler",function(){l.removeClass("focused")}))};n(),i.on("refresh",function(){i.off(".styler").closest(".jq-number").before(i).remove(),n()})}else if(i.is("select")){var f=function(){function d(e){var t=e.prop("scrollHeight")-e.outerHeight(),s=null,i=null;e.off("mousewheel DOMMouseScroll").on("mousewheel DOMMouseScroll",function(l){s=l.originalEvent.detail<0||l.originalEvent.wheelDelta>0?1:-1,((i=e.scrollTop())>=t&&s<0||i<=0&&s>0)&&(l.stopPropagation(),l.preventDefault())})}function r(){for(var e=0;e<c.length;e++){var t=c.eq(e),s="",i="",o="",a="",d="",r="",f="",h="",u="";t.prop("selected")&&(i="selected sel"),t.is(":disabled")&&(i="disabled"),t.is(":selected:disabled")&&(i="selected sel disabled"),void 0!==t.attr("id")&&""!==t.attr("id")&&(a=' id="'+t.attr("id")+l.idSuffix+'"'),void 0!==t.attr("title")&&""!==c.attr("title")&&(d=' title="'+t.attr("title")+'"'),void 0!==t.attr("class")&&(f=" "+t.attr("class"),u=' data-jqfs-class="'+t.attr("class")+'"');var p=t.data();for(var v in p)""!==p[v]&&(r+=" data-"+v+'="'+p[v]+'"');i+f!==""&&(o=' class="'+i+f+'"'),s="<li"+u+r+o+d+a+">"+t.html()+"</li>",t.parent().is("optgroup")&&(void 0!==t.parent().attr("class")&&(h=" "+t.parent().attr("class")),s="<li"+u+r+' class="'+i+f+" option"+h+'"'+d+a+">"+t.html()+"</li>",t.is(":first-child")&&(s='<li class="optgroup'+h+'">'+t.parent().attr("label")+"</li>"+s)),n+=s}}var c=e("option",i),n="";if(i.is("[multiple]")){if(a||o)return;!function(){var s=new t,l=e('<div class="jq-select-multiple jqselect"></div>').attr({id:s.id,title:s.title}).addClass(s.classes).data(s.data);i.after(l),r(),l.append("<ul>"+n+"</ul>");var o=e("ul",l),a=e("li",l),f=i.attr("size"),h=o.outerHeight(),u=a.outerHeight();void 0!==f&&f>0?o.css({height:u*f}):o.css({height:4*u}),h>l.height()&&(o.css("overflowY","scroll"),d(o),a.filter(".selected").length&&o.scrollTop(o.scrollTop()+a.filter(".selected").position().top)),i.prependTo(l),i.is(":disabled")?(l.addClass("disabled"),c.each(function(){e(this).is(":selected")&&a.eq(e(this).index()).addClass("selected")})):(a.filter(":not(.disabled):not(.optgroup)").click(function(t){i.focus();var s=e(this);if(t.ctrlKey||t.metaKey||s.addClass("selected"),t.shiftKey||s.addClass("first"),t.ctrlKey||t.metaKey||t.shiftKey||s.siblings().removeClass("selected first"),(t.ctrlKey||t.metaKey)&&(s.is(".selected")?s.removeClass("selected first"):s.addClass("selected first"),s.siblings().removeClass("first")),t.shiftKey){var l=!1,o=!1;s.siblings().removeClass("selected").siblings(".first").addClass("selected"),s.prevAll().each(function(){e(this).is(".first")&&(l=!0)}),s.nextAll().each(function(){e(this).is(".first")&&(o=!0)}),l&&s.prevAll().each(function(){if(e(this).is(".selected"))return!1;e(this).not(".disabled, .optgroup").addClass("selected")}),o&&s.nextAll().each(function(){if(e(this).is(".selected"))return!1;e(this).not(".disabled, .optgroup").addClass("selected")}),1==a.filter(".selected").length&&s.addClass("first")}c.prop("selected",!1),a.filter(".selected").each(function(){var t=e(this),s=t.index();t.is(".option")&&(s-=t.prevAll(".optgroup").length),c.eq(s).prop("selected",!0)}),i.change()}),c.each(function(t){e(this).data("optionIndex",t)}),i.on("change.styler",function(){a.removeClass("selected");var t=[];c.filter(":selected").each(function(){t.push(e(this).data("optionIndex"))}),a.not(".optgroup").filter(function(s){return e.inArray(s,t)>-1}).addClass("selected")}).on("focus.styler",function(){l.addClass("focused")}).on("blur.styler",function(){l.removeClass("focused")}),h>l.height()&&i.on("keydown.styler",function(e){38!=e.which&&37!=e.which&&33!=e.which||o.scrollTop(o.scrollTop()+a.filter(".selected").position().top-u),40!=e.which&&39!=e.which&&34!=e.which||o.scrollTop(o.scrollTop()+a.filter(".selected:last").position().top-o.innerHeight()+2*u)}))}()}else!function(){var a=new t,f="",h=i.data("placeholder"),u=i.data("search"),p=i.data("search-limit"),v=i.data("search-not-found"),m=i.data("search-placeholder"),g=i.data("smart-positioning");void 0===h&&(h=l.selectPlaceholder),void 0!==u&&""!==u||(u=l.selectSearch),void 0!==p&&""!==p||(p=l.selectSearchLimit),void 0!==v&&""!==v||(v=l.selectSearchNotFound),void 0===m&&(m=l.selectSearchPlaceholder),void 0!==g&&""!==g||(g=l.selectSmartPositioning);var b=e('<div class="jq-selectbox jqselect"><div class="jq-selectbox__select"><div class="jq-selectbox__select-text"></div><div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div></div></div>').attr({id:a.id,title:a.title}).addClass(a.classes).data(a.data);i.after(b).prependTo(b);var C=b.css("z-index");C=C>0?C:1;var x=e("div.jq-selectbox__select",b),y=e("div.jq-selectbox__select-text",b),w=c.filter(":selected");r(),u&&(f='<div class="jq-selectbox__search"><input type="search" autocomplete="off" placeholder="'+m+'"></div><div class="jq-selectbox__not-found">'+v+"</div>");var q=e('<div class="jq-selectbox__dropdown">'+f+"<ul>"+n+"</ul></div>");b.append(q);var _=e("ul",q),j=e("li",q),k=e("input",q),S=e("div.jq-selectbox__not-found",q).hide();j.length<p&&k.parent().hide(),""===c.first().text()&&c.first().is(":selected")&&!1!==h?y.text(h).addClass("placeholder"):y.text(w.text());var T=0,N=0;if(j.css({display:"inline-block"}),j.each(function(){var t=e(this);t.innerWidth()>T&&(T=t.innerWidth(),N=t.width())}),j.css({display:""}),y.is(".placeholder")&&y.width()>T)y.width(y.width());else{var P=b.clone().appendTo("body").width("auto"),H=P.outerWidth();P.remove(),H==b.outerWidth()&&y.width(N)}T>b.width()&&q.width(T),""===c.first().text()&&""!==i.data("placeholder")&&j.first().hide();var A=b.outerHeight(!0),D=k.parent().outerHeight(!0)||0,I=_.css("max-height"),K=j.filter(".selected");if(K.length<1&&j.first().addClass("selected sel"),void 0===j.data("li-height")){var O=j.outerHeight();!1!==h&&(O=j.eq(1).outerHeight()),j.data("li-height",O)}var M=q.css("top");if("auto"==q.css("left")&&q.css({left:0}),"auto"==q.css("top")&&(q.css({top:A}),M=A),q.hide(),K.length&&(c.first().text()!=w.text()&&b.addClass("changed"),b.data("jqfs-class",K.data("jqfs-class")),b.addClass(K.data("jqfs-class"))),i.is(":disabled"))return b.addClass("disabled"),!1;x.click(function(){if(e("div.jq-selectbox").filter(".opened").length&&l.onSelectClosed.call(e("div.jq-selectbox").filter(".opened")),i.focus(),!o){var t=e(window),s=j.data("li-height"),a=b.offset().top,r=t.height()-A-(a-t.scrollTop()),n=i.data("visible-options");void 0!==n&&""!==n||(n=l.selectVisibleOptions);var f=5*s,h=s*n;n>0&&n<6&&(f=h),0===n&&(h="auto");var u=function(){q.height("auto").css({bottom:"auto",top:M});var e=function(){_.css("max-height",Math.floor((r-20-D)/s)*s)};e(),_.css("max-height",h),"none"!=I&&_.css("max-height",I),r<q.outerHeight()+20&&e()};!0===g||1===g?r>f+D+20?(u(),b.removeClass("dropup").addClass("dropdown")):(function(){q.height("auto").css({top:"auto",bottom:M});var e=function(){_.css("max-height",Math.floor((a-t.scrollTop()-20-D)/s)*s)};e(),_.css("max-height",h),"none"!=I&&_.css("max-height",I),a-t.scrollTop()-20<q.outerHeight()+20&&e()}(),b.removeClass("dropdown").addClass("dropup")):!1===g||0===g?r>f+D+20&&(u(),b.removeClass("dropup").addClass("dropdown")):(q.height("auto").css({bottom:"auto",top:M}),_.css("max-height",h),"none"!=I&&_.css("max-height",I)),b.offset().left+q.outerWidth()>t.width()&&q.css({left:"auto",right:0}),e("div.jqselect").css({zIndex:C-1}).removeClass("opened"),b.css({zIndex:C}),q.is(":hidden")?(e("div.jq-selectbox__dropdown:visible").hide(),q.show(),b.addClass("opened focused"),l.onSelectOpened.call(b)):(q.hide(),b.removeClass("opened dropup dropdown"),e("div.jq-selectbox").filter(".opened").length&&l.onSelectClosed.call(b)),k.length&&(k.val("").keyup(),S.hide(),k.keyup(function(){var t=e(this).val();j.each(function(){e(this).html().match(new RegExp(".*?"+t+".*?","i"))?e(this).show():e(this).hide()}),""===c.first().text()&&""!==i.data("placeholder")&&j.first().hide(),j.filter(":visible").length<1?S.show():S.hide()})),j.filter(".selected").length&&(""===i.val()?_.scrollTop(0):(_.innerHeight()/s%2!=0&&(s/=2),_.scrollTop(_.scrollTop()+j.filter(".selected").position().top-_.innerHeight()/2+s))),d(_)}}),j.hover(function(){e(this).siblings().removeClass("selected")});var W=j.filter(".selected").text();j.filter(":not(.disabled):not(.optgroup)").click(function(){i.focus();var t=e(this),s=t.text();if(!t.is(".selected")){var o=t.index();o-=t.prevAll(".optgroup").length,t.addClass("selected sel").siblings().removeClass("selected sel"),c.prop("selected",!1).eq(o).prop("selected",!0),W=s,y.text(s),b.data("jqfs-class")&&b.removeClass(b.data("jqfs-class")),b.data("jqfs-class",t.data("jqfs-class")),b.addClass(t.data("jqfs-class")),i.change()}q.hide(),b.removeClass("opened dropup dropdown"),l.onSelectClosed.call(b)}),q.mouseout(function(){e("li.sel",q).addClass("selected")}),i.on("change.styler",function(){y.text(c.filter(":selected").text()).removeClass("placeholder"),j.removeClass("selected sel").not(".optgroup").eq(i[0].selectedIndex).addClass("selected sel"),c.first().text()!=j.filter(".selected").text()?b.addClass("changed"):b.removeClass("changed")}).on("focus.styler",function(){b.addClass("focused"),e("div.jqselect").not(".focused").removeClass("opened dropup dropdown").find("div.jq-selectbox__dropdown").hide()}).on("blur.styler",function(){b.removeClass("focused")}).on("keydown.styler keyup.styler",function(e){var t=j.data("li-height");""===i.val()?y.text(h).addClass("placeholder"):y.text(c.filter(":selected").text()),j.removeClass("selected sel").not(".optgroup").eq(i[0].selectedIndex).addClass("selected sel"),38!=e.which&&37!=e.which&&33!=e.which&&36!=e.which||(""===i.val()?_.scrollTop(0):_.scrollTop(_.scrollTop()+j.filter(".selected").position().top)),40!=e.which&&39!=e.which&&34!=e.which&&35!=e.which||_.scrollTop(_.scrollTop()+j.filter(".selected").position().top-_.innerHeight()+t),13==e.which&&(e.preventDefault(),q.hide(),b.removeClass("opened dropup dropdown"),l.onSelectClosed.call(b))}).on("keydown.styler",function(e){32==e.which&&(e.preventDefault(),x.click())}),s.registered||(e(document).on("click",s),s.registered=!0)}()};f(),i.on("refresh",function(){i.off(".styler").parent().before(i).remove(),f()})}else i.is(":reset")&&i.on("click",function(){setTimeout(function(){i.closest("form").find("input, select").trigger("refresh")},1)})},destroy:function(){var t=e(this.element);t.is(":checkbox")||t.is(":radio")?(t.removeData("_"+i).off(".styler refresh").removeAttr("style").parent().before(t).remove(),t.closest("label").add('label[for="'+t.attr("id")+'"]').off(".styler")):t.is('input[type="number"]')?t.removeData("_"+i).off(".styler refresh").closest(".jq-number").before(t).remove():(t.is(":file")||t.is("select"))&&t.removeData("_"+i).off(".styler refresh").removeAttr("style").parent().before(t).remove()}},e.fn[i]=function(s){var l=arguments;if(void 0===s||"object"==typeof s)return this.each(function(){e.data(this,"_"+i)||e.data(this,"_"+i,new t(this,s))}).promise().done(function(){var t=e(this[0]).data("_"+i);t&&t.options.onFormStyled.call()}),this;if("string"==typeof s&&"_"!==s[0]&&"init"!==s){var o;return this.each(function(){var a=e.data(this,"_"+i);a instanceof t&&"function"==typeof a[s]&&(o=a[s].apply(a,Array.prototype.slice.call(l,1)))}),void 0!==o?o:this}},s.registered=!1});
+/**
+ * jquery.mask.js
+ * @version: v1.14.16
+ * @author: Igor Escobar
+ *
+ * Created by Igor Escobar on 2012-03-10. Please report any bug at github.com/igorescobar/jQuery-Mask-Plugin
+ *
+ * Copyright (c) 2012 Igor Escobar http://igorescobar.com
+ *
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/* jshint laxbreak: true */
+/* jshint maxcomplexity:17 */
+/* global define */
+
+// UMD (Universal Module Definition) patterns for JavaScript modules that work everywhere.
+// https://github.com/umdjs/umd/blob/master/templates/jqueryPlugin.js
+(function (factory, jQuery, Zepto) {
+
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object' && typeof Meteor === 'undefined') {
+        module.exports = factory(require('jquery'));
+    } else {
+        factory(jQuery || Zepto);
+    }
+
+}(function ($) {
+    'use strict';
+
+    var Mask = function (el, mask, options) {
+
+        var p = {
+            invalid: [],
+            getCaret: function () {
+                try {
+                    var sel,
+                        pos = 0,
+                        ctrl = el.get(0),
+                        dSel = document.selection,
+                        cSelStart = ctrl.selectionStart;
+
+                    // IE Support
+                    if (dSel && navigator.appVersion.indexOf('MSIE 10') === -1) {
+                        sel = dSel.createRange();
+                        sel.moveStart('character', -p.val().length);
+                        pos = sel.text.length;
+                    }
+                    // Firefox support
+                    else if (cSelStart || cSelStart === '0') {
+                        pos = cSelStart;
+                    }
+
+                    return pos;
+                } catch (e) {}
+            },
+            setCaret: function(pos) {
+                try {
+                    if (el.is(':focus')) {
+                        var range, ctrl = el.get(0);
+
+                        // Firefox, WebKit, etc..
+                        if (ctrl.setSelectionRange) {
+                            ctrl.setSelectionRange(pos, pos);
+                        } else { // IE
+                            range = ctrl.createTextRange();
+                            range.collapse(true);
+                            range.moveEnd('character', pos);
+                            range.moveStart('character', pos);
+                            range.select();
+                        }
+                    }
+                } catch (e) {}
+            },
+            events: function() {
+                el
+                .on('keydown.mask', function(e) {
+                    el.data('mask-keycode', e.keyCode || e.which);
+                    el.data('mask-previus-value', el.val());
+                    el.data('mask-previus-caret-pos', p.getCaret());
+                    p.maskDigitPosMapOld = p.maskDigitPosMap;
+                })
+                .on($.jMaskGlobals.useInput ? 'input.mask' : 'keyup.mask', p.behaviour)
+                .on('paste.mask drop.mask', function() {
+                    setTimeout(function() {
+                        el.keydown().keyup();
+                    }, 100);
+                })
+                .on('change.mask', function(){
+                    el.data('changed', true);
+                })
+                .on('blur.mask', function(){
+                    if (oldValue !== p.val() && !el.data('changed')) {
+                        el.trigger('change');
+                    }
+                    el.data('changed', false);
+                })
+                // it's very important that this callback remains in this position
+                // otherwhise oldValue it's going to work buggy
+                .on('blur.mask', function() {
+                    oldValue = p.val();
+                })
+                // select all text on focus
+                .on('focus.mask', function (e) {
+                    if (options.selectOnFocus === true) {
+                        $(e.target).select();
+                    }
+                })
+                // clear the value if it not complete the mask
+                .on('focusout.mask', function() {
+                    if (options.clearIfNotMatch && !regexMask.test(p.val())) {
+                       p.val('');
+                   }
+                });
+            },
+            getRegexMask: function() {
+                var maskChunks = [], translation, pattern, optional, recursive, oRecursive, r;
+
+                for (var i = 0; i < mask.length; i++) {
+                    translation = jMask.translation[mask.charAt(i)];
+
+                    if (translation) {
+
+                        pattern = translation.pattern.toString().replace(/.{1}$|^.{1}/g, '');
+                        optional = translation.optional;
+                        recursive = translation.recursive;
+
+                        if (recursive) {
+                            maskChunks.push(mask.charAt(i));
+                            oRecursive = {digit: mask.charAt(i), pattern: pattern};
+                        } else {
+                            maskChunks.push(!optional && !recursive ? pattern : (pattern + '?'));
+                        }
+
+                    } else {
+                        maskChunks.push(mask.charAt(i).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'));
+                    }
+                }
+
+                r = maskChunks.join('');
+
+                if (oRecursive) {
+                    r = r.replace(new RegExp('(' + oRecursive.digit + '(.*' + oRecursive.digit + ')?)'), '($1)?')
+                         .replace(new RegExp(oRecursive.digit, 'g'), oRecursive.pattern);
+                }
+
+                return new RegExp(r);
+            },
+            destroyEvents: function() {
+                el.off(['input', 'keydown', 'keyup', 'paste', 'drop', 'blur', 'focusout', ''].join('.mask '));
+            },
+            val: function(v) {
+                var isInput = el.is('input'),
+                    method = isInput ? 'val' : 'text',
+                    r;
+
+                if (arguments.length > 0) {
+                    if (el[method]() !== v) {
+                        el[method](v);
+                    }
+                    r = el;
+                } else {
+                    r = el[method]();
+                }
+
+                return r;
+            },
+            calculateCaretPosition: function(oldVal) {
+                var newVal = p.getMasked(),
+                    caretPosNew = p.getCaret();
+                if (oldVal !== newVal) {
+                    var caretPosOld = el.data('mask-previus-caret-pos') || 0,
+                        newValL = newVal.length,
+                        oldValL = oldVal.length,
+                        maskDigitsBeforeCaret = 0,
+                        maskDigitsAfterCaret = 0,
+                        maskDigitsBeforeCaretAll = 0,
+                        maskDigitsBeforeCaretAllOld = 0,
+                        i = 0;
+
+                    for (i = caretPosNew; i < newValL; i++) {
+                        if (!p.maskDigitPosMap[i]) {
+                            break;
+                        }
+                        maskDigitsAfterCaret++;
+                    }
+
+                    for (i = caretPosNew - 1; i >= 0; i--) {
+                        if (!p.maskDigitPosMap[i]) {
+                            break;
+                        }
+                        maskDigitsBeforeCaret++;
+                    }
+
+                    for (i = caretPosNew - 1; i >= 0; i--) {
+                        if (p.maskDigitPosMap[i]) {
+                            maskDigitsBeforeCaretAll++;
+                        }
+                    }
+
+                    for (i = caretPosOld - 1; i >= 0; i--) {
+                        if (p.maskDigitPosMapOld[i]) {
+                            maskDigitsBeforeCaretAllOld++;
+                        }
+                    }
+
+                    // if the cursor is at the end keep it there
+                    if (caretPosNew > oldValL) {
+                      caretPosNew = newValL * 10;
+                    } else if (caretPosOld >= caretPosNew && caretPosOld !== oldValL) {
+                        if (!p.maskDigitPosMapOld[caretPosNew])  {
+                          var caretPos = caretPosNew;
+                          caretPosNew -= maskDigitsBeforeCaretAllOld - maskDigitsBeforeCaretAll;
+                          caretPosNew -= maskDigitsBeforeCaret;
+                          if (p.maskDigitPosMap[caretPosNew])  {
+                            caretPosNew = caretPos;
+                          }
+                        }
+                    }
+                    else if (caretPosNew > caretPosOld) {
+                        caretPosNew += maskDigitsBeforeCaretAll - maskDigitsBeforeCaretAllOld;
+                        caretPosNew += maskDigitsAfterCaret;
+                    }
+                }
+                return caretPosNew;
+            },
+            behaviour: function(e) {
+                e = e || window.event;
+                p.invalid = [];
+
+                var keyCode = el.data('mask-keycode');
+
+                if ($.inArray(keyCode, jMask.byPassKeys) === -1) {
+                    var newVal = p.getMasked(),
+                        caretPos = p.getCaret(),
+                        oldVal = el.data('mask-previus-value') || '';
+
+                    // this is a compensation to devices/browsers that don't compensate
+                    // caret positioning the right way
+                    setTimeout(function() {
+                      p.setCaret(p.calculateCaretPosition(oldVal));
+                    }, $.jMaskGlobals.keyStrokeCompensation);
+
+                    p.val(newVal);
+                    p.setCaret(caretPos);
+                    return p.callbacks(e);
+                }
+            },
+            getMasked: function(skipMaskChars, val) {
+                var buf = [],
+                    value = val === undefined ? p.val() : val + '',
+                    m = 0, maskLen = mask.length,
+                    v = 0, valLen = value.length,
+                    offset = 1, addMethod = 'push',
+                    resetPos = -1,
+                    maskDigitCount = 0,
+                    maskDigitPosArr = [],
+                    lastMaskChar,
+                    check;
+
+                if (options.reverse) {
+                    addMethod = 'unshift';
+                    offset = -1;
+                    lastMaskChar = 0;
+                    m = maskLen - 1;
+                    v = valLen - 1;
+                    check = function () {
+                        return m > -1 && v > -1;
+                    };
+                } else {
+                    lastMaskChar = maskLen - 1;
+                    check = function () {
+                        return m < maskLen && v < valLen;
+                    };
+                }
+
+                var lastUntranslatedMaskChar;
+                while (check()) {
+                    var maskDigit = mask.charAt(m),
+                        valDigit = value.charAt(v),
+                        translation = jMask.translation[maskDigit];
+
+                    if (translation) {
+                        if (valDigit.match(translation.pattern)) {
+                            buf[addMethod](valDigit);
+                             if (translation.recursive) {
+                                if (resetPos === -1) {
+                                    resetPos = m;
+                                } else if (m === lastMaskChar && m !== resetPos) {
+                                    m = resetPos - offset;
+                                }
+
+                                if (lastMaskChar === resetPos) {
+                                    m -= offset;
+                                }
+                            }
+                            m += offset;
+                        } else if (valDigit === lastUntranslatedMaskChar) {
+                            // matched the last untranslated (raw) mask character that we encountered
+                            // likely an insert offset the mask character from the last entry; fall
+                            // through and only increment v
+                            maskDigitCount--;
+                            lastUntranslatedMaskChar = undefined;
+                        } else if (translation.optional) {
+                            m += offset;
+                            v -= offset;
+                        } else if (translation.fallback) {
+                            buf[addMethod](translation.fallback);
+                            m += offset;
+                            v -= offset;
+                        } else {
+                          p.invalid.push({p: v, v: valDigit, e: translation.pattern});
+                        }
+                        v += offset;
+                    } else {
+                        if (!skipMaskChars) {
+                            buf[addMethod](maskDigit);
+                        }
+
+                        if (valDigit === maskDigit) {
+                            maskDigitPosArr.push(v);
+                            v += offset;
+                        } else {
+                            lastUntranslatedMaskChar = maskDigit;
+                            maskDigitPosArr.push(v + maskDigitCount);
+                            maskDigitCount++;
+                        }
+
+                        m += offset;
+                    }
+                }
+
+                var lastMaskCharDigit = mask.charAt(lastMaskChar);
+                if (maskLen === valLen + 1 && !jMask.translation[lastMaskCharDigit]) {
+                    buf.push(lastMaskCharDigit);
+                }
+
+                var newVal = buf.join('');
+                p.mapMaskdigitPositions(newVal, maskDigitPosArr, valLen);
+                return newVal;
+            },
+            mapMaskdigitPositions: function(newVal, maskDigitPosArr, valLen) {
+              var maskDiff = options.reverse ? newVal.length - valLen : 0;
+              p.maskDigitPosMap = {};
+              for (var i = 0; i < maskDigitPosArr.length; i++) {
+                p.maskDigitPosMap[maskDigitPosArr[i] + maskDiff] = 1;
+              }
+            },
+            callbacks: function (e) {
+                var val = p.val(),
+                    changed = val !== oldValue,
+                    defaultArgs = [val, e, el, options],
+                    callback = function(name, criteria, args) {
+                        if (typeof options[name] === 'function' && criteria) {
+                            options[name].apply(this, args);
+                        }
+                    };
+
+                callback('onChange', changed === true, defaultArgs);
+                callback('onKeyPress', changed === true, defaultArgs);
+                callback('onComplete', val.length === mask.length, defaultArgs);
+                callback('onInvalid', p.invalid.length > 0, [val, e, el, p.invalid, options]);
+            }
+        };
+
+        el = $(el);
+        var jMask = this, oldValue = p.val(), regexMask;
+
+        mask = typeof mask === 'function' ? mask(p.val(), undefined, el,  options) : mask;
+
+        // public methods
+        jMask.mask = mask;
+        jMask.options = options;
+        jMask.remove = function() {
+            var caret = p.getCaret();
+            if (jMask.options.placeholder) {
+                el.removeAttr('placeholder');
+            }
+            if (el.data('mask-maxlength')) {
+                el.removeAttr('maxlength');
+            }
+            p.destroyEvents();
+            p.val(jMask.getCleanVal());
+            p.setCaret(caret);
+            return el;
+        };
+
+        // get value without mask
+        jMask.getCleanVal = function() {
+           return p.getMasked(true);
+        };
+
+        // get masked value without the value being in the input or element
+        jMask.getMaskedVal = function(val) {
+           return p.getMasked(false, val);
+        };
+
+       jMask.init = function(onlyMask) {
+            onlyMask = onlyMask || false;
+            options = options || {};
+
+            jMask.clearIfNotMatch  = $.jMaskGlobals.clearIfNotMatch;
+            jMask.byPassKeys       = $.jMaskGlobals.byPassKeys;
+            jMask.translation      = $.extend({}, $.jMaskGlobals.translation, options.translation);
+
+            jMask = $.extend(true, {}, jMask, options);
+
+            regexMask = p.getRegexMask();
+
+            if (onlyMask) {
+                p.events();
+                p.val(p.getMasked());
+            } else {
+                if (options.placeholder) {
+                    el.attr('placeholder' , options.placeholder);
+                }
+
+                // this is necessary, otherwise if the user submit the form
+                // and then press the "back" button, the autocomplete will erase
+                // the data. Works fine on IE9+, FF, Opera, Safari.
+                if (el.data('mask')) {
+                  el.attr('autocomplete', 'off');
+                }
+
+                // detect if is necessary let the user type freely.
+                // for is a lot faster than forEach.
+                for (var i = 0, maxlength = true; i < mask.length; i++) {
+                    var translation = jMask.translation[mask.charAt(i)];
+                    if (translation && translation.recursive) {
+                        maxlength = false;
+                        break;
+                    }
+                }
+
+                if (maxlength) {
+                    el.attr('maxlength', mask.length).data('mask-maxlength', true);
+                }
+
+                p.destroyEvents();
+                p.events();
+
+                var caret = p.getCaret();
+                p.val(p.getMasked());
+                p.setCaret(caret);
+            }
+        };
+
+        jMask.init(!el.is('input'));
+    };
+
+    $.maskWatchers = {};
+    var HTMLAttributes = function () {
+        var input = $(this),
+            options = {},
+            prefix = 'data-mask-',
+            mask = input.attr('data-mask');
+
+        if (input.attr(prefix + 'reverse')) {
+            options.reverse = true;
+        }
+
+        if (input.attr(prefix + 'clearifnotmatch')) {
+            options.clearIfNotMatch = true;
+        }
+
+        if (input.attr(prefix + 'selectonfocus') === 'true') {
+           options.selectOnFocus = true;
+        }
+
+        if (notSameMaskObject(input, mask, options)) {
+            return input.data('mask', new Mask(this, mask, options));
+        }
+    },
+    notSameMaskObject = function(field, mask, options) {
+        options = options || {};
+        var maskObject = $(field).data('mask'),
+            stringify = JSON.stringify,
+            value = $(field).val() || $(field).text();
+        try {
+            if (typeof mask === 'function') {
+                mask = mask(value);
+            }
+            return typeof maskObject !== 'object' || stringify(maskObject.options) !== stringify(options) || maskObject.mask !== mask;
+        } catch (e) {}
+    },
+    eventSupported = function(eventName) {
+        var el = document.createElement('div'), isSupported;
+
+        eventName = 'on' + eventName;
+        isSupported = (eventName in el);
+
+        if ( !isSupported ) {
+            el.setAttribute(eventName, 'return;');
+            isSupported = typeof el[eventName] === 'function';
+        }
+        el = null;
+
+        return isSupported;
+    };
+
+    $.fn.mask = function(mask, options) {
+        options = options || {};
+        var selector = this.selector,
+            globals = $.jMaskGlobals,
+            interval = globals.watchInterval,
+            watchInputs = options.watchInputs || globals.watchInputs,
+            maskFunction = function() {
+                if (notSameMaskObject(this, mask, options)) {
+                    return $(this).data('mask', new Mask(this, mask, options));
+                }
+            };
+
+        $(this).each(maskFunction);
+
+        if (selector && selector !== '' && watchInputs) {
+            clearInterval($.maskWatchers[selector]);
+            $.maskWatchers[selector] = setInterval(function(){
+                $(document).find(selector).each(maskFunction);
+            }, interval);
+        }
+        return this;
+    };
+
+    $.fn.masked = function(val) {
+        return this.data('mask').getMaskedVal(val);
+    };
+
+    $.fn.unmask = function() {
+        clearInterval($.maskWatchers[this.selector]);
+        delete $.maskWatchers[this.selector];
+        return this.each(function() {
+            var dataMask = $(this).data('mask');
+            if (dataMask) {
+                dataMask.remove().removeData('mask');
+            }
+        });
+    };
+
+    $.fn.cleanVal = function() {
+        return this.data('mask').getCleanVal();
+    };
+
+    $.applyDataMask = function(selector) {
+        selector = selector || $.jMaskGlobals.maskElements;
+        var $selector = (selector instanceof $) ? selector : $(selector);
+        $selector.filter($.jMaskGlobals.dataMaskAttr).each(HTMLAttributes);
+    };
+
+    var globals = {
+        maskElements: 'input,td,span,div',
+        dataMaskAttr: '*[data-mask]',
+        dataMask: true,
+        watchInterval: 300,
+        watchInputs: true,
+        keyStrokeCompensation: 10,
+        // old versions of chrome dont work great with input event
+        useInput: !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && eventSupported('input'),
+        watchDataMask: false,
+        byPassKeys: [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
+        translation: {
+            '0': {pattern: /\d/},
+            '9': {pattern: /\d/, optional: true},
+            '#': {pattern: /\d/, recursive: true},
+            'A': {pattern: /[a-zA-Z0-9]/},
+            'S': {pattern: /[a-zA-Z]/}
+        }
+    };
+
+    $.jMaskGlobals = $.jMaskGlobals || {};
+    globals = $.jMaskGlobals = $.extend(true, {}, globals, $.jMaskGlobals);
+
+    // looking for inputs with data-mask attribute
+    if (globals.dataMask) {
+        $.applyDataMask();
+    }
+
+    setInterval(function() {
+        if ($.jMaskGlobals.watchDataMask) {
+            $.applyDataMask();
+        }
+    }, globals.watchInterval);
+}, window.jQuery, window.Zepto));
+
 
 
 $(function () {
@@ -4114,9 +4719,13 @@ $(function () {
         return false;
     })
 
+    //Стилизация селектов
     setTimeout(function() {
         $('.js-select').styler();
     }, 100)
+
+    //Маска для телефона
+    $('.js-phone').mask('+7 (000) 000 00 00');
 
 
 

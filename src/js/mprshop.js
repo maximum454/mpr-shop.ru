@@ -5,6 +5,7 @@
 @@include('./partials/tabs.js')
 @@include('./partials/jquery.fancybox.min.js')
 @@include('./partials/jquery.formstyler.min.js')
+@@include('./partials/jquery.mask.js')
 
 
 @@include('./components/slider-promo.js')
@@ -155,9 +156,13 @@ $(function () {
         return false;
     })
 
+    //Стилизация селектов
     setTimeout(function() {
         $('.js-select').styler();
     }, 100)
+
+    //Маска для телефона
+    $('.js-phone').mask('+7 (000) 000 00 00');
 
 
 

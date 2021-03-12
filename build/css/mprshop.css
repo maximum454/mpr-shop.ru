@@ -4703,6 +4703,9 @@ body.lock {
   border-left: none;
   border-top: none;
   position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .card__item:nth-child(4n) {
@@ -4738,21 +4741,30 @@ body.lock {
   padding: 20px;
 }
 
+.card__item:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .card__item:hover .card__inner {
   position: absolute;
   -webkit-box-shadow: 0px 4px 24px rgba(107, 125, 139, 0.24);
           box-shadow: 0px 4px 24px rgba(107, 125, 139, 0.24);
   background: #fff;
   border: 1px solid #E0E0E0 !important;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .card__item:hover .card__footer {
   opacity: 1;
   visibility: visible;
   height: auto;
-  -webkit-transition: all .1s ease;
-  -o-transition: all .1s ease;
-  transition: all .1s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .card__inner {
