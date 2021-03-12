@@ -4675,7 +4675,7 @@ $(function () {
     })
 
 
-
+    //показ менб
     $('.menu__item').on('mouseover', function (e) {
         var id = $(this).attr('id');
         $('.main__menu-big').addClass('active');
@@ -4699,6 +4699,7 @@ $(function () {
             $('.menu').removeClass('open');
         })
     }
+    //end
 
     $('.menu__button, .js-menu-open').on('click', function () {
         $('.main__menu-big').toggleClass('active')
@@ -4709,8 +4710,6 @@ $(function () {
         $('.menu__more>a').hide();
         return false;
     })
-
-
 
 
     $('.js-menu-dropdown').on('click', function (){
@@ -4726,8 +4725,6 @@ $(function () {
 
     //Маска для телефона
     $('.js-phone').mask('+7 (000) 000 00 00');
-
-
 
 
     $tabs('.tabs');
