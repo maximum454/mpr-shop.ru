@@ -7954,44 +7954,6 @@ body.lock {
   display: block;
 }
 
-.form .select {
-  display: block;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 14px;
-  width: 100%;
-  max-width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  border-radius: 12px;
-  border: 1px solid #BDBDBD;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNS43MzIwNSA2QzQuOTYyMjUgNy4zMzMzMyAzLjAzNzc1IDcuMzMzMzMgMi4yNjc5NSA2TDAuNTM1ODk5IDNDLTAuMjMzOTAyIDEuNjY2NjcgMC43MjgzNDkgMCAyLjI2Nzk1IDBINS43MzIwNUM3LjI3MTY1IDAgOC4yMzM5IDEuNjY2NjcgNy40NjQxIDNMNS43MzIwNSA2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K");
-  background-repeat: no-repeat, repeat;
-  background-position: right .7em top 50%, 0 0;
-  background-size: .65em auto, 100%;
-}
-
-.form .select::-ms-expand {
-  display: none;
-}
-
-.form .select:focus {
-  border-color: #aaa;
-  -webkit-box-shadow: 0 0 1px 1px rgba(235, 34, 45, 0.7);
-          box-shadow: 0 0 1px 1px rgba(235, 34, 45, 0.7);
-  box-shadow: 0 0 0 1px -moz-mac-focusring;
-  outline: none;
-}
-
-.form .select option {
-  font-weight: normal;
-}
-
 .form label {
   font-family: Circe;
   font-style: normal;
@@ -8119,6 +8081,94 @@ body.lock {
   display: block;
   padding: 12px;
   width: 100%;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.form .jq-selectbox {
+  width: 100%;
+}
+
+.form .jq-selectbox.focused {
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  height: 60px;
+}
+
+.form .jq-selectbox__select {
+  height: 60px;
+  padding: 15px 45px 15px 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: Circe;
+  color: #333333;
+  text-shadow: 1px 1px #fff;
+}
+
+.form .jq-selectbox__select-text {
+  font-family: Circe;
+  font-weight: bold;
+  font-size: 17px;
+  color: #333333;
+  text-align: left;
+}
+
+.form .jq-selectbox__trigger {
+  border: none;
+}
+
+.form .jq-selectbox__trigger-arrow {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNS43MzIwNSA2QzQuOTYyMjUgNy4zMzMzMyAzLjAzNzc1IDcuMzMzMzMgMi4yNjc5NSA2TDAuNTM1ODk5IDNDLTAuMjMzOTAyIDEuNjY2NjcgMC43MjgzNDkgMCAyLjI2Nzk1IDBINS43MzIwNUM3LjI3MTY1IDAgOC4yMzM5IDEuNjY2NjcgNy40NjQxIDNMNS43MzIwNSA2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 8px;
+  height: 8px;
+  border: none;
+  top: 25px;
+}
+
+.form .jq-selectbox li {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  color: #333333;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form .jq-selectbox li:last-of-type {
+  margin-bottom: 0;
+}
+
+.form .jq-selectbox li.selected,
+.form .jq-selectbox li:hover {
+  background-color: transparent;
+  color: #EB222D;
+}
+
+.form .jq-selectbox__dropdown {
+  margin-top: 20px;
+  border: transparent;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 24px #e5ebf0;
+  box-shadow: 0 4px 24px #e5ebf0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.form .jq-selectbox__dropdown ul {
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .form input[type=submit],
