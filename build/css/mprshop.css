@@ -9670,6 +9670,9 @@ body.lock {
   padding: 10px 20px;
   max-width: 178px;
   width: 100%;
+  font-weight: bold;
+  font-size: 17px;
+  color: #333333;
 }
 
 .promocode__input:focus {
