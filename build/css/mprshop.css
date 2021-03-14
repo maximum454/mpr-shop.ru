@@ -7083,6 +7083,7 @@ body.lock {
   color: #333333;
   border: none;
   text-align: center;
+  width: 100%;
 }
 
 .catalog-detail__number .minus,
