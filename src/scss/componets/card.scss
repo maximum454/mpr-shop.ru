@@ -77,6 +77,11 @@
 	&__body {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		div{
+			&:focus{
+				outline: none;
+			}
+		}
 	}
 
 	&__row {
@@ -135,12 +140,18 @@
 				border: 1px solid #E0E0E0!important;
 				transition: all .3s ease;
 			}
+			.card__name{
+				color: #EB222D!important;
+			}
 			.card__footer{
 				opacity: 1;
 				visibility: visible;
 				height: auto;
 				transition: all .3s ease;
 			}
+		}
+		&:focus{
+			outline: none;
 		}
 	}
 	&__inner{
@@ -181,7 +192,7 @@
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 32px;
-		color: #000000;
+		color: #000000!important;
 	}
 
 	&__articul {
@@ -285,7 +296,7 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
-		color: #fff;
+		color: #fff!important;
 		border: none;
 		background-color:#EB222D;
 		box-sizing: border-box;

@@ -64,6 +64,14 @@
 			}
 		}
 	}
+	&__recomed{
+		.card{
+			margin: 0;
+		}
+		.slick-list{
+			padding-bottom: 54px;
+		}
+	}
 	&__blog{
 		background: #F6F8FA;
 		border-radius: 12px;
