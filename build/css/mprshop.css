@@ -8009,6 +8009,14 @@ body.lock {
   margin-top: 10px;
 }
 
+.form .item .error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #EB222D;
+  font-size: 10px;
+}
+
 .form .item-checkbox-list {
   display: -webkit-box;
   display: -ms-flexbox;
