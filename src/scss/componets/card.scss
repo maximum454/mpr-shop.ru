@@ -82,6 +82,9 @@
 				outline: none;
 			}
 		}
+		&--list{
+			display: block;
+		}
 	}
 
 	&__row {
@@ -152,6 +155,20 @@
 		}
 		&:focus{
 			outline: none;
+		}
+	}
+	&__item--list{
+		display: grid;
+		grid-template-columns: 300px 1fr 150px;
+		.card__stickers{
+			position: relative;
+			margin-bottom: 10px;
+		}
+		.card__footer{
+			opacity: 1;
+			visibility: visible;
+			height: auto;
+			text-align: right;
 		}
 	}
 	&__inner{

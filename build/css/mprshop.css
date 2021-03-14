@@ -4687,6 +4687,10 @@ body.lock {
   outline: none;
 }
 
+.card__body--list {
+  display: block;
+}
+
 .card__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4788,6 +4792,23 @@ body.lock {
 
 .card__item:focus {
   outline: none;
+}
+
+.card__item--list {
+  display: grid;
+  grid-template-columns: 300px 1fr 150px;
+}
+
+.card__item--list .card__stickers {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.card__item--list .card__footer {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  text-align: right;
 }
 
 .card__inner {
