@@ -45,6 +45,24 @@
     <div class="container">
         <div class="header__top">
             <a href="#" class="header__logo"><img src="./img/logo-mpr.png" width="358" height="90" alt=""></a>
+            <form class="header__search-form search-form" action="">
+                <div class="select">
+                    <select class="search-form__select js-select" name="" id="search-form__select1">
+                        <option value="">Везде</option>
+                        <option value="">Каталог</option>
+                        <option value="">Акции</option>
+                        <option value="">Новости и статьи</option>
+                    </select>
+                </div>
+                <div class="search-form__inner">
+                    <input class="search-form__input" type="text" placeholder="Поиск">
+                    <input class="search-form__submit" type="submit" value="">
+                </div>
+                <ul class="search-form__drop">
+                    <li>Екатеринбург, ул. Шарташская, 10</li>
+                    <li>Екатеринбург, ул. Азина, 20/3</li>
+                </ul>
+            </form>
             <div class="header__select-delivery js-select-delivery">
                 <span>Доставить в</span>
                 <p>Екатеринбург</p>
@@ -60,7 +78,9 @@
             <div class="header__control">
                 <a class="header__auth" href="#" data-remodal-target="modal-auth"></a>
                 <a class="header__like" href="#"></a>
-                <a class="header__cart" href="#"></a>
+                <a class="header__cart" href="#">
+                    <div class="header__count">4</div>
+                </a>
             </div>
             <button class="header__burger">
                 <span></span>
@@ -69,29 +89,65 @@
             </button>
         </div>
         <div class="header__bottom">
-            <button class="header__btn">Каталог</button>
+            <button class="header__btn js-menu-catalog">Каталог</button>
             <form class="search-form" action="">
                 <div class="select">
-                    <button class="btn btn-secondary dropdown-toggle" type="button">
-                        Кнопка выпадающего списка
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    <select class="search-form__select" name="" id="">
+                    <select class="search-form__select js-select" name="" id="search-form__select">
                         <option value="">Везде</option>
+                        <option value="">Каталог</option>
+                        <option value="">Акции</option>
+                        <option value="">Новости и статьи</option>
                     </select>
                 </div>
                 <div class="search-form__inner">
-                    <input class="search-form__input js-input-key" type="text" placeholder="Поиск">
+                    <input class="search-form__input js-input-search" type="text" placeholder="Поиск">
                     <input class="search-form__submit" type="submit" value="">
+                    <div class="search-form__close"></div>
                 </div>
-                <ul class="search-form__drop">
-                    <li>Екатеринбург, ул. Шарташская, 10</li>
-                    <li>Екатеринбург, ул. Азина, 20/3</li>
-                </ul>
+                <div class="search-form__result">
+                    <ul>
+                        <li>
+                            <a href="#" class="accompany__item" tabindex="0">
+                                <div class="accompany__img">
+                                    <img src="./img/accompany-1.png" alt="">
+                                </div>
+                                <div class="accompany__txt">
+                                    <div class="accompany__name">NEW GALAXY Держатель телефона на присоске, тип:
+                                        раздвижной, гибкая ножка, 23см, пластик
+                                    </div>
+                                    <div class="accompany__star">4,4</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="accompany__item" tabindex="0">
+                                <div class="accompany__img">
+                                    <img src="./img/accompany-1.png" alt="">
+                                </div>
+                                <div class="accompany__txt">
+                                    <div class="accompany__name">NEW GALAXY Держатель телефона на присоске, тип:
+                                        раздвижной, гибкая ножка, 23см, пластик
+                                    </div>
+                                    <div class="accompany__star">4,4</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="accompany__item" tabindex="0">
+                                <div class="accompany__img">
+                                    <img src="./img/accompany-1.png" alt="">
+                                </div>
+                                <div class="accompany__txt">
+                                    <div class="accompany__name">NEW GALAXY Держатель телефона на присоске, тип:
+                                        раздвижной, гибкая ножка, 23см, пластик
+                                    </div>
+                                    <div class="accompany__star">4,4</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="search-form__result-all" href="#">Все результаты</a>
+                </div>
             </form>
 
             <ul class="menu-header">
@@ -100,8 +156,10 @@
                 <li><a href="#"><img class="menu-header__icon" src="./img/adres-icon.svg" width="24" height="24" alt="">
                     Адреса магазинов</a></li>
                 <li>
-                    <a href="#"><img class="menu-header__icon" src="./img/company-icon.svg" width="24" height="24"
-                                     alt=""> Компания</a>
+                    <a href="#" class="down-icon js-menu-dropdown"><img class="menu-header__icon"
+                                                                        src="./img/company-icon.svg" width="24"
+                                                                        height="24"
+                                                                        alt=""> Компания</a>
                     <ul class="menu-header__down">
                         <li><a href="">Компания 1</a></li>
                         <li><a href="">Компания 2</a></li>
@@ -219,9 +277,214 @@
                 <input type="submit" value="Применить">
             </div>
 
-            </form>
+        </form>
     </div>
 </header>
+
+<div class="overflow-search"></div>
+
+<div class="menu-mobile">
+    <header class="menu-mobile__header">
+        <div class="menu-mobile__logo"><img src="./img/logo-mpr.png" width="137" height="35" alt=""></div>
+        <div class="menu-mobile__close js-mobile-close"></div>
+    </header>
+    <ul class="menu-mobile__list">
+        <li><a href="">Акции</a></li>
+        <li><a href="">Адреса магазинов</a></li>
+        <li><a href="">Оплата и доставка</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Партнерам</a></li>
+        <li><a href="">Учебный центр</a></li>
+        <li><a href="">Сервисные центры</a></li>
+        <li><a href="">Контакты</a></li>
+    </ul>
+    <footer class="menu-mobile__footer">
+        <div class="menu-mobile__row">
+            <a href="" class="btn">Войти</a>
+            <a href="" class="btn outline">Регистрация</a>
+        </div>
+        <div class="menu-mobile__auth">
+            <a class="menu-mobile__login" href="">Личный кабинет</a>
+            <a class="menu-mobile__exit" href=""></a>
+        </div>
+        <a class="menu-mobile__phone" href="tel:88002500600">8-800-2500-600</a>
+        <a class="menu-mobile__email" href="mailto:info@mpr-shop.ru">info@mpr-shop.ru</a>
+        <div class="menu-mobile__social">
+            <a href="#"><img src="./img/vk.svg" alt=""></a>
+            <a href="#"><img src="./img/fb.svg" alt=""></a>
+            <a href="#"><img src="./img/inst.svg" alt=""></a>
+            <a href="#"><img src="./img/youtube.svg" alt=""></a>
+            <a href="#"><img src="./img/ok.svg" alt=""></a>
+        </div>
+    </footer>
+</div>
+
+<div class="menu-catalog">
+    <header class="menu-catalog__header">
+        <div class="menu-catalog__title"><div class="menu-catalog__back"></div> <span class="menu-catalog__title-text">Каталог</span></div>
+        <div class="menu-catalog__close js-menu-catalog-close"></div>
+    </header>
+    <div class="menu-catalog__search">
+        <input class="menu-catalog__input" type="text" placeholder="Поиск">
+        <input class="menu-catalog__submit" type="submit" value="">
+    </div>
+    <ul class="menu-catalog__list">
+        <li class="menu-catalog__list-li"><i class="icons icons-auto"></i> <span class="menu-catalog__text">Авто</span>
+            <ul class="menu-catalog__level2">
+                <li class="menu-catalog__list-li2">Телевизоры и аксессуары
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-catalog__list-li"><i class="icons icons-aromatizatory"></i> <span class="menu-catalog__text">Ароматизаторы</span>
+            <ul class="menu-catalog__level2">
+                <li class="menu-catalog__list-li2">Телевизоры и аксессуары
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-catalog__list-li"><i class="icons icons-bytovaya-tekhnika"></i> <span class="menu-catalog__text">Бытовая техника</span>
+            <ul class="menu-catalog__level2">
+                <li class="menu-catalog__list-li2">Телевизоры и аксессуары
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-catalog__list-li"><i class="icons icons-bytovaya-khimiya"></i> <span class="menu-catalog__text">Бытовая химия</span>
+            <ul class="menu-catalog__level2">
+                <li class="menu-catalog__list-li2">Телевизоры и аксессуары
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-catalog__list-li"><i class="icons icons-galantereya"></i> <span class="menu-catalog__text">Галантерея</span>
+            <ul class="menu-catalog__level2">
+                <li class="menu-catalog__list-li2">Телевизоры и аксессуары
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+                <li class="menu-catalog__list-li2">Техника для дома
+                    <ul class="menu-catalog__level3">
+                        <li><a href="">Телевизоры</a></li>
+                        <li><a href="">Кронштейны</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-catalog__list-li"><i class="icons icons-dacha-i-sad"></i> <span class="menu-catalog__text">Дача и сад</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-domashniy-tekstil"></i> <span class="menu-catalog__text">Домашний текстиль</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-instrumenty"></i> <span class="menu-catalog__text">Инструменты</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-kantselyarskie-tovary"></i> <span class="menu-catalog__text">Канцтовары</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-elektrotekhnika"></i> <span class="menu-catalog__text">Мобильные аксессуа...</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-novogodnie-tovary"></i> <span class="menu-catalog__text">Новогодние товары</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-podarki"></i> <span class="menu-catalog__text">Подарки</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-posuda"></i> <span class="menu-catalog__text">Посуда и кухонные п...</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-santekhnika"></i> <span class="menu-catalog__text">Сантехника</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-sport"></i> <span class="menu-catalog__text">Спорт и отдых</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-dlya-detey"></i> <span class="menu-catalog__text">Товары для детей</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-turizm"></i> <span class="menu-catalog__text">Туризм и рыбалка</span></li>
+        <li class="menu-catalog__list-li"><i class="icons icons-khoztovary"></i> <span class="menu-catalog__text">Хозтовары</span></li>
+    </ul>
+</div>
+
 
 
     <main class="main main--page container">
@@ -243,6 +506,196 @@
                     ограничено. Цвет и некоторые незначительные детали могут отличаться, от изображений на фотографии.
                     Товар сертифицирован. Не является публичной офертой.
                     Подробности у продавцов-кассиров или по телефону <a href="#">+7(922)1115544</a></p>
+            </section>
+
+            <section class="card">
+                <h2>Товары по акции</h2>
+                <div class="card__body">
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <a href="#" class="card__img">
+                                <img src="./img/card-1.png" alt="" width="180" height="180">
+                                <div class="card__stickers stickers">
+                                    <div class="stickers__item hit">ХИТ</div>
+                                    <div class="stickers__item stock">АКЦИЯ</div>
+                                </div>
+                            </a>
+                            <div class="card__txt">
+                                <a href="#" class="card__name">Маска для глаз тканевая круговая HYDRA NOURISH, 30г</a>
+                                <div class="card__articul">Арт.: 978-060</div>
+                                <div class="card__count">Много</div>
+                                <div class="card__row">
+                                    <div class="card__price">43 ₷/шт.</div>
+                                    <div class="card__star">4,4</div>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a href="#" class="card__basket">В корзину</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>

@@ -3,6 +3,7 @@
 	display: none;
 	&.active{
 		display: block;
+		height: 100%;
 	}
 	&__header{
 		display: flex;
@@ -63,12 +64,17 @@
 		list-style: none;
 		position: relative;
 		width: 100%;
-		/*display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px,313px));*/
+		flex-direction: column;
+		flex-wrap: wrap;
+		column-count: 3;
+		column-gap: 0;
 		&>li{
-
-			width: 280px;
+			break-inside: avoid;
+			max-width: 280px;
+			width: 100%;
 			margin: 0 20px;
+			display: flex;
+			flex-direction: column;
 			&>a{
 				font-family: Circe;
 				font-style: normal;

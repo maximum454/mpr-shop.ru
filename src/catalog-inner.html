@@ -21,7 +21,6 @@
         <aside class="main__aside">
             <div class="menu">
                 <button class="menu__button">Все товары</button>
-
                 <ul class="menu__list">
                     <li><a href="#">Автомобильный свет / фонари / лампы переноски</a></li>
                     <li><a href="#">Автоэлектроника</a></li>
@@ -111,32 +110,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="promo__block promo__block--categor">
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Внутрисалонные аксессуары прочие</div>
+                <div class="promo__over">
+                    <div class="promo__block promo__block--categor">
+                        <a href="#" class="item filter" data-remodal-target="modal-filter">
+                            <div class="txt">
+                                <div class="name">
+                                    <i class="promo__filter"></i>
+
+                                    <div class="none-text-mobile">Фильтр</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Внутрисалонные аксессуары прочие</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Держатели салонные</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Зеркала автомобильные</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Коврики противоскользящие</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="txt">
+                                <div class="name">Разветвители, зарядники и адаптеры</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="remodal" data-remodal-id="modal-filter">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+
+                    <form class="form" action="">
+                        <div class="title">Фильтр</div>
+                        <div class="filter">
+                            <div class="filter__item">
+                                <div class="filter__title">Цена, ₽</div>
+                                <div class="filter__row">
+                                    <input class="input" type="text" name="arrCatalog_8_MIN" id="arrCatalog_8_MIN" value="" size="5"
+                                           placeholder="от 13" onkeyup="">
+                                    <div class="difis">—</div>
+                                    <input class="input" type="text" name="arrCatalog_8_MAX" id="arrCatalog_8_MAX" value="" size="5"
+                                           placeholder="до 7 868" onkeyup="">
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__title">Магазины</div>
+                                <select class="select" name="filter1" id="filter1">
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                    <option value="">Все</option>
+                                </select>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__title">Наличие</div>
+                                <select class="select" name="filter2" id="filter2">
+                                    <option value="">Не имеет значения</option>
+                                    <option value="">Не имеет значения</option>
+                                    <option value="">Не имеет значения</option>
+                                    <option value="">Не имеет значения</option>
+                                </select>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Держатели салонные</div>
+                        <div class="item">
+                            <input class="btn" type="submit" value="Показать 192 товара">
                         </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Зеркала автомобильные</div>
-                        </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Коврики противоскользящие</div>
-                        </div>
-                    </a>
-                    <a href="#" class="item">
-                        <div class="txt">
-                            <div class="name">Разветвители, зарядники и адаптеры</div>
-                        </div>
-                    </a>
+                        <a href="" class="btn link">Сбросить фильтр</a>
+
+                    </form>
                 </div>
             </section>
 
@@ -184,7 +236,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -209,7 +260,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -234,7 +284,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -259,7 +308,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -284,7 +332,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -309,20 +356,19 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
                             </footer>
                         </div>
                     </div>
-                    <div class="card__item card__item--all">
+                    <a href="#" class="card__item card__item--all">
                         <div class="card__txt">
-                            <a href="#" class="card__name"><b>Все товары категории</b></a>
+                            <div class="card__name"><b>Все товары категории</b></div>
                             <div class="card__articul">34 товара</div>
                         </div>
                         <div class="card__all"></div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
@@ -370,7 +416,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -395,7 +440,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -420,7 +464,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -445,7 +488,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -470,7 +512,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -495,27 +536,26 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
                             </footer>
                         </div>
                     </div>
-                    <div class="card__item card__item--all">
+                    <a href="#" class="card__item card__item--all">
                         <div class="card__txt">
-                            <a href="#" class="card__name"><b>Все товары категории</b></a>
+                            <div class="card__name"><b>Все товары категории</b></div>
                             <div class="card__articul">34 товара</div>
                         </div>
                         <div class="card__all"></div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
             <section class="card">
                 <h2>Держатели салонные</h2>
                 <div class="card__body">
-                    <div class="card__item">
+                    <div class="card__item bb-none">
                         <div class="card__inner">
                             <a href="#" class="card__img">
                                 <img src="./img/card-1.png" alt="" width="180" height="180">
@@ -538,7 +578,7 @@
                             </footer>
                         </div>
                     </div>
-                    <div class="card__item">
+                    <div class="card__item bb-none br-none">
                         <div class="card__inner">
                             <a href="#" class="card__img">
                                 <img src="./img/card-2.png" alt="" width="180" height="180">
@@ -556,7 +596,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -610,7 +649,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>
@@ -658,7 +696,6 @@
                                     <div class="card__price">43 ₷/шт.</div>
                                     <div class="card__star">4,4</div>
                                 </div>
-                                <a href="#" class="card__cart-btn">В корзину</a>
                             </div>
                             <footer class="card__footer">
                                 <a href="#" class="card__basket">В корзину</a>

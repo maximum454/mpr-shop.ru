@@ -41,12 +41,25 @@
 		align-self: center;
 		overflow-x: hidden;
 		overflow-y: hidden;
+		div{
+			&:focus{
+				outline: none;
+			}
+		}
 	}
 	&__item{
 		display: flex;
 		align-items: center;
 		width: 360px;
 		text-decoration: none;
+		&:focus{
+			outline: none;
+		}
+		&:hover{
+			.accompany__name{
+				color: #EB222D;
+			}
+		}
 	}
 	&__img{
 		margin-right: 20px;
@@ -121,6 +134,9 @@
 	.slick-disabled{
 		opacity: .4;
 	}
+	.slick-slide{
+
+	}
 	&__prev{
 		border-right: 1px solid #EB222D;
 	}
@@ -143,8 +159,6 @@
 		&__body{
 			display: flex;
 			align-self: center;
-			overflow-x: scroll;
-			overflow-y: hidden;
 		}
 	}
 	@include r(767){
@@ -155,10 +169,6 @@
 		}
 		&__nav{
 			display: none;
-		}
-		&__body{
-			display: flex;
-			align-self: center;
 		}
 		&__item{
 			display: block;

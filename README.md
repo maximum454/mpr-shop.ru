@@ -61,6 +61,9 @@
 ###Страница Адреса магазинов
 * https://maximum454.github.io/mpr-shop.ru/build/shops.html
 
+###Страница Адреса магазинов детальная
+* https://maximum454.github.io/mpr-shop.ru/build/shops-detail.html
+
 ###Страница Оформление заказа
 * https://maximum454.github.io/mpr-shop.ru/build/order.html
 

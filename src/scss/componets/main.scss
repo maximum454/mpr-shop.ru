@@ -28,8 +28,31 @@
 		background-color: #fff;
 		display: none;
 		width: 100%;
+		height: 100%;
+
 		&.active{
 			display: block;
+			z-index: 100;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0px;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				border-top: 1px solid #E0E0E0;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0px;
+				right: -100%;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				border-top: 1px solid #E0E0E0;
+			}
 		}
 	}
 	&__subtitle{
@@ -61,6 +84,9 @@
 		&__title{
 			font-size: 32px;
 			line-height: 48px;
+		}
+		&__aside{
+			display: none;
 		}
 	}
 	@include r(767){

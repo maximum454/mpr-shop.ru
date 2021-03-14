@@ -4,10 +4,20 @@
 	width: 100%;
 	display: flex;
 	position: relative;
+	&.active{
+		position: absolute;
+		max-width: 100%;
+		z-index: 1000;
+		.search-form__close{
+			visibility: visible;
+		}
+		.search-form__result{
+			visibility: visible;
+		}
+	}
 	&__select{
 		background-color: #E5EBF0;
 		border: none;
-		padding: 20px;
 		position: relative;
 		display: inline-block;
 		-webkit-appearance: none;
@@ -15,24 +25,73 @@
 		appearance: none;
 		height: 100%;
 		border-radius:12px 0 0 12px;
-	}
-	.select {
-		position: relative;
-		display: inline-block;
-	}
-	.select:after {
-		content: "▼";
-		font-size: 8px;
-		color: #333333;
-		position: absolute;
-		right: 8px;
-		top: 28px;
-		z-index: 1;
-		text-align: center;
-		width: 10%;
-		height: 100%;
-		pointer-events: none;
-		box-sizing: border-box;
+		width: 106px;
+		option{
+			background: #fff;
+		}
+		.jq-selectbox__select{
+			height: 100%;
+			border: none;
+			border-radius: 0;
+			background: none;
+			box-shadow: none;
+			font-family: Circe;
+			color: #333;
+			text-shadow: none;
+			display: flex;
+			align-items: center;
+			padding: 0;
+		}
+		.jq-selectbox__select-text {
+			overflow: hidden;
+			user-select: none;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			font-family: Circe;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: #333333;
+			padding: 0 20px;
+		}
+		.jq-selectbox__trigger {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			margin-top: -4px;
+			width: 8px;
+			height: 8px;
+			border-left: none;
+		}
+		.jq-selectbox__trigger-arrow {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 8px;
+			height: 8px;
+			border: none;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNS43MzIwNSA2QzQuOTYyMjUgNy4zMzMzMyAzLjAzNzc1IDcuMzMzMzMgMi4yNjc5NSA2TDAuNTM1ODk5IDNDLTAuMjMzOTAyIDEuNjY2NjcgMC43MjgzNDkgMCAyLjI2Nzk1IDBINS43MzIwNUM3LjI3MTY1IDAgOC4yMzM5IDEuNjY2NjcgNy40NjQxIDNMNS43MzIwNSA2WiIgZmlsbD0iIzMzMzMzMyIvPgo8L3N2Zz4K);
+			background-repeat: no-repeat;
+			background-size: 8px;
+		}
+		.jq-selectbox__dropdown {
+			box-sizing: border-box;
+			margin: 26px 0 0;
+			border: transparent;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 24px #E5EBF0;
+			border-radius: 12px;
+			padding: 20px;
+			width: 231px;
+			.selected{
+				background: transparent;
+				color: #EB222D;
+			}
+			li:hover {
+				background-color:transparent;
+				color: #EB222D;
+			}
+		}
 	}
 
 	&__inner{
@@ -52,7 +111,7 @@
 		border: none;
 		padding: 20px 20px 20px 74px;
 		&:focus{
-			box-shadow: 0 0 14px rgba(#EB222D, 0.5);
+			box-shadow: none;
 			outline: none;
 			border-radius: 0 12px 12px 0;
 		}
@@ -102,12 +161,89 @@
 			}
 		}
 	}
+	&__close{
+		visibility: hidden;
+		width: 24px;
+		height: 24px;
+		top: 50%;
+		right: 20px;
+		margin-top: -12px;
+		position: absolute;
+		display: inline-block;
+		cursor: pointer;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-image: url("../img/promocode-close.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+	}
+	&__result{
+		visibility: hidden;
+		position: absolute;
+		top: 75px;
+		background: #FFFFFF;
+		border-radius: 16px;
+		max-width: 1128px;
+		width: 100%;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		padding: 30px 30px 0;
+		overflow: hidden;
+		ul{
+			margin: 0 0;
+			padding: 0;
+			list-style: none;
+			li{
+				margin-bottom: 30px;
+			}
+		}
+		.accompany__item{
+			width: 100%;
+			max-width: 880px;
+			display: flex;
+		}
+		.accompany__img{
+			margin-right: 20px;
+		}
+		.accompany__txt{
+			display: block;
+		}
+	}
+	&__result-all{
+		background: #E5EBF0;
+		display: block;
+		width: calc(100% + 60px);
+		margin-left: -30px;
+		padding: 15px 0;
+		text-align: center;
+		font-family: Circe;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+		color: #333333;
+		text-decoration: none;
+	}
 	@include r(1023){
 		.select {
 			display: none;
 		}
 		&__input{
 			border-radius:12px;
+			&:focus{
+				border-radius:12px;
+			}
 		}
 	}
 }

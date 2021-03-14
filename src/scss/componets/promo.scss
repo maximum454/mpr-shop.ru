@@ -1,5 +1,6 @@
 .promo{
 	margin: 0 0 60px;
+	overflow: hidden;
 	&__body{
 		display: grid;
 		grid-template-columns: 280px minmax(660px,1015px);
@@ -126,6 +127,9 @@
 			grid-gap: 30px;
 			.item{
 				max-width: none;
+				&.filter{
+					display: none;
+				}
 			}
 			.txt{
 				border-radius: 12px;
@@ -149,6 +153,68 @@
 			}
 		}
 	}
-
-
+	&__filter{
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		background-image: url("../img/filter-icon.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		margin-right: 5px;
+	}
+	@include r(1023){
+		&__over{
+			overflow: hidden;
+		}
+		&__block{
+			&--categor{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				overflow-x: scroll;
+				overflow-y: hidden;
+				white-space: nowrap;
+				.item{
+					max-width: none;
+					width: 100%;
+					display: inline-block;
+					white-space: nowrap;
+					overflow: initial;
+					&.filter{
+						display: inline-block;
+						margin: 0;
+					}
+				}
+				.txt{
+					border-radius: 12px;
+					background-color: #F5F8FA;
+					position: relative;
+					padding: 20px 28px;
+					height: 100%;
+					display: flex;
+					align-items: center;
+				}
+				.name{
+					font-family: Circe;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 17px;
+					line-height: 25px;
+					color: #333333;
+					background-color: transparent;
+					border-radius:0;
+					padding: 0;
+					white-space: nowrap;
+					display: flex;
+				}
+			}
+		}
+	}
+	@include r(767){
+		.none-text-mobile{
+			display: none;
+		}
+	}
 }
