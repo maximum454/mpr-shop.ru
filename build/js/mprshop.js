@@ -4749,7 +4749,9 @@ $(function () {
 
     //Стилизация селектов
     setTimeout(function() {
-        $('.js-select').styler();
+        $('.js-select').styler({
+            selectSmartPositioning: false,
+        });
     }, 100)
 
     //Маска для телефона
