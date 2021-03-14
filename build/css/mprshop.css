@@ -5829,6 +5829,8 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
           flex: 0 0 100px;
+  display: block;
+  text-decoration: none;
 }
 
 .accompany__img img {
@@ -5844,6 +5846,7 @@ body.lock {
   color: #333333;
   height: 64px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .accompany__price {
