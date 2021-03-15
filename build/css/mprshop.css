@@ -4705,6 +4705,7 @@ body.lock {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  min-height: 440px;
 }
 
 .card__item:nth-child(4n) {
