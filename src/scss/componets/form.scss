@@ -32,6 +32,13 @@
 			display: inline-block;
 			margin-top: 10px;
 		}
+		.error{
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: #EB222D;
+			font-size: 10px;
+		}
 	}
 
 	.item-checkbox-list {

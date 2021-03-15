@@ -64,6 +64,8 @@
 	&__img{
 		margin-right: 20px;
 		flex: 0 0 100px;
+		display: block;
+		text-decoration: none;
 		img{
 			max-width: 100%;
 			display: block;
@@ -76,6 +78,7 @@
 		color: #333333;
 		height: 64px;
 		overflow: hidden;
+		text-decoration: none;
 	}
 	&__price{
 		font-family: Circe;

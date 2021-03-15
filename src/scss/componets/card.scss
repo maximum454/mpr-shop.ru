@@ -77,6 +77,14 @@
 	&__body {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		div{
+			&:focus{
+				outline: none;
+			}
+		}
+		&--list{
+			display: block;
+		}
 	}
 
 	&__row {
@@ -136,12 +144,32 @@
 				border: 1px solid #E0E0E0!important;
 				transition: all .3s ease;
 			}
+			.card__name{
+				color: #EB222D!important;
+			}
 			.card__footer{
 				opacity: 1;
 				visibility: visible;
 				height: auto;
 				transition: all .3s ease;
 			}
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+	&__item--list{
+		display: grid;
+		grid-template-columns: 300px 1fr 150px;
+		.card__stickers{
+			position: relative;
+			margin-bottom: 10px;
+		}
+		.card__footer{
+			opacity: 1;
+			visibility: visible;
+			height: auto;
+			text-align: right;
 		}
 	}
 	&__inner{
@@ -182,7 +210,7 @@
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 32px;
-		color: #000000;
+		color: #000000!important;
 	}
 
 	&__articul {
@@ -286,7 +314,7 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
-		color: #fff;
+		color: #fff!important;
 		border: none;
 		background-color:#EB222D;
 		box-sizing: border-box;

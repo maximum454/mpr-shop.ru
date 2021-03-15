@@ -11,6 +11,7 @@
 @@include('./components/slider-promo.js')
 @@include('./components/slider-accompany.js')
 @@include('./components/slider-catalog.js')
+@@include('./components/card-slider.js')
 @@include('./components/promocode.js')
 @@include('./components/header-scroll.js')
 
@@ -157,7 +158,9 @@ $(function () {
 
     //Стилизация селектов
     setTimeout(function() {
-        $('.js-select').styler();
+        $('.js-select').styler({
+            selectSmartPositioning: false,
+        });
     }, 100)
 
     //Маска для телефона

@@ -4550,6 +4550,31 @@ $(function () {
     });
 });
 $(function () {
+    $('.js-slider-card').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        autoplay: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 4,
+                }
+            }
+        ]
+    });
+});
+$(function () {
     $('.js-promocode').on('click', function () {
         var input = $('.promocode__input').val();
         if (input != '') {
@@ -4568,11 +4593,15 @@ $(function () {
 });
 $(function () {
     var nav = $('.header');
+    var headerHeight = $(".header").outerHeight();
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 136) {
+        if ($(this).scrollTop() > 52) {
             nav.addClass("f-nav");
+
+            $('.alert').css({'margin-bottom': headerHeight + 'px'});
         } else {
             nav.removeClass("f-nav");
+            $('.alert').css({'margin-bottom': 0});
         }
     });
 });
@@ -4720,7 +4749,9 @@ $(function () {
 
     //Стилизация селектов
     setTimeout(function() {
-        $('.js-select').styler();
+        $('.js-select').styler({
+            selectSmartPositioning: false,
+        });
     }, 100)
 
     //Маска для телефона

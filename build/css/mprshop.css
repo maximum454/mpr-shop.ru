@@ -4683,6 +4683,14 @@ body.lock {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.card__body div:focus {
+  outline: none;
+}
+
+.card__body--list {
+  display: block;
+}
+
 .card__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4770,6 +4778,10 @@ body.lock {
   transition: all .3s ease;
 }
 
+.card__item:hover .card__name {
+  color: #EB222D !important;
+}
+
 .card__item:hover .card__footer {
   opacity: 1;
   visibility: visible;
@@ -4777,6 +4789,27 @@ body.lock {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.card__item:focus {
+  outline: none;
+}
+
+.card__item--list {
+  display: grid;
+  grid-template-columns: 300px 1fr 150px;
+}
+
+.card__item--list .card__stickers {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.card__item--list .card__footer {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  text-align: right;
 }
 
 .card__inner {
@@ -4818,7 +4851,7 @@ body.lock {
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #000000;
+  color: #000000 !important;
 }
 
 .card__articul {
@@ -4927,7 +4960,7 @@ body.lock {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  color: #fff;
+  color: #fff !important;
   border: none;
   background-color: #EB222D;
   -webkit-box-sizing: border-box;
@@ -5797,6 +5830,8 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
           flex: 0 0 100px;
+  display: block;
+  text-decoration: none;
 }
 
 .accompany__img img {
@@ -5812,6 +5847,7 @@ body.lock {
   color: #333333;
   height: 64px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .accompany__price {
@@ -6253,6 +6289,14 @@ body.lock {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+}
+
+.articles-detail__recomed .card {
+  margin: 0;
+}
+
+.articles-detail__recomed .slick-list {
+  padding-bottom: 54px;
 }
 
 .articles-detail__blog {
@@ -7040,6 +7084,7 @@ body.lock {
   color: #333333;
   border: none;
   text-align: center;
+  width: 100%;
 }
 
 .catalog-detail__number .minus,
@@ -7967,6 +8012,14 @@ body.lock {
   color: #333333;
   display: inline-block;
   margin-top: 10px;
+}
+
+.form .item .error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #EB222D;
+  font-size: 10px;
 }
 
 .form .item-checkbox-list {
