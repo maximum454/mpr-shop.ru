@@ -295,14 +295,31 @@
 		&__phone{
 			display: none;
 		}
+
 		&__auth{
-			width: 32px;
-			height: 32px;
 			margin: 0 15px;
 			&:before{
 				background-size: 32px;
 				width: 100%;
 				height: 100%;
+			}
+			&--login{
+				display: flex;
+				align-items: center;
+				padding-right: 18px;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translate(0,-50%);
+					background-image: url("../img/auth-icon-login.svg");
+					background-size: 100%;
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 42px;
+					height: 42px;
+				}
 			}
 		}
 		&__like{
@@ -378,6 +395,26 @@
 			margin: 0 12px;
 			&:before{
 				background-size: 24px;
+			}
+			&--login{
+				width: auto;
+				display: flex;
+				align-items: center;
+				padding-right: 18px;
+				padding-left: 24px;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translate(0,-50%);
+					background-image: url("../img/auth-icon-login.svg");
+					background-size: 100%;
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 24px;
+					height: 24px;
+				}
 			}
 		}
 		&__like{
