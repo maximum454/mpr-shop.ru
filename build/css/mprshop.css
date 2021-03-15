@@ -9298,6 +9298,10 @@ body.lock {
   margin-right: 40px;
 }
 
+.order__radio:last-of-type {
+  margin-right: 0;
+}
+
 .order__radio .checkmark {
   width: 100%;
   height: 100%;
@@ -11182,11 +11186,21 @@ body.lock {
   }
 
   .order {
-    display: block;
+    grid-template-columns: 1fr;
   }
 
   .order__left {
     margin-bottom: 40px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .order__right {
+    margin-bottom: 40px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -12396,6 +12410,29 @@ body.lock {
   .personal-order__row {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .order__row {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .order__radio {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #888E94;
+    padding: 24px;
+    background: #F6F8FA;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
   }
 }
 
