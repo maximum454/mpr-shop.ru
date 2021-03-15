@@ -1,10 +1,9 @@
 $(function () {
 
-    $('.sort__control--item').on('click', function (){
-        if($('.sort__control--item').hasClass('active')){
-            $('.sort__control--item, .card__tabs-content').removeClass('active');
-            $(this).addClass('active');
-        }else{
-        }
+
+
+    $('.sort__control').on('click', 'a:not(.active)', function() {
+        $(this).addClass('active').siblings().removeClass('active')
+            .closest('.card').find('.card__tabs-content').removeClass('active').eq($(this).index()).addClass('active');
     })
 });
