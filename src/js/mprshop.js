@@ -14,6 +14,7 @@
 @@include('./components/card-slider.js')
 @@include('./components/promocode.js')
 @@include('./components/header-scroll.js')
+@@include('./components/sort.js')
 
 
 $(function () {
