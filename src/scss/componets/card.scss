@@ -430,6 +430,9 @@
 		&__body {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+			&--list{
+				display: block;
+			}
 		}
 		&__item {
 			&:nth-child(4n) {
@@ -472,57 +475,6 @@
 					height: auto;
 					transition: all .1s ease;
 				}
-			}
-		}
-		&__item--list{
-			display: grid;
-			grid-template-columns: minmax(160px,300px) 320px minmax(150px,1fr);
-			grid-gap: 30px;
-			padding-bottom: 20px;
-			margin-bottom: 20px;
-			border-bottom: 1px dashed #BDBDBD;
-			&:last-of-type{
-				border-bottom: 0;
-			}
-			.card__stickers{
-				position: relative;
-				margin-bottom: 10px;
-				left: 0;
-			}
-			.card__like{
-				position: relative;
-				display: block;
-				top: 0;
-				right: 0;
-				margin-left: auto;
-				margin-right: 0;
-				margin-bottom: 40px;
-			}
-			.card__price {
-				margin-bottom: 10px;
-			}
-			.card__footer{
-				opacity: 1;
-				visibility: visible;
-				height: auto;
-				text-align: right;
-				margin-left: auto;
-				margin-right: 0;
-			}
-			.card__row {
-				display: flex;
-				justify-content: flex-start;
-				align-items: center;
-				margin-bottom: 10px;
-			}
-			.card__name{
-				margin-bottom: 8px;
-			}
-			.card__img {
-				margin-bottom: 0;
-			}
-			.information li{
-				margin: 0;
 			}
 		}
 		h2 {
@@ -649,6 +601,60 @@
 			}
 			&:hover{
 
+			}
+		}
+		&__item--list{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 30px;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px dashed #BDBDBD;
+			&:last-of-type{
+				border-bottom: 0;
+			}
+			.card__stickers{
+				position: relative;
+				margin-bottom: 10px;
+				left: 0;
+			}
+			.card__like{
+				position: relative;
+				display: block;
+				top: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: 0;
+				margin-bottom: 40px;
+			}
+			.card__price {
+				margin-bottom: 10px;
+			}
+			.card__footer{
+				opacity: 1;
+				visibility: visible;
+				height: auto;
+				text-align: right;
+				margin-left: auto;
+				margin-right: 0;
+				grid-column-start: 2;
+				grid-column-end: 2;
+				width: 100%;
+			}
+			.card__row {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+			.card__name{
+				margin-bottom: 8px;
+			}
+			.card__img {
+				margin-bottom: 0;
+			}
+			.information li{
+				margin: 0;
 			}
 		}
 		&__inner{
