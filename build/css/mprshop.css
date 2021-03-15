@@ -3242,6 +3242,29 @@ body.lock {
   display: block;
 }
 
+.overflow-scroll {
+  max-width: 1024px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  height: 3px;
+}
+
+.overflow-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-scroll::-webkit-scrollbar-thumb {
+  background: #EB222D;
+}
+
+.overflow-scroll::-webkit-scrollbar-thumb:hover {
+  background: #D1DBE2;
+}
+
 .alert {
   border-radius: 0;
   padding: 13px 15px;
@@ -8614,10 +8637,8 @@ body.lock {
 
 .table {
   width: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-collapse: collapse;
 }
 
@@ -8658,6 +8679,7 @@ body.lock {
   font-weight: normal;
   font-size: 17px;
   line-height: 24px;
+  min-width: 100px;
 }
 
 .table tbody tr > th:first-child,
@@ -10522,6 +10544,10 @@ body.lock {
 }
 
 @media only screen and (max-width: 1023px) {
+  .overflow-scroll {
+    overflow-x: scroll;
+  }
+
   .alert {
     font-size: 17px;
     line-height: 24px;
@@ -11119,6 +11145,14 @@ body.lock {
 
   .learning__row.mobile {
     display: grid;
+  }
+
+  .form--personal {
+    max-width: 100%;
+  }
+
+  .table {
+    white-space: nowrap;
   }
 
   .service .tabs__link {

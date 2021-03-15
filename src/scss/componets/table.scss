@@ -1,9 +1,6 @@
 .table{
 	width: 100%;
 	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	border-collapse: collapse;
 	&--order{
 		tbody {
@@ -49,6 +46,7 @@
 				font-weight: normal;
 				font-size: 17px;
 				line-height: 24px;
+				min-width: 100px;
 				&:first-child{
 					font-family: Circe;
 					font-style: normal;
@@ -108,5 +106,8 @@
 		height: 24px;
 		border: none;
 		background-color: transparent;
+	}
+	@include r(1023){
+		white-space: nowrap;
 	}
 }

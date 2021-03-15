@@ -284,6 +284,31 @@ body {
 	}
 }
 
+.overflow-scroll{
+	max-width: 1024px;
+	@include r(1023){
+		overflow-x: scroll;
+	}
+	&::-webkit-scrollbar {
+		height: 3px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #EB222D;
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: #D1DBE2;
+	}
+}
+
 //Уведомления
 @import "componets/alert";
 
