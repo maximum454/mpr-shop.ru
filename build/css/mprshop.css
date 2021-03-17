@@ -12192,6 +12192,10 @@ body.lock {
     line-height: 20px;
   }
 
+  .articles-detail__recomed .slick-list {
+    padding-bottom: 0;
+  }
+
   .catalog-section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;

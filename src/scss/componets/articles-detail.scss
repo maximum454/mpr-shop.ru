@@ -98,5 +98,10 @@
 			font-size: 15px;
 			line-height: 20px;
 		}
+		&__recomed{
+			.slick-list{
+				padding-bottom: 0;
+			}
+		}
 	}
 }
