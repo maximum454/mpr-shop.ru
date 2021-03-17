@@ -6378,6 +6378,10 @@ body.lock {
   margin: 0;
 }
 
+.articles-detail__recomed .card__item {
+  border-bottom: none !important;
+}
+
 .articles-detail__recomed .slick-list {
   padding-bottom: 54px;
 }
