@@ -12,6 +12,8 @@
 		color: #333333;
 	}
 	&__select{
+		position: relative;
+		z-index: 100;
 		.jq-selectbox{
 			width: 100%;
 			&.focused{

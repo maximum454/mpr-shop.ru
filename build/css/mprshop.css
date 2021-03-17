@@ -7359,6 +7359,11 @@ body.lock {
   color: #333333;
 }
 
+.sort__select {
+  position: relative;
+  z-index: 100;
+}
+
 .sort__select .jq-selectbox {
   width: 100%;
 }
