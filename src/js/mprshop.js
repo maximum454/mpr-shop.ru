@@ -17,6 +17,7 @@
 @@include('./components/header-scroll.js')
 @@include('./components/sort.js')
 @@include('./components/menu-header.js')
+@@include('./components/search-form.js')
 
 
 $(function () {
@@ -55,14 +56,7 @@ $(function () {
         $('.menu-catalog').removeClass('active');
     })
 
-    $('.js-input-search').on('focus', function (){
-        $(this).parents('.search-form').addClass('active');
-        $('.overflow-search').addClass('active');
-    })
-    $('.search-form__close').on('click', function (){
-        $(this).parents('.search-form').removeClass('active');
-        $('.overflow-search').removeClass('active');
-    })
+
 
     $('.js-card-like').on('click', function (){
         $(this).toggleClass('active');

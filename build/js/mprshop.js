@@ -4789,6 +4789,23 @@ document.addEventListener('click', function (e) {
         }
     }
 )
+document.addEventListener('click', function (e) {
+        const overflowSearch = document.querySelector('.overflow-search');
+        const serachForm = document.getElementById('search-form');
+        const target = e.target;
+        if (target.id != 'js-input-search') {
+            console.log(serachForm);
+            serachForm.classList.remove('active');
+            overflowSearch.classList.remove('active');
+            document.body.classList.remove('lock');
+
+        } else {
+            target.closest('.search-form').classList.add('active');
+            overflowSearch.classList.add('active');
+            document.body.classList.add('lock');
+        }
+    }
+)
 
 
 $(function () {
@@ -4827,14 +4844,7 @@ $(function () {
         $('.menu-catalog').removeClass('active');
     })
 
-    $('.js-input-search').on('focus', function (){
-        $(this).parents('.search-form').addClass('active');
-        $('.overflow-search').addClass('active');
-    })
-    $('.search-form__close').on('click', function (){
-        $(this).parents('.search-form').removeClass('active');
-        $('.overflow-search').removeClass('active');
-    })
+
 
     $('.js-card-like').on('click', function (){
         $(this).toggleClass('active');

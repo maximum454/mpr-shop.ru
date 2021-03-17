@@ -246,4 +246,13 @@
 			}
 		}
 	}
+	@include r(767){
+		&.active{
+			.search-form__result{
+				visibility: visible;
+				overflow: scroll;
+				max-height: 300px;
+			}
+		}
+	}
 }

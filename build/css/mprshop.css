@@ -11485,6 +11485,12 @@ body.lock {
     font-size: 12px;
   }
 
+  .search-form.active .search-form__result {
+    visibility: visible;
+    overflow: scroll;
+    max-height: 300px;
+  }
+
   .menu-header {
     display: none;
   }
