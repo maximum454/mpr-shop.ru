@@ -110,17 +110,11 @@
 	}
 
 	@include r(1023) {
-		grid-template-columns: 1fr;
-		&__left {
-			margin-bottom: 40px;
-			order: 2;
-		}
-		&__right {
-			margin-bottom: 40px;
-			order: 1;
-		}
+
+
 	}
 	@include r(767){
+		grid-template-columns: 1fr;
 		&__row {
 			display: block;
 			margin-bottom: 60px;

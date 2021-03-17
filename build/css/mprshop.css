@@ -11227,24 +11227,6 @@ body.lock {
     grid-gap: 20px;
   }
 
-  .order {
-    grid-template-columns: 1fr;
-  }
-
-  .order__left {
-    margin-bottom: 40px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-
-  .order__right {
-    margin-bottom: 40px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
   .basket__header {
     display: none;
   }
@@ -12455,6 +12437,10 @@ body.lock {
 
   .personal-order__row {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .order {
     grid-template-columns: 1fr;
   }
 

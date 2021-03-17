@@ -6,6 +6,7 @@
 @@include('./partials/jquery.fancybox.min.js')
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/jquery.mask.js')
+@@include('./partials/dinamicAdap.js')
 
 
 @@include('./components/slider-promo.js')
