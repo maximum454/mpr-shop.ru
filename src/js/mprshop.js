@@ -16,6 +16,7 @@
 @@include('./components/promocode.js')
 @@include('./components/header-scroll.js')
 @@include('./components/sort.js')
+@@include('./components/menu-header.js')
 
 
 $(function () {
@@ -154,11 +155,9 @@ $(function () {
     })
 
 
-    $('.js-menu-dropdown').on('click', function (){
-        $('.menu-header__down').toggleClass('active');
-        $(this).toggleClass('active');
-        return false;
-    })
+
+
+
 
     //Стилизация селектов
     setTimeout(function() {
