@@ -28,26 +28,33 @@
                             <label for="d" class="order__radio radio">
                                 <input id="d" type="radio" checked="checked" name='r1'>
                                 <span class="checkmark"></span>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="8" y1="19" x2="8" y2="40" stroke="#EB222D" stroke-width="4"
-                                          stroke-linecap="round"/>
-                                    <path d="M19 17V38C19 39.1046 19.8954 40 21 40H32C33.1046 40 34 39.1046 34 38V17"
-                                          stroke="#EB222D" stroke-width="4"/>
-                                    <path d="M9.10994 3C7.34631 3 5.79079 4.15506 5.28082 5.84335L2.47486 15.1325C1.89307 17.0585 3.33473 19 5.34669 19H36.6533C38.6653 19 40.1069 17.0585 39.5251 15.1325L36.7192 5.84335C36.2092 4.15506 34.6537 3 32.8901 3H9.10994Z"
-                                          stroke="#EB222D" stroke-width="4"/>
-                                </svg>
-
-                                <div class="order__name">Самовывоз</div>
-                                <div class="order__date">Сегодня</div>
-                                <div class="order__price success">бесплатно</div>
+                                <div class="order__radio-body">
+                                <div class="order__radio-header">
+                                    <svg class="order__img" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="8" y1="19" x2="8" y2="40" stroke="#EB222D" stroke-width="4"
+                                              stroke-linecap="round"/>
+                                        <path d="M19 17V38C19 39.1046 19.8954 40 21 40H32C33.1046 40 34 39.1046 34 38V17"
+                                              stroke="#EB222D" stroke-width="4"/>
+                                        <path d="M9.10994 3C7.34631 3 5.79079 4.15506 5.28082 5.84335L2.47486 15.1325C1.89307 17.0585 3.33473 19 5.34669 19H36.6533C38.6653 19 40.1069 17.0585 39.5251 15.1325L36.7192 5.84335C36.2092 4.15506 34.6537 3 32.8901 3H9.10994Z"
+                                              stroke="#EB222D" stroke-width="4"/>
+                                    </svg>
+                                    <div class="order__name">Самовывоз</div>
+                                </div>
+                                <div class="order__radio-main">
+                                    <div class="order__date">Сегодня</div>
+                                    <div class="order__price success">бесплатно</div>
+                                </div>
                                 <div class="order__adres">ул. Белинского, 152/1</div>
+                                </div>
                             </label>
 
                             <label for="f" class="order__radio radio">
                                 <input id="f" type="radio" checked="checked" name='r1'>
                                 <span class="checkmark"></span>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                <div class="order__radio-body">
+                                <div class="order__radio-header">
+                                <svg class="order__img" width="42" height="42" viewBox="0 0 42 42" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 13V33C6 36.866 9.13401 40 13 40H29C32.866 40 36 36.866 36 33V13"
                                           stroke="#EB222D" stroke-width="4"/>
@@ -59,9 +66,13 @@
                                 </svg>
 
                                 <div class="order__name">Самовывоз</div>
-                                <div class="order__date">Завтра 29.12.2020</div>
-                                <div class="order__price secondary">500 ₽</div>
+                                </div>
+                                <div class="order__radio-main">
+                                    <div class="order__date">Завтра 29.12.2020</div>
+                                    <div class="order__price secondary">500 ₽</div>
+                                </div>
                                 <div class="order__adres" data-remodal-target="dostavka-adress">Выбрать</div>
+                                </div>
                             </label>
                         </div>
 
@@ -71,7 +82,8 @@
                             <label for="q" class="order__radio radio">
                                 <input id="q" type="radio" checked="checked" name='r2'>
                                 <span class="checkmark"></span>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                <div class="order__radio-header">
+                                <svg class="order__img" width="42" height="42" viewBox="0 0 42 42" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 11H32V7H7V11ZM32 17H7V21H32V17ZM36 25V34.5H40V25H36ZM36 15V24.5H40V15H36ZM7 17C5.34315 17 4 15.6569 4 14H0C0 17.866 3.13401 21 7 21V17ZM32 21C34.2091 21 36 22.7909 36 25H40C40 20.5817 36.4183 17 32 17V21ZM32 11C34.2091 11 36 12.7909 36 15H40C40 10.5817 36.4183 7 32 7V11ZM7 7C3.13401 7 0 10.134 0 14H4C4 12.3431 5.34315 11 7 11V7Z"
                                           fill="#EB222D"/>
@@ -80,18 +92,21 @@
                                 </svg>
 
                                 <div class="order__name">Наличными</div>
+                                </div>
                             </label>
 
                             <label for="w" class="order__radio radio">
                                 <input id="w" type="radio" checked="checked" name='r2'>
                                 <span class="checkmark"></span>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                <div class="order__radio-header">
+                                <svg class="order__img" width="42" height="42" viewBox="0 0 42 42" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <rect x="2" y="3" width="38" height="36" rx="8" stroke="#EB222D" stroke-width="4"/>
                                     <rect x="1" y="13" width="40" height="2" stroke="#EB222D" stroke-width="2"/>
                                 </svg>
 
                                 <div class="order__name">Картой</div>
+                        </div>
                             </label>
                         </div>
                     </div>
@@ -128,7 +143,7 @@
 
                     </form>
                 </div>
-                <div class="order__right" data-da=".soa-total-adap,1023,last">
+                <div class="order__right" data-da=".soa-total-adap,767,last">
                     <div class="soa-total">
                         <header class="soa-total__header">
                             <div class="soa-total__title">8 товаров <a href="#" class="soa-total__link">изменить</a></div>

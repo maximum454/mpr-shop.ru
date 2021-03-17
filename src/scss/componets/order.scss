@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: minmax(280px, 640px) 280px;
 	justify-content: space-between;
+	grid-gap: 30px;
 
 	&__title {
 		font-family: Circe;
@@ -115,25 +116,70 @@
 	}
 	@include r(767){
 		grid-template-columns: 1fr;
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
 		&__row {
 			display: block;
-			margin-bottom: 60px;
+			margin-bottom: 24px;
 		}
-		&__radio {
-			font-family: Circe;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 20px;
-			line-height: 32px;
-			text-align: center;
-			color: #888E94;
-			padding: 24px;
-			background: #F6F8FA;
-			box-sizing: border-box;
-			border-radius: 12px;
-			width: 100%;
+		&__radio{
 			max-width: 100%;
-			margin-right: 0;
+			text-align: left;
+			padding: 16px;
+			margin: 0 0 16px;
+
+			.checkmark{
+				border: none;
+			}
+		}
+		&__radio-body {
+			display: grid;
+			grid-template-areas: 'radio-header radio-main' 'radio-adres radio-adres';
+			grid-gap: 23px;
+		}
+		&__radio-header{
+			display: flex;
+			align-items: center;
+			grid-area: radio-header;
+		}
+		&__img{
+			width: 24px;
+			height: 24px;
+			margin-right: 12px;
+			svg,img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__name {
+			font-size: 15px;
+			line-height: 20px;
+		}
+		&__date{
+			margin: 0;
+			margin-right: 8px;
+			font-size: 15px;
+			line-height: 20px;
+		}
+		&__price{
+			margin: 0;
+			font-size: 13px;
+			line-height: 20px;
+		}
+		&__radio-main{
+			grid-area: radio-main;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+		&__adres{
+			grid-area: radio-adres;
+			text-align: left;
+			font-size: 15px;
+			line-height: 20px;
 		}
 	}
 }
