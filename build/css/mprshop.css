@@ -11278,6 +11278,7 @@ body.lock {
     margin: 0;
     height: 100%;
     overflow: scroll;
+    max-width: 100%;
   }
 
   .remodal .remodal-close {
@@ -12405,6 +12406,14 @@ body.lock {
     width: -moz-fit-content;
     width: fit-content;
     height: auto;
+  }
+
+  .form input[type=password] {
+    color: #333333;
+    letter-spacing: 4px;
+    height: 46px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .slider-main__block {

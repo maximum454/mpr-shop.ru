@@ -502,5 +502,12 @@
 				height: auto;
 			}
 		}
+		input[type=password] {
+			color: #333333;
+			letter-spacing: 4px;
+			height: 46px;
+			font-size: 17px;
+			line-height: 24px;
+		}
 	}
 }
