@@ -4768,6 +4768,15 @@ $(function () {
     //Маска для телефона
     $('.js-phone').mask('+7 (000) 000 00 00');
 
+    $(window).scroll(function() {
+        //фиксированные видео на странице спора при прокрутке
+        if ( $(this).scrollTop() > $(".basket").height() ) {
+            $(".basket .btn").removeClass("fixed");
+        } else  {
+            $(".basket .btn").addClass("fixed");
+        }
+    });
+
 
     $tabs('.tabs');
 })
