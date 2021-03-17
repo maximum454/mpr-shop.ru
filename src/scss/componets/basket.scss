@@ -75,6 +75,7 @@
       display: block;
       object-fit: cover;
       max-width: 100%;
+      height: auto;
     }
   }
   &__delete{
@@ -181,6 +182,43 @@
     }
   }
   @include r(767){
+    &__item{
+      align-items: flex-start;
+    }
+    &__name{
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    &__row{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__delete{
+      margin-left: 20px;
+      align-self: center;
+    }
+    &__img{
+      min-width: 80px;
+    }
+    .catalog-detail__number{
+      margin: 0 0 10px;
+      background-color: #EEF3F9;
+      border: none;
+      input{
+        background-color: transparent;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0 5px;
+      }
+      .minus,.plus{
+        max-width: 18px;
+      }
+
+    }
     &__footer{
       background-color: transparent;
       padding: 0;
@@ -189,6 +227,13 @@
         margin-left: -20px;
         border-radius: 0;
       }
+    }
+    &__label{
+      display: none;
+    }
+    .btn{
+      font-size: 15px;
+      line-height: 20px;
     }
   }
 }
