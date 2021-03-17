@@ -18,17 +18,20 @@
 @@include('./components/sort.js')
 @@include('./components/menu-header.js')
 @@include('./components/search-form.js')
+@@include('./components/header-burger.js')
 
 
 $(function () {
-    $('.header__burger').on('click', function (){
-        $('.menu-mobile').addClass('active');
-        $('body').addClass('lock');
-    })
-    $('.js-mobile-close').on('click', function (){
-        $('.menu-mobile').removeClass('active');
-        $('body').removeClass('lock');
-    })
+    //Стилизация селектов
+    setTimeout(function() {
+        $('.js-select').styler({
+            selectSmartPositioning: false,
+        });
+    }, 100)
+
+    //Маска для телефона
+    $('.js-phone').mask('+7 (000) 000 00 00');
+
 
     $('.menu-catalog__list-li').on('click', function (){
         var text = $(this).find('.menu-catalog__text').text();
@@ -153,15 +156,7 @@ $(function () {
 
 
 
-    //Стилизация селектов
-    setTimeout(function() {
-        $('.js-select').styler({
-            selectSmartPositioning: false,
-        });
-    }, 100)
 
-    //Маска для телефона
-    $('.js-phone').mask('+7 (000) 000 00 00');
 
     $(window).scroll(function() {
         //фиксированные видео на странице спора при прокрутке
