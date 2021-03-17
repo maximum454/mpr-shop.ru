@@ -31,6 +31,12 @@ body {
 .d-none{
 	display: none;
 }
+.d-desktop-none{
+	display: none;
+	@include r(767){
+		display: block;
+	}
+}
 
 .container {
 	max-width: 1366px;
@@ -98,6 +104,7 @@ body {
 		border-radius: 0;
 		margin: 0;
 		height: 100%;
+		overflow: scroll;
 		.remodal-close{
 			width: 16px;
 			height: 16px;
