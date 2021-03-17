@@ -9628,6 +9628,8 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .basket__row {
@@ -9649,6 +9651,17 @@ body.lock {
   font-size: 20px;
   line-height: 32px;
   color: #000000;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.basket__name:hover {
+  color: #EB222D;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .basket__img {
@@ -9782,6 +9795,8 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .promocode__title {
@@ -9799,6 +9814,7 @@ body.lock {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   margin-right: 20px;
+  min-width: 100px;
   color: #333333;
 }
 
@@ -9878,6 +9894,15 @@ body.lock {
 
 .promocode__open {
   display: none;
+}
+
+.promocode__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-big {
@@ -10533,6 +10558,22 @@ body.lock {
   .slider-main .slick-dots li.slick-active {
     background-color: #EB222D;
     color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .basket__footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .promocode {
+    margin-bottom: 20px;
   }
 }
 
@@ -11201,6 +11242,10 @@ body.lock {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .basket__header {
+    display: none;
   }
 }
 
@@ -12433,6 +12478,39 @@ body.lock {
     width: 100%;
     max-width: 100%;
     margin-right: 0;
+  }
+
+  .basket__footer {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .basket__footer .btn {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    border-radius: 0;
+  }
+
+  .promocode {
+    width: 100%;
+    display: block;
+  }
+
+  .promocode__title {
+    margin-bottom: 5px;
+  }
+
+  .promocode__input {
+    display: inline-block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
+    max-width: none;
+  }
+
+  .promocode__link {
+    display: inline-block;
+    margin: 0 20px;
   }
 }
 

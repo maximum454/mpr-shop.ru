@@ -1,6 +1,7 @@
 .promocode{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	&__title{
 		font-family: Circe;
 		font-style: normal;
@@ -12,7 +13,7 @@
 		letter-spacing: 0.07em;
 		text-transform: uppercase;
 		margin-right: 20px;
-
+		min-width: 100px;
 		color: #333333;
 	}
 	&__input{
@@ -83,5 +84,28 @@
 	}
 	&__open{
 		display: none;
+	}
+	&__row{
+		display: flex;
+		align-items: center;
+	}
+	@include r(1200){
+		margin-bottom: 20px;
+	}
+	@include r(767){
+		width: 100%;
+		display: block;
+		&__title{
+			margin-bottom: 5px;
+		}
+		&__input{
+			display: inline-block;
+			flex:1 0 0;
+			max-width: none;
+		}
+		&__link{
+			display: inline-block;
+			margin: 0 20px;
+		}
 	}
 }
