@@ -11,7 +11,7 @@
 					}
 				}
 				&>th,&>td{
-					padding: 22px 0;
+					padding: 22px;
 					border-bottom: 1px solid #BDBDBD;
 					font-family: Circe;
 					font-style: normal;
@@ -19,27 +19,34 @@
 					font-size: 17px;
 					line-height: 24px;
 					vertical-align: top;
+					&:first-child{
+						padding: 22px 0;
+					}
 				}
 			}
 		}
 	}
 	thead {
 		tr {
+			white-space: nowrap;
 			&>td,&>th {
-				padding: 22px 0;
+				padding: 22px;
 				font-family: Circe;
 				font-style: normal;
 				font-weight: bold;
 				font-size: 20px;
 				line-height: 18px;
 				color: #333333;
+				&:first-child{
+					padding: 22px 0;
+				}
 			}
 		}
 	}
 	tbody {
 		tr{
 			&>th,&>td{
-				padding: 22px 0;
+				padding: 22px;
 				border-bottom: 1px solid #BDBDBD;
 				font-family: Circe;
 				font-style: normal;
@@ -54,6 +61,7 @@
 					font-size: 17px;
 					line-height: 18px;
 					color: #222222;
+					padding: 22px 0;
 				}
 			}
 		}
@@ -110,6 +118,6 @@
 		background-color: transparent;
 	}
 	@include r(1023){
-		white-space: nowrap;
+
 	}
 }

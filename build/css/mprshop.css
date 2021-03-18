@@ -8904,7 +8904,7 @@ body.lock {
 
 .table--order tbody tr > th,
 .table--order tbody tr > td {
-  padding: 22px 0;
+  padding: 22px;
   border-bottom: 1px solid #BDBDBD;
   font-family: Circe;
   font-style: normal;
@@ -8914,9 +8914,18 @@ body.lock {
   vertical-align: top;
 }
 
+.table--order tbody tr > th:first-child,
+.table--order tbody tr > td:first-child {
+  padding: 22px 0;
+}
+
+.table thead tr {
+  white-space: nowrap;
+}
+
 .table thead tr > td,
 .table thead tr > th {
-  padding: 22px 0;
+  padding: 22px;
   font-family: Circe;
   font-style: normal;
   font-weight: bold;
@@ -8925,9 +8934,14 @@ body.lock {
   color: #333333;
 }
 
+.table thead tr > td:first-child,
+.table thead tr > th:first-child {
+  padding: 22px 0;
+}
+
 .table tbody tr > th,
 .table tbody tr > td {
-  padding: 22px 0;
+  padding: 22px;
   border-bottom: 1px solid #BDBDBD;
   font-family: Circe;
   font-style: normal;
@@ -8945,6 +8959,7 @@ body.lock {
   font-size: 17px;
   line-height: 18px;
   color: #222222;
+  padding: 22px 0;
 }
 
 .table tfoot {
@@ -11564,10 +11579,6 @@ body.lock {
 
   .form--personal {
     max-width: 100%;
-  }
-
-  .table {
-    white-space: nowrap;
   }
 
   .service .tabs__link {
