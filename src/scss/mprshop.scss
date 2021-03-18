@@ -37,6 +37,12 @@ body {
 		display: block;
 	}
 }
+.d-mobile-none{
+	display: block;
+	@include r(767){
+		display: none!important;
+	}
+}
 
 .container {
 	max-width: 1366px;

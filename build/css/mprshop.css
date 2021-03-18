@@ -3023,6 +3023,10 @@ body.lock {
   display: none;
 }
 
+.d-mobile-none {
+  display: block;
+}
+
 .container {
   max-width: 1366px;
   margin-left: auto;
@@ -11249,19 +11253,6 @@ body.lock {
     display: none;
   }
 
-  .pagination {
-    display: block;
-    text-align: center;
-  }
-
-  .pagination__count {
-    display: none;
-  }
-
-  .pagination__list {
-    display: none;
-  }
-
   .filter .input {
     max-width: 100%;
   }
@@ -11383,6 +11374,10 @@ body.lock {
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
+  }
+
+  .d-mobile-none {
+    display: none !important;
   }
 
   .remodal-wrapper {
@@ -12323,6 +12318,69 @@ body.lock {
 
   .articles-detail__recomed .slick-list {
     padding-bottom: 0;
+  }
+
+  .pagination {
+    display: block;
+    text-align: center;
+  }
+
+  .pagination__count {
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .pagination__more {
+    max-width: 100%;
+  }
+
+  .pagination__list {
+    margin: 18px 0 0;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .pagination__list li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  .pagination__list li a,
+  .pagination__list li span {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #333333;
+  }
+
+  .pagination__list li .cur {
+    background: #E5EBF0;
+    border-radius: 12px;
   }
 
   .catalog-section {
