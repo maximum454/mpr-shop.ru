@@ -3345,6 +3345,7 @@ body.lock {
 
 .header__logo {
   max-width: 358px;
+  margin-right: 10px;
 }
 
 .header__logo img {
@@ -5002,14 +5003,20 @@ body.lock {
   line-height: 24px;
   color: #333333;
   text-decoration: none;
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 21px 45px 21px 32px;
+  width: 205px;
+  padding-right: 40px;
   margin: 20px auto;
   position: relative;
-  height: 70px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card__btn:before {
@@ -5021,7 +5028,7 @@ body.lock {
   height: 100%;
   background-image: url("../img/border-btn.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .card__cart-btn {

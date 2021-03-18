@@ -297,12 +297,14 @@
 		line-height: 24px;
 		color: #333333;
 		text-decoration: none;
-		display: block;
-		width: fit-content;
-		padding: 21px 45px 21px 32px;
+		width: 205px;
+		padding-right: 40px;
 		margin: 20px auto;
 		position: relative;
-		height: 70px;
+		height: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		&:before {
 			content: '';
 			position: absolute;
@@ -312,7 +314,7 @@
 			height: 100%;
 			background-image: url("../img/border-btn.svg");
 			background-repeat: no-repeat;
-			background-size: 100%;
+			background-size: contain;
 		}
 	}
 
