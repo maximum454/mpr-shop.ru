@@ -8122,7 +8122,7 @@ body.lock {
 
 .form .item .error {
   position: absolute;
-  top: 0;
+  top: -8px;
   right: 0;
   color: #EB222D;
   font-size: 10px;
@@ -8766,6 +8766,8 @@ body.lock {
 
 .table .basket {
   background-image: url("../img/icon-basket-delete.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 24px;
   height: 24px;
   border: none;
