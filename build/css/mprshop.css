@@ -5290,7 +5290,6 @@ body.lock {
   display: flex;
   margin: 0 -20px;
   overflow: auto;
-  max-width: 1200px;
 }
 
 .maps__body--shops {
@@ -5340,6 +5339,31 @@ body.lock {
           flex-direction: column;
 }
 
+.maps__item--one {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  padding: 0;
+}
+
+.maps__item--one .maps__txt {
+  margin-bottom: 0;
+  padding: 20px 24px 0;
+}
+
+.maps__item--one .maps__map {
+  width: 100%;
+  margin: 0;
+}
+
+.maps__item--one .maps__map img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 383px;
+}
+
 .maps__txt {
   margin-bottom: 46px;
 }
@@ -5353,6 +5377,7 @@ body.lock {
   display: block;
   max-width: 100%;
   width: 100%;
+  height: auto;
 }
 
 .maps ul {
@@ -12037,6 +12062,31 @@ body.lock {
     margin: 0 20px 0 0;
   }
 
+  .maps__item--one {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .maps__item--one .maps__txt {
+    margin-bottom: 0;
+    padding: 20px 24px 0;
+  }
+
+  .maps__item--one .maps__map {
+    width: 100%;
+    margin: 0;
+  }
+
+  .maps__item--one .maps__map img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 383px;
+  }
+
   .maps h2 {
     font-size: 24px;
     line-height: 32px;
@@ -12970,6 +13020,40 @@ body.lock {
 }
 
 @media only screen and (max-width: 540px) {
+  .maps__item--one {
+    background: #FFFFFF;
+    border: 1px solid rgba(136, 142, 148, 0.4);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 12px;
+    padding: 20px 24px 0;
+    overflow: hidden;
+    margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .maps__item--one .maps__txt {
+    margin-bottom: 0;
+  }
+
+  .maps__item--one .maps__map {
+    width: calc(100% + 48px);
+    margin: auto 0 0 -24px;
+  }
+
+  .maps__item--one .maps__map img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
   .banners-bottom__main {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }

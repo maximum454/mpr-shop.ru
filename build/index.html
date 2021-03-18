@@ -1181,7 +1181,7 @@
                                 <p>+7(922)111-55-44</p>
                             </li>
                         </ul>
-                        <a href="#" class="maps__btn">Написать сообщение</a>
+                        <a href="#" class="maps__btn" data-remodal-target="zadat-vopros">Написать сообщение</a>
                     </div>
                     <div class="maps__map">
                         <img src="https://picsum.photos/418/244" alt="">
@@ -1200,10 +1200,37 @@
                                 <p>+7(922)111-55-44</p>
                             </li>
                         </ul>
-                        <a href="#" class="maps__btn">Написать сообщение</a>
+                        <a href="#" class="maps__btn" data-remodal-target="zadat-vopros">Написать сообщение</a>
                     </div>
                     <div class="maps__map">
                         <img src="https://picsum.photos/418/244" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="maps">
+        <div class="container">
+            <h2 class="maps__title"><a href="">Адреса магазинов</a> в г. Екатеринбург</h2>
+            <div class="maps__body">
+                <div class="maps__item maps__item--one">
+                    <div class="maps__txt">
+                        <h3>ул. Белинского, 152/1</h3>
+                        <ul>
+                            <li>
+                                <span>Режим работы</span>
+                                <p>пн-вс 9:00-21:00</p>
+                            </li>
+                            <li>
+                                <span>Телефон</span>
+                                <p>+7(922)111-55-44</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="maps__btn" data-remodal-target="zadat-vopros">Написать сообщение</a>
+                    </div>
+                    <div class="maps__map">
+                        <img src="https://picsum.photos/418/244" width="992" height="383" alt="">
                     </div>
                 </div>
             </div>
@@ -1532,6 +1559,46 @@
     </div>
 </footer>
 
+
+<div class="remodal" data-remodal-id="zadat-vopros">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <form class="form" action="">
+        <div class="title">Задать вопрос сотруднику</div>
+
+        <div class="item">
+            <label for="">Фамилия и имя</label>
+            <input type="text">
+            <div class="error">Заполните это поле</div>
+        </div>
+        <div class="item">
+            <label for="">Телефон</label>
+            <input  class="js-phone" type="text">
+            <div class="error">Заполните это поле</div>
+        </div>
+        <div class="item">
+            <label for="">E-mail</label>
+            <input type="text">
+            <div class="error">Заполните это поле</div>
+        </div>
+        <div class="item">
+            <label for="">Вопрос</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="error">Заполните это поле</div>
+        </div>
+        <div class="item">
+            <label for="" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a>
+                <input id="" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <div class="error">Заполните это поле</div>
+        </div>
+        <div>
+            <input class="btn" type="submit" value="Отправить">
+        </div>
+
+    </form>
+</div>
 
 
 
