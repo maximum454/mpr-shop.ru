@@ -7255,6 +7255,7 @@ body.lock {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: auto;
 }
 
 .catalog-detail .catalog-for {
