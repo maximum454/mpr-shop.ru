@@ -77,7 +77,8 @@
 	@include r(767){
 		&--order{
 			margin-left: 0;
-			margin-bottom: 27px;
+			margin-bottom: 0;
+			max-width: 100%;
 			li{
 				display: flex;
 				justify-content: space-between;
@@ -109,14 +110,9 @@
 					color: #888E94;
 				}
 				span{
-					font-family: Circe;
-					font-style: normal;
-					font-weight: normal;
-					font-size: 20px;
-					line-height: 32px;
+					font-size: 15px;
+					line-height: 20px;
 					color: #222222;
-					padding: 0!important;
-
 				}
 			}
 		}

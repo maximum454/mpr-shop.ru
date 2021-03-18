@@ -12171,6 +12171,14 @@ body.lock {
     display: none;
   }
 
+  .accompany--table .accompany__btn {
+    display: none;
+  }
+
+  .accompany--table .accompany__price {
+    display: none;
+  }
+
   .sale__name {
     font-size: 20px;
     line-height: 24px;
@@ -12250,7 +12258,8 @@ body.lock {
 
   .information--order {
     margin-left: 0;
-    margin-bottom: 27px;
+    margin-bottom: 0;
+    max-width: 100%;
   }
 
   .information--order li {
@@ -12294,13 +12303,9 @@ body.lock {
   }
 
   .information--order li span {
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 20px;
     color: #222222;
-    padding: 0 !important;
   }
 
   .page404 {
@@ -12518,6 +12523,58 @@ body.lock {
   .personal-order__row {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .personal-order__item {
+    margin-bottom: 12px;
+  }
+
+  .personal-order__title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .personal-order__dostavlen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .personal-order__dostavlen .personal-order__title {
+    margin: 0;
+  }
+
+  .personal-order__btn.outline {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .personal-order__btn.outline:hover {
+    color: #fff;
+    background-color: #EB222D;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .personal-order p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .personal-order p.text {
+    margin-bottom: 32px;
+  }
+
+  .personal-order p a {
+    color: #EB222D;
+    text-decoration: none;
   }
 
   .order {

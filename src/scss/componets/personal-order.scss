@@ -1,13 +1,15 @@
-.personal-order{
-  &__row{
+.personal-order {
+  &__row {
     display: grid;
     grid-template-columns: 1fr 320px;
     grid-gap: 30px;
   }
-  &__item{
+
+  &__item {
     margin-bottom: 32px;
   }
-  &__title{
+
+  &__title {
     font-family: Circe;
     font-style: normal;
     font-weight: bold;
@@ -17,7 +19,7 @@
     margin-bottom: 6px;
   }
 
-  &__label{
+  &__label {
     background: #6FCF97;
     border-radius: 6px;
     font-family: Circe;
@@ -29,7 +31,8 @@
     width: fit-content;
     padding: 3px 8px 2px;
   }
-  &__status{
+
+  &__status {
     font-family: Circe;
     font-style: normal;
     font-weight: normal;
@@ -37,7 +40,8 @@
     line-height: 24px;
     color: #888E94;
   }
-  &__btn{
+
+  &__btn {
     text-align: center;
     font-family: Circe;
     font-style: normal;
@@ -46,7 +50,7 @@
     line-height: 28px;
     color: #fff;
     border: none;
-    background-color:#EB222D;
+    background-color: #EB222D;
     box-sizing: border-box;
     border-radius: 12px;
     padding: 19px 15px 15px;
@@ -58,18 +62,21 @@
     margin: 0;
     cursor: pointer;
     transition: all .3s ease;
-    &.outline{
+
+    &.outline {
       color: #333333;
       border: 1px solid #EB222D;
-      background-color:transparent;
-      &:hover{
+      background-color: transparent;
+
+      &:hover {
         color: #fff;
         background-color: #EB222D;
         transition: all .3s ease;
       }
     }
   }
-  p{
+
+  p {
     color: #333333;
     font-family: Circe;
     font-style: normal;
@@ -77,20 +84,65 @@
     font-size: 20px;
     line-height: 32px;
     margin: 0;
-    &.text{
+
+    &.text {
       margin-bottom: 32px;
     }
-    a{
+
+    a {
       color: #EB222D;;
       text-decoration: none;
     }
   }
-  @include r(767){
+
+  @include r(767) {
     display: block;
-    &__row{
+    &__row {
       display: grid;
       grid-template-columns: 1fr;
 
+    }
+    &__item {
+      margin-bottom: 12px;
+    }
+    &__title {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__label {
+    }
+    &__dostavlen{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .personal-order__title{
+        margin: 0;
+      }
+    }
+    &__btn {
+      &.outline {
+        max-width: 100%;
+        margin-top: 20px;
+
+        &:hover {
+          color: #fff;
+          background-color: #EB222D;
+          transition: all .3s ease;
+        }
+      }
+    }
+    p {
+      font-size: 15px;
+      line-height: 20px;
+
+      &.text {
+        margin-bottom: 32px;
+      }
+
+      a {
+        color: #EB222D;;
+        text-decoration: none;
+      }
     }
   }
 }
