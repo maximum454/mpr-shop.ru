@@ -10794,6 +10794,7 @@ body.lock {
   .promo__block--categor .item.filter {
     display: inline-block;
     margin: 0;
+    margin-right: 8px;
   }
 
   .promo__block--categor .txt {
