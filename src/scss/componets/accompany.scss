@@ -54,11 +54,6 @@
 		&:focus{
 			outline: none;
 		}
-		&:hover{
-			.accompany__name{
-				color: #EB222D;
-			}
-		}
 	}
 	&__img{
 		margin-right: 20px;
@@ -77,6 +72,9 @@
 		color: #333333;
 		overflow: hidden;
 		text-decoration: none;
+		&:hover{
+			color: #EB222D;
+		}
 	}
 	&__price{
 		font-family: Circe;
@@ -96,7 +94,7 @@
 		font-size: 20px;
 		line-height: 28px;
 		color: #fff;
-		border: none;
+		border: 1px solid #EB222D;
 		background-color:#EB222D;
 		box-sizing: border-box;
 		border-radius: 12px;
@@ -107,6 +105,14 @@
 		width: 100%;
 		height: 68px;
 		margin: 0;
+		cursor: pointer;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			border: 1px solid #EB222D;
+			background-color:#fff;
+			color: #333333;
+		}
 	}
 	&__star{
 		background-image: url("../img/Star.svg");

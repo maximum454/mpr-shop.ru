@@ -280,14 +280,22 @@
 		&__btn{
 			display: block;
 			background-color: #EB222D;
+			border: 1px solid #EB222D;
 			border-radius: 12px;
 			font-weight: bold;
 			font-size: 17px;
 			line-height: normal;
 			color: #FFFFFF;
-			border: none;
 			padding: 20px;
 			margin-right: 12px;
+			cursor: pointer;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				border: 1px solid #EB222D;
+				background-color:#fff;
+				color: #333333;
+			}
 		}
 		&__logo {
 			max-width: 250px;

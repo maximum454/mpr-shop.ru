@@ -5905,10 +5905,6 @@ body.lock {
   outline: none;
 }
 
-.accompany__item:hover .accompany__name {
-  color: #EB222D;
-}
-
 .accompany__img {
   margin-right: 20px;
   -webkit-box-flex: 0;
@@ -5933,6 +5929,10 @@ body.lock {
   text-decoration: none;
 }
 
+.accompany__name:hover {
+  color: #EB222D;
+}
+
 .accompany__price {
   font-family: Circe;
   font-style: normal;
@@ -5952,7 +5952,7 @@ body.lock {
   font-size: 20px;
   line-height: 28px;
   color: #fff;
-  border: none;
+  border: 1px solid #EB222D;
   background-color: #EB222D;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5964,6 +5964,19 @@ body.lock {
   width: 100%;
   height: 68px;
   margin: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.accompany__btn:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px solid #EB222D;
+  background-color: #fff;
+  color: #333333;
 }
 
 .accompany__star {
@@ -9153,12 +9166,24 @@ body.lock {
   width: 100%;
   height: 68px;
   margin: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .personal-order__btn.outline {
   color: #333333;
   border: 1px solid #EB222D;
   background-color: transparent;
+}
+
+.personal-order__btn.outline:hover {
+  color: #fff;
+  background-color: #EB222D;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .personal-order p {
@@ -10630,14 +10655,27 @@ body.lock {
   .header__btn {
     display: block;
     background-color: #EB222D;
+    border: 1px solid #EB222D;
     border-radius: 12px;
     font-weight: bold;
     font-size: 17px;
     line-height: normal;
     color: #FFFFFF;
-    border: none;
     padding: 20px;
     margin-right: 12px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .header__btn:hover {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: 1px solid #EB222D;
+    background-color: #fff;
+    color: #333333;
   }
 
   .header__logo {
