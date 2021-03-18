@@ -158,24 +158,29 @@
 		margin: 0 20px;
 	}
 	&__cart{
-		background-image: url("../img/cart-icon.svg");
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		width: 42px;
-		height: 42px;
-		display: block;
 		margin: 0 20px;
 		position: relative;
-		margin-right: 42px;
+		padding-left: 42px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0,-50%);
+			background-image: url("../img/cart-icon.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 42px;
+			height: 42px;
+		}
 	}
 	&__count{
 		width: 32px;
 		height: 32px;
-		top: 50%;
-		right: -34px;
-		margin-top: -16px;
-		position: absolute;
 		font-family: Circe;
 		font-style: normal;
 		font-weight: bold;
@@ -339,9 +344,11 @@
 			margin: 0 15px;
 		}
 		&__cart{
-			width: 32px;
-			height: 32px;
 			margin: 0 15px;
+			&:before{
+				width: 32px;
+				height: 32px;
+			}
 		}
 		.select-city{
 			width: 100%;
@@ -396,7 +403,7 @@
 		}
 		&__control{
 			margin-left: auto;
-			margin-right: 25px;
+			margin-right: 0;
 			order: 2;
 		}
 		&__auth{
@@ -439,11 +446,13 @@
 			margin: 0 12px;
 		}
 		&__cart{
-
-			width: 24px;
-			height: 24px;
 			display: block;
 			margin: 0 12px;
+			padding-left: 32px;
+			&:before{
+				width: 24px;
+				height: 24px;
+			}
 		}
 		&__burger{
 			order: 3;
@@ -466,8 +475,6 @@
 		&__count{
 			width: 24px;
 			height: 24px;
-			right: -28px;
-			margin-top: -12px;
 			font-size: 12px;
 		}
 

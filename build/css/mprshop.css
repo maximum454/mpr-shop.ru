@@ -3496,25 +3496,37 @@ body.lock {
 }
 
 .header__cart {
+  margin: 0 20px;
+  position: relative;
+  padding-left: 42px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__cart:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   background-image: url("../img/cart-icon.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   width: 42px;
   height: 42px;
-  display: block;
-  margin: 0 20px;
-  position: relative;
-  margin-right: 42px;
 }
 
 .header__count {
   width: 32px;
   height: 32px;
-  top: 50%;
-  right: -34px;
-  margin-top: -16px;
-  position: absolute;
   font-family: Circe;
   font-style: normal;
   font-weight: bold;
@@ -4939,6 +4951,7 @@ body.lock {
      object-fit: contain;
   margin: 0 auto;
   display: block;
+  height: auto;
 }
 
 .card__name {
@@ -10770,9 +10783,12 @@ body.lock {
   }
 
   .header__cart {
+    margin: 0 15px;
+  }
+
+  .header__cart:before {
     width: 32px;
     height: 32px;
-    margin: 0 15px;
   }
 
   .header .select-city {
@@ -11100,6 +11116,10 @@ body.lock {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .card__item--list .information {
+    display: none;
   }
 
   .blog {
@@ -11494,7 +11514,7 @@ body.lock {
 
   .header__control {
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -11551,10 +11571,14 @@ body.lock {
   }
 
   .header__cart {
-    width: 24px;
-    height: 24px;
     display: block;
     margin: 0 12px;
+    padding-left: 32px;
+  }
+
+  .header__cart:before {
+    width: 24px;
+    height: 24px;
   }
 
   .header__burger {
@@ -11591,8 +11615,6 @@ body.lock {
   .header__count {
     width: 24px;
     height: 24px;
-    right: -28px;
-    margin-top: -12px;
     font-size: 12px;
   }
 
@@ -11874,73 +11896,7 @@ body.lock {
   }
 
   .card__item--list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed #BDBDBD;
-  }
-
-  .card__item--list:last-of-type {
-    border-bottom: 0;
-  }
-
-  .card__item--list .card__stickers {
-    position: relative;
-    margin-bottom: 10px;
-    left: 0;
-  }
-
-  .card__item--list .card__like {
-    position: relative;
-    display: block;
-    top: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-
-  .card__item--list .card__price {
-    margin-bottom: 10px;
-  }
-
-  .card__item--list .card__footer {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    text-align: right;
-    margin-left: auto;
-    margin-right: 0;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    width: 100%;
-  }
-
-  .card__item--list .card__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .card__item--list .card__name {
-    margin-bottom: 8px;
-  }
-
-  .card__item--list .card__img {
-    margin-bottom: 0;
-  }
-
-  .card__item--list .information li {
-    margin: 0;
+    grid-template-columns: 100px 1fr minmax(150px, 1fr);
   }
 
   .card__inner {
@@ -11985,6 +11941,10 @@ body.lock {
     font-size: 15px;
     line-height: 20px;
     padding: 10px 20px;
+  }
+
+  .card .sort__control {
+    display: none;
   }
 
   .blog {
