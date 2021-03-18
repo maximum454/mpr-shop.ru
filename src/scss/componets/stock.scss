@@ -55,6 +55,11 @@
 		display: flex;
 		align-items: center;
 		color: #333333;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			color: #EB222D;
+		}
 	}
 	&__btn{
 		font-weight: bold;
@@ -62,12 +67,15 @@
 		line-height: 31px;
 		color: #333333;
 		text-decoration: none;
-		display: block;
-		width: fit-content;
-		padding: 20px 46px 20px 25px;
+		width: 205px;
+		height: 64px;
+		padding-right: 40px;
 		margin: 20px auto;
 		position: relative;
-		&:before{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:before {
 			content: '';
 			position: absolute;
 			top: 0;
@@ -76,7 +84,11 @@
 			height: 100%;
 			background-image: url("../img/border-btn.svg");
 			background-repeat: no-repeat;
-			background-size: 100%;
+			background-size: contain;
+		}
+		&:hover{
+			color: #EB222D;
+			transition: all .3s ease;
 		}
 	}
 	@include r(1023){

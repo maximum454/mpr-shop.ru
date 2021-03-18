@@ -27,6 +27,11 @@
 		color: #333333;
 		text-decoration: none;
 		margin-right: 40px;
+		transition: all .3s ease;
+		&:hover{
+			color: #EB222D;
+			transition: all .3s ease;
+		}
 		&.stocked{
 			background-image: url("../img/percent-icon.svg");
 		}
@@ -85,6 +90,11 @@
 				margin: 24px 0;
 				display: block;
 				text-decoration: none;
+				transition: all .3s ease;
+				&:hover{
+					color: #EB222D;
+					transition: all .3s ease;
+				}
 			}
 			&>ul{
 				margin: 0;
@@ -101,9 +111,11 @@
 						margin: 24px 0px;
 						text-decoration: none;
 						display: block;
-						&.active{
-							color: #EB222D;
+						transition: all .3s ease;
+						&:hover{
 							font-weight: bold;
+							color: #EB222D;
+							transition: all .3s ease;
 						}
 					}
 				}

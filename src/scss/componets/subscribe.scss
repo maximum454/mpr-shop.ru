@@ -62,8 +62,15 @@
 		text-align: center;
 		color: #FFFFFF;
 		width: fit-content;
+		cursor: pointer;
 		padding: 20px 40px;
-		border: none;
+		border: 1px solid #EB222D;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			background-color: #fff;
+			color: #333;
+		}
 	}
 	@include r(1023){
 		margin: 40px 0;

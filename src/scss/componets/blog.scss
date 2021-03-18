@@ -11,6 +11,11 @@
 		margin: 0 0 20px;
 		a{
 			color: inherit;
+			transition: all .3s ease;
+			&:hover{
+				color: #EB222D;
+				transition: all .3s ease;
+			}
 		}
 	}
 	&__body{
@@ -56,6 +61,11 @@
 		line-height: 32px;
 		color: #333333;
 		font-family: 'Circe', sans-serif;
+		transition: all .3s ease;
+		&:hover{
+			color: #EB222D;
+			transition: all .3s ease;
+		}
 	}
 	@include r(1023){
 		margin: 40px 0;

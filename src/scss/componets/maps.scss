@@ -135,6 +135,13 @@
 		padding: 12px 18px;
 		margin-bottom: 10px;
 		text-decoration: none;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			border: 1px solid #EB222D;
+			background-color: #EB222D;
+			color: #fff;
+		}
 	}
 	.tabs{
 		img{

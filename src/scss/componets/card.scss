@@ -316,6 +316,10 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
+		&:hover{
+			color: #EB222D;
+			transition: all .3s ease;
+		}
 	}
 
 	&__cart-btn {

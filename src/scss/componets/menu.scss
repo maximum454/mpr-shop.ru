@@ -103,6 +103,11 @@
 				line-height: 28px;
 				color: #333333;
 				text-decoration: none;
+				transition: all .3s ease;
+				&:hover{
+					color: #EB222D;
+					transition: all .3s ease;
+				}
 			}
 		}
 
