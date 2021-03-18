@@ -4220,6 +4220,9 @@ body.lock {
 
 .promo__slider img {
   max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .promo__for {
@@ -12966,6 +12969,10 @@ body.lock {
     border-right: none;
     border-left: none;
     border-top: none;
+  }
+
+  .card__item--all {
+    display: none;
   }
 
   .accompany__item {

@@ -704,6 +704,9 @@
 			border-right: none;
 			border-left: none;
 			border-top: none;
+			&--all {
+				display: none;
+			}
 		}
 	}
 }
