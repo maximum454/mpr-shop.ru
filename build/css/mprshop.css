@@ -12280,6 +12280,21 @@ body.lock {
     padding-bottom: 0;
   }
 
+  .articles-detail .accompany__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .articles-detail .accompany__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .articles-detail .accompany__txt {
+    display: block;
+  }
+
   .pagination {
     display: block;
     text-align: center;

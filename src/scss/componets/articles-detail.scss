@@ -103,5 +103,15 @@
 				padding-bottom: 0;
 			}
 		}
+		.accompany__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.accompany__item{
+			display: flex;
+		}
+		.accompany__txt{
+			display: block;
+		}
 	}
 }
