@@ -93,6 +93,11 @@
 			position: relative;
 			display: block;
 			text-decoration: none;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				box-shadow: 0 0 20px 8px rgba(235, 34, 45, 0.2);
+			}
 		}
 
 		.txt {
