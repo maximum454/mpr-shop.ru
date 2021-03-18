@@ -4846,6 +4846,30 @@ document.addEventListener('click', function (e) {
     console.log(target);
     }
 )
+$(function () {
+
+    heightTitle('.card__body','.card__item');
+    // при изменении размера
+    $( window ).resize(function () {
+        heightTitle('.card__body','.card__item');
+    });
+
+})
+
+
+function heightTitle(parent, el){
+    var height = 0;
+    $(parent).find(el).css('height','auto');
+    setTimeout(function(){
+        $(parent).find(el).each(function(){
+            if($(this).height() > height){
+                height = $(this).height();
+            }
+        });
+        $(parent).find(el).height(height);
+    },300);
+}
+
 
 
 $(function () {
@@ -4914,9 +4938,7 @@ $(function () {
         $('.select-city').toggleClass('active');
     })
 
-    /*Подставляем высоту карточки*/
-    let cartItemHeight = $('.card__item').outerHeight(false);
-    $('.card__item').css({'height': cartItemHeight + 'px'})
+
 
 
     $('.js-input-key').on('keyup', function () {

@@ -1,5 +1,6 @@
 .stickers {
 	display: flex;
+	flex-wrap: wrap;	
 	&__item {
 		border-radius: 6px;
 		font-family: Circe;

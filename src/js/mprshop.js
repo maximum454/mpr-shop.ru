@@ -19,6 +19,7 @@
 @@include('./components/menu-header.js')
 @@include('./components/search-form.js')
 @@include('./components/header-burger.js')
+@@include('./components/card__item.js')
 
 
 $(function () {
@@ -87,9 +88,7 @@ $(function () {
         $('.select-city').toggleClass('active');
     })
 
-    /*Подставляем высоту карточки*/
-    let cartItemHeight = $('.card__item').outerHeight(false);
-    $('.card__item').css({'height': cartItemHeight + 'px'})
+
 
 
     $('.js-input-key').on('keyup', function () {
