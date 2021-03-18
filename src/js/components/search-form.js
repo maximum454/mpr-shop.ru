@@ -3,7 +3,6 @@ document.addEventListener('click', function (e) {
         const serachForm = document.getElementById('search-form');
         const target = e.target;
         if (target.id != 'js-input-search') {
-            console.log(serachForm);
             serachForm.classList.remove('active');
             overflowSearch.classList.remove('active');
             document.body.classList.remove('lock');

@@ -4821,7 +4821,6 @@ document.addEventListener('click', function (e) {
         const serachForm = document.getElementById('search-form');
         const target = e.target;
         if (target.id != 'js-input-search') {
-            console.log(serachForm);
             serachForm.classList.remove('active');
             overflowSearch.classList.remove('active');
             document.body.classList.remove('lock');
@@ -4833,14 +4832,20 @@ document.addEventListener('click', function (e) {
         }
     }
 )
-$('.header__burger').on('click', function (){
-    $('.menu-mobile').addClass('active');
-    $('body').addClass('lock');
-})
-$('.js-mobile-close').on('click', function (){
-    $('.menu-mobile').removeClass('active');
-    $('body').removeClass('lock');
-})
+document.addEventListener('click', function (e) {
+        const menuMobile = document.querySelector('.menu-mobile');
+        const target = e.target;
+        if (target.id != 'header-burger') {
+            menuMobile.classList.remove("active");
+            document.body.classList.remove('lock');
+        } else {
+            menuMobile.classList.toggle("active");
+            document.body.classList.add('lock');
+
+        }
+    console.log(target);
+    }
+)
 
 
 $(function () {
