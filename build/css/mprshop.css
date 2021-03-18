@@ -11244,6 +11244,37 @@ body.lock {
     display: none;
   }
 
+  .catalog-detail__grid {
+    grid-column-gap: 40px;
+  }
+
+  .catalog-detail__number {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .catalog-detail__btn {
+    margin: 0;
+  }
+
+  .catalog-detail__btn.like {
+    margin: 0 5px;
+  }
+
+  .catalog-detail__btn.like.active {
+    background-image: url("../img/like.svg");
+  }
+
+  .catalog-detail__btn--warning {
+    border: 1px solid #EB222D;
+    background-color: transparent;
+    color: #333333;
+    max-width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .learning p {
     font-size: 17px;
     line-height: 24px;
@@ -12276,6 +12307,11 @@ body.lock {
   .catalog-detail__price {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .catalog-detail__number {
+    margin-right: 5px;
+    margin-bottom: 10px;
   }
 
   .catalog-detail .catalog-nav {
