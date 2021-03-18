@@ -52,13 +52,19 @@
 		color: #333333;
 	}
 	&__add{
-		display: flex;
-		flex-wrap: wrap;
+	display: grid;
+		grid-template-columns: minmax(320px,500px) 340px;
 		justify-content: space-between;
-		align-items: flex-start;
+		grid-gap: 30px;
 	}
 	&__form{
-		max-width: 500px;
+		max-width: 100%;
 		width: 100%;
+	}
+	@include r(767){
+		&__add{
+			display: grid;
+			grid-template-columns: 1fr;
+		}
 	}
 }
