@@ -11,6 +11,7 @@
 		line-height: 32px;
 		color: #888E94;
 		position: relative;
+		white-space: nowrap;
 		&:after{
 			content: '/';
 			display: inline-block;
@@ -25,5 +26,8 @@
 			color: #888E94;
 			text-decoration: none;
 		}
+	}
+	@include r(1024){
+		overflow-x: scroll;
 	}
 }
