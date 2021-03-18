@@ -109,8 +109,6 @@
 				display: inline;
 			}
 		}
-	}
-	@include r(530){
 		&__nav {
 			display: flex;
 			list-style-type: none;
@@ -118,5 +116,4 @@
 			overflow-x: scroll;
 		}
 	}
-
 }

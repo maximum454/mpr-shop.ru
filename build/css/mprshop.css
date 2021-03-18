@@ -7289,6 +7289,7 @@ body.lock {
   display: block;
   margin: auto;
   height: auto;
+  max-width: 100%;
 }
 
 .catalog-detail .catalog-nav {
@@ -7313,6 +7314,16 @@ body.lock {
 
 .catalog-detail .catalog-nav .slick-current .item {
   border: 2px solid #EB222D;
+}
+
+.catalog-detail .tabs__link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.catalog-detail .tabs__nav {
+  overflow-x: scroll;
 }
 
 .breadcrumb {
@@ -12087,6 +12098,15 @@ body.lock {
     display: inline;
   }
 
+  .tabs__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    overflow-x: scroll;
+  }
+
   .banners-bottom__header {
     margin-bottom: 20px;
   }
@@ -12247,6 +12267,54 @@ body.lock {
   .catalog-section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  .catalog-detail__grid {
+    display: block;
+  }
+
+  .catalog-detail__price {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .catalog-detail .catalog-nav {
+    display: none;
+  }
+
+  .catalog-detail .accompany__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-detail .accompany__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .catalog-detail .accompany__txt {
+    display: block;
+  }
+
+  .catalog-detail .tabs__nav {
+    padding-bottom: 8px;
+  }
+
+  .catalog-detail .tabs__link {
+    font-size: 17px;
+    line-height: 24px;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 16px 8px;
+    color: #333;
+  }
+
+  .catalog-detail .tabs__link--second.tabs__link_active {
+    background: transparent;
+    border-radius: 0;
+    color: #333;
+    border-bottom: 4px solid #eb222d;
   }
 
   .sort__control {
@@ -12845,17 +12913,6 @@ body.lock {
     margin-left: 6%;
     margin-top: 0;
     margin-bottom: auto;
-  }
-}
-
-@media only screen and (max-width: 530px) {
-  .tabs__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    overflow-x: scroll;
   }
 }
 

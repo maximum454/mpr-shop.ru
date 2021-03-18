@@ -215,6 +215,7 @@
 				display: block;
 				margin: auto;
 				height: auto;
+				max-width: 100%;
 			}
 		}
 	}
@@ -236,6 +237,55 @@
 		.slick-current{
 			.item {
 				border: 2px solid #EB222D;
+			}
+		}
+	}
+
+	.tabs__link{
+		width: fit-content;
+	}
+	.tabs__nav {
+		overflow-x: scroll;
+	}
+	@include r(767){
+		&__grid{
+			display: block;
+		}
+		&__price{
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		.catalog-nav{
+			display: none;
+		}
+		.accompany__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.accompany__item{
+			display: flex;
+		}
+		.accompany__txt{
+			display: block;
+		}
+		.tabs__nav {
+			padding-bottom: 8px;
+		}
+		.tabs__link{
+			font-size: 17px;
+			line-height: 24px;
+			background: transparent;
+			border-radius:0;
+			padding: 10px 16px 8px;
+			color: #333;
+			&--second{
+				&.tabs__link_active{
+					background: transparent;
+					border-radius: 0;
+					color: #333;
+					border-bottom: 4px solid #eb222d;
+				}
 			}
 		}
 	}

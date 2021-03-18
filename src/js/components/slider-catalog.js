@@ -5,7 +5,23 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         fade: false,
-        asNavFor: '.catalog-nav'
+        asNavFor: '.catalog-nav',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
     $('.catalog-nav').slick({
         slidesToShow: 4,
