@@ -8969,6 +8969,28 @@ body.lock {
   padding: 22px 0;
 }
 
+.table tbody tr > th a,
+.table tbody tr > td a {
+  text-decoration: none;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: #EB222D;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.table tbody tr > th a:hover,
+.table tbody tr > td a:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #333;
+}
+
 .table tfoot {
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;

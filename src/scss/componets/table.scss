@@ -63,6 +63,20 @@
 					color: #222222;
 					padding: 22px 0;
 				}
+				a{
+					text-decoration: none;
+					font-family: Circe;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 17px;
+					line-height: 18px;
+					color: #EB222D;
+					transition: all .3s ease;
+					&:hover{
+						transition: all .3s ease;
+						color: #333;
+					}
+				}
 			}
 		}
 	}
