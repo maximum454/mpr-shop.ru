@@ -1,6 +1,5 @@
 .promo{
 	margin: 0 0 60px;
-	overflow: hidden;
 	&__body{
 		display: grid;
 		grid-template-columns: 280px minmax(660px,1015px);
@@ -211,6 +210,48 @@
 					padding: 0;
 					white-space: nowrap;
 					display: flex;
+				}
+			}
+		}
+		&__for{
+			.slick-track{
+				overflow: hidden;
+			}
+			.slick-dots{
+				position: relative;
+				left: 0;
+				right: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 8px auto;
+				width: 100%;
+				li {
+					position: relative;
+					padding: 0;
+					margin: 0 6px;
+					cursor: pointer;
+					color: #BDBDBD;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 48px;
+					border-bottom: none;
+
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					overflow: hidden;
+					background: rgba(136, 142, 148, 0.4);
+					&:first-child{
+						border-top: 1px solid rgba(0, 0, 0, 0.12);
+					}
+					&.slick-active{
+						background-color: #EB222D;
+						color: #fff;
+					}
+					a{
+						display: none;
+					}
 				}
 			}
 		}

@@ -4225,7 +4225,6 @@ body.lock {
 
 .promo {
   margin: 0 0 60px;
-  overflow: hidden;
 }
 
 .promo__body {
@@ -11132,6 +11131,57 @@ body.lock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .promo__for .slick-track {
+    overflow: hidden;
+  }
+
+  .promo__for .slick-dots {
+    position: relative;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 8px auto;
+    width: 100%;
+  }
+
+  .promo__for .slick-dots li {
+    position: relative;
+    padding: 0;
+    margin: 0 6px;
+    cursor: pointer;
+    color: #BDBDBD;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    border-bottom: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(136, 142, 148, 0.4);
+  }
+
+  .promo__for .slick-dots li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .promo__for .slick-dots li.slick-active {
+    background-color: #EB222D;
+    color: #fff;
+  }
+
+  .promo__for .slick-dots li a {
+    display: none;
   }
 
   .footer {
