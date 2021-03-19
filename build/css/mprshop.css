@@ -5154,6 +5154,16 @@ body.lock {
   width: 100%;
   height: 54px;
   margin: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.card__basket.in {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #E5EBF0;
 }
 
 .blog {

@@ -376,6 +376,11 @@
 		width: 100%;
 		height: 54px;
 		margin: 0;
+		transition: all .3s ease;
+		&.in{
+			transition: all .3s ease;
+			background-color: #E5EBF0;
+		}
 	}
 
 	@include r(1023) {

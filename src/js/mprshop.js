@@ -20,6 +20,7 @@
 @@include('./components/search-form.js')
 @@include('./components/header-burger.js')
 @@include('./components/card__item.js')
+@@include('./components/card__basket.js')
 
 
 $(function () {
