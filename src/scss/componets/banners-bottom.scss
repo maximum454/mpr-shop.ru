@@ -39,12 +39,14 @@
 		line-height: 28px;
 		color: #333333;
 		text-decoration: none;
-		display: block;
 		width: 190px;
 		height: 64px;
-		padding: 21px 45px 21px 44px;
+		padding-right: 30px;
 		margin: 20px 0;
 		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		&:before{
 			content: '';
 			position: absolute;
@@ -128,7 +130,6 @@
 		&__btn{
 			font-size: 15px;
 			line-height: 20px;
-			padding: 10px 20px;
 			margin: 20px 0;
 		}
 	}
