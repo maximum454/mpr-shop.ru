@@ -8403,7 +8403,6 @@ body.lock {
   border-radius: 12px;
   margin: 0;
   list-style: none;
-  z-index: 1;
   text-align: left;
   font-family: Circe;
   font-style: normal;
@@ -8411,6 +8410,7 @@ body.lock {
   font-size: 15px;
   line-height: 20px;
   color: #333333;
+  z-index: 100;
 }
 
 .form .search-drop.active {
@@ -11044,7 +11044,6 @@ body.lock {
   }
 
   .header .select-city {
-    width: 100%;
     top: 20px;
   }
 
@@ -13403,6 +13402,11 @@ body.lock {
     width: 20px;
     height: 20px;
     margin: 0 12px;
+  }
+
+  .header .select-city {
+    width: 360px;
+    top: 20px;
   }
 }
 

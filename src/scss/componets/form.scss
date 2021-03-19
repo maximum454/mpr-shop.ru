@@ -75,7 +75,6 @@
 		border-radius: 12px;
 		margin: 0;
 		list-style: none;
-		z-index: 1;
 		text-align: left;
 		font-family: Circe;
 		font-style: normal;
@@ -83,7 +82,7 @@
 		font-size: 15px;
 		line-height: 20px;
 		color: #333333;
-
+		z-index: 100;
 		&.active {
 			display: block;
 		}
