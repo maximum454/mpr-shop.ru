@@ -13332,6 +13332,7 @@ body.lock {
 @media only screen and (max-width: 480px) {
   .card__body {
     margin: 0 -15px;
+    grid-template-columns: 1fr;
   }
 
   .card__item {
