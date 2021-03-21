@@ -8944,6 +8944,146 @@ body.lock {
   border-top: 1px solid #BDBDBD;
 }
 
+.form .input-group-contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .input-group-1 {
+  width: auto;
+  margin-bottom: 16px;
+}
+
+.form .input-group-1 .input-group-input {
+  border: 1px solid #BDBDBD;
+  padding: 7px 12px;
+  text-align: left;
+  border-radius: 12px 0 0 12px;
+}
+
+.form .input-group-1 .input-group-input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-1 .input-group-input::-moz-placeholder {
+  text-align: left;
+}
+
+.form .input-group-1 .input-group-input:-ms-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-1 .input-group-input::-ms-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-1 .input-group-input::placeholder {
+  text-align: left;
+}
+
+.form .input-group-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.form .input-group-3 .input-group-input {
+  border: 1px solid #BDBDBD;
+  padding: 7px 12px;
+  text-align: left;
+  border-radius: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.form .input-group-3 .input-group-input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-3 .input-group-input::-moz-placeholder {
+  text-align: left;
+}
+
+.form .input-group-3 .input-group-input:-ms-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-3 .input-group-input::-ms-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-3 .input-group-input::placeholder {
+  text-align: left;
+}
+
+.form .input-group-3 .input-group-input:last-of-type {
+  border-radius: 0;
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+
+.form .input-group-3 .input-group-input:first-of-type {
+  border-radius: 0;
+  border-left-width: 0;
+  border-right-width: 1px;
+}
+
+.form .input-group-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.form .input-group-2 .input-group-input {
+  border: 1px solid #BDBDBD;
+  padding: 7px 12px;
+  text-align: left;
+  border-radius: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.form .input-group-2 .input-group-input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-2 .input-group-input::-moz-placeholder {
+  text-align: left;
+}
+
+.form .input-group-2 .input-group-input:-ms-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-2 .input-group-input::-ms-input-placeholder {
+  text-align: left;
+}
+
+.form .input-group-2 .input-group-input::placeholder {
+  text-align: left;
+}
+
+.form .input-group-2 .input-group-input:last-of-type {
+  border-radius: 0 12px 12px 0;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.form .input-group-2 .input-group-input:first-of-type {
+  border-radius: 0;
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+
 .table {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -13099,6 +13239,144 @@ body.lock {
     height: 46px;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .form .input-group-contant {
+    display: block;
+  }
+
+  .form .input-group-1 {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .form .input-group-1 .input-group-input {
+    border: 1px solid #BDBDBD;
+    padding: 7px 12px;
+    text-align: left;
+    border-radius: 12px;
+  }
+
+  .form .input-group-1 .input-group-input::-webkit-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-1 .input-group-input::-moz-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-1 .input-group-input:-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-1 .input-group-input::-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-1 .input-group-input::placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .form .input-group-3 .input-group-input {
+    border: 1px solid #BDBDBD;
+    padding: 7px 12px;
+    text-align: left;
+    border-radius: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+
+  .form .input-group-3 .input-group-input::-webkit-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-3 .input-group-input::-moz-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-3 .input-group-input:-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-3 .input-group-input::-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-3 .input-group-input::placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-3 .input-group-input:last-of-type {
+    border-radius: 0 12px 12px 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+
+  .form .input-group-3 .input-group-input:first-of-type {
+    border-radius: 12px 0 0 12px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+
+  .form .input-group-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .form .input-group-2 .input-group-input {
+    border: 1px solid #BDBDBD;
+    padding: 7px 12px;
+    text-align: left;
+    border-radius: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+
+  .form .input-group-2 .input-group-input::-webkit-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-2 .input-group-input::-moz-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-2 .input-group-input:-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-2 .input-group-input::-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-2 .input-group-input::placeholder {
+    text-align: left;
+  }
+
+  .form .input-group-2 .input-group-input:last-of-type {
+    border-radius: 0 12px 12px 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+
+  .form .input-group-2 .input-group-input:first-of-type {
+    border-radius: 12px 0 0 12px;
+    border-left-width: 1px;
+    border-right-width: 0;
   }
 
   .slider-main__block {
