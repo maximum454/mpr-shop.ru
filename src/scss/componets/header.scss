@@ -9,7 +9,30 @@
 		z-index: 1000;
 		width: 100%;
 		.header__logo {
-			max-width: 270px;
+			display: none;
+		}
+		.header__btn{
+			display: block;
+			background-color: #EB222D;
+			border: 1px solid #EB222D;
+			border-radius: 12px;
+			font-weight: bold;
+			font-size: 17px;
+			line-height: normal;
+			color: #FFFFFF;
+			padding: 20px;
+			margin-right: 12px;
+			cursor: pointer;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				border: 1px solid #EB222D;
+				background-color:#fff;
+				color: #333333;
+			}
+		}
+		.header__select-delivery{
+			display: none;
 		}
 		.header__bottom,
 		.header__phone{
@@ -17,7 +40,9 @@
 		}
 		.header__search-form{
 			display: flex!important;
-			max-width: 490px;
+			max-width: none;
+			margin-right: 20px;
+			margin-left: 0;
 		}
 	}
 	&__top {
@@ -25,6 +50,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		.header__btn{
+			display: none;
+		}
 
 	}
 	&__logo {
@@ -357,16 +385,28 @@
 	@include r(767){
 
 		&.f-nav{
+			.header__top{
+				flex-wrap: nowrap;
+				padding-bottom: 20px;
+			}
 			.header__logo {
 				max-width: 110px;
 			}
 			.header__search-form{
 				max-width: 100%;
-				margin-bottom: 20px;
+			}
+
+			.header__btn{
+				font-size: 15px;
+				padding: 10px;
+			}
+			.header__select-delivery{
+				display: none;
 			}
 		}
 		&__top {
 			flex-wrap: wrap;
+			padding-bottom: 0;
 		}
 		&__logo{
 			order: 1;
@@ -470,13 +510,64 @@
 				background: #EB222D;
 				border-radius: 2px;
 			}
+			flex-shrink: 0;
 		}
 		&__count{
 			width: 24px;
 			height: 24px;
 			font-size: 12px;
 		}
+		&__btn{
+			display: block;
+			background-color: #EB222D;
+			border: 1px solid #EB222D;
+			border-radius: 12px;
+			font-weight: bold;
+			font-size: 17px;
+			line-height: normal;
+			color: #FFFFFF;
+			padding: 10px;
+			margin-right: 12px;
+			cursor: pointer;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				border: 1px solid #EB222D;
+				background-color:#fff;
+				color: #333333;
+			}
+		}
+		.search-form__input{
+			padding: 10px 10px 10px 40px;
+			font-size: 15px;
+		}
 
+	}
+	@include r(425){
+		&.f-nav{
+			.header__top{
+				flex-wrap: nowrap;
+				padding-bottom: 20px;
+			}
+			.header__logo {
+				display: block;
+			}
+			.header__search-form{
+				display: none!important;
+			}
+
+			.search-form__submit{
+				width: 20px;
+				left: 10px;
+
+			}
+			.header__btn{
+				display: none;
+			}
+			.header__select-delivery{
+				display: none;
+			}
+		}
 	}
 	@include r(380){
 		&__logo{

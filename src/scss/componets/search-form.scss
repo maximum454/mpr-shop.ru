@@ -126,7 +126,8 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 39px;
-		height: 39px;
+		height: 100%;
+		padding: 0;
 		border: none;
 		background-color: transparent;
 	}
@@ -253,6 +254,10 @@
 				overflow: scroll;
 				max-height: 300px;
 			}
+		}
+		&__submit{
+			left: 10px;
+			width: 20px;
 		}
 	}
 }
