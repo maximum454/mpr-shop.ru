@@ -13487,13 +13487,13 @@ body.lock {
   }
 
   .header__auth {
-    display: none;
     width: 20px;
     height: 20px;
-    margin: 0 12px;
+    margin: 0;
   }
 
   .header__like {
+    display: none;
     width: 20px;
     height: 20px;
     margin: 0 12px;
@@ -13503,6 +13503,17 @@ body.lock {
     width: 20px;
     height: 20px;
     margin: 0 12px;
+  }
+
+  .header__cart:before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__count {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
   }
 
   .header .select-city {
