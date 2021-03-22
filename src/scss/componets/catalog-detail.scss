@@ -135,6 +135,7 @@
 		.minus,.plus{
 			display: flex;
 			align-items: center;
+			cursor: pointer;
 		}
 	}
 	&__warning{
@@ -191,7 +192,7 @@
 			line-height: 0;
 			&.active{
 				background-image: url("../img/like-active.svg");
-				transition: all 3s ease;
+				transition: all .1s ease;
 			}
 		}
 		&--warning{

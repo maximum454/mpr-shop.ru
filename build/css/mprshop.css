@@ -7488,6 +7488,7 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .catalog-detail__warning {
@@ -7561,9 +7562,9 @@ body.lock {
 
 .catalog-detail__btn.like.active {
   background-image: url("../img/like-active.svg");
-  -webkit-transition: all 3s ease;
-  -o-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
 }
 
 .catalog-detail__btn--warning {
