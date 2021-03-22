@@ -13671,16 +13671,14 @@ body.lock {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
   }
 
   .basket .btn.fixed {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    opacity: 1;
-    visibility: visible;
   }
 
   .promocode {

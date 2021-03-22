@@ -239,12 +239,10 @@
       left: 0;
       z-index: 10;
       transition: all 0.3s ease-in-out;
-      opacity: 0;
-      visibility: hidden;
+      opacity: 1;
+      visibility: visible;
       &.fixed{
         transition: all 0.3s ease-in-out;
-        opacity: 1;
-        visibility: visible;
       }
     }
   }
