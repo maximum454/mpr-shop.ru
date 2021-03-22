@@ -13922,12 +13922,8 @@ body.lock {
     padding-bottom: 20px;
   }
 
-  .header.f-nav .header__logo {
-    display: block;
-  }
-
   .header.f-nav .header__search-form {
-    display: none !important;
+    margin-right: 10px;
   }
 
   .header.f-nav .search-form__submit {
@@ -13935,12 +13931,18 @@ body.lock {
     left: 10px;
   }
 
-  .header.f-nav .header__btn {
+  .header.f-nav .header__select-delivery {
     display: none;
   }
 
-  .header.f-nav .header__select-delivery {
+  .header.f-nav .header__auth,
+  .header.f-nav .header__like,
+  .header.f-nav .header__count {
     display: none;
+  }
+
+  .header.f-nav .header__control {
+    margin-right: 0;
   }
 
   .subscribe__form {

@@ -549,23 +549,24 @@
 				flex-wrap: nowrap;
 				padding-bottom: 20px;
 			}
-			.header__logo {
-				display: block;
-			}
 			.header__search-form{
-				display: none!important;
+				margin-right: 10px;
 			}
-
 			.search-form__submit{
 				width: 20px;
 				left: 10px;
 
 			}
-			.header__btn{
-				display: none;
-			}
 			.header__select-delivery{
 				display: none;
+			}
+			.header__auth,
+			.header__like,
+			.header__count{
+				display: none;
+			}
+			.header__control{
+				margin-right: 0;
 			}
 		}
 	}
