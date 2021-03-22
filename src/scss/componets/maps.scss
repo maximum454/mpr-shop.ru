@@ -148,6 +148,16 @@
 			max-width: 100%;
 			height: auto;
 		}
+		&__link{
+			width: fit-content;
+			cursor: pointer;
+			&_active,&:hover {
+				background-image: none;
+				background-color: #eb222d;
+				cursor: default;
+				color: #ffffff;
+			}
+		}
 	}
 	@include r(1023){
 		margin: 40px 0;

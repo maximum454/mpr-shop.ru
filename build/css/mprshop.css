@@ -5589,6 +5589,21 @@ body.lock {
   height: auto;
 }
 
+.maps .tabs__link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.maps .tabs__link_active,
+.maps .tabs__link:hover {
+  background-image: none;
+  background-color: #eb222d;
+  cursor: default;
+  color: #ffffff;
+}
+
 .tizers {
   font-family: 'Circe', sans-serif;
   position: relative;
@@ -5814,6 +5829,7 @@ body.lock {
   display: flex;
   list-style-type: none;
   margin: 0;
+  overflow-y: hidden;
 }
 
 .tabs__link {
@@ -7504,10 +7520,23 @@ body.lock {
   width: 100%;
   height: 68px;
   margin: 0 5px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.catalog-detail__btn:hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px solid #EB222D;
+  background-color: #fff;
+  color: #333333;
 }
 
 .catalog-detail__btn.like {
-  display: block;
+  padding: 0;
   background-image: url("../img/like.svg");
   background-size: 32px;
   background-repeat: no-repeat;
@@ -7517,10 +7546,24 @@ body.lock {
   border: 1px solid #EB222D;
   background-color: transparent;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0;
+  line-height: 0;
 }
 
 .catalog-detail__btn.like.active {
-  background-image: url("../img/like.svg");
+  background-image: url("../img/like-active.svg");
+  -webkit-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 .catalog-detail__btn--warning {
@@ -7597,6 +7640,15 @@ body.lock {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
+}
+
+.catalog-detail .tabs__link_active,
+.catalog-detail .tabs__link:hover {
+  background-image: none;
+  background-color: #eb222d;
+  cursor: default;
+  color: #ffffff;
 }
 
 .catalog-detail .tabs__nav {
@@ -9276,6 +9328,21 @@ body.lock {
 
 .service .search-form__drop li:last-of-type {
   margin-bottom: 0;
+}
+
+.service .tabs__link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.service .tabs__link_active,
+.service .tabs__link:hover {
+  background-image: none;
+  background-color: #eb222d;
+  cursor: default;
+  color: #ffffff;
 }
 
 .slider-main {
@@ -12733,6 +12800,7 @@ body.lock {
     display: flex;
     list-style-type: none;
     margin: 0;
+    overflow-y: hidden;
     overflow-x: scroll;
   }
 

@@ -165,8 +165,16 @@
 		width: 100%;
 		height: 68px;
 		margin: 0 5px;
+		transition: all .3s ease;
+		cursor: pointer;
+		&:hover{
+			transition: all .3s ease;
+			border: 1px solid #EB222D;
+			background-color:#fff;
+			color: #333333;
+		}
 		&.like{
-			display: block;
+			padding: 0;
 			background-image: url("../img/like.svg");
 			background-size: 32px;
 			background-repeat: no-repeat;
@@ -176,8 +184,14 @@
 			border: 1px solid #EB222D;
 			background-color: transparent;
 			outline: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0;
+			line-height: 0;
 			&.active{
-				background-image: url("../img/like.svg");
+				background-image: url("../img/like-active.svg");
+				transition: all 3s ease;
 			}
 		}
 		&--warning{
@@ -188,6 +202,7 @@
 			width: fit-content;
 			height: auto;
 		}
+
 	}
 
 	.catalog-for{
@@ -244,7 +259,15 @@
 
 	.tabs__link{
 		width: fit-content;
+		cursor: pointer;
+		&_active,&:hover {
+			background-image: none;
+			background-color: #eb222d;
+			cursor: default;
+			color: #ffffff;
+		}
 	}
+
 	.tabs__nav {
 		overflow-x: scroll;
 	}
