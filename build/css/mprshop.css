@@ -12465,6 +12465,23 @@ body.lock {
     border-radius: 12px;
   }
 
+  .card__item:hover .card__inner {
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #fff;
+    border: 0 !important;
+  }
+
+  .card__item:hover .card__footer {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+  }
+
   .card__item--list {
     grid-template-columns: 100px 1fr minmax(150px, 1fr);
   }

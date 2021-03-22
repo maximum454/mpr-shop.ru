@@ -619,7 +619,18 @@
 				border-radius: 12px;
 			}
 			&:hover{
-
+				.card__inner{
+					position: relative;
+					box-shadow: none;
+					background: #fff;
+					border: 0!important;
+				}
+				.card__footer{
+					opacity: 1;
+					visibility: visible;
+					height: auto;
+					transition: all .1s ease;
+				}
 			}
 		}
 		&__item--list{
