@@ -22,6 +22,7 @@
 		line-height: 28px;
 		color: #333333;
 		border: 1px solid #EB222D;
+		background-color:#fff;
 		box-sizing: border-box;
 		border-radius: 12px;
 		padding: 19px 15px 15px;
@@ -30,6 +31,13 @@
 		display: inline-block;
 		max-width: 205px;
 		width: 100%;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			border: 1px solid #EB222D;
+			background-color:#EB222D;
+			color: #fff;
+		}
 	}
 	&__item{
 		margin-bottom: 32px;
@@ -62,9 +70,20 @@
 		width: 100%;
 	}
 	@include r(767){
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
 		&__add{
 			display: grid;
 			grid-template-columns: 1fr;
+		}
+		&__btn{
+			width: fit-content;
+			max-width: none;
+			padding: 10px;
+			font-size: 15px;
+			line-height: 20px;
 		}
 	}
 }
