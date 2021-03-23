@@ -73,12 +73,17 @@
 			border-bottom: 1px dashed #888E94;
 			z-index: 0;
 		}
+
 		span{
 			background-color: #fff;
 			display: block;
 			position: relative;
 			z-index: 1;
 			padding: 5px;
+			margin-right: 20px;
+			&:last-of-type{
+				margin-right: 0;
+			}
 		}
 	}
 	@include r(767){
