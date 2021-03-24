@@ -7669,10 +7669,6 @@ body.lock {
   color: #ffffff;
 }
 
-.catalog-detail .tabs__nav {
-  overflow-x: scroll;
-}
-
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
