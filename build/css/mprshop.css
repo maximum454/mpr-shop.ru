@@ -6095,14 +6095,17 @@ body.lock {
   overflow: hidden;
 }
 
-.no-webp .banners-top__item.bg1{
-  background-image: url("../img/banners-top-1.png"); }
+.banners-top__item.bg1 {
+  background-image: url("../img/banners-top-1.svg");
+}
 
-.no-webp .banners-top__item.bg2{
-  background-image: url("../img/banners-top-2.png"); }
+.banners-top__item.bg2 {
+  background-image: url("../img/banners-top-2.svg");
+}
 
-.no-webp .banners-top__item.bg3{
-  background-image: url("../img/banners-top-3.png"); }
+.banners-top__item.bg3 {
+  background-image: url("../img/banners-top-3.svg");
+}
 
 .banners-top__name {
   font-weight: bold;
@@ -14142,9 +14145,3 @@ body.lock {
 }
 
 .webp .jq-selectbox__search input{ background: url(data:image/webp;base64,UklGRsoAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSH0AAAABgGJt27Loxd2jwwI4NHfL1hwSNJfsLhma/izAdeKkf1nfvLOFiJgAYMSpn1dPDWjm9ORUmYpfCypBcQAAfGcuhrICce3H/EpJ5QLmrSd1YphhiSB9ajCGrxcAJKstoM23Ta17p+gqAwOCSC6qZbToJgNDZrTp9v+A0U7+BQBWUDggJgAAAHACAJ0BKhQADAAuaUikUiIlpaWFgGhLSAAHsoAA/vv++f7Y0AAA) no-repeat 100% 50%; }
-
-.webp .banners-top__item.bg1{ background-image: url(../img/banners-top-1.webp); }
-
-.webp .banners-top__item.bg2{ background-image: url(../img/banners-top-2.webp); }
-
-.webp .banners-top__item.bg3{ background-image: url(../img/banners-top-3.webp); }
