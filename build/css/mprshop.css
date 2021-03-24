@@ -6080,7 +6080,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
-  background: #F6F8FA;
+  background-color: #F6F8FA;
   border-radius: 12px;
   margin: 0 20px;
   max-width: 418px;
@@ -6088,7 +6088,21 @@ body.lock {
   padding: 68px 20px;
   text-align: center;
   text-decoration: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  overflow: hidden;
 }
+
+.no-webp .banners-top__item.bg1{
+  background-image: url("../img/banners-top-1.png"); }
+
+.no-webp .banners-top__item.bg2{
+  background-image: url("../img/banners-top-2.png"); }
+
+.no-webp .banners-top__item.bg3{
+  background-image: url("../img/banners-top-3.png"); }
 
 .banners-top__name {
   font-weight: bold;
@@ -14128,3 +14142,9 @@ body.lock {
 }
 
 .webp .jq-selectbox__search input{ background: url(data:image/webp;base64,UklGRsoAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSH0AAAABgGJt27Loxd2jwwI4NHfL1hwSNJfsLhma/izAdeKkf1nfvLOFiJgAYMSpn1dPDWjm9ORUmYpfCypBcQAAfGcuhrICce3H/EpJ5QLmrSd1YphhiSB9ajCGrxcAJKstoM23Ta17p+gqAwOCSC6qZbToJgNDZrTp9v+A0U7+BQBWUDggJgAAAHACAJ0BKhQADAAuaUikUiIlpaWFgGhLSAAHsoAA/vv++f7Y0AAA) no-repeat 100% 50%; }
+
+.webp .banners-top__item.bg1{ background-image: url(../img/banners-top-1.webp); }
+
+.webp .banners-top__item.bg2{ background-image: url(../img/banners-top-2.webp); }
+
+.webp .banners-top__item.bg3{ background-image: url(../img/banners-top-3.webp); }

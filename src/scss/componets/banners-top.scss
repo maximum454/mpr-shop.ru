@@ -7,7 +7,7 @@
 	}
 	&__item{
 		flex: 1 0 0;
-		background: #F6F8FA;
+		background-color: #F6F8FA;
 		border-radius: 12px;
 		margin: 0 20px;
 		max-width: 418px;
@@ -15,6 +15,20 @@
 		padding: 68px 20px;
 		text-align: center;
 		text-decoration: none;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: relative;
+		overflow: hidden;
+		&.bg1{
+			background-image: url("../img/banners-top-1.png");
+		}
+		&.bg2{
+			background-image: url("../img/banners-top-2.png");
+		}
+		&.bg3{
+			background-image: url("../img/banners-top-3.png");
+		}
 	}
 	&__name{
 		font-weight: bold;
