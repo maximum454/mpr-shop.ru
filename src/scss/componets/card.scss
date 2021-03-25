@@ -401,6 +401,13 @@
 				width: 100%;
 				max-width: 100%;
 				height: 280px;
+				min-height: auto;
+				&--horizontal{
+					.card__footer,
+					.card__like{
+						display: none;
+					}
+				}
 			}
 			.card__inner{
 				display: flex;
@@ -554,6 +561,7 @@
 			}
 			.card__item {
 				height: auto;
+				min-height: auto;
 			}
 			.card__inner{
 				display: flex;
