@@ -130,6 +130,12 @@
 		height: 24px;
 		border: none;
 		background-color: transparent;
+		cursor: pointer;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			background-image: url("../img/btn-delete.svg");
+		}
 	}
 	@include r(1023){
 

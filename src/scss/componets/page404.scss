@@ -38,7 +38,7 @@
 		font-size: 20px;
 		line-height: 28px;
 		color: #fff;
-		border: none;
+		border: 1px solid #EB222D;
 		background-color:#EB222D;
 		box-sizing: border-box;
 		border-radius: 12px;
@@ -48,6 +48,13 @@
 		width: fit-content;
 		height: 68px;
 		margin: 0;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			color: #333;
+			background-color: #fff;
+			border: 1px solid #EB222D;
+		}
 	}
 	@include r(767){
 		text-align: center;

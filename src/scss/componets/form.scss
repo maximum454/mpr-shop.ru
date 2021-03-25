@@ -267,7 +267,7 @@
 		font-size: 20px;
 		line-height: 28px;
 		color: #fff;
-		border: none;
+		border: 1px solid #EB222D;
 		background-color: #EB222D;
 		box-sizing: border-box;
 		border-radius: 12px;
@@ -278,6 +278,13 @@
 		width: 100%;
 		height: 68px;
 		margin: 0;
+		cursor: pointer;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			background-color: #fff;
+			color: #333;
+		}
 
 		&.link {
 			background-color: transparent;
@@ -291,6 +298,11 @@
 			margin: 0;
 			width: fit-content;
 			padding: 0;
+			border: none;
+			&:hover{
+				transition: all .3s ease;
+				color: #EB222D;
+			}
 		}
 
 		&.submit {

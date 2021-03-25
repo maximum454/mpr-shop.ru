@@ -35,6 +35,13 @@
 		display: inline-block;
 		max-width: 305px;
 		width: 100%;
+		cursor: pointer;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			background-color: #EB222D;
+			color: #fff;
+		}
 	}
 	&__list{
 		margin: 0;
@@ -57,8 +64,16 @@
 				align-items: center;
 				text-align: center;
 				justify-content: center;
-
 				color: #333333;
+				transition: all .3s ease;
+				border-radius: 12px;
+				cursor: pointer;
+				transition: all .3s ease;
+				&:hover{
+					transition: all .3s ease;
+					background-color: #EB222D;
+					color: #fff;
+				}
 
 			}
 			.cur{

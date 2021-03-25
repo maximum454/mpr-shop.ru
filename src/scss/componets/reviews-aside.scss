@@ -5,6 +5,13 @@
 		text-decoration: none;
 		margin-bottom: 60px;
 		color: inherit;
+		transition: all .3s ease;
+		&:hover{
+			.reviews-aside__title{
+				transition: all .3s ease;
+				color: #EB222D;
+			}
+		}
 	}
 	&__label{
 		font-family: Circe;

@@ -202,6 +202,12 @@
 			max-width: 100%;
 			width: fit-content;
 			height: auto;
+			&:hover{
+				transition: all .3s ease;
+				border: 1px solid #EB222D;
+				background-color:#EB222D;
+				color: #fff;
+			}
 		}
 
 	}

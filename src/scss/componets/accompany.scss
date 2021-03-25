@@ -146,9 +146,17 @@
 	}
 	&__prev{
 		border-right: 1px solid #EB222D;
+		transition: all .3s ease;
+		&:hover{
+			background-color: #EB222D;
+		}
 	}
 	&__next{
+		transition: all .3s ease;
 		transform: rotate(180deg);
+		&:hover{
+			background-color: #EB222D;
+		}
 	}
 	&__txt{
 		display: block;

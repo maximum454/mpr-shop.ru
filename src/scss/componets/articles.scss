@@ -14,6 +14,12 @@
 		box-sizing: border-box;
 		border-radius: 12px;
 		overflow: hidden;
+		transition: all .3s ease;
+		&:hover{
+			.articles__name{
+				color: #eb222d;
+			}
+		}
 	}
 	&__name{
 		font-family: Circe;

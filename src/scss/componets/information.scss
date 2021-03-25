@@ -5,8 +5,9 @@
 	min-width: 290px;
 	width: fit-content;
 	&--order{
-		margin-left: auto;
+		margin-left: 0;
 		margin-bottom: 27px;
+		width: 100%;
 		li{
 			display: flex;
 			justify-content: space-between;

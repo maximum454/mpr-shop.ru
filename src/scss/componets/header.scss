@@ -68,7 +68,8 @@
 	&__select-delivery {
 		position: relative;
 		padding-left: 62px;
-
+		cursor: pointer;
+		transition: all .3s ease;
 		&:before {
 			content: '';
 			position: absolute;
@@ -81,6 +82,15 @@
 			background-position: center;
 			width: 42px;
 			height: 42px;
+		}
+		&:hover{
+			transition: all .3s ease;
+			span{
+				color: #eb222d;
+			}
+			p{
+				color: #eb222d;
+			}
 		}
 		span{
 			font-style: normal;
@@ -107,6 +117,11 @@
 		text-decoration: none;
 		margin: 0 65px;
 		white-space: nowrap;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			color: #eb222d;
+		}
 	}
 	&__control{
 		display: flex;
@@ -117,6 +132,12 @@
 		margin: 0 20px;
 		position: relative;
 		padding-left: 42px;
+		cursor: pointer;
+		&:hover{
+			.header__auth-name{
+				color: #eb222d;
+			}
+		}
 		&:before{
 			content: '';
 			position: absolute;
@@ -275,7 +296,7 @@
 			font-size: 15px;
 			line-height: 20px;
 			color: #fff;
-			border: none;
+			border: 1px solid #EB222D;
 			background-color:#EB222D;
 			box-sizing: border-box;
 			border-radius: 12px;
@@ -284,6 +305,13 @@
 			display: inline-block;
 			width: fit-content;
 			margin: 0 20px 0 0;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				background-color: #fff;
+				color: #333;
+				border: 1px solid #EB222D;
+			}
 		}
 		.link{
 			font-family: Circe;
@@ -293,6 +321,10 @@
 			line-height: 20px;
 			color: #333333;
 			text-decoration: none;
+			transition: all .3s ease;
+			&:hover{
+				color: #EB222D;
+			}
 		}
 		.close{
 			position: absolute;

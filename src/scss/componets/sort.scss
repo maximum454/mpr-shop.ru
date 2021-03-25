@@ -123,7 +123,7 @@
 		font-size: 20px;
 		line-height: 28px;
 		color: #fff;
-		border: none;
+		border: 1px solid #EB222D;
 		background-color:#EB222D;
 		box-sizing: border-box;
 		border-radius: 12px;
@@ -134,6 +134,13 @@
 		vertical-align: middle;
 		margin-right: 0;
 		margin-left: auto;
+		transition: all .3s ease;
+		&:hover{
+			transition: all .3s ease;
+			background-color: #fff;
+			color: #333;
+			border: 1px solid #EB222D;
+		}
 	}
 	@include r(767){
 		&__control{
