@@ -635,6 +635,7 @@
                         <div class="tabs__content tabs__content--second">
                             <div class="tabs__pane tabs__pane_show" id="content-1">
                                 Сферическое зеркало служит для увеличения обзора и сокращения мертвых зон. 1
+                                <a href="#" data-remodal-target="modal-receiving-order">Способ получения заказа</a>
                             </div>
                             <div class="tabs__pane" id="content-2">
                                 <div class="information-attr">
@@ -1296,6 +1297,7 @@
 </footer>
 
 
+
 <div class="remodal" data-remodal-id="zadat-vopros">
     <button data-remodal-action="close" class="remodal-close"></button>
 
@@ -1336,9 +1338,55 @@
     </form>
 </div>
 
+<div class="remodal receiving-order" data-remodal-id="modal-receiving-order">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="">
+        <div class="receiving-order__title">Способ получения заказа</div>
+        <p class="receiving-order__subtitle">Выберите, чтобы получить актуальный ассортимент и цены</p>
+
+    <div class="receiving-order__tabs">
+        <ul class="receiving-order__caption">
+            <li class="active">Доставка</li>
+            <li>Самовывоз</li>
+        </ul>
+        <div class="receiving-order__body">
+            <div class="receiving-order__content active">
+                <form class="form" action="">
 
 
 
+                    <p>Доставка бесплатна всегда, минимальный заказ — 1000 ₽</p>
+
+                    <div class="form-group">
+                        <input type="text" class="js-key-empty" placeholder="Адрес">
+                    </div>
+
+                    <div class="receiving-order__map">
+
+                    </div>
+                        <input class="btn w100 disabled" type="submit" value="Сохранить">
+                </form>
+            </div>
+            <div class="receiving-order__content">
+                <form class="form" action="">
+
+
+
+                    <p>При заказе от 300 ₽</p>
+
+                    <div class="form-group">
+                        <input type="text" class="js-key-empty" placeholder="Адрес">
+                    </div>
+
+                    <div class="receiving-order__map">
+
+                    </div>
+                    <input class="btn w100 disabled" type="submit" value="Сохранить">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 <script src="js/mprshop.min.js"></script>

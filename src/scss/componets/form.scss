@@ -326,6 +326,15 @@
 			max-width: none;
 			border-radius: 0;
 		}
+		&.disabled{
+			pointer-events: none;
+			background: #E5EBF0;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 28px;
+			color: #888E94;
+			border: 1px solid #E5EBF0;
+		}
 	}
 
 	.input-group-container {

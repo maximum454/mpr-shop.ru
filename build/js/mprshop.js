@@ -5008,7 +5008,18 @@ $(function () {
         return false;
     })
 
+    $('.receiving-order__caption').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.receiving-order__tabs').find('.receiving-order__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
 
+    $('.js-key-empty').on('keyup', function () {
+        $(this).parents('form').find('.btn').removeClass('disabled');
+        if (this.value === '') {
+            $(this).parents('form').find('.btn').addClass('disabled');
+        }
+    })
 
     $tabs('.tabs');
 })
